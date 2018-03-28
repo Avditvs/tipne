@@ -6,7 +6,7 @@ import android.os.Bundle;
 
 public class DataBaseActivity  extends Activity {
 
-    public void onCreate (Bundle savedInstanceState){
+    protected void onCreate (Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         AppDataBase db = AppDataBase.getAppDatabase(getApplicationContext());
         MotsDAO dbDAO = db.MotsDao();
