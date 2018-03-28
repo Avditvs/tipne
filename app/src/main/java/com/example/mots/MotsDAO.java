@@ -22,4 +22,7 @@ public interface MotsDAO {
     @Query("SELECT * FROM mots WHERE idList like :list")
     List<Mots> getList(Integer list);
 
+    @Query("DELETE FROM mots")
+    void nukeTableMots();
+
 }

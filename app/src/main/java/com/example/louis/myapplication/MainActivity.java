@@ -41,9 +41,19 @@ public class MainActivity extends Activity {
         MotsDAO bdDao = db.MotsDao();
 
 
-        buildDb(bdDao);
+
+        if (!verifiedDb(bdDao)){
+            bdDao.nukeTableMots();
+            buildDb(bdDao);
+        }
 
 
+
+    }
+
+    private boolean verifiedDb(MotsDAO dbDAO){
+
+        return !dbDAO.getAll().isEmpty();
     }
 
 
