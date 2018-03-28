@@ -1,17 +1,47 @@
-package com.example.mots;
+package com.example.dbActivity;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.widget.TextView;
+
+import com.example.R;
+import com.example.louis.myapplication.MainActivity;
+import com.example.mots.Mots;
+import com.example.mots.MotsDAO;
 
 
 public class DataBaseActivity  extends Activity {
 
+    TextView text = null;
+
     public void onCreate (Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
+        Intent intent = new Intent(this, MainActivity.class);
+        setContentView(R.layout.database_activity);
         AppDataBase db = AppDataBase.getAppDatabase(getApplicationContext());
         MotsDAO dbDAO = db.MotsDao();
-        buildDb(dbDAO);
+
+        text = findViewById(R.id.affdb);
+
+        if (!verifiedDb(dbDAO)){
+            dbDAO.nukeTableMots();
+            System.out.println("Suppression de liste");
+            buildDb(dbDAO);
+        }
+        text.setText("Db chargée");
+        startActivity(intent);
     }
+
+    private boolean verifiedDb(MotsDAO dbDAO){
+        System.out.println("Verifying the database");
+
+        //coder qqchose qui vérifie si la bdd est bonne
+
+
+        return !dbDAO.getAll().isEmpty();
+    }
+
 
 
     private void buildDb(MotsDAO dbDAO){  //créé la DB
