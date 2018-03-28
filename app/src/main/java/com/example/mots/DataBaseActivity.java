@@ -2,7 +2,7 @@ package com.example.mots;
 
 import android.app.Activity;
 
-public class DataBaseActivity  extends Activity{
+public class DataBaseActivity  extends Activity {
 
     public MotsDAO buildDb(){
         AppDataBase db = AppDataBase.getAppDatabase(getApplicationContext());
