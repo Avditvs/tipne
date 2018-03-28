@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string-array name="Names">
+        <item>list1</item>
+        <item>list2</item>
+    </string-array>
+    <string-array name="list1">
+        <item>engineering/genie</item>
+        <item>process/processus;deroulement</item>
+        <item>to recharge a battery/recharger une batterie</item>
+        <item>a helmet;a hard hat/un casque</item>
+        <item>spray can/bombe;vaporisateur</item>
+        <item>sheet/plaque;feuille;film</item>
+        <item>gear/roue dentée;engrenage</item>
+        <item>to lie down/se reposer;s\'allonger</item>
+        <item>a cap;stopper/un bouchon</item>
+    </string-array>
+    <string-array name="list2">
+        <item>to assign/assigner</item>
+        <item>regardless of/indépendamment de</item>
+        <item>convention/conférence</item>
+    </string-array>
+</resources>
