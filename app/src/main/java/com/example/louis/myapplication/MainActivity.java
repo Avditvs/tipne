@@ -32,18 +32,13 @@ public class MainActivity extends Activity {
         text = findViewById(R.id.text);
         bouton = findViewById(R.id.test);
 
-        bouton.setBackgroundColor(getResources().getColor(R.color.colorAccent));
-
-        text.setText("test commit ide");
-
-
         AppDataBase db = AppDataBase.getAppDatabase(getApplicationContext());
         MotsDAO bdDao = db.MotsDao();
 
 
-
         if (!verifiedDb(bdDao)){
             bdDao.nukeTableMots();
+            System.out.println("Nuke mots");
             buildDb(bdDao);
         }
 
@@ -52,12 +47,17 @@ public class MainActivity extends Activity {
     }
 
     private boolean verifiedDb(MotsDAO dbDAO){
+        System.out.println("Verifying the database");
+
+        //coder qqchose qui vérifie si la bdd est bonne
+
 
         return !dbDAO.getAll().isEmpty();
     }
 
 
     private void buildDb(MotsDAO dbDAO){
+        System.out.println("Importing database");
         String[] namesList = getNamesOfTheLists();
         int idList = 1;
         for (String nameOfList : namesList){
