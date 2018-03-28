@@ -1,11 +1,8 @@
 package com.example.louis.myapplication;
 
 import android.app.Activity;
-import android.arch.persistence.room.Room;
-import android.graphics.Color;
 import android.speech.tts.TextToSpeech;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import com.example.mots.*;
@@ -42,6 +39,7 @@ public class MainActivity extends Activity {
             buildDb(bdDao);
         }
 
+        text.setText(bdDao.getUnique(1,1).getTabMotsEn()[0]);
 
 
     }

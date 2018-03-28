@@ -1,8 +1,8 @@
 package com.example.mots;
 
-
 import android.arch.persistence.room.ColumnInfo;
 import android.arch.persistence.room.Entity;
+import android.arch.persistence.room.Ignore;
 import android.arch.persistence.room.PrimaryKey;
 
 
@@ -29,6 +29,13 @@ public class Mots {
 
     @ColumnInfo(name = "nbEval")
     private int nbEval;
+
+    @Ignore
+    private String[] tabMotsFr = null;
+    @Ignore
+    private String[] tabMotsEn = null;
+
+
 
 
     ///////// Builders /////////
@@ -84,6 +91,13 @@ public class Mots {
         return nbFaults;
     }
 
+    public String[] getTabMotsEn() {
+        return tabMotsEn;
+    }
+
+    public String[] getTabMotsFr() {
+        return tabMotsFr;
+    }
 
     ///////// Setters /////////
 
@@ -97,10 +111,12 @@ public class Mots {
 
     public void setMotsEn(String motsEn) {
         this.motsEn = motsEn;
+        this.tabMotsEn = parsemot(motsEn);
     }
 
     public void setMotsFr(String motsFr) {
         this.motsFr = motsFr;
+        this.tabMotsFr = parsemot(motsFr);
     }
 
     public void setUid(int id) {
@@ -113,6 +129,10 @@ public class Mots {
 
     public void setNbFaults(int nbFaults) {
         this.nbFaults = nbFaults;
+    }
+
+    private  String[] parsemot(String nonParsed){
+        return nonParsed.split(";");
     }
 
 
