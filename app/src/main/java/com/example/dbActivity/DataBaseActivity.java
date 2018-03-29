@@ -3,6 +3,7 @@ package com.example.dbActivity;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
 
 import com.example.R;
@@ -13,25 +14,62 @@ import com.example.mots.MotsDAO;
 
 public class DataBaseActivity  extends Activity {
 
-    TextView text = null;
+    private boolean dbIsLoaded = false;
+    private Intent intent = null;
+    private TextView text;
 
     public void onCreate (Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
-        Intent intent = new Intent(this, MainActivity.class);
         setContentView(R.layout.database_activity);
-        AppDataBase db = AppDataBase.getAppDatabase(getApplicationContext());
-        MotsDAO dbDAO = db.MotsDao();
-
         text = findViewById(R.id.affdb);
+        intent = new Intent(this, MainActivity.class);
 
-        if (!verifiedDb(dbDAO)){
-            dbDAO.nukeTableMots();
-            System.out.println("Suppression de liste");
-            buildDb(dbDAO);
-        }
-        text.setText("Db chargée");
-        startActivity(intent);
+        Thread threadedThings = new Thread(new Runnable() {
+            @Override
+            public void run() {
+                AppDataBase db = AppDataBase.getAppDatabase(getApplicationContext());
+                MotsDAO dbDAO = db.MotsDao();
+
+                if (!verifiedDb(dbDAO)){
+                    dbDAO.nukeTableMots();
+                    System.out.println("Suppression de liste");
+                    buildDb(dbDAO);
+                }
+
+
+                try {
+                    Thread.sleep(3000);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+
+                dbIsLoaded = true;
+
+                runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                        text.setText("Db chargée");
+                    }
+                });
+
+            }
+        });
+
+        threadedThings.start();
+
     }
+
+
+
+    public void onScreenClick(View view) {
+        if(dbIsLoaded){
+            startActivity(intent);
+        }
+        else{
+            System.out.println("Pas encore chargé");
+        }
+    }
+
 
     private boolean verifiedDb(MotsDAO dbDAO){
         System.out.println("Verifying the database");
@@ -85,7 +123,6 @@ public class DataBaseActivity  extends Activity {
         Mots aWord = new Mots(idList, idInList, separatedWords[0], separatedWords[1], 0, 0);
         return aWord;
     }
-
 
 
 
