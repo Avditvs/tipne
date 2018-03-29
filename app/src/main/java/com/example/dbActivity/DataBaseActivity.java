@@ -19,46 +19,45 @@ public class DataBaseActivity  extends Activity {
     private TextView text;
 
     public void onCreate (Bundle savedInstanceState){
+
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.database_activity);
+        threadDb.start();
         text = findViewById(R.id.affdb);
         intent = new Intent(this, MainActivity.class);
 
-        Thread threadedThings = new Thread(new Runnable() {
-            @Override
-            public void run() {
-                AppDataBase db = AppDataBase.getAppDatabase(getApplicationContext());
-                MotsDAO dbDAO = db.MotsDao();
-
-                if (!verifiedDb(dbDAO)){
-                    dbDAO.nukeTableMots();
-                    System.out.println("Suppression de liste");
-                    buildDb(dbDAO);
-                }
-
-
-                try {
-                    Thread.sleep(3000);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
-
-                dbIsLoaded = true;
-
-                runOnUiThread(new Runnable() {
-                    @Override
-                    public void run() {
-                        text.setText("Db chargée");
-                    }
-                });
-
-            }
-        });
-
-        threadedThings.start();
-
     }
 
+    private Thread threadDb = new Thread(new Runnable() {
+        @Override
+        public void run() {
+            AppDataBase db = AppDataBase.getAppDatabase(getApplicationContext());
+            MotsDAO dbDAO = db.MotsDao();
+
+            if (!verifiedDb(dbDAO)){
+                dbDAO.nukeTableMots();
+                System.out.println("Suppression de liste");
+                buildDb(dbDAO);
+            }
+
+            try {
+                Thread.sleep(3000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+
+            dbIsLoaded = true;
+
+            runOnUiThread(new Runnable() {
+                @Override
+                public void run() {
+                    text.setText("Db chargée");
+                }
+            });
+
+        }
+    });
 
 
     public void onScreenClick(View view) {
