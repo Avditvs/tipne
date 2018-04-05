@@ -20,7 +20,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Activité de chargement"
+            android:text="Chargement de la base de données"
             android:id="@+id/affdb"/>
 
 

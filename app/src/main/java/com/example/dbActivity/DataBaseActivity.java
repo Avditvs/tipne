@@ -5,11 +5,10 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
-
-import com.example.R;
 import com.example.louis.myapplication.MainActivity;
 import com.example.mots.Mots;
 import com.example.mots.MotsDAO;
+import com.example.R;
 
 
 public class DataBaseActivity  extends Activity {
@@ -65,7 +64,7 @@ public class DataBaseActivity  extends Activity {
             startActivity(intent);
         }
         else{
-            System.out.println("Pas encore chargé");
+            text.setText("Pas encore chargée");
         }
     }
 
