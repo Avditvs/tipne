@@ -20,6 +20,9 @@
         <activity android:name=".louis.myapplication.MainActivity">
 
         </activity>
+        <activity android:name=".Activities.Main_Menu.MainMenu">
+
+        </activity>
     </application>
 
 </manifest>

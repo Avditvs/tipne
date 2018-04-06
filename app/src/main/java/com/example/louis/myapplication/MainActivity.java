@@ -5,8 +5,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
-import com.example.R;
+
 import com.example.Activities.Main_Menu.MainMenu;
+import com.example.R;
 
 
 public class MainActivity extends Activity {
@@ -29,7 +30,7 @@ public class MainActivity extends Activity {
 
     @Override
     public void onBackPressed(){
-
+        //Ne rien faire
     }
 
 }
