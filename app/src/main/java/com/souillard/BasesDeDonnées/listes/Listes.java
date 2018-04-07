@@ -25,9 +25,5 @@ public class Listes {
 
 
     ///// Builders //////
-    public Listes () {
-        }
 
-
-    public Listes ()
 }

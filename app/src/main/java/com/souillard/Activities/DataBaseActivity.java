@@ -3,6 +3,7 @@ package com.souillard.Activities;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 
@@ -37,7 +38,7 @@ public class DataBaseActivity  extends Activity {
 
             if (!verifiedDb(dbDAO)){
                 dbDAO.nukeTableMots();
-                System.out.println("Suppression de liste");
+                Log.i("Tables", "Table mots détruite");
                 buildDb(dbDAO);
             }
 
@@ -52,7 +53,7 @@ public class DataBaseActivity  extends Activity {
             runOnUiThread(new Runnable() {
                 @Override
                 public void run() {
-                    text.setText("Db chargée");
+                    text.setText("Chargement terminé, appuyez pour continuer");
                 }
             });
 
@@ -65,7 +66,7 @@ public class DataBaseActivity  extends Activity {
             startActivity(intent);
         }
         else{
-            text.setText("Pas encore chargée");
+            Log.i("Base", "Pas encore chargée");
         }
     }
 
@@ -82,7 +83,7 @@ public class DataBaseActivity  extends Activity {
 
 
     private void buildDb(MotsDAO dbDAO){  //créé la DB
-        System.out.println("Importing database");
+        Log.i("Base", "Import de la base de données");
         String[] namesList = getNamesOfTheLists();
         int idList = 1;
         for (String nameOfList : namesList){
