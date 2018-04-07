@@ -8,6 +8,8 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.souillard.BasesDeDonnées.AppDataBase;
+import com.souillard.BasesDeDonnées.listes.Listes;
+import com.souillard.BasesDeDonnées.listes.ListesDAO;
 import com.souillard.BasesDeDonnées.mots.Mots;
 import com.souillard.BasesDeDonnées.mots.MotsDAO;
 import com.souillard.R;
@@ -34,12 +36,14 @@ public class DataBaseActivity  extends Activity {
         @Override
         public void run() {
             AppDataBase db = AppDataBase.getAppDatabase(getApplicationContext());
-            MotsDAO dbDAO = db.MotsDao();
+            MotsDAO dbMots = db.MotsDao();
+            ListesDAO dbListe = db.ListesDAO();
 
-            if (!verifiedDb(dbDAO)){
-                dbDAO.nukeTableMots();
+            if (!verifiedDbMots(dbMots)){
+                dbMots.nukeTableMots();
                 Log.i("Tables", "Table mots détruite");
-                buildDb(dbDAO);
+                buildDbListes(dbListe);
+                buildDbMots(dbMots, dbListe);
             }
 
             try {
@@ -71,20 +75,20 @@ public class DataBaseActivity  extends Activity {
     }
 
 
-    private boolean verifiedDb(MotsDAO dbDAO){
+    private boolean verifiedDbMots(MotsDAO dbMots){
         System.out.println("Verifying the database");
 
         //coder qqchose qui vérifie si la bdd est bonne
 
 
-        return !dbDAO.getAll().isEmpty();
+        return !dbMots.getAll().isEmpty();
     }
 
 
 
-    private void buildDb(MotsDAO dbDAO){  //créé la DB
+    private void buildDbMots(MotsDAO dbMots, ListesDAO dbListes){  //créé la DB
         Log.i("Base", "Import de la base de données");
-        String[] namesList = getNamesOfTheLists();
+        String[] namesList = getNamesOfTheLists(dbListes);
         int idList = 1;
         for (String nameOfList : namesList){
             int idInList = 1;
@@ -92,19 +96,48 @@ public class DataBaseActivity  extends Activity {
             for (String linkedWords : aList){
                 String[] separatedWords = separateWords(linkedWords);
                 Mots aWord = setWord(separatedWords, idList, idInList);
-                insertWordInDB(aWord, dbDAO);
+                insertWordInDB(aWord, dbMots);
                 idInList ++;
             }
             idList ++;
         }
     }
 
-    private void insertWordInDB (Mots aWord, MotsDAO dbDAO) {
-        dbDAO.insertMot(aWord);
+
+    private void buildDbListes (ListesDAO dbListes){
+        String[] listesParameters = getListsParameters();
+        int idList = 1;
+        for (String linkedListe : listesParameters){
+            String[] separatedListe = separateList(linkedListe);
+            Listes aListe = setListe(separatedListe, idList);
+            insertListeInDB(aListe, dbListes);
+            idList ++;
+        }
     }
 
-    private String[] getNamesOfTheLists(){      //Récupère les noms de toutes nos listes
-        String[] namesList = getResources().getStringArray(R.array.Names);
+
+    private String[] getListsParameters(){
+        String[] listsParameters = getResources().getStringArray(R.array.Listes);
+        return listsParameters;
+    }
+
+    private String[] separateList(String linkedList){
+        String[] separatedList = linkedList.split("/");
+        return separatedList;
+    }
+
+    private Listes setListe (String[] separatedList, int idList){
+        Listes aList = new Listes(idList, separatedList[0], Integer.parseInt(separatedList[1]), Integer.parseInt(separatedList[2]));
+        return  aList;
+    }
+
+    private void insertListeInDB (Listes aListe, ListesDAO dbListes){dbListes.insertListe(aListe);
+
+    }
+
+
+    private String[] getNamesOfTheLists(ListesDAO dbListes){      //Récupère les noms de toutes nos listes
+        String[] namesList = dbListes.getNames();
         return namesList;
     }
 
@@ -124,6 +157,8 @@ public class DataBaseActivity  extends Activity {
         return aWord;
     }
 
-
+    private void insertWordInDB (Mots aWord, MotsDAO dbMots) {
+        dbMots.insertMot(aWord);
+    }
 
 }

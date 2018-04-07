@@ -39,6 +39,10 @@ public class Listes {
 
     //// Getters ////
 
+    public Integer getUid() {
+        return uid;
+    }
+
     public int getIdList() {
         return idList;
     }
@@ -74,5 +78,7 @@ public class Listes {
         this.nbWordsHalf = nbWordsHalf;
     }
 
-
+    public void setUid(int id) {
+        this.uid = id;
+    }
 }

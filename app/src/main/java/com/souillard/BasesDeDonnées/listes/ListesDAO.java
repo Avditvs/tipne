@@ -13,12 +13,12 @@ public interface ListesDAO {
     List<Listes> getAll();
 
     @Query ("SELECT nameOfList FROM listes")
-    List<String> getNames();
+    String[] getNames();
 
     @Insert
     void insertListe (Listes aList);
 
-    @Query("SELECT FROM listes")
+    @Query("DELETE FROM listes")
     void nukeTableListes();
 
 

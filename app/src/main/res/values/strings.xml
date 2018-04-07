@@ -1,8 +1,8 @@
 <resources>
     <string name="app_name">My Application</string>
-    <string-array name="Names">
-        <item>list1</item>
-        <item>list2</item>
+    <string-array name="Listes">
+        <item>list1/55/23</item>
+        <item>list2/26/41</item>
     </string-array>
     <string-array name="list1">
         <item>engineering/genie</item>
