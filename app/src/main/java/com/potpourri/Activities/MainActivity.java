@@ -1,4 +1,4 @@
-package Activities;
+package com.potpourri.Activities;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
-import com.example.R;
+import com.potpourri.R;
 
 
 public class MainActivity extends Activity {

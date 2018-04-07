@@ -1,9 +1,9 @@
-package Activities;
+package com.potpourri.Activities;
 
 import android.app.Activity;
 import android.os.Bundle;
 
-import com.example.R;
+import com.potpourri.R;
 
 
 public class MainMenu extends Activity {

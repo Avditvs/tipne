@@ -1,4 +1,4 @@
-package BasesDeDonnées.mots;
+package com.potpourri.BasesDeDonnées.mots;
 
 import android.arch.persistence.room.ColumnInfo;
 import android.arch.persistence.room.Entity;
