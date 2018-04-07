@@ -1,4 +1,4 @@
-package com.potpourri.BasesDeDonnées.mots;
+package com.souillard.BasesDeDonnées.mots;
 
 import android.arch.persistence.room.Dao;
 import android.arch.persistence.room.Insert;

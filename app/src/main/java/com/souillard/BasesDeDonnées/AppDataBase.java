@@ -1,12 +1,12 @@
-package com.potpourri.BasesDeDonnées;
+package com.souillard.BasesDeDonnées;
 
 import android.arch.persistence.room.Database;
 import android.arch.persistence.room.Room;
 import android.arch.persistence.room.RoomDatabase;
 import android.content.Context;
 
-import com.potpourri.BasesDeDonnées.mots.Mots;
-import com.potpourri.BasesDeDonnées.mots.MotsDAO;
+import com.souillard.BasesDeDonnées.mots.Mots;
+import com.souillard.BasesDeDonnées.mots.MotsDAO;
 
 @Database(entities = {Mots.class}, version = 1, exportSchema = false)
 public abstract class AppDataBase extends RoomDatabase {

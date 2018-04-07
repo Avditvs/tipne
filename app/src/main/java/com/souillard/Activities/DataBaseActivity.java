@@ -1,4 +1,4 @@
-package com.potpourri.Activities;
+package com.souillard.Activities;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -6,10 +6,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
-import com.potpourri.BasesDeDonnées.AppDataBase;
-import com.potpourri.BasesDeDonnées.mots.Mots;
-import com.potpourri.BasesDeDonnées.mots.MotsDAO;
-import com.potpourri.R;
+import com.souillard.BasesDeDonnées.AppDataBase;
+import com.souillard.BasesDeDonnées.mots.Mots;
+import com.souillard.BasesDeDonnées.mots.MotsDAO;
+import com.souillard.R;
 
 
 public class DataBaseActivity  extends Activity {
