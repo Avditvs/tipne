@@ -1,4 +1,4 @@
-package BasesDeDonnées.mots;
+package Activities;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -8,7 +8,9 @@ import android.widget.TextView;
 
 import com.example.R;
 
-import Activities.MainActivity;
+import BasesDeDonnées.mots.AppDataBase;
+import BasesDeDonnées.mots.Mots;
+import BasesDeDonnées.mots.MotsDAO;
 
 
 public class DataBaseActivity  extends Activity {

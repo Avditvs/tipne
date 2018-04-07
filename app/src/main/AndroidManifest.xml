@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example">
+    package="">
 
     <application
         android:allowBackup="true"
@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".dbActivity.DataBaseActivity">
+        <activity android:name="Activities.DataBaseActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -17,10 +17,10 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".louis.myapplication.MainActivity">
+        <activity android:name="Activities.MainActivity">
 
         </activity>
-        <activity android:name=".Activities.Main_Menu.MainMenu">
+        <activity android:name="Activities.MainMenu">
 
         </activity>
     </application>
