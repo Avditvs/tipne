@@ -7,11 +7,15 @@ import android.content.Context;
 
 import com.souillard.BasesDeDonnées.mots.Mots;
 import com.souillard.BasesDeDonnées.mots.MotsDAO;
+import com.souillard.BasesDeDonnées.listes.Listes;
+import com.souillard.BasesDeDonnées.listes.ListesDAO;
 
-@Database(entities = {Mots.class}, version = 1, exportSchema = false)
+@Database(entities = {Mots.class, Listes.class}, version = 1, exportSchema = false)
 public abstract class AppDataBase extends RoomDatabase {
 
     public abstract MotsDAO MotsDao();
+
+    public abstract ListesDAO ListesDAO();
 
     private static AppDataBase INSTANCE;
 

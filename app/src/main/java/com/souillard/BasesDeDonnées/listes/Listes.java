@@ -29,5 +29,50 @@ public class Listes {
         }
 
 
-    public Listes ()
+    public Listes (int IdList, String NameOfList, int NbWords, int NbWordsHalf){
+        idList = IdList;
+        nameOfList = NameOfList;
+        nbWords = NbWords;
+        nbWordsHalf = NbWordsHalf;
+    }
+
+
+    //// Getters ////
+
+    public int getIdList() {
+        return idList;
+    }
+
+    public String getNameOfList() {
+        return nameOfList;
+    }
+
+    public int getNbWords() {
+        return nbWords;
+    }
+
+    public int getNbWordsHalf() {
+        return nbWordsHalf;
+    }
+
+
+    //// Setters ////
+
+    public void setIdList(int idList) {
+        this.idList = idList;
+    }
+
+    public void setNameOfList(String nameOfList) {
+        this.nameOfList = nameOfList;
+    }
+
+    public void setNbWords(int nbWords) {
+        this.nbWords = nbWords;
+    }
+
+    public void setNbWordsHalf(int nbWordsHalf) {
+        this.nbWordsHalf = nbWordsHalf;
+    }
+
+
 }
