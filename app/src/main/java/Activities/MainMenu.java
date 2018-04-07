@@ -1,4 +1,4 @@
-package com.potpourri.Activities.Main_Menu;
+package Activities;
 
 import android.app.Activity;
 import android.os.Bundle;
