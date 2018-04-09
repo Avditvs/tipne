@@ -23,6 +23,10 @@
         <activity android:name="com.souillard.Activities.MainMenu">
 
         </activity>
+        <activity android:name="com.souillard.SpeechToText.SpeechtoTextActivity">
+
+        </activity>
+
     </application>
 
 </manifest>
