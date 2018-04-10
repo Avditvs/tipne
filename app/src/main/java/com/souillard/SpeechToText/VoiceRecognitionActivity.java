@@ -1,6 +1,7 @@
 package com.souillard.SpeechToText;
 
 import android.Manifest;
+import android.app.Activity;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
@@ -9,39 +10,35 @@ import android.speech.RecognizerIntent;
 import android.speech.SpeechRecognizer;
 import android.support.annotation.NonNull;
 import android.support.v4.app.ActivityCompat;
-import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
-import android.widget.CompoundButton;
-import android.widget.ProgressBar;
-import android.widget.TextView;
+import android.widget.Button;
 import android.widget.Toast;
-import android.widget.ToggleButton;
-import com.souillard.R;
+
 
 import java.util.ArrayList;
 
-public class VoiceRecognition extends AppCompatActivity implements
+public abstract class VoiceRecognitionActivity extends Activity implements
         RecognitionListener {
 
-    private static final int REQUEST_RECORD_PERMISSION = 100;
-    private TextView returnedText;
-    private ToggleButton toggleButton;
-    private ProgressBar progressBar;
-    private SpeechRecognizer speech = null;
-    private Intent recognizerIntent;
-    private String LOG_TAG = "VoiceRecognition";
+    protected static final int REQUEST_RECORD_PERMISSION = 100;
+    protected Button toggleButton;
+    protected SpeechRecognizer speech = null;
+    protected Intent recognizerIntent;
+    protected String LOG_TAG = "VoiceRecognition";
+    protected ArrayList<String> matches = null;
+
+
+    /* Activité à ne pas modifier/ elle n'est pas faite pour être utilisée comme-tel */
+
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.voice_recognition);
-        returnedText = (TextView) findViewById(R.id.textView1);
-        progressBar = (ProgressBar) findViewById(R.id.progressBar1);
-        toggleButton = (ToggleButton) findViewById(R.id.toggleButton1);
 
 
-        progressBar.setVisibility(View.INVISIBLE);
         speech = SpeechRecognizer.createSpeechRecognizer(this);
         Log.i(LOG_TAG, "isRecognitionAvailable: " + SpeechRecognizer.isRecognitionAvailable(this));
         speech.setRecognitionListener(this);
@@ -53,24 +50,24 @@ public class VoiceRecognition extends AppCompatActivity implements
         recognizerIntent.putExtra(RecognizerIntent.EXTRA_LANGUAGE, "en-US");
         recognizerIntent.putExtra(RecognizerIntent.EXTRA_MAX_RESULTS, 3);
 
-        toggleButton.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+        toggleButton.setOnClickListener(new Button.OnClickListener() {
+
+            boolean isChecked = true;
 
             @Override
-            public void onCheckedChanged(CompoundButton buttonView,
-                                         boolean isChecked) {
+            public void onClick(View v) {
                 if (isChecked) {
-                    progressBar.setVisibility(View.VISIBLE);
-                    progressBar.setIndeterminate(true);
                     ActivityCompat.requestPermissions
-                            (VoiceRecognition.this,
+                            (VoiceRecognitionActivity.this,
                                     new String[]{Manifest.permission.RECORD_AUDIO},
                                     REQUEST_RECORD_PERMISSION);
                 } else {
-                    progressBar.setIndeterminate(false);
-                    progressBar.setVisibility(View.INVISIBLE);
+
                     speech.stopListening();
                 }
+
             }
+
         });
 
     }
@@ -83,7 +80,7 @@ public class VoiceRecognition extends AppCompatActivity implements
                 if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
                     speech.startListening(recognizerIntent);
                 } else {
-                    Toast.makeText(VoiceRecognition.this, "Permission Denied!", Toast
+                    Toast.makeText(VoiceRecognitionActivity.this, "Permission Denied!", Toast
                             .LENGTH_SHORT).show();
                 }
         }
@@ -113,8 +110,7 @@ public class VoiceRecognition extends AppCompatActivity implements
     @Override
     public void onBeginningOfSpeech() {
         Log.i(LOG_TAG, "onBeginningOfSpeech");
-        progressBar.setIndeterminate(false);
-        progressBar.setMax(10);
+
     }
 
     @Override
@@ -125,16 +121,13 @@ public class VoiceRecognition extends AppCompatActivity implements
     @Override
     public void onEndOfSpeech() {
         Log.i(LOG_TAG, "onEndOfSpeech");
-        progressBar.setIndeterminate(true);
-        toggleButton.setChecked(false);
     }
 
     @Override
     public void onError(int errorCode) {
         String errorMessage = getErrorText(errorCode);
         Log.d(LOG_TAG, "FAILED " + errorMessage);
-        returnedText.setText(errorMessage);
-        toggleButton.setChecked(false);
+        Toast.makeText(this, "Error: "+ errorMessage, Toast.LENGTH_LONG);
     }
 
     @Override
@@ -155,19 +148,12 @@ public class VoiceRecognition extends AppCompatActivity implements
     @Override
     public void onResults(Bundle results) {
         Log.i(LOG_TAG, "onResults");
-        ArrayList<String> matches = results
-                .getStringArrayList(SpeechRecognizer.RESULTS_RECOGNITION);
-        String text = "";
-        for (String result : matches)
-            text += result + "\n";
-
-        returnedText.setText(text);
+        matches = results.getStringArrayList(SpeechRecognizer.RESULTS_RECOGNITION);
     }
 
     @Override
     public void onRmsChanged(float rmsdB) {
         Log.i(LOG_TAG, "onRmsChanged: " + rmsdB);
-        progressBar.setProgress((int) rmsdB);
     }
 
     public static String getErrorText(int errorCode) {

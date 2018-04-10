@@ -27,7 +27,7 @@
         <activity android:name="com.souillard.Activities.MainMenu">
 
         </activity>
-        <activity android:name=".SpeechToText.VoiceRecognition">
+        <activity android:name=".Activities.testSTT">
 
         </activity>
 

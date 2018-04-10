@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.souillard.R;
-import com.souillard.SpeechToText.VoiceRecognition;
+import com.souillard.SpeechToText.VoiceRecognitionActivity;
 
 
 public class MainMenu extends Activity {
@@ -20,7 +20,7 @@ public class MainMenu extends Activity {
 
     public void onScreenClick(View view) {
 
-        intent = new Intent(this, VoiceRecognition.class);
+        intent = new Intent(this, testSTT.class);
         startActivity(intent);
     }
 

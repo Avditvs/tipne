@@ -31,8 +31,9 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:scaleType="centerInside"
-            android:src="@drawable/souillard" />
+            android:scaleType="fitCenter"
+            android:src="@drawable/souillard"
+            />
 
         <TextView
             android:id="@+id/affdb"
