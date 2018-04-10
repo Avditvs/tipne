@@ -2,6 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.souillard">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -23,9 +27,10 @@
         <activity android:name="com.souillard.Activities.MainMenu">
 
         </activity>
-        <activity android:name="com.souillard.SpeechToText.SpeechtoTextActivity">
+        <activity android:name=".SpeechToText.VoiceRecognition">
 
         </activity>
+
 
     </application>
 
