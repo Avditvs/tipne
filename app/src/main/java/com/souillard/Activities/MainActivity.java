@@ -29,7 +29,7 @@ public class MainActivity extends Activity {
 
     @Override
     public void onBackPressed(){
-        //Ne rien faire
+        //Ne rien faire bite
     }
 
 }
