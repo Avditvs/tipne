@@ -4,6 +4,7 @@ import android.Manifest;
 import android.app.Activity;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.speech.RecognitionListener;
 import android.speech.RecognizerIntent;
@@ -15,18 +16,19 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import java.util.Objects;
 
-import java.util.ArrayList;
 
 public abstract class VoiceRecognitionActivity extends Activity implements
         RecognitionListener {
 
-    protected static final int REQUEST_RECORD_PERMISSION = 100;
-    protected Button toggleButton;
-    protected SpeechRecognizer speech = null;
-    protected Intent recognizerIntent;
-    protected String LOG_TAG = "VoiceRecognition";
-    protected ArrayList<String> matches = null;
+    private static final int REQUEST_RECORD_PERMISSION = 100;
+    private Button toggleButton;
+    private SpeechRecognizer speech = null;
+    private Intent recognizerIntent;
+    private String LOG_TAG = "VoiceRecognition";
+    private boolean recording = false;
+
 
 
     /* Activité à ne pas modifier/ elle n'est pas faite pour être utilisée comme-tel */
@@ -38,32 +40,26 @@ public abstract class VoiceRecognitionActivity extends Activity implements
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-
         speech = SpeechRecognizer.createSpeechRecognizer(this);
         Log.i(LOG_TAG, "isRecognitionAvailable: " + SpeechRecognizer.isRecognitionAvailable(this));
         speech.setRecognitionListener(this);
+
         recognizerIntent = new Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH);
-        recognizerIntent.putExtra(RecognizerIntent.EXTRA_LANGUAGE_PREFERENCE,
-                "en");
-        recognizerIntent.putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL,
-                RecognizerIntent.LANGUAGE_MODEL_FREE_FORM);
-        recognizerIntent.putExtra(RecognizerIntent.EXTRA_LANGUAGE, "en-US");
-        recognizerIntent.putExtra(RecognizerIntent.EXTRA_MAX_RESULTS, 3);
+        onRecognizerIntentCreation();
 
         toggleButton.setOnClickListener(new Button.OnClickListener() {
 
-            boolean isChecked = true;
-
             @Override
             public void onClick(View v) {
-                if (isChecked) {
+                if (!recording) {
                     ActivityCompat.requestPermissions
                             (VoiceRecognitionActivity.this,
                                     new String[]{Manifest.permission.RECORD_AUDIO},
                                     REQUEST_RECORD_PERMISSION);
                 } else {
-
+                    toggleButton.setTextColor(Color.RED);
                     speech.stopListening();
+                    recording = false;
                 }
 
             }
@@ -79,9 +75,15 @@ public abstract class VoiceRecognitionActivity extends Activity implements
             case REQUEST_RECORD_PERMISSION:
                 if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
                     speech.startListening(recognizerIntent);
+                    toggleButton.setTextColor(Color.GREEN);
+                    recording = true;
+
                 } else {
                     Toast.makeText(VoiceRecognitionActivity.this, "Permission Denied!", Toast
                             .LENGTH_SHORT).show();
+                    toggleButton.setTextColor(Color.RED);
+                    recording = false;
+
                 }
         }
     }
@@ -103,6 +105,9 @@ public abstract class VoiceRecognitionActivity extends Activity implements
         if (speech != null) {
             speech.destroy();
             Log.i(LOG_TAG, "destroy");
+            toggleButton.setTextColor(Color.RED);
+            recording = false;
+
         }
     }
 
@@ -121,6 +126,7 @@ public abstract class VoiceRecognitionActivity extends Activity implements
     @Override
     public void onEndOfSpeech() {
         Log.i(LOG_TAG, "onEndOfSpeech");
+        recording = false;
     }
 
     @Override
@@ -128,6 +134,8 @@ public abstract class VoiceRecognitionActivity extends Activity implements
         String errorMessage = getErrorText(errorCode);
         Log.d(LOG_TAG, "FAILED " + errorMessage);
         Toast.makeText(this, "Error: "+ errorMessage, Toast.LENGTH_LONG);
+        toggleButton.setTextColor(Color.RED);
+        recording = false;
     }
 
     @Override
@@ -148,7 +156,7 @@ public abstract class VoiceRecognitionActivity extends Activity implements
     @Override
     public void onResults(Bundle results) {
         Log.i(LOG_TAG, "onResults");
-        matches = results.getStringArrayList(SpeechRecognizer.RESULTS_RECOGNITION);
+        toggleButton.setTextColor(Color.RED);
     }
 
     @Override
@@ -192,4 +200,27 @@ public abstract class VoiceRecognitionActivity extends Activity implements
         }
         return message;
     }
+
+
+
+    protected void setTriggerButton(Button button){
+        this.toggleButton = button;
+    }
+
+
+    protected void onRecognizerIntentCreation(){
+        recognizerIntent.putExtra(RecognizerIntent.EXTRA_LANGUAGE_PREFERENCE,
+                "en");
+        recognizerIntent.putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL,
+                RecognizerIntent.LANGUAGE_MODEL_FREE_FORM);
+        recognizerIntent.putExtra(RecognizerIntent.EXTRA_LANGUAGE, "en-US");
+        recognizerIntent.putExtra(RecognizerIntent.EXTRA_MAX_RESULTS, 3);
+    }
+
+    protected boolean isRecording(){
+        return recording;
+    }
+
+
+
 }
