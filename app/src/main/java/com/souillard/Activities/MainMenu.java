@@ -18,6 +18,9 @@ public class MainMenu extends Activity {
         setContentView(R.layout.main_menu);
     }
 
+
+
+
     public void onScreenClick(View view) {
 
         intent = new Intent(this, testSTT.class);
