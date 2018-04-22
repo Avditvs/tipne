@@ -215,7 +215,9 @@ public abstract class VoiceRecognitionActivity extends Activity implements
                 RecognizerIntent.LANGUAGE_MODEL_FREE_FORM);
         recognizerIntent.putExtra(RecognizerIntent.EXTRA_LANGUAGE, "en-US");
         recognizerIntent.putExtra(RecognizerIntent.EXTRA_MAX_RESULTS, 3);
+
     }
+
 
     protected boolean isRecording(){
         return recording;
