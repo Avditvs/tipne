@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="Activities.MainActivity"
-    android:onClick="onScreenClick">
+    >
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -29,17 +29,21 @@
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/rounded_corners_rectangle"
+
                 app:src="@drawable/speaker"
                 app:text="Test"
                 app:textColor="@color/white"
-                app:textSize="20"
+                app:textSize="20dp"
                 app:image_color="@color/white"
                 android:minHeight="70dp"
                 android:minWidth="70dp"
-                app:margin="30"
+                app:margin="30dp"
                 android:layout_margin="10dp"
-
+                app:background_color="@color/light_grey"
+                app:corner_radius="20dp"
+                android:id="@+id/button"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
 
                 />
 
@@ -48,16 +52,18 @@
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/rounded_corners_rectangle"
                 app:src="@drawable/speaker"
                 app:text="Test 2"
                 app:textColor="@color/white"
-                app:textSize="20"
+                app:textSize="5dp"
                 app:image_color="@color/white"
                 android:minHeight="70dp"
                 android:minWidth="70dp"
-                app:margin="30"
+                app:margin="10dp"
                 android:layout_margin="10dp"
+                app:background_color="@color/fond_bouton"
+                app:corner_radius="5dp"
+                android:foreground="?android:attr/selectableItemBackground"
 
 
                 />
@@ -68,19 +74,23 @@
         <com.souillard.customViews.MenuButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/rounded_corners_rectangle"
+
             app:src="@drawable/speaker"
             app:text="Test 4"
             app:textColor="@color/white"
-            app:textSize="20"
+            app:textSize="3dp"
             app:image_color="@color/white"
-            android:minHeight="190dp"
-            android:minWidth="190dp"
-            app:margin="100"
+            android:minHeight="40dp"
+            android:minWidth="20dp"
+            app:margin="10dp"
             android:layout_margin="10dp"
+            app:corner_radius="50dp"
+            app:background_color="@color/bg_gradient_end"
+            android:foreground="?android:attr/selectableItemBackground"
 
 
-                />
+
+            />
 
 
 

@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <declare-styleable name="MenuButton">
-        <attr name="textSize" format="integer"/>
+        <attr name="textSize" format="dimension"/>
         <attr name="text" format="string"/>
         <attr name="textColor" format="color"/>
         <attr name="src" format="integer"/>
         <attr name="image_color" format="color"/>
-        <attr name="margin" format="integer"/>
+        <attr name="margin" format="dimension"/>
+        <attr name="background_color" format="color"/>
+        <attr name="corner_radius" format="dimension"/>
         
     </declare-styleable>
 
