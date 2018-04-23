@@ -30,6 +30,9 @@
         <activity android:name=".Activities.testSTT">
 
         </activity>
+        <activity android:name=".Activities.ChooseListActivity">
+
+        </activity>
 
 
     </application>
