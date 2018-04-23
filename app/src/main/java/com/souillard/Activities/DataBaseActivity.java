@@ -7,12 +7,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 
-import com.souillard.BasesDeDonnées.AppDataBase;
 import com.souillard.BasesDeDonnées.DataBaseBuilder;
-import com.souillard.BasesDeDonnées.listes.Listes;
-import com.souillard.BasesDeDonnées.listes.ListesDAO;
-import com.souillard.BasesDeDonnées.mots.Mots;
-import com.souillard.BasesDeDonnées.mots.MotsDAO;
 import com.souillard.R;
 
 

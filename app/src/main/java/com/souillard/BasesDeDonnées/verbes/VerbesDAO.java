@@ -11,6 +11,7 @@ public interface VerbesDAO {
     @Query("SELECT * FROM verbes")
     List<Verbes> getAll();
 
-
+    @Query("DELETE FROM verbes")
+    void nukeTableVerbes();
 
 }

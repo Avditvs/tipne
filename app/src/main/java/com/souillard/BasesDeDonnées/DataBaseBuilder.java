@@ -3,10 +3,12 @@ package com.souillard.BasesDeDonnées;
 import android.content.Context;
 import android.util.Log;
 
+import com.souillard.BasesDeDonnées.evaluations.EvaluationsDAO;
 import com.souillard.BasesDeDonnées.listes.Listes;
 import com.souillard.BasesDeDonnées.listes.ListesDAO;
 import com.souillard.BasesDeDonnées.mots.Mots;
 import com.souillard.BasesDeDonnées.mots.MotsDAO;
+import com.souillard.BasesDeDonnées.verbes.VerbesDAO;
 import com.souillard.R;
 
 public class DataBaseBuilder {
@@ -17,6 +19,8 @@ public class DataBaseBuilder {
     private MotsDAO motsDAO;
     private ListesDAO listesDAO;
     private AppDataBase appDataBase;
+    private VerbesDAO verbesDAO;
+    private EvaluationsDAO evaluationsDAO;
 
 
     //////////////Builder///////////////
@@ -26,16 +30,29 @@ public class DataBaseBuilder {
         this.appDataBase = AppDataBase.getAppDatabase(context);
         this.listesDAO = appDataBase.ListesDAO();
         this.motsDAO = appDataBase.MotsDao();
+        this.verbesDAO = appDataBase.VerbesDAO();
+        this.evaluationsDAO = appDataBase.EvaluationsDAO();
     }
 
 ////////////Fonction de build de la db////////////////////
 
     public void buildDataBase(){
-        if (listesDAO.getAll().isEmpty()) {
-            buildDbListes(listesDAO);
-            buildDbMots(motsDAO, listesDAO);
+       DataBaseChecker dataBaseChecker = new DataBaseChecker(context);
 
-        }
+       if(!dataBaseChecker.dbListesCorrect()){
+           listesDAO.nukeTableListes();
+           buildDbListes(listesDAO);
+       }
+
+       if(!dataBaseChecker.dbMotsCorrect()){
+           motsDAO.nukeTableMots();
+           buildDbMots(motsDAO, listesDAO);
+       }
+
+       if(!dataBaseChecker.dbVerbesCorrect()){
+           verbesDAO.nukeTableVerbes();
+           //buildDbVerbes();
+       }
     }
 
 ////////////Fonctions de build de la dbMots////////////////////////
