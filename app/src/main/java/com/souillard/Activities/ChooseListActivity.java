@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.app.Activity;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.ListAdapter;
 import android.widget.ListView;
 import com.souillard.R;
 import android.widget.ArrayAdapter;
@@ -49,7 +50,7 @@ public class ChooseListActivity extends Activity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                     String nomliste = (String) mListView.getItemAtPosition(position);
-                    text.setText("Bite");
+                    text.setText(prenoms[position]);
 
             }
         });
