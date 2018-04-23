@@ -41,6 +41,7 @@ public class DataBaseChecker {
         if(motsDAO.getAll().isEmpty()){
             return false;
         }
+
         else{
             return true;
         }
@@ -61,5 +62,6 @@ public class DataBaseChecker {
 
         return true;
     }
+
 
 }
