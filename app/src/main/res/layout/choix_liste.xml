@@ -4,7 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="Activities.ChooseListActivity">
+    tools:context="Activities.ChooseListActivity"
+    android:background="@color/fond_bouton">
 
     <RelativeLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
@@ -14,8 +15,7 @@
         <ListView
             android:id="@+id/listView"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"/>
+            android:layout_height="wrap_content" />
 
         <TextView
             android:layout_width="wrap_content"

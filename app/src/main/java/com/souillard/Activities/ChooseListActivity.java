@@ -39,8 +39,8 @@ public class ChooseListActivity extends Activity {
         text = findViewById(R.id.test);
 
         //Défini les données à afficher et comment on les affiche
-        final ArrayAdapter<String> adapter = new ArrayAdapter<String>(ChooseListActivity.this,
-                R.layout.button_choix_liste, prenoms);
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(ChooseListActivity.this,
+                R.layout.button_choix_liste,R.id.liste, prenoms);
 
         //On associe ces données à la ListView
         mListView.setAdapter(adapter);
