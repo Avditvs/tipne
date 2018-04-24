@@ -18,7 +18,9 @@ import com.souillard.customViews.MenuButton;
 
 public class MainActivity extends Activity {
     MenuButton button = null;
+    MenuButton button2 = null;
     private Intent intent = null;
+    private Intent intent2 = null;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,8 +28,9 @@ public class MainActivity extends Activity {
 
         //////////////Récupération des views/////////////////
         button = findViewById(R.id.button);
-
+        button2 = findViewById(R.id.button2);
         button.setOnClickListener(listener);
+        button2.setOnClickListener(listener2);
 
 
 
@@ -42,6 +45,20 @@ public class MainActivity extends Activity {
             handler.postDelayed(new Runnable(){
                 public void run() {
                     startActivity(intent);
+                }
+            }, 300);
+
+        }
+    };
+    private View.OnClickListener listener2 = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+
+            intent2 = new Intent(getApplicationContext(), testSTT.class);
+            Handler handler = new Handler();
+            handler.postDelayed(new Runnable(){
+                public void run() {
+                    startActivity(intent2);
                 }
             }, 300);
 
