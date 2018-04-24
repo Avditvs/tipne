@@ -1,15 +1,100 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    >
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/fond_ecran">
 
-    <TextView
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/nomListe"
+            android:text="Liste1"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:textSize="15dp"/>
+
+        <TextView
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/numeroMot"
+            android:text="mot 120 sur 120"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:textSize="20dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/test"
-        android:textSize="20dp"
-        android:text="Coucou"/>
+        android:orientation="horizontal"
+        android:layout_centerInParent="true"
+        >
 
-</android.support.constraint.ConstraintLayout>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/fleche_gauche"
+            android:layout_gravity="left|center_vertical"
+            android:id="@+id/clickGauche"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:orientation="vertical"
+            android:paddingTop="15dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/motFR"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                android:layout_gravity="center_horizontal|top"
+                android:gravity="center"/>
+
+            <FrameLayout
+                android:layout_width="190dp"
+                android:layout_height="5dp"
+                android:layout_gravity="center|center_horizontal"
+                android:background="@color/vert_kaki"
+                >
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                android:layout_gravity="center_horizontal|bottom"
+                android:gravity="center"
+                android:id="@+id/motEN"/>
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/fleche_droite"
+            android:layout_gravity="right|center_vertical"
+            android:id="@+id/clickDroite"/>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>
