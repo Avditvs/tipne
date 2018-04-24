@@ -54,7 +54,7 @@ public class MenuButton extends LinearLayout{
     @SuppressLint("ResourceType")
     public void init(Context context, AttributeSet attrs){
 
-        Drawable d = null;
+        Drawable d;
         this.setOrientation(LinearLayout.VERTICAL);
         this.setGravity(Gravity.CENTER);
         textView = new TextView(getContext());
@@ -62,7 +62,6 @@ public class MenuButton extends LinearLayout{
 
         TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.MenuButton);
 
-        textView.setText("test");
         textView.setGravity(Gravity.CENTER);
         textView.setText(a.getText(R.styleable.MenuButton_text));
         textView.setTextColor(a.getColor(R.styleable.MenuButton_textColor, Color.BLACK));

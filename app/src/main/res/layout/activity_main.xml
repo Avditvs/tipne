@@ -27,35 +27,36 @@
 
             <com.souillard.customViews.MenuButton
 
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-
-                app:src="@drawable/speaker"
-                app:text="Test"
-                app:textColor="@color/white"
-                app:textSize="20dp"
-                app:image_color="@color/white"
-                android:minHeight="70dp"
-                android:minWidth="70dp"
-                app:margin="30dp"
-                android:layout_margin="10dp"
-                app:background_color="@color/light_grey"
-                app:corner_radius="20dp"
                 android:id="@+id/button"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
                 android:clickable="true"
                 android:foreground="?android:attr/selectableItemBackground"
+                android:minHeight="100dp"
+                android:minWidth="100dp"
+                app:background_color="@color/light_grey"
+                app:corner_radius="20dp"
+                app:image_color="@color/white"
+                app:margin="10dp"
+                app:src="@drawable/speaker"
+                app:text="Test \nChoixListe"
+                app:textColor="@color/white"
+                app:textSize="10dp"
 
                 />
 
 
             <com.souillard.customViews.MenuButton
 
+                android:id="@+id/button2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 app:src="@drawable/speaker"
-                app:text="Test 2"
+                app:text="Test STT"
                 app:textColor="@color/white"
-                app:textSize="5dp"
+                app:textSize="10dp"
                 app:image_color="@color/white"
                 android:minHeight="70dp"
                 android:minWidth="70dp"
@@ -64,7 +65,6 @@
                 app:background_color="@color/fond_bouton"
                 app:corner_radius="5dp"
                 android:foreground="?android:attr/selectableItemBackground"
-
 
                 />
 

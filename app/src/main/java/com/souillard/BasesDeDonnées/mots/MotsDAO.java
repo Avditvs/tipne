@@ -25,4 +25,7 @@ public interface MotsDAO {
     @Query("DELETE FROM mots")
     void nukeTableMots();
 
+    @Query("SELECT COUNT(*) FROM mots WHERE idList like :list")
+    int countNbWordInlist(int list);
+
 }
