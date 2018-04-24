@@ -7,6 +7,9 @@ import com.souillard.BasesDeDonnées.listes.ListesDAO;
 import com.souillard.BasesDeDonnées.mots.MotsDAO;
 import com.souillard.BasesDeDonnées.verbes.VerbesDAO;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class DataBaseChecker {
 
     private Context context;
@@ -38,10 +41,9 @@ public class DataBaseChecker {
     }
 
     public boolean dbMotsCorrect(){
-        if(motsDAO.getAll().isEmpty()){
+        if(motsDAO.getAll().isEmpty()||!hasRightNumber()){
             return false;
         }
-
         else{
             return true;
         }
@@ -61,6 +63,17 @@ public class DataBaseChecker {
         //pas encore implémenté
 
         return true;
+    }
+
+    private boolean hasRightNumber(){
+        List<Integer> nbWordsList = listesDAO.getNbWordsList();
+        boolean ok = true;
+        int i = 1;
+        for(int nb : nbWordsList){
+            ok = (nb==motsDAO.countNbWordInlist(i))&&ok;
+            i++;
+        }
+        return ok;
     }
 
 

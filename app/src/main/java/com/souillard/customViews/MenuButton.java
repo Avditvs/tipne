@@ -1,26 +1,15 @@
 package com.souillard.customViews;
 
-import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.res.TypedArray;
-import android.graphics.Canvas;
 import android.graphics.Color;
-import android.graphics.Paint;
 import android.graphics.PorterDuff;
 import android.graphics.drawable.Drawable;
 import android.graphics.drawable.GradientDrawable;
-import android.graphics.drawable.RippleDrawable;
-import android.graphics.drawable.ShapeDrawable;
-import android.graphics.drawable.shapes.Shape;
-import android.os.Build;
-import android.support.annotation.Dimension;
-import android.support.annotation.DrawableRes;
+
 import android.support.annotation.Nullable;
 import android.util.AttributeSet;
-import android.util.Log;
 import android.view.Gravity;
-import android.view.MotionEvent;
-import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -28,13 +17,6 @@ import android.widget.TextView;
 import com.souillard.R;
 
 public class MenuButton extends LinearLayout{
-
-
-    private TextView textView = null;
-    private ImageView imageView = null;
-
-
-
 
 
     public MenuButton(Context context) {
@@ -51,14 +33,13 @@ public class MenuButton extends LinearLayout{
         init(context, attrs);
     }
 
-    @SuppressLint("ResourceType")
     public void init(Context context, AttributeSet attrs){
 
         Drawable d;
         this.setOrientation(LinearLayout.VERTICAL);
         this.setGravity(Gravity.CENTER);
-        textView = new TextView(getContext());
-        imageView = new ImageView(getContext());
+        TextView textView = new TextView(getContext());
+        ImageView imageView = new ImageView(getContext());
 
         TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.MenuButton);
 
@@ -94,6 +75,7 @@ public class MenuButton extends LinearLayout{
 
         addView(imageView);
         addView(textView);
+        a.recycle();
         invalidate();
 
     }
