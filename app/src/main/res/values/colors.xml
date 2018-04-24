@@ -6,6 +6,7 @@
     <color name="white">#ffffff</color>
     <color name="bg_gradient_start">#31244e</color>
     <color name="bg_gradient_end">#6b394c</color>
-    <color name="fond_bouton">#1C2836</color>
+    <color name="fond_ecran">#1C2836</color>
     <color name="light_grey">#4286f4</color>
+    <color name="fond_bouton">#4472C4</color>
 </resources>

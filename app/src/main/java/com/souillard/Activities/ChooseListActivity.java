@@ -1,16 +1,21 @@
 package com.souillard.Activities;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.app.Activity;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListAdapter;
 import android.widget.ListView;
+
+import com.souillard.BasesDeDonnées.AppDataBase;
 import com.souillard.R;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
 import android.widget.Button;
 import android.widget.Toast;
+import com.souillard.BasesDeDonnées.listes.ListesDAO;
+import com.souillard.BasesDeDonnées.AppDataBase;
 
 
 public class ChooseListActivity extends Activity {
@@ -27,6 +32,11 @@ public class ChooseListActivity extends Activity {
 
     private TextView text;
     private Button button;
+    private ListesDAO listesDAO;
+    private AppDataBase appDataBase;
+
+    AppDataBase db = AppDataBase.getAppDatabase(getApplicationContext());
+    ListesDAO dbListes = db.ListesDAO();
 
 
     @Override
@@ -38,9 +48,11 @@ public class ChooseListActivity extends Activity {
         mListView = (ListView) findViewById(R.id.listView);
         text = findViewById(R.id.test);
 
+        String[] namesList = dbListes.getNames();
+
         //Défini les données à afficher et comment on les affiche
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(ChooseListActivity.this,
-                R.layout.button_choix_liste,R.id.liste, prenoms);
+                R.layout.button_choix_liste,R.id.liste, namesList);
 
         //On associe ces données à la ListView
         mListView.setAdapter(adapter);
