@@ -27,23 +27,23 @@
 
             <com.souillard.customViews.MenuButton
 
+                android:id="@+id/button"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
 
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:minHeight="100dp"
+                android:minWidth="100dp"
+                app:background_color="@color/light_grey"
+                app:corner_radius="20dp"
+                app:image_color="@color/white"
+                app:margin="40dp"
                 app:src="@drawable/speaker"
                 app:text="Test"
                 app:textColor="@color/white"
-                app:textSize="20dp"
-                app:image_color="@color/white"
-                android:minHeight="70dp"
-                android:minWidth="70dp"
-                app:margin="30dp"
-                android:layout_margin="10dp"
-                app:background_color="@color/light_grey"
-                app:corner_radius="20dp"
-                android:id="@+id/button"
-                android:clickable="true"
-                android:foreground="?android:attr/selectableItemBackground"
+                app:textSize="50dp"
 
                 />
 

@@ -23,7 +23,7 @@ public interface ListesDAO {
     void nukeTableListes();
 
     @Query("SELECT nbWords FROM listes")
-    ArrayList<Integer> getNbWordsList();
+    List<Integer> getNbWordsList();
 
     @Query("SELECT nbWords FROM listes WHERE idList LIKE :id")
     int getNbWords(int id);
