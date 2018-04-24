@@ -31,12 +31,10 @@ public class ChooseListActivity extends Activity {
     };
 
     private TextView text;
-    private Button button;
-    private ListesDAO listesDAO;
-    private AppDataBase appDataBase;
 
-    AppDataBase db = AppDataBase.getAppDatabase(getApplicationContext());
+    AppDataBase db = AppDataBase.getAppDatabase(ChooseListActivity.this);
     ListesDAO dbListes = db.ListesDAO();
+    String[] namesList = dbListes.getNames();
 
 
     @Override
@@ -47,8 +45,6 @@ public class ChooseListActivity extends Activity {
         //Défini notre listView
         mListView = (ListView) findViewById(R.id.listView);
         text = findViewById(R.id.test);
-
-        String[] namesList = dbListes.getNames();
 
         //Défini les données à afficher et comment on les affiche
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(ChooseListActivity.this,
@@ -62,7 +58,7 @@ public class ChooseListActivity extends Activity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                     String nomliste = (String) mListView.getItemAtPosition(position);
-                    text.setText(prenoms[position]);
+                    text.setText(namesList[position]);
 
             }
         });
