@@ -10,6 +10,7 @@ import android.widget.ListView;
 
 import com.souillard.BasesDeDonnées.AppDataBase;
 import com.souillard.R;
+import android.content.Intent;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
 import android.widget.Button;
@@ -18,9 +19,11 @@ import com.souillard.BasesDeDonnées.listes.ListesDAO;
 import com.souillard.BasesDeDonnées.AppDataBase;
 
 
+
 public class ChooseListActivity extends Activity {
 
     private ListView mListView;
+    public final static String nameList = "";
 
     private String[] prenoms = new String[]{
             "Antoine", "Benoit", "Cyril", "David", "Eloise", "Florent",
@@ -58,8 +61,9 @@ public class ChooseListActivity extends Activity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                     String nomliste = (String) mListView.getItemAtPosition(position);
-                    text.setText(namesList[position]);
-
+                    Intent i = new Intent(ChooseListActivity.this, LearningMotsActivity.class);
+                    i.putExtra(nameList, nomliste);
+                    startActivity(i);
             }
         });
     }

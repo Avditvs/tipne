@@ -33,6 +33,9 @@
         <activity android:name=".Activities.ChooseListActivity">
 
         </activity>
+        <activity android:name=".Activities.LearningMotsActivity">
+
+        </activity>
 
 *
     </application>

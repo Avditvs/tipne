@@ -22,6 +22,12 @@ public interface MotsDAO {
     @Query("SELECT * FROM mots WHERE idList like :list")
     List<Mots> getList(Integer list);
 
+    @Query("SELECT wordEn FROM mots WHERE idList like :idList")
+    String[] getEN(int idList);
+
+    @Query("SELECT wordFr FROM mots WHERE idList like :idList")
+    String[] getFR(int idList);
+
     @Query("DELETE FROM mots")
     void nukeTableMots();
 
