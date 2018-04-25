@@ -66,12 +66,15 @@
                 <TextView
                     android:id="@+id/motFR"
                     android:layout_width="match_parent"
-                    android:layout_height="50dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginBottom="5dp"
+                    android:layout_gravity="bottom"
                     android:gravity="center"
                     android:singleLine="false"
                     android:textColor="@color/white"
-                    android:textSize="20dp" />
+                    android:textSize="20dp"
+                    android:text="test"
+                    android:lines="3"/>
 
                 <FrameLayout
                     android:layout_width="190dp"
@@ -82,12 +85,14 @@
                 <TextView
                     android:id="@+id/motEN"
                     android:layout_width="match_parent"
-                    android:layout_height="50dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
                     android:gravity="center"
                     android:singleLine="false"
                     android:textColor="@color/white"
-                    android:textSize="20dp" />
+                    android:textSize="20dp"
+                    android:lines="3"
+                    android:layout_gravity="top"/>
 
             </LinearLayout>
 

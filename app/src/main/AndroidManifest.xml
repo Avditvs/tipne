@@ -33,7 +33,9 @@
         <activity android:name=".Activities.ChooseListActivity">
 
         </activity>
-        <activity android:name=".Activities.LearningMotsActivity">
+        <activity
+            android:name=".Activities.LearningMotsActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize">
 
         </activity>
 

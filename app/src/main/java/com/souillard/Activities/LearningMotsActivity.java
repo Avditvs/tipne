@@ -35,6 +35,7 @@ public class LearningMotsActivity extends Activity{
     private String[] wordsEN = null;
     private String[] wordsFR  = null;
     private TextToSpeech voice;
+    private int idList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,11 +46,11 @@ public class LearningMotsActivity extends Activity{
         textEn = findViewById(R.id.motEN);
         textFr = findViewById(R.id.motFR);
 
-        clickGauche = (Button) findViewById(R.id.clickGauche);
-        clickDroite = (Button) findViewById(R.id.clickDroite);
-        textToSpeech = (Button) findViewById(R.id.TextToSpeech);
+        clickGauche = findViewById(R.id.clickGauche);
+        clickDroite = findViewById(R.id.clickDroite);
+        textToSpeech = findViewById(R.id.TextToSpeech);
 
-        int idList = getIdList();
+        idList = getIdList();
 
         textListe.setText(dbListes.getNameOfList(idList));
         nbDeMots = dbListes.getNbWords(idList);
@@ -99,9 +100,7 @@ public class LearningMotsActivity extends Activity{
         public void onClick (View v) {
             if (motActuel > 0) {
                 motActuel--;
-                textEn.setText(wordsEN[motActuel]);
-                textFr.setText(wordsFR[motActuel]);
-                textMot.setText("Mot " + (motActuel+1) + " sur " + nbDeMots);
+                updateTextViews();
             }
         }
     };
@@ -111,9 +110,7 @@ public class LearningMotsActivity extends Activity{
         public void onClick(View v) {
             if (motActuel < nbDeMots) {
                 motActuel++;
-                textEn.setText(wordsEN[motActuel]);
-                textFr.setText(wordsFR[motActuel]);
-                textMot.setText("Mot " + (motActuel+1) + " sur " + nbDeMots);
+                updateTextViews();
             }
         }
     };
@@ -124,6 +121,38 @@ public class LearningMotsActivity extends Activity{
             voice.speak(wordsEN[motActuel], TextToSpeech.QUEUE_FLUSH, null);
         }
     };
+
+    private void updateTextViews(){
+
+        String strEN=new String();
+        String[] motEN = wordsEN[motActuel].split(";");
+        int i = 0;
+        for(String str : motEN){
+            i++;
+            if(i>1){
+                strEN = strEN+",";
+            }
+            strEN = strEN+" "+str;
+        }
+
+        String[] motFr = wordsFR[motActuel].split(";");
+        String strFR=new String();
+        int j = 0;
+        for(String str : motFr){
+            j++;
+            if(j>1){
+                strFR = strFR+",";
+            }
+            strFR = strFR+" "+str;
+        }
+
+
+
+        textEn.setText(strEN);
+        textFr.setText(strFR);
+        textMot.setText("Mot " + (motActuel+1) + " sur " + nbDeMots);
+
+    }
 }
 
 
