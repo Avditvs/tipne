@@ -9,6 +9,7 @@ import com.souillard.BasesDeDonnées.mots.MotsDAO;
 import com.souillard.R;
 import android.view.View;
 import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.view.View.OnClickListener;
 import android.speech.tts.TextToSpeech;
@@ -22,24 +23,23 @@ public class LearningMotsActivity extends Activity{
     AppDataBase db = AppDataBase.getAppDatabase(LearningMotsActivity.this);
     ListesDAO dbListes = db.ListesDAO();
     MotsDAO dbMots = db.MotsDao();
-    public TextView textListe;
-    public TextView textMot;
-    public TextView textFr;
-    public TextView textEn;
-    public int motActuel = 0;
-    public int nbDeMots = 0;
-    Button clickGauche = null;
-    Button clickDroite = null;
-    Button textToSpeech = null;
-    public String[] wordsEN = null;
-    public String[] wordsFR = null;
-    TextToSpeech voice;
+    private TextView textListe;
+    private TextView textMot;
+    private TextView textFr;
+    private TextView textEn;
+    private int motActuel = 0;
+    private int nbDeMots = 0;
+    private Button clickGauche = null;
+    private Button clickDroite = null;
+    private Button textToSpeech = null;
+    private String[] wordsEN = null;
+    private String[] wordsFR  = null;
+    private TextToSpeech voice;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.learning_mots_activity);
-
         textListe = findViewById(R.id.nomListe);
         textMot = findViewById(R.id.numeroMot);
         textEn = findViewById(R.id.motEN);

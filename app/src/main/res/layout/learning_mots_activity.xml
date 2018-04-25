@@ -44,88 +44,74 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:layout_gravity="center"
 
             >
 
             <Button
+                android:id="@+id/clickGauche"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/fleche_gauche"
                 android:layout_gravity="left|center_vertical"
-                android:id="@+id/clickGauche"
-                />
+                android:background="@drawable/fleche_gauche" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
-                android:layout_height="100dp"
-                android:orientation="vertical"
-                android:paddingTop="15dp"
-                >
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
                     android:id="@+id/motFR"
-                    android:textSize="20dp"
-                    android:textColor="@color/white"
-                    android:layout_gravity="center_horizontal|top"
-                    android:gravity="top|center"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
                     android:layout_marginBottom="5dp"
-                    android:ellipsize="marquee"
-                    android:focusable="true"
-                    android:focusableInTouchMode="true"
-                    android:singleLine="true"/>
+                    android:gravity="center"
+                    android:singleLine="false"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
 
                 <FrameLayout
                     android:layout_width="190dp"
                     android:layout_height="5dp"
-                    android:layout_gravity="center|center_horizontal"
-                    android:background="@color/vert_kaki"
-                    >
-                </FrameLayout>
+                    android:layout_gravity="center"
+                    android:background="@color/vert_kaki"></FrameLayout>
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textSize="20dp"
-                    android:textColor="@color/white"
-                    android:layout_gravity="center_horizontal|bottom"
-                    android:gravity="center"
                     android:id="@+id/motEN"
-                    android:layout_marginTop="5dp"/>
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:singleLine="false"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
 
             </LinearLayout>
 
             <Button
+                android:id="@+id/clickDroite"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/fleche_droite"
                 android:layout_gravity="right|center_vertical"
-                android:id="@+id/clickDroite"/>
-
+                android:background="@drawable/fleche_droite" />
 
 
         </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="fill_parent"
+
+        <Button
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:id="@+id/ligne"
-            android:layout_marginTop="80dp"
-            android:gravity="center"
-            >
+            android:gravity="center_horizontal|center"
+            android:layout_gravity="center"
+            android:text="TextToSpeech"
+            android:id="@+id/TextToSpeech"
+            android:layout_marginTop="30dp"/>
 
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="center_horizontal|center"
-                android:layout_gravity="center"
-                android:text="TextToSpeech"
-                android:id="@+id/TextToSpeech" />
 
-        </LinearLayout>
 
     </LinearLayout>
 
