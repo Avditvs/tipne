@@ -11,4 +11,9 @@
     <color name="fond_bouton">#4472C4</color>
     <color name="vert_kaki">#417B3E</color>
     <color name="black">#000000</color>
+
+    <color name="midnight_blue">#1E1F26</color>
+    <color name="indigo_ink">#283655</color>
+    <color name="blueberry">#4D648D</color>
+    <color name="periwinkle">#D0E1F9</color>
 </resources>

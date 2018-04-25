@@ -1,43 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:background="@color/fond_ecran">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:background="@color/indigo_ink"
+        android:orientation="vertical"
+        android:id="@+id/header">
 
         <TextView
-            android:layout_marginTop="15dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:id="@+id/nomListe"
-            android:text="Liste1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:textColor="@color/white"
-            android:textSize="15dp"/>
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:text="Liste1"
+            android:textColor="@color/periwinkle"
+            android:textSize="15dp" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="@color/periwinkle"
+            android:layout_marginHorizontal="60dp"/>
 
         <TextView
-            android:layout_marginTop="15dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:id="@+id/numeroMot"
-            android:text="mot 120 sur 120"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:textColor="@color/white"
-            android:textSize="20dp"/>
+            android:layout_margin="15dp"
+            android:text="mot 120 sur 120"
+            android:textColor="@color/periwinkle"
+            android:textSize="25dp"
+            android:gravity="center"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="5px"
+            android:background="@color/periwinkle"/>
 
     </LinearLayout>
+
+
 
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:orientation="vertical"
+        android:gravity="center"
+        android:layout_alignStart="@id/header"
+        app:layout_constraintTop_toBottomOf="@id/header"
+        app:layout_constraintBottom_toBottomOf="parent"
         >
 
         <LinearLayout
@@ -46,6 +67,7 @@
             android:orientation="horizontal"
             android:gravity="center"
             android:layout_gravity="center"
+
 
             >
 
@@ -71,7 +93,7 @@
                     android:layout_gravity="bottom"
                     android:gravity="center"
                     android:singleLine="false"
-                    android:textColor="@color/white"
+                    android:textColor="@color/periwinkle"
                     android:textSize="20dp"
                     android:text="test"
                     android:lines="3"/>
@@ -89,7 +111,7 @@
                     android:layout_marginTop="5dp"
                     android:gravity="center"
                     android:singleLine="false"
-                    android:textColor="@color/white"
+                    android:textColor="@color/periwinkle"
                     android:textSize="20dp"
                     android:lines="3"
                     android:layout_gravity="top"/>
@@ -100,28 +122,42 @@
                 android:id="@+id/clickDroite"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="right|center_vertical"
+                android:layout_gravity="center"
                 android:background="@drawable/fleche_droite" />
 
 
         </LinearLayout>
 
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:paddingVertical="12dp"
+            android:paddingHorizontal="25dp"
+            android:layout_marginTop="20dp">
 
-        <Button
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:gravity="center_horizontal|center"
-            android:layout_gravity="center"
-            android:id="@+id/TextToSpeech"
-            android:layout_marginTop="30dp"
-            android:background="@drawable/speaker_bleu"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Entendre le mot"
+                android:textSize="15dp"
+                android:textColor="@color/periwinkle"
+                android:layout_gravity="center"
+                android:gravity="center"/>
 
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:gravity="center_horizontal|center"
+                android:layout_gravity="center"
+                android:id="@+id/TextToSpeech"
+                android:background="@drawable/speaker_bleu"
+                android:layout_marginTop="15dp"/>
 
+        </LinearLayout>
 
     </LinearLayout>
 
 
-
-
-
-</RelativeLayout>
+</android.support.constraint.ConstraintLayout>

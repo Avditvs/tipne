@@ -98,7 +98,7 @@ public class LearningMotsActivity extends Activity{
     private OnClickListener clickListenerGauche = new OnClickListener(){
         @Override
         public void onClick (View v) {
-            if (motActuel > 0) {
+            if (motActuel+1 > 1) {
                 motActuel--;
                 updateTextViews();
             }
@@ -108,7 +108,7 @@ public class LearningMotsActivity extends Activity{
     private OnClickListener clickListenerDroite = new OnClickListener() {
         @Override
         public void onClick(View v) {
-            if (motActuel < nbDeMots) {
+            if (motActuel+1 < nbDeMots) {
                 motActuel++;
                 updateTextViews();
             }
