@@ -17,8 +17,9 @@ import com.souillard.customViews.MenuButton;
 
 
 public class MainActivity extends Activity {
-    MenuButton button = null;
-    MenuButton button2 = null;
+    private MenuButton button = null;
+    private MenuButton button2 = null;
+    private MenuButton button3 = null;
     private Intent intent = null;
     private Intent intent2 = null;
 
@@ -31,6 +32,8 @@ public class MainActivity extends Activity {
         button2 = findViewById(R.id.button2);
         button.setOnClickListener(listener);
         button2.setOnClickListener(listener2);
+        button3 = findViewById(R.id.bt_verbes);
+        button3.setOnClickListener(listener3);
 
 
 
@@ -40,7 +43,7 @@ public class MainActivity extends Activity {
         @Override
         public void onClick(View v) {
 
-            intent = new Intent(getApplicationContext(), LearningVerbsActivity.class);
+            intent = new Intent(getApplicationContext(), LearningMotsActivity.class);
             Handler handler = new Handler();
             handler.postDelayed(new Runnable(){
                 public void run() {
@@ -62,6 +65,19 @@ public class MainActivity extends Activity {
                 }
             }, 300);
 
+        }
+    };
+
+    private View.OnClickListener listener3 = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            final Intent intent3 = new Intent(getApplicationContext(), LearningVerbsActivity.class);
+            Handler handler = new Handler();
+            handler.postDelayed(new Runnable(){
+                public void run() {
+                    startActivity(intent3);
+                }
+            }, 300);
         }
     };
 

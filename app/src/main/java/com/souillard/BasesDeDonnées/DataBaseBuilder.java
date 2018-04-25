@@ -167,7 +167,7 @@ public class DataBaseBuilder {
     }
 
     private Verbes setVerb (String[] separatedVerb){
-        Verbes aVerb = new Verbes(separatedVerb[0], separatedVerb[1], separatedVerb[2], separatedVerb[3], 0, 0);
+        Verbes aVerb = new Verbes(separatedVerb[0], separatedVerb[1], separatedVerb[2], separatedVerb[3]);
         return aVerb;
     }
 

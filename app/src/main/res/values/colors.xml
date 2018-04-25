@@ -17,4 +17,10 @@
     <color name="indigo_ink">#283655</color>
     <color name="blueberry">#4D648D</color>
     <color name="periwinkle">#D0E1F9</color>
+
+    <color name="moss">#AEBD38</color>
+    <color name="meadow">#598234</color>
+
+    <color name="emerauld">#265C00</color>
+    <color name="green_bean">#65A225</color>
 </resources>

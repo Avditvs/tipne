@@ -32,8 +32,6 @@ public class Verbes {
     @ColumnInfo
     private int nb_fautes;
 
-    @ColumnInfo
-    private String rawTrads;
 
     @Ignore
     private ArrayList<String> trads;
@@ -51,6 +49,13 @@ public class Verbes {
         this.participe_passe = pp;
         this.nb_eval = nb_eval;
         this.nb_fautes = nb_fautes;
+    }
+
+    public Verbes(String trad, String bv, String pret, String pp){
+        this.tradFr = trad;
+        this.baseVerbale = bv;
+        this.preterit = pret;
+        this.participe_passe = pp;
     }
 
 
@@ -76,12 +81,6 @@ public class Verbes {
     public String getParticipe_passe() {
         return participe_passe;
     }
-
-
-    public String getRawTrads() {
-        return rawTrads;
-    }
-
 
     public ArrayList<String> getTrads() {
         return trads;
@@ -123,10 +122,6 @@ public class Verbes {
         this.nb_fautes = nb_fautes;
     }
 
-    public void setRawTrads(String rawTrads) {
-        this.rawTrads = rawTrads;
-        this.trads = new ArrayList<String>(Arrays.asList(rawTrads.split(";")));
-    }
 
     public void setTrads(ArrayList<String> trads) {
         this.trads = trads;
