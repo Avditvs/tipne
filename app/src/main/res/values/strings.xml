@@ -25,4 +25,9 @@
         <item>regardless of/indépendamment de</item>
         <item>convention/conférence</item>
     </string-array>
+    <string-array name="Verbes">
+        <item>être/be/was, were/been</item>
+        <item>avoir/have/had/had</item>
+        <item>devenir/become/became/become</item>
+    </string-array>
 </resources>

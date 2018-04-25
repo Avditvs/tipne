@@ -40,7 +40,7 @@ public class MainActivity extends Activity {
         @Override
         public void onClick(View v) {
 
-            intent = new Intent(getApplicationContext(), ChooseListActivity.class);
+            intent = new Intent(getApplicationContext(), LearningVerbsActivity.class);
             Handler handler = new Handler();
             handler.postDelayed(new Runnable(){
                 public void run() {

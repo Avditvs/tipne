@@ -7,6 +7,8 @@ import com.souillard.BasesDeDonnées.AppDataBase;
 import com.souillard.BasesDeDonnées.listes.ListesDAO;
 import com.souillard.BasesDeDonnées.mots.MotsDAO;
 import com.souillard.R;
+
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
@@ -153,6 +155,7 @@ public class LearningMotsActivity extends Activity{
         textMot.setText("Mot " + (motActuel+1) + " sur " + nbDeMots);
 
     }
+
 }
 
 

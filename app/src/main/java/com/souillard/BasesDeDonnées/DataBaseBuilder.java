@@ -8,6 +8,7 @@ import com.souillard.BasesDeDonnées.listes.Listes;
 import com.souillard.BasesDeDonnées.listes.ListesDAO;
 import com.souillard.BasesDeDonnées.mots.Mots;
 import com.souillard.BasesDeDonnées.mots.MotsDAO;
+import com.souillard.BasesDeDonnées.verbes.Verbes;
 import com.souillard.BasesDeDonnées.verbes.VerbesDAO;
 import com.souillard.R;
 
@@ -51,7 +52,7 @@ public class DataBaseBuilder {
 
        if(!dataBaseChecker.dbVerbesCorrect()){
            verbesDAO.nukeTableVerbes();
-           //buildDbVerbes();
+           buildDbVerbes(verbesDAO);
        }
     }
 
@@ -87,6 +88,21 @@ public class DataBaseBuilder {
         }
         Log.i("Base", "Import des listes dans la bsae de donnée");
     }
+
+///////////Fonction de build de la dbVerbes//////////////////////
+
+    private void buildDbVerbes (VerbesDAO dbVerbes){
+        String[] verbsList = getVerbsList();
+        for (String linkedVerb : verbsList){
+            String[] separatedVerb = separateVerb(linkedVerb);
+            Verbes aVerb = setVerb(separatedVerb);
+            insertVerbInDB(aVerb, dbVerbes);
+        }
+    }
+
+
+
+
 
 /////////////////////Fonctions utiles au build de dbListes////////////////
 
@@ -138,7 +154,23 @@ public class DataBaseBuilder {
         dbMots.insertMot(aWord);
     }
 
+    ///////////////////Fonctions utiles au build de dbVerbes//////////////////////
 
+    private String[] getVerbsList (){
+        String[] verbsList = context.getResources().getStringArray(R.array.Verbes);
+        return verbsList;
+    }
 
+    private String[] separateVerb (String linkedVerb){
+        String[] separatedVerb = linkedVerb.split("/");
+        return separatedVerb;
+    }
+
+    private Verbes setVerb (String[] separatedVerb){
+        Verbes aVerb = new Verbes(separatedVerb[0], separatedVerb[1], separatedVerb[2], separatedVerb[3], 0, 0);
+        return aVerb;
+    }
+
+    private void insertVerbInDB (Verbes aVerb, VerbesDAO dbVerbes) {dbVerbes.insertVerb(aVerb);}
 
 }

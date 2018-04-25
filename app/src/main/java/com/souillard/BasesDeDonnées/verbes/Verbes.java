@@ -15,6 +15,9 @@ public class Verbes {
     private int id;
 
     @ColumnInfo
+    private String tradFr;
+
+    @ColumnInfo
     private String baseVerbale;
 
     @ColumnInfo
@@ -41,7 +44,8 @@ public class Verbes {
     public Verbes(){
     }
 
-    public Verbes(String bv, String pret, String pp, int nb_fautes, int nb_eval){
+    public Verbes(String trad, String bv, String pret, String pp, int nb_fautes, int nb_eval){
+        this.tradFr = trad;
         this.baseVerbale = bv;
         this.preterit = pret;
         this.participe_passe = pp;
@@ -56,6 +60,8 @@ public class Verbes {
     public int getId() {
         return id;
     }
+
+    public String getTradFr(){return tradFr;}
 
     public String getBaseVerbale() {
         return baseVerbale;
@@ -98,6 +104,8 @@ public class Verbes {
     public void setId(int id) {
         this.id = id;
     }
+
+    public void setTradFr(String trad){this.tradFr = trad;}
 
     public void setBaseVerbale(String baseVerbale) {
         this.baseVerbale = baseVerbale;
