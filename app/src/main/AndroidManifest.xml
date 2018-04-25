@@ -33,9 +33,8 @@
         <activity android:name=".Activities.ChooseListActivity">
 
         </activity>
-        <activity
-            android:name=".Activities.LearningMotsActivity"
-            android:configChanges="keyboardHidden|orientation|screenSize">
+        <activity android:name=".Activities.LearningMotsActivity"
+            android:screenOrientation="portrait">
 
         </activity>
 
