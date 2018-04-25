@@ -6,7 +6,6 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
-        <item name="colorControlHighlight">@android:color/holo_green_dark</item>
     </style>
 
     <style name="MySwitch" parent="@style/Widget.AppCompat.CompoundButton.Switch">

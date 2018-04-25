@@ -6,14 +6,19 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.graphics.PorterDuff;
+import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
 import android.icu.text.Normalizer2;
 import android.os.Bundle;
+import android.os.Handler;
+import android.support.annotation.NonNull;
 import android.transition.Transition;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
+import android.view.ViewGroupOverlay;
 import android.view.animation.AnimationSet;
 import android.widget.Button;
 import android.widget.LinearLayout;
@@ -137,13 +142,28 @@ public class DataBaseActivity  extends Activity {
 
                 popup.dismiss();
                 classeEstChoisie = true;
+                clearDim((ViewGroup)getWindow().getDecorView().getRootView());
             }
         });
 
         popup.showAtLocation(layout, Gravity.CENTER, 0, 0);
+        applyDim((ViewGroup)getWindow().getDecorView().getRootView(), 210);
 
 
 
+    }
 
+    public void applyDim(@NonNull ViewGroup parent, int dimAmount){
+        Drawable dim = new ColorDrawable(Color.BLACK);
+        dim.setBounds(0, 0, parent.getWidth(), parent.getHeight());
+        dim.setAlpha(dimAmount);
+
+        ViewGroupOverlay overlay = parent.getOverlay();
+        overlay.add(dim);
+    }
+
+    public void clearDim(@NonNull ViewGroup parent) {
+        ViewGroupOverlay overlay = parent.getOverlay();
+        overlay.clear();
     }
 }
