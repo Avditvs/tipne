@@ -32,6 +32,8 @@
         <item>devenir/become/became/become</item>
     </string-array>
     <string-array name="Help_p19">
+        <item>abroad;overseas/à l\'étranger</item>
+        <item>accommodation;housing/logement</item>
         <item>advise someone to do sthg (to)/conseiller à qqn de faire qqc</item>
         <item>aim;goal;purpose – to aim at/but;objectif – viser à</item>
         <item>allow s.o. to do ... (to)/permettre (donner autorisation)</item>
@@ -42,7 +44,7 @@
         <item>automation – automated/automatisation – automatisé</item>
         <item>available – availability/disponible – disponibilité</item>
         <item>benefit from = take advantage of/profiter de;tirer parti de</item>
-        <item>best - to do one's best to + Vb/mieux - faire de son mieux pour</item>
+        <item>best - to do one\'s best to + Vb/mieux - faire de son mieux pour</item>
         <item>break - time off (ex. : a week off)/congé;coupure (scolaire)</item>
         <item>carry out (to)/effectuer</item>
         <item>charges – fees/frais (général) - frais (inscription)</item>
@@ -53,11 +55,11 @@
         <item>complete (to)/terminer;achever</item>
         <item>computer - computer network/ordinateur - réseau informatique</item>
         <item>convenient/pratique</item>
-        <item>curriculum = syllabus/programme d'études</item>
+        <item>curriculum = syllabus/programme d\'études</item>
         <item>c.v. = (USA) résumé/curriculum vitae;C.V.</item>
         <item>data-processing/informatique (traitement données)</item>
         <item>deal with (to) - (car-)dealer/traiter de - concessionnaire (auto)</item>
-        <item>degree - bachelor's degree/diplôme – licence</item>
+        <item>degree - bachelor\'s degree/diplôme – licence</item>
         <item>demand - to demand – demanding/exigence - exiger – exigeant</item>
         <item>depend on (to) - depending on/dépendre de - en fonction de</item>
         <item>divide into (to) – division/diviser en – division</item>
@@ -68,18 +70,18 @@
         <item>effort = attempt – tentative/effort;essai – provisoire</item>
         <item>enable s.o.,sthg to do ... /permettre (rendre possible) à ... de</item>
         <item>end up + Ving (to)/finir par;se retrouver à faire</item>
-        <item>engineer - e's diploma/ingénieur - diplôme d'ingénieur</item>
+        <item>engineer - e\'s diploma/ingénieur - diplôme d\'ingénieur</item>
         <item>engineering/ingénierie;génie</item>
-        <item>enroll (to);register;sign up/s'inscrire</item>
+        <item>enroll (to);register;sign up/s\'inscrire</item>
         <item>equipment - to equip/matériel – équiper</item>
         <item>evaluate (to) - evaluation : évaluer – évaluation/</item>
         <item>evidence - to prove/preuve;preuves – prouver</item>
-        <item>exchange programme/programme d'échange</item>
+        <item>exchange programme/programme d\'échange</item>
         <item>expand (to) - to develop/développer (se)</item>
         <item>expansion = development : expansion/</item>
         <item>expenses - to spend ≠ to save/dépenses – dépenser ≠ économiser</item>
         <item>extra;additional - further (abstrait)/supplémentaire</item>
-        <item>feedback - to feed/retour d'information – alimenter</item>
+        <item>feedback - to feed/retour d\'information – alimenter</item>
         <item>figure out (to) = to work out/résoudre;trouver;mettre au point</item>
         <item>filing folder - filing cabinet/classeur : dossier – meuble</item>
         <item>financial support - financial help/soutien financier</item>
@@ -93,10 +95,10 @@
         <item>funds;funding;financing/financement</item>
         <item>further (=continuing) education/formation continue;permanente</item>
         <item>get mixed up (to)/se tromper</item>
-        <item>graduate (to)/obtenir un diplôme de fin d'étude</item>
+        <item>graduate (to)/obtenir un diplôme de fin d\'étude</item>
         <item>graduate ≠ undergraduate (N-A)/licence : au-delà ≠ avant</item>
         <item>grant (to);to allocate/accorder;allouer</item>
-        <item>grant = scolarship/bourse (d'études)</item>
+        <item>grant = scolarship/bourse (d\'études)</item>
         <item>guest ≠ host - to invite/invité ≠ hôte – inviter</item>
         <item>hall of residence (USA : dorm)/résidence universitaire</item>
         <item>hand out literature/distribuer des documents</item>
@@ -116,10 +118,10 @@
         <item>link;connection - to link;connect/lien – relier</item>
         <item>look for a job (to)/chercher un emploi</item>
         <item>look forward to + N-Ving (to)/attendre avec impatience – plaisir</item>
-        <item>make sure that (to) = check that/s'assurer que</item>
+        <item>make sure that (to) = check that/s\'assurer que</item>
         <item>many ≠ a few (books)/beaucoup ≠ peu (pluriel)</item>
-        <item>mark - (USA : grade)/note (d'évaluation)</item>
-        <item>master's degree/mastère (ex maîtrise)</item>
+        <item>mark - (USA : grade)/note (d\'évaluation)</item>
+        <item>master\'s degree/mastère (ex maîtrise)</item>
         <item>match sthg (to);to correspond to/correspondre à;aller de pair avec</item>
         <item>material/matière(s) - matériau(x)</item>
         <item>much ≠ a little (work)/beaucoup ≠ peu (non comptable)</item>
@@ -146,7 +148,7 @@
         <item>run out of (to) - to lack sthg/se trouver à court de - manquer de</item>
         <item>safety - health – hazard/sécurité - santé - risque industriel</item>
         <item>sandwich courses/formation en alternance</item>
-        <item>school - college of engineering/école d'ingénieur</item>
+        <item>school - college of engineering/école d\'ingénieur</item>
         <item>seminar/T.D. (séance de TD)</item>
         <item>sensible = reasonable/sensé;raisonnable</item>
         <item>series (a series)/série</item>
