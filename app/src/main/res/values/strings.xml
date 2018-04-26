@@ -9,6 +9,7 @@
         <item>list1/55/23</item>
         <item>list2/26/41</item>
         <item>Help_p19/137/69</item>
+        <item>Help_p35/212/110</item>
     </string-array>
     <string-array name="list1">
         <item>engineering/genie</item>
@@ -74,11 +75,11 @@
         <item>engineering/ingénierie;génie</item>
         <item>enroll (to);register;sign up/s\'inscrire</item>
         <item>equipment - to equip/matériel – équiper</item>
-        <item>evaluate (to) - evaluation : évaluer – évaluation/</item>
+        <item>evaluate (to) - evaluation/évaluer – évaluation/</item>
         <item>evidence - to prove/preuve;preuves – prouver</item>
         <item>exchange programme/programme d\'échange</item>
         <item>expand (to) - to develop/développer (se)</item>
-        <item>expansion = development : expansion/</item>
+        <item>expansion = development/expansion/</item>
         <item>expenses - to spend ≠ to save/dépenses – dépenser ≠ économiser</item>
         <item>extra;additional - further (abstrait)/supplémentaire</item>
         <item>feedback - to feed/retour d\'information – alimenter</item>
@@ -169,5 +170,219 @@
         <item>whole;full;complete;entire/entier;complet</item>
         <item>willing to ≠ reluctant to/désireux de ≠ réticent à</item>
         <item>workshop/atelier</item>
+    </string-array>
+    <string-array name="Help_p35">
+        <item>access/accès</item>
+        <item>to access data/avoir accès à des données</item>
+        <item>achievement/réalisation;concrétisation </item>
+        <item>to achieve/réaliser;concrétiser</item>
+        <item>acquire/acquérir</item>
+        <item>actual/réel</item>
+        <item>actually/réellement</item>
+        <item>administration/administration</item>
+        <item>advert;advertisement ;ad/annonce;une publicité</item>
+        <item>advertising;advertise/le fait de faire de la publicité</item>
+        <item>analysis/analyse</item>
+        <item>to analyse/analyser</item>
+        <item>arrangements/organisation;préparatifs</item>
+        <item>assess (to)/évaluer</item>
+        <item>assessment/évaluation</item>
+        <item>assignment/tache</item>
+        <item>assign/assigner une tache</item>
+        <item>assist (to)/aider</item>
+        <item>assistance;help/aide</item>
+        <item>attached/attaché</item>
+        <item>attachment ( e-mail)/fichier attaché</item>
+        <item>aware;conscious/conscient</item>
+        <item>awareness/la conscience</item>
+        <item>behaviour/comportement</item>
+        <item>to behave/se comporter</item>
+        <item>benefit/bénéfice</item>
+        <item>beneflcial/bénéfique</item>
+        <item>career/carrière</item>
+        <item>career-minded/carriériste</item>
+        <item>challenge/défi</item>
+        <item>to challenge/défier</item>
+        <item>charge of (to be in)/être responsable de (service;…)</item>
+        <item>charge (the person in charge)/le,la responsable</item>
+        <item>chemicals/produits chimiques</item>
+        <item>pharmaceuticals/produits pharmaceutiques</item>
+        <item>claim (to)/prétendre</item>
+        <item>a claim/revendication</item>
+        <item>close down (to)/fermer définitivement</item>
+        <item>closure/fermeture définitive</item>
+        <item>come up with (to) an idea/proposer une idée;suggérer</item>
+        <item>commitment;dedication/zèle;implication</item>
+        <item>comply with the laws/se conformer aux lois</item>
+        <item>computerised/informatisé</item>
+        <item>consist of + N (to)/consister en + Nom</item>
+        <item>cope with (to)/faire face à (pb;situation)</item>
+        <item>current/actuel</item>
+        <item>currently/actuellement</item>
+        <item>decide (to)/décider</item>
+        <item>to make a decision/prendre une décision</item>
+        <item>department/service</item>
+        <item>department head/chef de service</item>
+        <item>deteriorate (to)/se dégrader</item>
+        <item>deterioration/dégradation</item>
+        <item>driving licence/permis de conduire</item>
+        <item>earn (to)/gagner</item>
+        <item>earnings/gains;rémunération</item>
+        <item>efficiency/efficacité</item>
+        <item>efficient;effective ≠ inefficient/efficace ≠ inefficace</item>
+        <item>enclosed/ci-joint</item>
+        <item>enclosure/pièce jointe (courrier)</item>
+        <item>enlarge/agrandir</item>
+        <item>enlargement/agrandissement</item>
+        <item>large/grand</item>
+        <item>enquire (to)/demander renseignements</item>
+        <item>enquiry;inquiry/une demande</item>
+        <item>expected to + V (to be)/être censé (faire qqch)</item>
+        <item>experience ≠ experiment/expérience : vécue ≠ de labo</item>
+        <item>face a difficulty (to)/affronter un problème</item>
+        <item>fail (to)/échouer</item>
+        <item>failure/échec</item>
+        <item>first-aid/secourisme</item>
+        <item>fuel ≠ domestic oil/du combustible ≠ du fioul</item>
+        <item>full-time ≠ part-time/à temps complet ≠ partiel</item>
+        <item>gas/du gaz</item>
+        <item>to gasify/transformer en gaz</item>
+        <item>get better (to) ≠ to get worse/s\'améliorer ≠  se détériorer</item>
+        <item>guidelines/des directives</item>
+        <item>a policy/une poiitique</item>
+        <item>handle a pb;to tackle a pb/faire face (à un problème)</item>
+        <item>health/santé</item>
+        <item>healthy/en bonne santé</item>
+        <item>high-performance/performant;très efficace</item>
+        <item>implementation;to implement/mise en œuvre;en pratique</item>
+        <item>industry/l’industrie</item>
+        <item>industrial/industriel</item>
+        <item>information/des informations</item>
+        <item>informative/instructif</item>
+        <item>internship;industrial placement/stage en industrie</item>
+        <item>involved/impliqué</item>
+        <item>involvement in sthg/implication dans</item>
+        <item>job (a job)/un travail</item>
+        <item>work (no article)/du travail</item>
+        <item>join (to) sthg/se joindre à;accéder à</item>
+        <item>know-how/savoir-faire</item>
+        <item>to know/savoir</item>
+        <item>knowledge/le savoir;les connaissances</item>
+        <item>laptop P.C. ≠ desktop P.C/ordinateur portabIe ≠ de bureau</item>
+        <item>lay off (to)/licensier</item>
+        <item>a lay-off/licenciement</item>
+        <item>likely to + Verb (to be)/avoir de fortes chances de</item>
+        <item>location;be located/localisation;emplacement</item>
+        <item>look for (to) ≠ find out/chercher ≠ trouver (abstrait)</item>
+        <item>los/perte</item>
+        <item>to lose/perdre</item>
+        <item>machine/machine</item>
+        <item>mechanical/mécanique</item>
+        <item>maintain (to)/entretenir</item>
+        <item>maintenance/entretien</item>
+        <item>make better (to) ≠ make worse/améliorer ≠ détériorer</item>
+        <item>make up for (to)/compenser</item>
+        <item>manager/directeur</item>
+        <item>managing director/directeur général</item>
+        <item>manage (to)/diriger;gérer</item>
+        <item>management/gestion</item>
+        <item>match sthg (to)/être en adéquation avec qqch</item>
+        <item>mechanism/mécanisme</item>
+        <item>mobile phone/téléphone portable</item>
+        <item>portable/portable (adj.);nomade</item>
+        <item>motivation/motivation</item>
+        <item>to be motivated/motivé</item>
+        <item>offshore platform;oil-rig/plateforme de forage</item>
+        <item>oil/du pétrole;de l\'huile;lubrifiant</item>
+        <item>on-site training/formation sur place</item>
+        <item>a site/site;lieu de travail</item>
+        <item>open university/"université pour tous"</item>
+        <item>outdoors/à l’extérieur</item>
+        <item>outdoors facilities/installations extérieures</item>
+        <item>perform a task (to)/exécuter;accomplir une tache</item>
+        <item>personal (Adj.)/qui est personnel</item>
+        <item>personnel;staff/le personnel</item>
+        <item>personnel dept/service du personnel</item>
+        <item>personnel manager/chef du personnel</item>
+        <item>petrol - (US) gasoline/de l\'essence</item>
+        <item>point out (to)/faire remarquer</item>
+        <item>pose (to) a problem/poser;soulever un problème</item>
+        <item>practice/la pratique</item>
+        <item>to practise/pratiquer</item>
+        <item>pretend (to)/faire semblant</item>
+        <item>produce (to)/produire</item>
+        <item>producer/producteur</item>
+        <item>product/produit</item>
+        <item>production/production</item>
+        <item>productive/productif</item>
+        <item>productivity/productivité</item>
+        <item>qualification(s)/compétence(s)</item>
+        <item>realise (to)/se rendre compte</item>
+        <item>realisation/prise de conscience</item>
+        <item>receipt/réception;reçu</item>
+        <item>to receive/recevoir</item>
+        <item>reminder/rappel</item>
+        <item>to remind s.o. of N/rappeler qqch a qqn</item>
+        <item>repair/réparation</item>
+        <item>to repair/réparer</item>
+        <item>request/demande polie</item>
+        <item>to request/demander</item>
+        <item>requirements (to meet;suit)/répondre aux besoins;exigences</item>
+        <item>responsibility/responsabilité</item>
+        <item>responsible for (to be)/avoir la responsabilité (morale) de</item>
+        <item>salary;wage(s)/salaire;rémunération</item>
+        <item>schedule (to)/programmer dans le temps</item>
+        <item>scheduled;due/planifié</item>
+        <item>schedule;time-table/emploi du temps</item>
+        <item>scheme;programme/programme</item>
+        <item>second-hand;used/d\'occasion</item>
+        <item>show round (to) a work-site/faire visiter un lieu de travail</item>
+        <item>sick (to be)/être malade</item>
+        <item>on sick leave/en congé maladie</item>
+        <item>skill/aptitude</item>
+        <item>communication skill/compétence en communication</item>
+        <item>software ≠ hardware/les logiciels ≠ le matériel (info)</item>
+        <item>solution/solution</item>
+        <item>to solve a problem/résoudre un problème</item>
+        <item>sort out (to)/trier;solutionner</item>
+        <item>special/spécial</item>
+        <item>specialise in (to) + N or Ving/être spécialisé en</item>
+        <item>sponsor/mécène</item>
+        <item>to sponsor/parrainer</item>
+        <item>sponsorship;sponsoring/parrainage;mécénat</item>
+        <item>standard  (N)/une norme</item>
+        <item>standard (adj)/normal;normalisé</item>
+        <item>straightaway;at once/immédiatement</item>
+        <item>stress/accent</item>
+        <item>to stress sthg/mettre l\'accent sur qqch</item>
+        <item>succeed (to)/réussir</item>
+        <item>successful/qui réussit</item>
+        <item>suit (to)/convenir</item>
+        <item>suitable/qui convient</item>
+        <item>task/tâche</item>
+        <item>duty/fonction;responsabilité</item>
+        <item>team;crew/équipe</item>
+        <item>team-work/travail d\'équipe</item>
+        <item>temp work;temporary work/travail temporaire</item>
+        <item>theoretical/théorique</item>
+        <item>theory/théorie</item>
+        <item>tour/visite</item>
+        <item>to give a plant tour/faire une visite d\'usine</item>
+        <item>trainee ≠ trainer/stagiaire ≠ formateur</item>
+        <item>to train/(se) former</item>
+        <item>turn out to be (to)/s\'avérer;se révéler être</item>
+        <item>turn into (to);to transform into/(se) transformer en</item>
+        <item>unemployed/au chômage</item>
+        <item>unemployment/le chômage</item>
+        <item>various/divers</item>
+        <item>to vary/varier</item>
+        <item>variety/variété</item>
+        <item>volunteer/volontaire</item>
+        <item>voluntary work/bénévolat</item>
+        <item>wear and tear/usure (des machines)</item>
+        <item>to wear out/user</item>
+        <item>well-known/très connu;reconnu</item>
+        <item>word-processing/traitement de texte (activité)</item>
+        <item>word-processor/ordinateur pour traitement de texte</item>
     </string-array>
 </resources>
