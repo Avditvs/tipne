@@ -33,11 +33,14 @@
         <activity android:name=".Activities.ChooseListActivity">
 
         </activity>
-        <activity android:name=".Activities.LearningMotsActivity"
-            android:screenOrientation="portrait">
+        <activity android:name=".Activities.LearningMotsActivity">
 
         </activity>
         <activity android:name=".Activities.LearningVerbsActivity">
+
+        </activity>
+        
+        <activity android:name=".Activities.EvaluationActivity">
 
         </activity>
 *

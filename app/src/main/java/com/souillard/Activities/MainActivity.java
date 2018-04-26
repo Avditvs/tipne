@@ -20,6 +20,7 @@ public class MainActivity extends Activity {
     private MenuButton button = null;
     private MenuButton button2 = null;
     private MenuButton button3 = null;
+    private MenuButton bouton4 = null;
     private Intent intent = null;
     private Intent intent2 = null;
 
@@ -28,16 +29,31 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
 
         //////////////Récupération des views/////////////////
-        button = findViewById(R.id.button);
-        button2 = findViewById(R.id.button2);
+        button = findViewById(R.id.entrainement);
+        button2 = findViewById(R.id.STT);
         button.setOnClickListener(listener);
         button2.setOnClickListener(listener2);
         button3 = findViewById(R.id.bt_verbes);
         button3.setOnClickListener(listener3);
+        bouton4 = findViewById(R.id.bt_eval);
+        bouton4.setOnClickListener(listenerbt4);
 
 
 
     }
+
+    private View.OnClickListener listenerbt4 = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            final Intent intent4 = new Intent(getApplicationContext(), EvaluationActivity.class);
+            Handler handler = new Handler();
+            handler.postDelayed(new Runnable(){
+                public void run() {
+                    startActivity(intent4);
+                }
+            }, 300);
+        }
+    };
 
     private View.OnClickListener listener = new View.OnClickListener() {
         @Override

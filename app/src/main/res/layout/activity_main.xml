@@ -27,7 +27,7 @@
 
             <com.souillard.customViews.MenuButton
 
-                android:id="@+id/button"
+                android:id="@+id/entrainement"
                 android:layout_width="wrap_content"
 
                 android:layout_height="wrap_content"
@@ -50,7 +50,7 @@
 
             <com.souillard.customViews.MenuButton
 
-                android:id="@+id/button2"
+                android:id="@+id/STT"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 app:src="@drawable/speaker"
@@ -70,28 +70,51 @@
 
         </LinearLayout>
 
-
-        <com.souillard.customViews.MenuButton
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-            app:src="@drawable/speaker"
-            app:text="Apprentissage \ndes verbes"
-            app:textColor="@color/white"
-            app:textSize="10dp"
-            app:image_color="@color/white"
-            android:minHeight="100dp"
-            android:minWidth="80dp"
-            app:margin="10dp"
-            android:id="@+id/bt_verbes"
-            android:layout_margin="10dp"
-            app:corner_radius="15dp"
-            app:background_color="@color/bg_gradient_end"
-            android:foreground="?android:attr/selectableItemBackground"
+            <com.souillard.customViews.MenuButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
 
+                app:src="@drawable/speaker"
+                app:text="Apprentissage \ndes verbes"
+                app:textColor="@color/white"
+                app:textSize="10dp"
+                app:image_color="@color/white"
+                android:minHeight="100dp"
+                android:minWidth="80dp"
+                app:margin="10dp"
+                android:id="@+id/bt_verbes"
+                android:layout_margin="10dp"
+                app:corner_radius="15dp"
+                app:background_color="@color/bg_gradient_end"
+                android:foreground="?android:attr/selectableItemBackground"
 
+                />
 
-            />
+            <com.souillard.customViews.MenuButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:src="@drawable/speaker"
+                app:text="Evaluation"
+                app:textColor="@color/white"
+                app:textSize="10dp"
+                app:image_color="@color/white"
+                android:minHeight="100dp"
+                android:minWidth="80dp"
+                app:margin="10dp"
+                android:id="@+id/bt_eval"
+                android:layout_margin="10dp"
+                app:corner_radius="15dp"
+                app:background_color="@android:color/holo_red_dark"
+                android:foreground="?android:attr/selectableItemBackground"
+
+                />
+
+        </LinearLayout>
 
 
 
