@@ -8,6 +8,7 @@
     <string-array name="Listes">
         <item>list1/55/23</item>
         <item>list2/26/41</item>
+        <item>Help_p19/137/69</item>
     </string-array>
     <string-array name="list1">
         <item>engineering/genie</item>
@@ -29,5 +30,142 @@
         <item>être/be/was, were/been</item>
         <item>avoir/have/had/had</item>
         <item>devenir/become/became/become</item>
+    </string-array>
+    <string-array name="Help_p19">
+        <item>advise someone to do sthg (to)/conseiller à qqn de faire qqc</item>
+        <item>aim;goal;purpose – to aim at/but;objectif – viser à</item>
+        <item>allow s.o. to do ... (to)/permettre (donner autorisation)</item>
+        <item>applicant – application/candidat – candidature</item>
+        <item>apply for + N ;to + V (to)/faire acte de candidature</item>
+        <item>assignment;paper;test/devoir (surveillé)</item>
+        <item>attend a lecture/assister à une conférence</item>
+        <item>automation – automated/automatisation – automatisé</item>
+        <item>available – availability/disponible – disponibilité</item>
+        <item>benefit from = take advantage of/profiter de;tirer parti de</item>
+        <item>best - to do one's best to + Vb/mieux - faire de son mieux pour</item>
+        <item>break - time off (ex. : a week off)/congé;coupure (scolaire)</item>
+        <item>carry out (to)/effectuer</item>
+        <item>charges – fees/frais (général) - frais (inscription)</item>
+        <item>chemical engineering/génie chimique</item>
+        <item>chemistry – chemist/chimie – chimiste;ingénieur chimiste</item>
+        <item>college - university – campus/faculté - université – campus</item>
+        <item>complement (to) = to supplement/compléter</item>
+        <item>complete (to)/terminer;achever</item>
+        <item>computer - computer network/ordinateur - réseau informatique</item>
+        <item>convenient/pratique</item>
+        <item>curriculum = syllabus/programme d'études</item>
+        <item>c.v. = (USA) résumé/curriculum vitae;C.V.</item>
+        <item>data-processing/informatique (traitement données)</item>
+        <item>deal with (to) - (car-)dealer/traiter de - concessionnaire (auto)</item>
+        <item>degree - bachelor's degree/diplôme – licence</item>
+        <item>demand - to demand – demanding/exigence - exiger – exigeant</item>
+        <item>depend on (to) - depending on/dépendre de - en fonction de</item>
+        <item>divide into (to) – division/diviser en – division</item>
+        <item>document - hand-out – brochure/document - document distribué</item>
+        <item>duration - to last - how long ?/durée - durer - combien de tps ?</item>
+        <item>duty – duties/devoir - devoirs (obligation morale)</item>
+        <item>educational background/cursus;bagage (éducation)</item>
+        <item>effort = attempt – tentative/effort;essai – provisoire</item>
+        <item>enable s.o.,sthg to do ... /permettre (rendre possible) à ... de</item>
+        <item>end up + Ving (to)/finir par;se retrouver à faire</item>
+        <item>engineer - e's diploma/ingénieur - diplôme d'ingénieur</item>
+        <item>engineering/ingénierie;génie</item>
+        <item>enroll (to);register;sign up/s'inscrire</item>
+        <item>equipment - to equip/matériel – équiper</item>
+        <item>evaluate (to) - evaluation : évaluer – évaluation/</item>
+        <item>evidence - to prove/preuve;preuves – prouver</item>
+        <item>exchange programme/programme d'échange</item>
+        <item>expand (to) - to develop/développer (se)</item>
+        <item>expansion = development : expansion/</item>
+        <item>expenses - to spend ≠ to save/dépenses – dépenser ≠ économiser</item>
+        <item>extra;additional - further (abstrait)/supplémentaire</item>
+        <item>feedback - to feed/retour d'information – alimenter</item>
+        <item>figure out (to) = to work out/résoudre;trouver;mettre au point</item>
+        <item>filing folder - filing cabinet/classeur : dossier – meuble</item>
+        <item>financial support - financial help/soutien financier</item>
+        <item>first-year student/étudiant de 1° année</item>
+        <item>fluency - to speak fluently/fluidité - parler couramment</item>
+        <item>food - to feed/nourriture – (s’)alimenter</item>
+        <item>foreign ≠ strange/étranger ≠ étrange;bizarre</item>
+        <item>form - to fill in a form/formulaire - remplir formulaire</item>
+        <item>former student/ancien étudiant</item>
+        <item>fund (to);to finance/financer</item>
+        <item>funds;funding;financing/financement</item>
+        <item>further (=continuing) education/formation continue;permanente</item>
+        <item>get mixed up (to)/se tromper</item>
+        <item>graduate (to)/obtenir un diplôme de fin d'étude</item>
+        <item>graduate ≠ undergraduate (N-A)/licence : au-delà ≠ avant</item>
+        <item>grant (to);to allocate/accorder;allouer</item>
+        <item>grant = scolarship/bourse (d'études)</item>
+        <item>guest ≠ host - to invite/invité ≠ hôte – inviter</item>
+        <item>hall of residence (USA : dorm)/résidence universitaire</item>
+        <item>hand out literature/distribuer des documents</item>
+        <item>hands-on experience/la pratique</item>
+        <item>highschool : junior highschool/collège</item>
+        <item>highschool : senior highschool/lycée</item>
+        <item>higher education/enseignement supéneur</item>
+        <item>holiday (vacation) - on holiday/vacances - en vacances</item>
+        <item>host - to host - to welcome/hôte – accuelllir – souhaiter bienvenu</item>
+        <item>improve (to) – improvement/améliorer – amélioration</item>
+        <item>in-company training/formation en entreprise</item>
+        <item>industrial training period;internship/stage en entreprise</item>
+        <item>information technology (I.T.)/informatique</item>
+        <item>lab - lab practical session/labo - T.P. (séance de TP)</item>
+        <item>lecture - lecturer - lecture-hall/conférence - conférencier – amphi</item>
+        <item>level/niveau</item>
+        <item>link;connection - to link;connect/lien – relier</item>
+        <item>look for a job (to)/chercher un emploi</item>
+        <item>look forward to + N-Ving (to)/attendre avec impatience – plaisir</item>
+        <item>make sure that (to) = check that/s'assurer que</item>
+        <item>many ≠ a few (books)/beaucoup ≠ peu (pluriel)</item>
+        <item>mark - (USA : grade)/note (d'évaluation)</item>
+        <item>master's degree/mastère (ex maîtrise)</item>
+        <item>match sthg (to);to correspond to/correspondre à;aller de pair avec</item>
+        <item>material/matière(s) - matériau(x)</item>
+        <item>much ≠ a little (work)/beaucoup ≠ peu (non comptable)</item>
+        <item>must (a must) – compulsory/obligation – obligatoire</item>
+        <item>office – desk/bureau : pièce – meuble</item>
+        <item>opportunity/chance;opportunité</item>
+        <item>opt for (to) = to choose/choisir;décider en faveur de</item>
+        <item>pass an exam (to)/réussir un examen</item>
+        <item>pass with distinction;honours/réussir avec mention</item>
+        <item>Ph. D - Ph.D student/doctorat – doctorant</item>
+        <item>pick s.o. up (to) ≠ drop s.o. off/passer prendre qqn ≠ déposer</item>
+        <item>position;job;post/emploi;poste</item>
+        <item>postgraduate/thésard - niveau 3° cycle</item>
+        <item>profit from (to) = make the most of/profiter de;tirer parti de</item>
+        <item>provide;to supply (s.o. with sthg)/fournir (qqch à qqn)</item>
+        <item>quick(ly);fast (fast) ≠ slow(ly)/rapide(ment) ≠ lent(ement)</item>
+        <item>require (to) – required/nécessiter;requérir – requis</item>
+        <item>requirement/condition nécessaire</item>
+        <item>resume (to)/reprendre (après un arrêt)</item>
+        <item>research – researcher/recherche (la - les) – chercheur</item>
+        <item>research - leading edge res./les-des recherches de pointe</item>
+        <item>room;one - room apartment;fiat/chambre – studio</item>
+        <item>room-mate/co-locataire</item>
+        <item>run out of (to) - to lack sthg/se trouver à court de - manquer de</item>
+        <item>safety - health – hazard/sécurité - santé - risque industriel</item>
+        <item>sandwich courses/formation en alternance</item>
+        <item>school - college of engineering/école d'ingénieur</item>
+        <item>seminar/T.D. (séance de TD)</item>
+        <item>sensible = reasonable/sensé;raisonnable</item>
+        <item>series (a series)/série</item>
+        <item>show s.o. round a place (to)/montrer;faire visiter un endroit</item>
+        <item>specialise in a field (to)/spécialiser (se) dans 1 domaine</item>
+        <item>stand for (to) - to mean/signifier (pour un sigle) – signifier</item>
+        <item>straightaway/immédiatement</item>
+        <item>studies - to study – student/études - étudier – étudiant</item>
+        <item>suit s.o.;sthg (to)/convenir à qqn</item>
+        <item>sum up (to) – summary/résumer- un résumé</item>
+        <item>take an exam (to);sit for an exam/passer un examen</item>
+        <item>teach (to) ≠ to learn – teaching/enseigner ≠ apprendre – enseignement</item>
+        <item>technical-sales engineer/ingénieur technico-commercial</item>
+        <item>thesis (pl. theses)/thèse – thèses</item>
+        <item>tuition;courses - a course;class/enseignement - un cours</item>
+        <item>undertake (to) - to set out to + V/entreprendre - entreprendre de</item>
+        <item>value – valuable/valeur - qui a de la valeur</item>
+        <item>whole;full;complete;entire/entier;complet</item>
+        <item>willing to ≠ reluctant to/désireux de ≠ réticent à</item>
+        <item>workshop/atelier</item>
     </string-array>
 </resources>
