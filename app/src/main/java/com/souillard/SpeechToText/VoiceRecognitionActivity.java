@@ -47,25 +47,29 @@ public abstract class VoiceRecognitionActivity extends Activity implements
         recognizerIntent = new Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH);
         onRecognizerIntentCreation();
 
-        toggleButton.setOnClickListener(new Button.OnClickListener() {
+        toggleButton.setOnClickListener(triggerButtonListener);
 
-            @Override
-            public void onClick(View v) {
-                if (!recording) {
-                    ActivityCompat.requestPermissions
-                            (VoiceRecognitionActivity.this,
-                                    new String[]{Manifest.permission.RECORD_AUDIO},
-                                    REQUEST_RECORD_PERMISSION);
-                } else {
-                    toggleButton.setTextColor(Color.RED);
-                    speech.stopListening();
-                    recording = false;
-                }
+    }
 
-            }
 
-        });
+    View.OnClickListener triggerButtonListener = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            speechTriggered();
+        }
+    };
 
+    protected void speechTriggered(){
+        if (!recording) {
+            ActivityCompat.requestPermissions
+                    (VoiceRecognitionActivity.this,
+                            new String[]{Manifest.permission.RECORD_AUDIO},
+                            REQUEST_RECORD_PERMISSION);
+        } else {
+            toggleButton.setTextColor(Color.RED);
+            speech.stopListening();
+            recording = false;
+        }
     }
 
     @Override

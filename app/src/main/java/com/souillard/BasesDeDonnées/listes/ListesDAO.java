@@ -31,6 +31,9 @@ public interface ListesDAO {
     @Query("SELECT idList FROM listes WHERE nameOfList LIKE :nameList")
     int idDeListe(String nameList);
 
+    @Query("SELECT * FROM listes WHERE idList LIKE :id")
+    Listes getListesById(int id);
+
     @Query("SELECT nameOfList FROM listes WHERE idList Like :id")
     String getNameOfList(int id);
 

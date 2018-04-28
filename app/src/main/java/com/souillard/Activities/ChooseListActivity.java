@@ -24,15 +24,6 @@ public class ChooseListActivity extends Activity {
 
     private ListView mListView;
     public final static String nameList = "";
-
-    private String[] prenoms = new String[]{
-            "Antoine", "Benoit", "Cyril", "David", "Eloise", "Florent",
-            "Gerard", "Hugo", "Ingrid", "Jonathan", "Kevin", "Logan",
-            "Mathieu", "Noemie", "Olivia", "Philippe", "Quentin", "Romain",
-            "Sophie", "Tristan", "Ulric", "Vincent", "Willy", "Xavier",
-            "Yann", "Zoé"
-    };
-
     private TextView text;
 
     AppDataBase db = AppDataBase.getAppDatabase(ChooseListActivity.this);
