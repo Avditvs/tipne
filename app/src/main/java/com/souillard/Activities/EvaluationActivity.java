@@ -1,18 +1,26 @@
 package com.souillard.Activities;
 
+import android.app.Activity;
+import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.speech.SpeechRecognizer;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.KeyEvent;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
+import android.widget.PopupWindow;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.souillard.BasesDeDonnées.AppDataBase;
+import com.souillard.BasesDeDonnées.evaluations.Evaluations;
+import com.souillard.BasesDeDonnées.evaluations.EvaluationsDAO;
 import com.souillard.BasesDeDonnées.listes.Listes;
 import com.souillard.BasesDeDonnées.listes.ListesDAO;
 import com.souillard.BasesDeDonnées.mots.Mots;
@@ -40,6 +48,8 @@ public class EvaluationActivity extends VoiceRecognitionActivity {
     private int nbBonnesRep;
     private LinearLayout bodyEval;
     private Toast toast;
+    private int maxScore;
+    private LinearLayout layout;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -60,6 +70,7 @@ public class EvaluationActivity extends VoiceRecognitionActivity {
         requeteView = findViewById(R.id.requete);
         infoSuppView = findViewById(R.id.infoSupp);
         bodyEval = findViewById(R.id.bodyEval);
+        layout = findViewById(R.id.header);
 
         editText.setOnKeyListener(textEnterListener);
 
@@ -75,6 +86,7 @@ public class EvaluationActivity extends VoiceRecognitionActivity {
 
         boutonValidation.setOnClickListener(listenerValidation);
 
+        maxScore=0;
         nbBonnesRep=0;
         indiceMot = 1;
         changerMot(indiceMot);
@@ -122,6 +134,7 @@ public class EvaluationActivity extends VoiceRecognitionActivity {
         infoSuppView.setText("");
         indiceMotView.setText("Mot " + indice + " sur " + listeInfo.getNbWords());
         Mots motActuel  = dataMots.get(indice-1);
+        dataMots.get(indice-1).incrementNbEval(1);
         String request = "";
         for(int i =0; motActuel.getTabMotsFr().length>i; i++){
             request += motActuel.getTabMotsFr()[i];
@@ -146,16 +159,21 @@ public class EvaluationActivity extends VoiceRecognitionActivity {
             onWrongAnswer();
         }
 
-        indiceMot++;
-        changerMot(indiceMot);
-        Log.i("Reponse: ", dataMots.get(indiceMot-1).getMotsEn());
-
-        if(indiceMot>listeInfo.getNbWords()){
-
-            //trigger la fin cad balancer les résultats et mettre en bdd
-
+        if(indiceMot+1>dataMots.size()){
+            onTestEnd();
         }
+        else {
+            maxScore++;
+            indiceMot++;
+            changerMot(indiceMot);
+            Log.i("Reponse: ", dataMots.get(indiceMot - 1).getMotsEn());
 
+            if (indiceMot > listeInfo.getNbWords()) {
+
+                //trigger la fin cad balancer les résultats et mettre en bdd
+
+            }
+        }
 
     }
 
@@ -175,10 +193,12 @@ public class EvaluationActivity extends VoiceRecognitionActivity {
     }
 
     private void onWrongAnswer() {
+        dataMots.get(indiceMot-1).incrementNbFaults(1);
         String toastText = "Mauvaise réponse, la(les) réponses\ncorrectes étaient :";
         int i;
         for (i = 0; i < dataMots.get(indiceMot - 1).getTabMotsEn().length; i++){
             toastText = toastText +"\n" + dataMots.get(indiceMot-1).getTabMotsEn()[i];
+
         }
         toast = Toast.makeText(getBaseContext(), toastText, Toast.LENGTH_LONG);
         toast.setGravity(Gravity.TOP, 0, bodyEval.getBottom()+20);
@@ -187,5 +207,48 @@ public class EvaluationActivity extends VoiceRecognitionActivity {
 
     private void onPartialAnswer(){
 
+    }
+
+    private void onTestEnd(){
+        EvaluationsDAO evaluationsDAO = AppDataBase.getAppDatabase(getBaseContext()).EvaluationsDAO();
+        MotsDAO motsDAO = AppDataBase.getAppDatabase(getBaseContext()).MotsDao();
+        Evaluations resultats = new Evaluations(listId, listeInfo.getNbWords()-nbBonnesRep, System.currentTimeMillis());
+        evaluationsDAO.insertEvaluation(resultats);
+        motsDAO.insertListe(dataMots);
+        showResults();
+
+
+
+    }
+
+    private void showResults(){
+        LayoutInflater inflater = (LayoutInflater) getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        View view = inflater.inflate(R.layout.resultats_mots, null);
+        PopupWindow popup = new PopupWindow(view, LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT);
+        TextView viewNomListe = view.findViewById(R.id.nomListe);
+        TextView viewScore = view.findViewById(R.id.score);
+        Button recommencer = view.findViewById(R.id.recommencer);
+        Button toMenu = view.findViewById(R.id.toMenuPrincipal);
+
+        recommencer.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(getIntent());
+            }
+        });
+
+        toMenu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getBaseContext(), MainActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        float score = (nbBonnesRep*20)/maxScore;
+
+        viewNomListe.setText("Résultat pour la liste \n" + listeInfo.getNameOfList());
+        viewScore.setText("Score : " + score);
+        popup.showAtLocation(layout, Gravity.CENTER, 0, 0);
     }
 }

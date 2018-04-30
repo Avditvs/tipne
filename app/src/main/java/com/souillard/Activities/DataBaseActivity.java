@@ -42,6 +42,7 @@ public class DataBaseActivity  extends Activity {
     private PopupWindow popup;
     private SharedPreferences.Editor spEditor;
 
+
     public void onCreate (Bundle savedInstanceState){
 
 

@@ -2,6 +2,7 @@ package com.souillard.BasesDeDonnées.mots;
 
 import android.arch.persistence.room.Dao;
 import android.arch.persistence.room.Insert;
+import android.arch.persistence.room.OnConflictStrategy;
 import android.arch.persistence.room.Query;
 
 import java.util.List;
@@ -18,6 +19,9 @@ public interface MotsDAO {
 
     @Insert
     void insertMot(Mots aWord);
+
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    void insertListe(List<Mots> list);
 
     @Query("SELECT * FROM mots WHERE idList like :list")
     List<Mots> getList(Integer list);

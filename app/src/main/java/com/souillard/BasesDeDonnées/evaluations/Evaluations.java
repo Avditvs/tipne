@@ -26,10 +26,17 @@ public class Evaluations {
     @Ignore
     private Date date;
 
+
     ////////Constructeur//////////
 
     public Evaluations(){
 
+    }
+
+    public Evaluations(int idListe, int nbFautes, long epoch){
+        this.epoch = epoch;
+        this.idListe = idListe;
+        this.nbFautes = nbFautes;
     }
 
 
@@ -84,5 +91,6 @@ public class Evaluations {
         this.epoch = epoch;
         this.date = new Date(epoch);
     }
+
 }
 

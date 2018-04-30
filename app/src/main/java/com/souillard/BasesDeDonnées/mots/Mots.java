@@ -3,7 +3,9 @@ package com.souillard.BasesDeDonnées.mots;
 import android.arch.persistence.room.ColumnInfo;
 import android.arch.persistence.room.Entity;
 import android.arch.persistence.room.Ignore;
+import android.arch.persistence.room.OnConflictStrategy;
 import android.arch.persistence.room.PrimaryKey;
+import android.arch.persistence.room.Room;
 
 
 @Entity
@@ -136,4 +138,11 @@ public class Mots {
     }
 
 
+    public void incrementNbEval(int incr){
+        this.nbEval += incr;
+    }
+
+    public void incrementNbFaults(int incr){
+        this.nbFaults += incr;
+    }
 }
