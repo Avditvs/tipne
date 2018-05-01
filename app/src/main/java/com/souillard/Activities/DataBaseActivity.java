@@ -54,8 +54,7 @@ public class DataBaseActivity  extends Activity {
 
         sharedPreferences = getSharedPreferences("APP_SHARED_PREFERENCES", Context.MODE_PRIVATE);
         spEditor = sharedPreferences.edit();
-        //boolean firstLaunch = sharedPreferences.getBoolean("first_launch", true);
-        boolean firstLaunch = true;
+        boolean firstLaunch = sharedPreferences.getBoolean("first_launch", true);
         if (firstLaunch){
             classeEstChoisie = false;
           layout.post(new Runnable() {
@@ -65,20 +64,14 @@ public class DataBaseActivity  extends Activity {
               }
           });
         }
-
-
-        threadDb.start();
-
-
-
     }
 
     private Thread threadDb = new Thread(new Runnable() {
         @Override
         public void run() {
-
+            int annee = sharedPreferences.getInt("user_year", 1);
             DataBaseBuilder dataBaseBuilder = new DataBaseBuilder(getApplicationContext());
-            dataBaseBuilder.buildDataBase();
+            dataBaseBuilder.buildDataBase(annee);
 
             try {
                 Thread.sleep(1000);
@@ -150,8 +143,7 @@ public class DataBaseActivity  extends Activity {
         popup.showAtLocation(layout, Gravity.CENTER, 0, 0);
         applyDim((ViewGroup)getWindow().getDecorView().getRootView(), 210);
 
-
-
+        threadDb.start();
     }
 
     public void applyDim(@NonNull ViewGroup parent, int dimAmount){

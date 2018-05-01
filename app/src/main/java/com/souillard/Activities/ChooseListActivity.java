@@ -17,6 +17,7 @@ import android.widget.Button;
 import android.widget.Toast;
 import com.souillard.BasesDeDonnées.listes.ListesDAO;
 import com.souillard.BasesDeDonnées.AppDataBase;
+import java.lang.String;
 
 
 
@@ -29,7 +30,7 @@ public class ChooseListActivity extends Activity {
     AppDataBase db = AppDataBase.getAppDatabase(ChooseListActivity.this);
     ListesDAO dbListes = db.ListesDAO();
     String[] namesList = dbListes.getNames();
-
+    String[] namesListDisplay = dbListes.getProperNames();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,7 +43,7 @@ public class ChooseListActivity extends Activity {
 
         //Défini les données à afficher et comment on les affiche
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(ChooseListActivity.this,
-                R.layout.button_choix_liste,R.id.liste, namesList);
+                R.layout.button_choix_liste,R.id.liste, namesListDisplay);
 
         //On associe ces données à la ListView
         mListView.setAdapter(adapter);
@@ -51,10 +52,10 @@ public class ChooseListActivity extends Activity {
         mListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                    String nomliste = (String) mListView.getItemAtPosition(position);
-                    Intent i = new Intent(ChooseListActivity.this, LearningMotsActivity.class);
-                    i.putExtra(nameList, nomliste);
-                    startActivity(i);
+                String nomliste = namesList[position];
+                Intent i = new Intent(ChooseListActivity.this, LearningMotsActivity.class);
+                i.putExtra(nameList, nomliste);
+                startActivity(i);
             }
         });
     }

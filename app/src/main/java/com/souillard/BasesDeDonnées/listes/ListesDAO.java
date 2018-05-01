@@ -37,6 +37,12 @@ public interface ListesDAO {
     @Query("SELECT nameOfList FROM listes WHERE idList Like :id")
     String getNameOfList(int id);
 
+    @Query("SELECT properName FROM listes")
+    String[] getProperNames();
+
+    @Query("SELECT properName FROM listes WHERE idList Like :id")
+    String getProperName(int id);
+
 
 
 

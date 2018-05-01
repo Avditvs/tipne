@@ -37,12 +37,12 @@ public class DataBaseBuilder {
 
 ////////////Fonction de build de la db////////////////////
 
-    public void buildDataBase(){
+    public void buildDataBase(int annee){
        DataBaseChecker dataBaseChecker = new DataBaseChecker(context);
 
        if(!dataBaseChecker.dbListesCorrect()){
            listesDAO.nukeTableListes();
-           buildDbListes(listesDAO);
+           buildDbListes(listesDAO, annee);
        }
 
        if(!dataBaseChecker.dbMotsCorrect()){
@@ -77,8 +77,8 @@ public class DataBaseBuilder {
 
 ///////////Fonction de build de la dbListes//////////////////////
 
-    private void buildDbListes (ListesDAO dbListes){
-        String[] listesParameters = getListsParameters();
+    private void buildDbListes (ListesDAO dbListes, int annee){
+        String[] listesParameters = getListsParameters(annee);
         int idList = 1;
         for (String linkedListe : listesParameters){
             String[] separatedListe = separateList(linkedListe);
@@ -107,8 +107,14 @@ public class DataBaseBuilder {
 /////////////////////Fonctions utiles au build de dbListes////////////////
 
 
-    private String[] getListsParameters(){
-        String[] listsParameters = context.getResources().getStringArray(R.array.Listes);
+    private String[] getListsParameters(int annee){
+        String[] listsParameters;
+        if (annee == 1) {
+            listsParameters = context.getResources().getStringArray(R.array.ListesSTPI1);
+        }
+        else {
+            listsParameters = context.getResources().getStringArray(R.array.ListesSTPI2);
+        }
         return listsParameters;
     }
 
@@ -118,7 +124,7 @@ public class DataBaseBuilder {
     }
 
     private Listes setListe (String[] separatedList, int idList){
-        Listes aList = new Listes(idList, separatedList[0], Integer.parseInt(separatedList[1]), Integer.parseInt(separatedList[2]));
+        Listes aList = new Listes(idList, separatedList[0], Integer.parseInt(separatedList[1]), Integer.parseInt(separatedList[2]), separatedList[3]);
         return  aList;
     }
 

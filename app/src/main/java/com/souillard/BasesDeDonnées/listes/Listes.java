@@ -23,17 +23,21 @@ public class Listes {
     @ColumnInfo (name = "nbWordsHalf")
     private int nbWordsHalf;
 
+    @ColumnInfo (name = "properName")
+    private String properName;
+
 
     ///// Builders //////
     public Listes () {
         }
 
 
-    public Listes (int IdList, String NameOfList, int NbWords, int NbWordsHalf){
+    public Listes (int IdList, String NameOfList, int NbWords, int NbWordsHalf, String ProperName){
         idList = IdList;
         nameOfList = NameOfList;
         nbWords = NbWords;
         nbWordsHalf = NbWordsHalf;
+        properName = ProperName;
     }
 
 
@@ -59,6 +63,7 @@ public class Listes {
         return nbWordsHalf;
     }
 
+    public String getProperName(){ return properName;}
 
     //// Setters ////
 
@@ -81,4 +86,6 @@ public class Listes {
     public void setUid(int id) {
         this.uid = id;
     }
+
+    public void setProperName(String properName) {this.properName = properName;}
 }

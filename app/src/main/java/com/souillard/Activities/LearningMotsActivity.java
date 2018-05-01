@@ -54,7 +54,7 @@ public class LearningMotsActivity extends Activity{
 
         idList = getIdList();
 
-        textListe.setText(dbListes.getNameOfList(idList));
+        textListe.setText(dbListes.getProperName(idList));
         nbDeMots = dbListes.getNbWords(idList);
 
         wordsEN = getENwords(idList);
