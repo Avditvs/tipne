@@ -1322,4 +1322,11 @@
         <item>	yield/rendement	</item>
         <item>	to yield/produire (rendement)	</item>
     </string-array>
+    <string-array name="Models1">
+        <item>1_Model_p4/Model p4/stpi1_model_p4</item>
+        <item>1_Model_p6/Model p6/stpi1_model_p6</item>
+    </string-array>
+    <string-array name="Models2">
+
+    </string-array>
 </resources>

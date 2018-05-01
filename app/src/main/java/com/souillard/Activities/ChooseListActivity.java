@@ -16,6 +16,7 @@ import android.widget.TextView;
 import android.widget.Button;
 import android.widget.Toast;
 import com.souillard.BasesDeDonnées.listes.ListesDAO;
+import com.souillard.BasesDeDonnées.models.ModelsDAO;
 import com.souillard.BasesDeDonnées.AppDataBase;
 import java.lang.String;
 
@@ -25,10 +26,12 @@ public class ChooseListActivity extends Activity {
 
     private ListView mListView;
     public final static String nameList = "";
+    public final static String nameModel ="";
     private TextView text;
 
     AppDataBase db = AppDataBase.getAppDatabase(ChooseListActivity.this);
     ListesDAO dbListes = db.ListesDAO();
+    ModelsDAO dbModels = db.ModelsDAO();
     String[] namesList = dbListes.getNames();
     String[] namesListDisplay = dbListes.getProperNames();
     String choixUser;
@@ -49,7 +52,9 @@ public class ChooseListActivity extends Activity {
         if (choixUser.equals("mots")) {
             motsChoosed();
         }
-
+        else if (choixUser.equals("model")) {
+            modelsChoosed();
+        }
     }
 
     private void motsChoosed () {
@@ -68,6 +73,27 @@ public class ChooseListActivity extends Activity {
                 if (modeChoisi.equals("apprentissage")) {
                     Intent i = new Intent(ChooseListActivity.this, LearningMotsActivity.class);
                     i.putExtra(nameList, nomliste);
+                    startActivity(i);
+                }
+            }
+        });
+    }
+
+    private void modelsChoosed(){
+        final String[] properNames = dbModels.getProperNames();
+
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(ChooseListActivity.this,
+                R.layout.button_choix_liste,R.id.liste, properNames);
+
+        mListView.setAdapter(adapter);
+
+        mListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                String nomModel = properNames[position];
+                if (modeChoisi.equals("apprentissage")){
+                    Intent i = new Intent(ChooseListActivity.this, LearningModelActivity.class);
+                    i.putExtra(nameModel, nomModel);
                     startActivity(i);
                 }
             }

@@ -4,6 +4,7 @@ import android.content.Context;
 
 import com.souillard.BasesDeDonnées.evaluations.EvaluationsDAO;
 import com.souillard.BasesDeDonnées.listes.ListesDAO;
+import com.souillard.BasesDeDonnées.models.ModelsDAO;
 import com.souillard.BasesDeDonnées.mots.MotsDAO;
 import com.souillard.BasesDeDonnées.verbes.VerbesDAO;
 
@@ -17,6 +18,7 @@ public class DataBaseChecker {
     private ListesDAO listesDAO;
     private AppDataBase appDataBase;
     private VerbesDAO verbesDAO;
+    private ModelsDAO modelsDAO;
     private EvaluationsDAO evaluationsDAO;
 
 
@@ -27,6 +29,7 @@ public class DataBaseChecker {
         this.motsDAO = appDataBase.MotsDao();
         this.verbesDAO = appDataBase.VerbesDAO();
         this.evaluationsDAO = appDataBase.EvaluationsDAO();
+        this.modelsDAO = appDataBase.ModelsDAO();
     };
 
 
@@ -51,6 +54,15 @@ public class DataBaseChecker {
 
     public boolean dbVerbesCorrect(){
         if(verbesDAO.getAll().isEmpty()){
+            return false;
+        }
+        else{
+            return true;
+        }
+    }
+
+    public boolean dbModelsCorrect(){
+        if(modelsDAO.getAll().isEmpty()){
             return false;
         }
         else{

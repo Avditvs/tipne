@@ -13,13 +13,16 @@
         android:orientation="horizontal">
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:gravity="center"
             android:text="Model p41"
             android:textColor="@color/white"
-            android:textSize="15dp"/>
+            android:textSize="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:id="@+id/name"/>
 
     </LinearLayout>
 
@@ -30,15 +33,16 @@
         android:orientation="horizontal">
 
         <ScrollView
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_marginRight="70dp"
-            android:layout_gravity="left|center">
+            android:layout_gravity="left"
+            android:layout_weight="10"
+            android:layout_marginRight="10dp">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="coooouuucucucuucucucucucucuucucucucucucucucucucuucucucucucucucujjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj  frufhrijfr f rifjr frijgf rifrifjr if rirjifjrijf ijfirjfirjif rijf irjf rijf irjf rijfir jf irjfijrifjirjf irjfijrifjirfj irjfrijfirjfirjf irjifjirfji"
+                android:text="c oooouuucucucuucucuc oooouuucucucuucucuc oooouuucucucuucucuc oooouuucucucuucucuc oooouuucucucuucucuc oooouuucucucuucucuc oooouuucucucuucucuc oooouuucucucuucucuc ucucucuucucucucucucucucucucuucucucucucucucujjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj  frufhrijfr f rifjr frijgf rifrifjr if rirjifjrijf ijfirjfirjif rijf irjf rijf irjf rijfir jf irjfijrifjirjf irjfijrifjirfj irjfrijfirjfirjf irjifjirfji"
                 android:textSize="35dp"
                 android:textColor="@color/white"/>
 
@@ -47,11 +51,12 @@
         <Button
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:gravity="center_horizontal|center"
-            android:layout_gravity="center|right"
+            android:layout_gravity="right|center"
             android:id="@+id/TextToSpeech"
-            android:background="@drawable/speaker_bleu"
-            android:layout_marginTop="15dp"/>
+            android:gravity="right|center"
+            android:background="@drawable/speaker_noir"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"/>
 
     </LinearLayout>
 

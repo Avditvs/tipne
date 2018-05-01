@@ -6,6 +6,8 @@ import android.util.Log;
 import com.souillard.BasesDeDonnées.evaluations.EvaluationsDAO;
 import com.souillard.BasesDeDonnées.listes.Listes;
 import com.souillard.BasesDeDonnées.listes.ListesDAO;
+import com.souillard.BasesDeDonnées.models.Models;
+import com.souillard.BasesDeDonnées.models.ModelsDAO;
 import com.souillard.BasesDeDonnées.mots.Mots;
 import com.souillard.BasesDeDonnées.mots.MotsDAO;
 import com.souillard.BasesDeDonnées.verbes.Verbes;
@@ -21,6 +23,7 @@ public class DataBaseBuilder {
     private ListesDAO listesDAO;
     private AppDataBase appDataBase;
     private VerbesDAO verbesDAO;
+    private ModelsDAO modelsDAO;
     private EvaluationsDAO evaluationsDAO;
 
 
@@ -32,6 +35,7 @@ public class DataBaseBuilder {
         this.listesDAO = appDataBase.ListesDAO();
         this.motsDAO = appDataBase.MotsDao();
         this.verbesDAO = appDataBase.VerbesDAO();
+        this.modelsDAO = appDataBase.ModelsDAO();
         this.evaluationsDAO = appDataBase.EvaluationsDAO();
     }
 
@@ -53,6 +57,11 @@ public class DataBaseBuilder {
        if(!dataBaseChecker.dbVerbesCorrect()){
            verbesDAO.nukeTableVerbes();
            buildDbVerbes(verbesDAO);
+       }
+
+       if(!dataBaseChecker.dbModelsCorrect()){
+           modelsDAO.nukeTableModels();
+           buildDbModels(modelsDAO, annee);
        }
     }
 
@@ -100,7 +109,16 @@ public class DataBaseBuilder {
         }
     }
 
+///////////Fonction de build de la dbModels /////////////////////////
 
+    private void buildDbModels(ModelsDAO dbModels, int annee){
+        String[] modelsList = getModelsList(annee);
+        for (String linkedModel : modelsList){
+            String[] separatedModel = separateModel(linkedModel);
+            Models aModel = setModel(separatedModel);
+            insertModelInDB(dbModels, aModel);
+        }
+    }
 
 
 
@@ -179,4 +197,28 @@ public class DataBaseBuilder {
 
     private void insertVerbInDB (Verbes aVerb, VerbesDAO dbVerbes) {dbVerbes.insertVerb(aVerb);}
 
+
+    /////////////////Fonctions utiles au build de dbModels ///////////////////////////////
+
+    private String[] getModelsList(int annee) {
+        String[] modelsList;
+        if (annee == 1) {
+            modelsList = context.getResources().getStringArray(R.array.Models1);
+        } else {
+            modelsList = context.getResources().getStringArray(R.array.Models2);
+        }
+        return modelsList;
+    }
+
+    private String[] separateModel(String linkedModel){
+        String[] separatedModel = linkedModel.split("/");
+        return separatedModel;
+    }
+
+    private Models setModel(String[] separatedModel){
+        Models aModel = new Models(separatedModel[0], separatedModel[1], separatedModel[2]);
+        return aModel;
+    }
+
+    private void insertModelInDB (ModelsDAO dbModels, Models aModel){dbModels.insertModel(aModel);}
 }

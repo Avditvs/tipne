@@ -52,7 +52,7 @@ public class ChooseActivity extends Activity {
     private View.OnClickListener clickListenerModel = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            Intent intent = new Intent (ChooseActivity.this, LearningModelActivity.class);
+            Intent intent = new Intent (ChooseActivity.this, ChooseListActivity.class);
             Bundle extras = new Bundle();
             extras.putString("choixUtilisateur", "model");
             extras.putString("mode", choixMode);
