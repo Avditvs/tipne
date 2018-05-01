@@ -63,6 +63,10 @@ public class DataBaseActivity  extends Activity {
                   onFirstLaunch();
               }
           });
+
+        }
+        else{
+            threadDb.start();
         }
     }
 
@@ -136,6 +140,7 @@ public class DataBaseActivity  extends Activity {
 
                 popup.dismiss();
                 classeEstChoisie = true;
+                threadDb.start();
                 clearDim((ViewGroup)getWindow().getDecorView().getRootView());
             }
         });
@@ -143,7 +148,7 @@ public class DataBaseActivity  extends Activity {
         popup.showAtLocation(layout, Gravity.CENTER, 0, 0);
         applyDim((ViewGroup)getWindow().getDecorView().getRootView(), 210);
 
-        threadDb.start();
+
     }
 
     public void applyDim(@NonNull ViewGroup parent, int dimAmount){
