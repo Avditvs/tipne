@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/fond_ecran">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_corners_rectangle"
+        android:text="Vocabulaire"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:id="@+id/vocabulaire"
+        android:height="30dp"
+        android:width="200dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:layout_gravity="center"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_corners_rectangle"
+        android:text="Model Speech"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:id="@+id/model"
+        android:height="30dp"
+        android:width="200dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:layout_gravity="center"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_corners_rectangle"
+        android:text="Verbes"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:id="@+id/verbes"
+        android:height="30dp"
+        android:width="200dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:layout_gravity="center"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_corners_rectangle"
+        android:text="Abbréviations"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:id="@+id/abbréviations"
+        android:height="30dp"
+        android:width="200dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:layout_gravity="center"/>
+
+</LinearLayout>

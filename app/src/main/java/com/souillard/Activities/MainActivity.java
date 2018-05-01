@@ -23,6 +23,7 @@ public class MainActivity extends Activity {
     private MenuButton btEval = null;
     private Intent intent = null;
     private Intent intent2 = null;
+    public final static String mode = "";
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -59,8 +60,9 @@ public class MainActivity extends Activity {
         @Override
         public void onClick(View v) {
 
-            intent = new Intent(getApplicationContext(), ChooseListActivity.class);
+            intent = new Intent(getApplicationContext(), ChooseActivity.class);
             Handler handler = new Handler();
+            intent.putExtra(mode, "apprentissage");
             handler.postDelayed(new Runnable(){
                 public void run() {
                     startActivity(intent);

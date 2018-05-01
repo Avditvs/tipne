@@ -31,6 +31,8 @@ public class ChooseListActivity extends Activity {
     ListesDAO dbListes = db.ListesDAO();
     String[] namesList = dbListes.getNames();
     String[] namesListDisplay = dbListes.getProperNames();
+    String choixUser;
+    String modeChoisi;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,8 +41,18 @@ public class ChooseListActivity extends Activity {
 
         //Défini notre listView
         mListView = (ListView) findViewById(R.id.listView);
-        text = findViewById(R.id.test);
 
+        Bundle extras = getIntent().getExtras();
+        choixUser = extras.getString("choixUtilisateur");
+        modeChoisi = extras.getString("mode");
+
+        if (choixUser.equals("mots")) {
+            motsChoosed();
+        }
+
+    }
+
+    private void motsChoosed () {
         //Défini les données à afficher et comment on les affiche
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(ChooseListActivity.this,
                 R.layout.button_choix_liste,R.id.liste, namesListDisplay);
@@ -53,9 +65,11 @@ public class ChooseListActivity extends Activity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 String nomliste = namesList[position];
-                Intent i = new Intent(ChooseListActivity.this, LearningMotsActivity.class);
-                i.putExtra(nameList, nomliste);
-                startActivity(i);
+                if (modeChoisi.equals("apprentissage")) {
+                    Intent i = new Intent(ChooseListActivity.this, LearningMotsActivity.class);
+                    i.putExtra(nameList, nomliste);
+                    startActivity(i);
+                }
             }
         });
     }

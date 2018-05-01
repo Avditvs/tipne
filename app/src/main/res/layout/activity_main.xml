@@ -41,7 +41,7 @@
                 app:image_color="@color/white"
                 app:margin="10dp"
                 app:src="@drawable/speaker"
-                app:text="Test \nChoixListe"
+                app:text="Test \nApprentissage"
                 app:textColor="@color/white"
                 app:textSize="10dp"
 
