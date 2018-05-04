@@ -20,30 +20,36 @@ public class LearningModelActivity extends Activity {
     AppDataBase db = AppDataBase.getAppDatabase(LearningModelActivity.this);
     ModelsDAO dbModels = db.ModelsDAO();
     private boolean playing = false;
-    private boolean alreadyPlayed = false;
+    private boolean prompt = false;
     private Button listeningButton;
+    private MediaPlayer mediaPlayer = null;
+    private TextView nomModel;
+    private TextView model;
+    private int audioID;
+    private int drawID;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.learning_model_activity);
-        TextView text = findViewById(R.id.name);
+        nomModel = findViewById(R.id.name);
         listeningButton = findViewById(R.id.TextToSpeech);
+        model = findViewById(R.id.model);
 
         Intent previousIntent = getIntent();
         String properName = previousIntent.getStringExtra(nameModel);
         String rawName = dbModels.getNameOfModel(properName);
         String fileName = dbModels.getAudioName(properName);
 
-        text.setText(properName);
+        nomModel.setText(properName);
 
         final int speakerNoir = getResources().getIdentifier("speaker_noir", "drawable", getPackageName());
         final int speakerBleu = getResources().getIdentifier("speaker_bleu", "drawable", getPackageName());
-        int audioID = getResources().getIdentifier(fileName,"raw", getPackageName());
-        //int drawID = getResources().getIdentifier(fileName, "drawable", getPackageName());
+        audioID = getResources().getIdentifier(fileName,"raw", getPackageName());
+        drawID = getResources().getIdentifier(fileName, "drawable", getPackageName());
 
 
-        final MediaPlayer mediaPlayer = MediaPlayer.create(this, audioID);
+        mediaPlayer = MediaPlayer.create(this, audioID);
 
         listeningButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -62,7 +68,23 @@ public class LearningModelActivity extends Activity {
         });
     }
 
+    @Override
+    protected void onPause(){
+        super.onPause();
+        mediaPlayer.stop();
+        mediaPlayer.release();
+    }
 
-
+    public void onClick(View v){
+        if (prompt){
+            model.setText("Ceci est le dialogue complet");
+            prompt = false;
+        }
+        else {
+            model.setText("");
+            prompt = true;
+            model.setBackgroundResource(drawID);
+        }
+    }
 }
 

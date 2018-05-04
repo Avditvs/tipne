@@ -33,18 +33,22 @@
         android:orientation="horizontal">
 
         <ScrollView
-            android:layout_width="wrap_content"
+            android:layout_width="536dp"
             android:layout_height="match_parent"
             android:layout_gravity="left"
-            android:layout_weight="10"
-            android:layout_marginRight="10dp">
+            android:layout_marginRight="10dp"
+            android:layout_weight="10">
 
             <TextView
+                android:id="@+id/model"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:clickable="true"
+                android:onClick="onClick"
                 android:text="c oooouuucucucuucucuc oooouuucucucuucucuc oooouuucucucuucucuc oooouuucucucuucucuc oooouuucucucuucucuc oooouuucucucuucucuc oooouuucucucuucucuc oooouuucucucuucucuc ucucucuucucucucucucucucucucuucucucucucucucujjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj  frufhrijfr f rifjr frijgf rifrifjr if rirjifjrijf ijfirjfirjif rijf irjf rijf irjf rijfir jf irjfijrifjirjf irjfijrifjirfj irjfrijfirjfirjf irjifjirfji"
+                android:textColor="@color/white"
                 android:textSize="35dp"
-                android:textColor="@color/white"/>
+                />
 
         </ScrollView>
 

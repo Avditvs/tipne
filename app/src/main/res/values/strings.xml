@@ -14,17 +14,20 @@
         <item>Help_p101/250/125/Help p101</item>
     </string-array>
     <string-array name="ListesSTPI2">
-        <item>Help_p41/125/45/Help p41</item>
+        <item>Travelling_and_Everyday_life_p14/173/0/Travelling and Everyday life p14</item>
+        <item>Everyday_life_p26/134/0/Everyday life p26</item>
+        <item>Companies_and_plants_p37/143/0/Companies and plants p37</item>
+        <item>Phrasal_verbs_and_expressions_used_in_everyday_life_p48/116/0/Phrasal verbs and expressions used in everyday life p48</item>
+        <item>Everyday_life_and_the_news_p61/158/0/Everyday life and the news p61</item>
+        <item>Expressions_for_reactions_in_meetings_p74/133/0/Expressions for reactions in meetings p74</item>
+        <item>Technology_and_basic_engineering_p12/148/0/Technology and basic engineering</item>
+        <item>Basic_managment_p22/158/0/Basic managment p22</item>
+        <item>Publications_and_reports_p31/148/0/Publications and reports p31</item>
+        <item>Vocabulary_p38/158/0/Vocabulary p38</item>
+        <item>Electronic_equipment_and_measuring_devices_p46/138/0/Electronic equipment and measuring devices p46</item>
+        <item>Legal_english_and_computers_p53/147/0/Legal english and computers p53</item>
     </string-array>
-    <string-array name="Help_p41">
-        <item>hello/bonjour</item>
-        <item>nice/cool</item>
-    </string-array>
-    <string-array name="Verbes">
-        <item>être/be/was, were/been</item>
-        <item>avoir/have/had/had</item>
-        <item>devenir/become/became/become</item>
-    </string-array>
+
     <string-array name="Help_p19">
         <item>abroad;overseas/à l\'étranger</item>
         <item>accommodation;housing/logement</item>
@@ -1321,6 +1324,1788 @@
         <item>	windy/venté	</item>
         <item>	yield/rendement	</item>
         <item>	to yield/produire (rendement)	</item>
+    </string-array>
+    <string-array name='Travelling_and_Everyday_life_p14'>
+        <item>	travel;trip/voyage	</item>
+        <item>	transport;transportation/transport	</item>
+        <item>	transfer/transfert	</item>
+        <item>	connection/correspondance	</item>
+        <item>	stopover/escale	</item>
+        <item>	timetable;schedule/horaire	</item>
+        <item>	luggage/bagage	</item>
+        <item>	baggage tag/etiquette	</item>
+        <item>	coach;bus/bus	</item>
+        <item>	shuttle/navette	</item>
+        <item>	departure/départ	</item>
+        <item>	arrival/arrivée	</item>
+        <item>	customs/douanes	</item>
+        <item>	duty free shops/boutiques hors taxes	</item>
+        <item>	gate/porte	</item>
+        <item>	boarding pass/carte d\'embarquement	</item>
+        <item>	check in counter/comptoir d\'enregistrement	</item>
+        <item>	security check/contrôle sécurité	</item>
+        <item>	seat/siège	</item>
+        <item>	cabin crew/hôtesse	</item>
+        <item>	flight attendant/stewart	</item>
+        <item>	to reserve;to book/réserver	</item>
+        <item>	a flight/vol	</item>
+        <item>	fare/coût voyage	</item>
+        <item>	rate/coût d\'une location	</item>
+        <item>	a rental car/une voiture de location	</item>
+        <item>	to rent;to hire/louer	</item>
+        <item>	to brake/freiner	</item>
+        <item>	a fine;a ticket/une amende	</item>
+        <item>	time zone;time difference/décalage horaire	</item>
+        <item>	to suffer from jet lag/souffrir du décalage	</item>
+        <item>	to pick someone up/prendre quelqu’un	</item>
+        <item>	to drop someone off/déposer quelqu’un	</item>
+        <item>	baggage claim area/zone de récupération	</item>
+        <item>	a ring road/rocade	</item>
+        <item>	a roundabout/rond point	</item>
+        <item>	crossroads;junction/croisement	</item>
+        <item>	traffic lights/feux tricolores	</item>
+        <item>	fully booked;no vacancy/complet	</item>
+        <item>	accommodation/logement	</item>
+        <item>	settle down/s\'installer	</item>
+        <item>	rate/prix	</item>
+        <item>	tariff;price list/tarif	</item>
+        <item>	estimate/devis	</item>
+        <item>	deposit/arrhes;caution	</item>
+        <item>	a tip/pourboire	</item>
+        <item>	a reduction;a discount/réduction	</item>
+        <item>	laundry/linge sale à laver	</item>
+        <item>	twin beds/lits jumeaux	</item>
+        <item>	to charge/faire payer	</item>
+        <item>	reception;front desk/réception	</item>
+        <item>	lounge/salon	</item>
+        <item>	lobby/hall d\'entrée	</item>
+        <item>	cafeteria/cafétéria	</item>
+        <item>	a stand/support	</item>
+        <item>	towel/serviette	</item>
+        <item>	blanket/couverture	</item>
+        <item>	a tap/robinet	</item>
+        <item>	hair drier/sèche-cheveux	</item>
+        <item>	facilities/installations;services	</item>
+        <item>	youth hostel;YMCA/auberge de jeunesse	</item>
+        <item>	heating/chauffage	</item>
+        <item>	board and lodging/pension (table et logement)	</item>
+        <item>	entertainment/divertissement	</item>
+        <item>	leisure/loisir	</item>
+        <item>	show/spectacle;séance	</item>
+        <item>	holiday/vacances	</item>
+        <item>	public holiday/jour férié	</item>
+        <item>	locker/consigne;casier	</item>
+        <item>	ski resort/station de ski	</item>
+        <item>	seaside resort/station balnéaire	</item>
+        <item>	bill;invoice/facture	</item>
+        <item>	check/note	</item>
+        <item>	credit card/carte de crédit	</item>
+        <item>	foreign currency/devises étrangères	</item>
+        <item>	traveler\'s cheques/chèques de voyage	</item>
+        <item>	a wallet/portefeuille	</item>
+        <item>	an ID/pièce d\'identité	</item>
+        <item>	a shopping mail;a shopping center/un centre commercial	</item>
+        <item>	a map/une carte	</item>
+        <item>	to enjoy;make the most of/profiter de	</item>
+        <item>	a suntan lotion/une lotion de bronzage	</item>
+        <item>	gym/un gymnase;salle de sport	</item>
+        <item>	sauna/sauna	</item>
+        <item>	sailing/voile	</item>
+        <item>	waves/vagues	</item>
+        <item>	tide/marée	</item>
+        <item>	landscape/paysage	</item>
+        <item>	horse riding/equitation	</item>
+        <item>	cycling/cyclisme	</item>
+        <item>	hiking/randonnée	</item>
+        <item>	climbing/escalade	</item>
+        <item>	a coach;an instructor/un moniteur	</item>
+        <item>	a camping site;a camping ground/camping	</item>
+        <item>	a backpack/sac à dos	</item>
+        <item>	to hitch hike/faire du stop	</item>
+        <item>	to hurt,injure oneself/se blesser	</item>
+        <item>	to sprain an ankle/se fouler une cheville	</item>
+        <item>	to be in good shape/être en forme	</item>
+        <item>	menu/menu	</item>
+        <item>	winelist/carte des vins	</item>
+        <item>	starter/hors d’œuvre	</item>
+        <item>	main dish/plat principal	</item>
+        <item>	dessert/dessert	</item>
+        <item>	cooking/cuisine	</item>
+        <item>	african cuisine/cuisine africaine	</item>
+        <item>	to taste/goûter	</item>
+        <item>	to try/essayer	</item>
+        <item>	sauce/sauce	</item>
+        <item>	salad dressing/sauce salade	</item>
+        <item>	shrimp/crevette	</item>
+        <item>	crab/crabe	</item>
+        <item>	lobster/homard	</item>
+        <item>	smoked salmon/saumon fumé	</item>
+        <item>	oysters/huitres	</item>
+        <item>	daiquiri/cocktail avec rhum	</item>
+        <item>	margarita/cocktail avec tequila	</item>
+        <item>	ice cubes/glaçons	</item>
+        <item>	saucepan/casserole	</item>
+        <item>	frying pan/poêle	</item>
+        <item>	bake/cuire au four	</item>
+        <item>	fry/frire	</item>
+        <item>	boil/bouillir	</item>
+        <item>	raw fish/poisson cru	</item>
+        <item>	snails/escargots	</item>
+        <item>	rare/bleu	</item>
+        <item>	medium/à point	</item>
+        <item>	well done/bien cuit	</item>
+        <item>	frog legs/cuisses de grenouille	</item>
+        <item>	a can of mushroom/boîte de champignons	</item>
+        <item>	french fries/frites	</item>
+        <item>	baked potato/pomme au four	</item>
+        <item>	salad/salade	</item>
+        <item>	beans/haricots	</item>
+        <item>	peas/petits pois	</item>
+        <item>	beef/bœuf	</item>
+        <item>	lamb/agneau	</item>
+        <item>	pork/porc	</item>
+        <item>	flour/farine	</item>
+        <item>	cream/crème	</item>
+        <item>	pie/tarte	</item>
+        <item>	lime juice/jus de citron vert	</item>
+        <item>	salt and pepper/sel et poivre	</item>
+        <item>	cheesecake/gâteau au fromage blanc	</item>
+        <item>	cookies/gateaux secs	</item>
+        <item>	seminar/séminaire	</item>
+        <item>	conference/congrès	</item>
+        <item>	lecture/conférence	</item>
+        <item>	workshop/atelier	</item>
+        <item>	video projector/projecteur vidéo	</item>
+        <item>	screen/écran	</item>
+        <item>	pointer/pointeur	</item>
+        <item>	mp3 player/lecteur mp3	</item>
+        <item>	dvd player/lecteur dvd	</item>
+        <item>	photocopier/photocopieur	</item>
+        <item>	answering machine;voice box/répondeur	</item>
+        <item>	fax machine/fax	</item>
+        <item>	toilets;restrooms/toilettes	</item>
+        <item>	classical architecture/architecture classique	</item>
+        <item>	standard;traditional method/méthode classique	</item>
+        <item>	gift;present/cadeau	</item>
+        <item>	unforgettable/inoubliable	</item>
+        <item>	spendid/splendid	</item>
+        <item>	enjoyable;pleasant/agréable	</item>
+        <item>	outstanding;breathtaking/remarquable;qui coupe le	</item>
+        <item>	disgusting/dégoûtant	</item>
+        <item>	exhausting/épuisant	</item>
+        <item>	daring/osé;aventurier	</item>
+        <item>	unexpected/inattendu	</item>
+        <item>	awful/affreux;terrible	</item>
+        <item>	to keep in touch/rester en contact	</item>
+        <item>	a misunderstanding/un malentendu	</item>
+        <item>	a freshman/un bizut;un première année	</item>
+    </string-array>
+    <string-array name="Everyday_life_p26">
+        <item>	subscription/abonnement	</item>
+        <item>	a cart/un chariot;caddy	</item>
+        <item>	a diary/agenda	</item>
+        <item>	a special deal/une affaire	</item>
+        <item>	a tag;label/étiquette	</item>
+        <item>	a visa permit/visa de travail	</item>
+        <item>	a work permit/permis de travail	</item>
+        <item>	security check/contrôle sécurité	</item>
+        <item>	an X-ray machine/machine rayons X	</item>
+        <item>	unlimited mileage/kilométrage illimite	</item>
+        <item>	a rack;bin;compartment/porte bagages	</item>
+        <item>	safety regulations/regles de sécurité	</item>
+        <item>	Would you be kind enough to .../Auriez-vous l\'obligeance de … ?	</item>
+        <item>	l would appreciate it if you could/Auriez-vous l\'obligeance de … ?	</item>
+        <item>	insurance/assurance	</item>
+        <item>	trade fair,show,exhibition/foire exposition	</item>
+        <item>	runway/piste atterrissage	</item>
+        <item>	cash desk/caísse	</item>
+        <item>	receipt/reçu	</item>
+        <item>	cash or charge?/liquide ou carte bleue?	</item>
+        <item>	to wrap as a gift/faire un paquet-cadeau	</item>
+        <item>	a wake-up call/coup téléphone pour réveiller	</item>
+        <item>	a B&#38;B/chambre d\'hôte	</item>
+        <item>	a guest house/petit hôtel	</item>
+        <item>	a guest/invité	</item>
+        <item>	a warm welcome/accueil chaleureux	</item>
+        <item>	kind hospitality/hospitalité	</item>
+        <item>	as of October 12/à partir du 12 octobre	</item>
+        <item>	full tank of gas/un plein (d\'essence)	</item>
+        <item>	a pick-up point/lieu de prise en charge	</item>
+        <item>	sightseeing/tourisme;visite	</item>
+        <item>	a souvenir/souvenir (objet)	</item>
+        <item>	my best memory/mon meilleur souvenir	</item>
+        <item>	a fleet of cars;of trucks/flotte,groupe de véhicules	</item>
+        <item>	to pick up/prendre en voiture	</item>
+        <item>	to drop off/déposer	</item>
+        <item>	to hitch-hike/faire du stop	</item>
+        <item>	a storey;a floor/étage	</item>
+        <item>	posh;classy/chic	</item>
+        <item>	it arouses a feeling of/fait naître un sentiment	</item>
+        <item>	I feel bad about it/je me sens honteux	</item>
+        <item>	it looks delicious/ça a l\'air délicieux	</item>
+        <item>	there\'s an atmosphere/il y a une atmosphère de	</item>
+        <item>	it connotes;expresses/exprime;connote	</item>
+        <item>	sensible;reasonable/raisonnable	</item>
+        <item>	full of energy;dynamic/énergique	</item>
+        <item>	satisfied;happy/content	</item>
+        <item>	kind;friendly/sympa	</item>
+        <item>	grateful/reconnaissant	</item>
+        <item>	to resent,feel resentment/éprouver de la rancœur	</item>
+        <item>	reticent;reluctant;hesitant/réticent	</item>
+        <item>	to be upset;angry;annoyed/agace	</item>
+        <item>	hectic;frenetic/survolté	</item>
+        <item>	worried;concerned/inquiet	</item>
+        <item>	clever;imaginative;creative/imaginatif	</item>
+        <item>	reliable/fiable	</item>
+        <item>	confident;self-confident/sûr de soi	</item>
+        <item>	involved;committed;dedicated/dévoué;engagé	</item>
+        <item>	indifferent to/indifférent à	</item>
+        <item>	adaptable;flexible/adaptable	</item>
+        <item>	shy;timid;reserved/timide	</item>
+        <item>	relaxed;laid-back/décontracté	</item>
+        <item>	tense;stressed/tendu;stressé	</item>
+        <item>	afraid;scared;frightened/effrayé	</item>
+        <item>	outgoing;talkative/ouvert	</item>
+        <item>	envious;jealous/jaloux	</item>
+        <item>	exhausted;worn out/très fatigué	</item>
+        <item>	crazy;mad/fou	</item>
+        <item>	proud/fier	</item>
+        <item>	selfish/égoïste	</item>
+        <item>	unbearable/insupportable	</item>
+        <item>	discouraging/décourageant,	</item>
+        <item>	depressing/déprimant	</item>
+        <item>	It\'s cool;neat;super;awesome/c\'est super	</item>
+        <item>	that\'s smart of you/c\'est malin de ta part	</item>
+        <item>	to be hooked on sthg,sone/être dingue;accroc de	</item>
+        <item>	stuff;gimmick;gizmo/machin;truc	</item>
+        <item>	it sucks!/Ca craint ! C\'est nul !	</item>
+        <item>	crummy;lousy/moche;miteux	</item>
+        <item>	trash;crap;garbage;junk;rubbish/saloperie	</item>
+        <item>	a bug/un insecte	</item>
+        <item>	to bug someone/embêter quelqu\'un	</item>
+        <item>	a cop/un flic	</item>
+        <item>	to bust;to smash/bousiller	</item>
+        <item>	to have guts/avoir des tripes,courage	</item>
+        <item>	to check out/reluquer;zyeuter	</item>
+        <item>	a guy;a bloke/un mec	</item>
+        <item>	booze/alcool	</item>
+        <item>	hammered/éméché	</item>
+        <item>	smashed/bourré	</item>
+        <item>	a hangover/une gueule de bois	</item>
+        <item>	to get mugged/se faire attaquer	</item>
+        <item>	to get ripped off/se faire arnaquer	</item>
+        <item>	bullshit;crap/conneries	</item>
+        <item>	a pain in the neck/un casse pied	</item>
+        <item>	fuck off;bug off;get lost/fous le camp	</item>
+        <item>	to fool around;hang out/glander;traîner	</item>
+        <item>	to hang out with friends/sortir;s\'amuser avec	</item>
+        <item>	to goof around/faire des bêtises	</item>
+        <item>	damned;darn;bloody/foutu;sacré	</item>
+        <item>	a son of a bitch;a jerk/connard	</item>
+        <item>	to have a date/avoir un rencard	</item>
+        <item>	to bitch/gueuler	</item>
+        <item>	to be pissed off/être en rage	</item>
+        <item>	a lot of hassle;bother/des embêtements	</item>
+        <item>	a gal;a chick;a babe/une nana	</item>
+        <item>	a trick/un truc	</item>
+        <item>	fake/truqué	</item>
+        <item>	phony/du toc	</item>
+        <item>	to pass out/tomber dans les pommes	</item>
+        <item>	wheels;a clunker/une bagnole	</item>
+        <item>	to get,to be paid peanuts/gagner des clopinettes	</item>
+        <item>	to be nuts,dumb,dummy/être dingue,idiot	</item>
+        <item>	a dummy/un crétin;un nul	</item>
+        <item>	a hillbilly;a redneck;a hick/un plouc	</item>
+        <item>	the johns;the loo/les chiottes	</item>
+        <item>	the blues/le cafard	</item>
+        <item>	a flop/un bide	</item>
+        <item>	my old folks/mes parents	</item>
+        <item>	you folks/les amis	</item>
+        <item>	my buddy;my pal;my mate/mon pote	</item>
+        <item>	It\'s no big deal/ça n\'a pas d\'importance	</item>
+        <item>	to have a blast,fun,a great time/se marrer	</item>
+        <item>	I don\'t give a damn about it !/je m\'en fous	</item>
+        <item>	bread;dough;cash/du fric	</item>
+        <item>	a lot of bucks;quids/Beaucoup de dollars;de livres GB	</item>
+        <item>	weird/etrange;bizarre	</item>
+        <item>	I\'m all set!/Je suis prêt;ça va!	</item>
+        <item>	Give me a break! Cut it out!/Arrête! Laisse-moi tranquille	</item>
+        <item>	a kid /un gamin	</item>
+        <item>	Frog;froggie;Frenchie/Français	</item>
+        <item>	a nerd/un intello	</item>
+        <item>	a geek/un fou d\'info	</item>
+        <item>	No way !/Pas question ! C\'est pas vrai !	</item>
+    </string-array>
+    <string-array name="Companies_and_plants_p37">
+        <item>	site/site	</item>
+        <item>	facilities/installations	</item>
+        <item>	supply/fournir	</item>
+        <item>	supplier/fournisseur	</item>
+        <item>	demand/demande	</item>
+        <item>	on demand/à la demande	</item>
+        <item>	dispatch/expédition;envoi (action)	</item>
+        <item>	consignment;shipment/envoi (paquet)	</item>
+        <item>	consignee/destinataire	</item>
+        <item>	sender;shipper/expéditeur	</item>
+        <item>	package/emballage;paquet	</item>
+        <item>	headquarters/siège social	</item>
+        <item>	subsidiary/succursale	</item>
+        <item>	branch/filiale	</item>
+        <item>	assembly-line/chaîne de montage	</item>
+        <item>	conveyor-belt/tapis roulant	</item>
+        <item>	lay-out/disposition	</item>
+        <item>	automation/automatisation	</item>
+        <item>	sensor/capteur	</item>
+        <item>	building/bâtiment	</item>
+        <item>	department/service	</item>
+        <item>	organisation chart/organigramme	</item>
+        <item>	flowchart/schéma de procédé	</item>
+        <item>	CEO;chairman/président;PDG	</item>
+        <item>	executive;manager/cadre	</item>
+        <item>	representative/représentant	</item>
+        <item>	meeting/réunion	</item>
+        <item>	agenda/ordre du jour	</item>
+        <item>	diary/agenda	</item>
+        <item>	clerks/employés de bureau	</item>
+        <item>	works/ouvriers	</item>
+        <item>	to work in shifts/faire les 3&#8211;8	</item>
+        <item>	safety/sécurité	</item>
+        <item>	security/sureté	</item>
+        <item>	invoice/facture	</item>
+        <item>	bill/note	</item>
+        <item>	turnover/chiffre d\\'affaire;changement personnel	</item>
+        <item>	output/production (quantité)	</item>
+        <item>	patent/brevet	</item>
+        <item>	policy/politique	</item>
+        <item>	project/projet	</item>
+        <item>	intention/intention	</item>
+        <item>	pallet/pallette	</item>
+        <item>	to assemble;to set up/monter;construire	</item>
+        <item>	return on investment/retour sur investissement	</item>
+        <item>	a CV;a resume/un CV	</item>
+        <item>	educational background/éducation;formation	</item>
+        <item>	profesional experience/expérience professionnelle	</item>
+        <item>	other skills/autres compétences	</item>
+        <item>	foreign languages/langues étrangères	</item>
+        <item>	computer skills/compétences en info	</item>
+        <item>	personal interests/passe-temps	</item>
+        <item>	advanced level/niveau avancé	</item>
+        <item>	intermediate level/niveau intermédiaire	</item>
+        <item>	to take,pass an exam/passer,réussir un examen	</item>
+        <item>	to retrain staff/recycler personnel	</item>
+        <item>	to recycle material/recycler matière	</item>
+        <item>	fee/coût de service	</item>
+        <item>	fare/coût de transport	</item>
+        <item>	rate/coût d\\'hôtel	</item>
+        <item>	a backlog of work/un retard dans le travail	</item>
+        <item>	sale/vente	</item>
+        <item>	purchase/achat	</item>
+        <item>	salesman;shop assistant retailer;dealer/vendeur	</item>
+        <item>	distributor/distributeur	</item>
+        <item>	crops (agriculture)/culture	</item>
+        <item>	to grow crops of corn,fly,worm/faire pousser du blé,maïs,mouche,ver	</item>
+        <item>	pests;bus;insects/vermine;insectes	</item>
+        <item>	manufacture aircraft/construire avions	</item>
+        <item>	road construction/construction de routes	</item>
+        <item>	to design software/concevoir logiciel	</item>
+        <item>	to develop;development/développer;développement	</item>
+        <item>	a stake/un enjeu	</item>
+        <item>	an issue/un problème	</item>
+        <item>	absenteeism/absentéisme	</item>
+        <item>	storage in a warehouse/stockage en entrepôt	</item>
+        <item>	stock/stock	</item>
+        <item>	stock-taking/inventaire	</item>
+        <item>	just in time system/flux tendus	</item>
+        <item>	supply and demand/offre et demande	</item>
+        <item>	supply chain;logistics/logistique	</item>
+        <item>	fork lift truck/chariot élévateur	</item>
+        <item>	access road/voie d\\'accès	</item>
+        <item>	helmet/casque	</item>
+        <item>	badge/badge	</item>
+        <item>	regulations/réglementation	</item>
+        <item>	leisure time/temps de loisir	</item>
+        <item>	leisure activities/activités de loisir	</item>
+        <item>	income;salary/salaire	</item>
+        <item>	to pay back;reimburse/rembourser	</item>
+        <item>	to get money back/récupérer de l\\'argent	</item>
+        <item>	to pay off/rapporter argent	</item>
+        <item>	deficit/déficit	</item>
+        <item>	recession/récession	</item>
+        <item>	to go bankrupt/faire faillite	</item>
+        <item>	a take over/une reprise;OPA	</item>
+        <item>	to order;to place an order/faire une commande	</item>
+        <item>	an order form/bon de commande	</item>
+        <item>	a label/une étiquette	</item>
+        <item>	to repair,fix a breakdown/réparer une panne	</item>
+        <item>	maintenance team/équipe de maintenance	</item>
+        <item>	funding/financement	</item>
+        <item>	trade unions/syndicats	</item>
+        <item>	cafeteria/cafétaria	</item>
+        <item>	to hand in;to hand out;to submit/remettre	</item>
+        <item>	feasible/faisable	</item>
+        <item>	delay/retard	</item>
+        <item>	delivery period;deadline/délai de livraison	</item>
+        <item>	a loan/un prêt	</item>
+        <item>	pay back interest/rembourser des intérêts	</item>
+        <item>	subcontractor/sous-traitant	</item>
+        <item>	training period;internship;industrial placement/stage	</item>
+        <item>	to be in charge of/responsable de	</item>
+        <item>	to carry out tests/effectuer des tests	</item>
+        <item>	the position sought/emploi recherché	</item>
+        <item>	references/références	</item>
+        <item>	graduated from/diplômé de	</item>
+        <item>	to graduate with an MSc/terminer avec une maîtrise	</item>
+        <item>	to specialise in/être spécialisé en	</item>
+        <item>	a rank/un rang	</item>
+        <item>	to rank first/être classé 1er	</item>
+        <item>	a field of specialisation/domaine de spécialité	</item>
+        <item>	a project work/projet	</item>
+        <item>	to attend courses in/assister à des cours en	</item>
+        <item>	college of engineering/école d\\'ingénieur	</item>
+        <item>	a first cycle student/étudiant 1er cycle	</item>
+        <item>	an undergraduate/étudiant non diplômé	</item>
+        <item>	a student union/BDE	</item>
+        <item>	to be involved in activities/être impliqué	</item>
+        <item>	sailing race/course à la voile	</item>
+        <item>	sport events/rencontre sportive	</item>
+        <item>	gala night/nuit de gala	</item>
+        <item>	to have access to/avoir accès à	</item>
+        <item>	theoretical knowledge/connaissances théoriques	</item>
+        <item>	to apply;to implement/appliquer	</item>
+        <item>	to hire;to recruit;to employ/recruter;embaucher	</item>
+        <item>	to organise;to arrange/organiser	</item>
+        <item>	the use/utilisation	</item>
+        <item>	the utilities/fourniture,charges eau;électricité	</item>
+        <item>	outsourcing/externalisation;sous-traitance	</item>
+        <item>	relocation;offshoring/délocalisation	</item>
+        <item>	lay off;dismiss/congédier	</item>
+        <item>	make redundant/mettre au chômage	</item>
+    </string-array>
+    <string-array name="Phrasal_verbs_and_expressions_used_in_everyday_life_p48">
+        <item>	to show off/se vanter, faire son show	</item>
+        <item>	to figure out a solution/imaginer une solution	</item>
+        <item>	to find out a solution/trouver une solution	</item>
+        <item>	to turn out to be/s’avérer être	</item>
+        <item>	to have time off, a day off/avoir du temps libre	</item>
+        <item>	to pick up someone/prendre quelqu’un en auto	</item>
+        <item>	to drop off someone/déposer quelqu’un	</item>
+        <item>	to get on well with someone/bien s’entendre avec quelqu’un	</item>
+        <item>	to fit in well with a decoration/bien s’aller avec la décoration	</item>
+        <item>	to get mixed up/s’embrouiller	</item>
+        <item>	it’s up to you/ça dépend de toi	</item>
+        <item>	to look forward to a party/attendre la fête avec impatience	</item>
+        <item>	to look forward to doing something/attendre de faire quelque chose avec impatience	</item>
+        <item>	to trigger off/déclencher	</item>
+        <item>	to give up/abandonner	</item>
+        <item>	to get by with what you have/se débrouiller avec	</item>
+        <item>	to sort out/trier, résoudre un problème	</item>
+        <item>	to speed up/accélérer	</item>
+        <item>	to slow down/ralentir	</item>
+        <item>	to wrap up in paper/envelopper avec du papier	</item>
+        <item>	to break down/tomber en panne	</item>
+        <item>	to break down into/diviser	</item>
+        <item>	to do without money/faire sans argent	</item>
+        <item>	to set up/monter	</item>
+        <item>	to carry out/effectuer	</item>
+        <item>	to carry on/continuer	</item>
+        <item>	to settle down/s’installer	</item>
+        <item>	to get over a problem, to overcome a problem/surmonter un problème	</item>
+        <item>	to point out/montrer, faire remarquer	</item>
+        <item>	to put up with/faire face, supporter	</item>
+        <item>	to lay off workers/congédier travailleurs	</item>
+        <item>	to lay out on a page/disposer sur une page	</item>
+        <item>	to calm down/calmer	</item>
+        <item>	a laid back attitude/une attitude décontractée	</item>
+        <item>	to undergo a change/subir un changement	</item>
+        <item>	to undertake/entreprendre	</item>
+        <item>	to tell someone off/rabrouer, disputer quelqu’un	</item>
+        <item>	to take over/prendre la relève, OPA	</item>
+        <item>	to stand by/attendre	</item>
+        <item>	to feel like/avoir envie de	</item>
+        <item>	to put forward an idea/émettre une idée	</item>
+        <item>	to queue up, to stand in line/faire la queue	</item>
+        <item>	to fill in papers, to fill out papers/remplir papiers	</item>
+        <item>	to watch out/faire attention	</item>
+        <item>	to cut off electricity/couper électricité	</item>
+        <item>	to be worn out/être crevé, fatigué	</item>
+        <item>	hold on/attendez	</item>
+        <item>	to be held up/être retenu, arrêté	</item>
+        <item>	I’ll put you through/je vous le passe	</item>
+        <item>	to show round/faire une visite	</item>
+        <item>	to look around/jeter un coup d’œil	</item>
+        <item>	to walk around/faire un petit tour	</item>
+        <item>	to make up for/compenser	</item>
+        <item>	to keep up with/rester au même niveau	</item>
+        <item>	to break into a house/cambrioler	</item>
+        <item>	to get rid of/se débarasser	</item>
+        <item>	to get ahead of someone/dépasser quelqu’un	</item>
+        <item>	to be ahead of/être devant	</item>
+        <item>	to lag behind/rester à la traîne	</item>
+        <item>	to back up/soutenir	</item>
+        <item>	to apply for/faire acte de candidature	</item>
+        <item>	to ask around you/se renseigner	</item>
+        <item>	to clean up a mess/nettoyer le dégât	</item>
+        <item>	tu cut down expenses/réduire les dépenses	</item>
+        <item>	to get down to work/se mettre au travail	</item>
+        <item>	to hand in,out a report/remettre un rapport	</item>
+        <item>	to light up/allume un feu, s’allumer	</item>
+        <item>	to switch on/allumer	</item>
+        <item>	to switch off/éteindre	</item>
+        <item>	to get on a bus/monter dans un bus	</item>
+        <item>	to get off a bus/descendre d’un bus	</item>
+        <item>	to overtake/dépasser	</item>
+        <item>	to roll up/remonter	</item>
+        <item>	to run out of gas/manquer d’essence	</item>
+        <item>	to run into/rencontrer par hasard	</item>
+        <item>	to come across/rencontrer par hasard	</item>
+        <item>	to set off/partir, se lancer	</item>
+        <item>	to see someone off (station)/dire au revoir à quelqu’un (gare)	</item>
+        <item>	to speak up/parler plus fort	</item>
+        <item>	to talk things over/discuter	</item>
+        <item>	to think it over/réfléchir	</item>
+        <item>	it pays off/ça rapporte	</item>
+        <item>	to prevent from (+Ving)/empêcher de	</item>
+        <item>	to warn against/avertir	</item>
+        <item>	to be better off doing/ferait mieux de faire	</item>
+        <item>	to stand out/se faire remarquer, sortir du lot	</item>
+        <item>	to fall through/échouer	</item>
+        <item>	to put aside,away/mettre de côté	</item>
+        <item>	to check in/enregistrer	</item>
+        <item>	to check out/quitter l’hôtel	</item>
+        <item>	to check up/vérifier	</item>
+        <item>	to check out a website/jeter un coup d’œil	</item>
+        <item>	to take off/enlever	</item>
+        <item>	it’s worth it/ça vaut le coup	</item>
+        <item>	to take advantage of/profiter de	</item>
+        <item>	on behalf of/au nom de	</item>
+        <item>	to pass out/tomber dans les pommes	</item>
+        <item>	to kill two birds with one stone/faire d’une pierre deux coups	</item>
+        <item>	when in Rome do as the Romands do/il faut adopter les coutumes du coin	</item>
+        <item>	when there’s a will, there’s a way/qui veut peut	</item>
+        <item>	better late than never/mieux vaut tard que jamais	</item>
+        <item>	first come, first served/premier arrivé, premier servi	</item>
+        <item>	you can’t have your cake and eat it/on ne peut pas avoir le beurre et l’argent du beurre	</item>
+        <item>	to be a tough cookie/être un dure à cuire	</item>
+        <item>	I haven’t got a clue/je n’en ai pas la moindre idée	</item>
+        <item>	it rings a bell/ça me rappelle quelque chose	</item>
+        <item>	it drives me crazy/ça me rend dingue	</item>
+        <item>	what a rip off !/quelle arnaque !	</item>
+        <item>	it’ the last straw/c’est le bouquet !	</item>
+        <item>	to take it for granted/tenir pour acquis, considérer comme normal	</item>
+        <item>	deal/affaire	</item>
+        <item>	to make a deal/conclure une affaire	</item>
+        <item>	a good deal/une bonne affaire	</item>
+        <item>	big deal/en voilà une affaire	</item>
+        <item>	it’s no big deal/c’est pas grand-chose, ça n’a pas d’importance	</item>
+        <item>	a dealer/un revendeur, un concessionnaire	</item>
+    </string-array>
+    <string-array name="Everyday_life_and_the_news_p61">
+        <item>	headlines/gros titres	</item>
+        <item>	report/rapport	</item>
+        <item>	reporter/reporter	</item>
+        <item>	journalist/journaliste	</item>
+        <item>	spokesman/porte-parole	</item>
+        <item>	a piece of news/une nouvelle (information)	</item>
+        <item>	a news item/une nouvelle (actualité)	</item>
+        <item>	an issue/une question d\'actualité	</item>
+        <item>	the outcome (of a conflict)/l\'issue d\'un conflit	</item>
+        <item>	a forecast/prévision	</item>
+        <item>	a survey/un sondage	</item>
+        <item>	a witness/un témoin	</item>
+        <item>	to quote/citer	</item>
+        <item>	a special envoy/envoyé spécial	</item>
+        <item>	a rate/un taux	</item>
+        <item>	a crisis/une crise	</item>
+        <item>	sustainable development/développement durable	</item>
+        <item>	to claim/revendiquer;prétendre	</item>
+        <item>	to take steps;to take measures/prendre mesures	</item>
+        <item>	a figure/un chiffre	</item>
+        <item>	to demand/exiger	</item>
+        <item>	to investigate/enquêter	</item>
+        <item>	foreign/étranger	</item>
+        <item>	western/occidental	</item>
+        <item>	Westerners/les Occidentaux	</item>
+        <item>	health/santé	</item>
+        <item>	intensive care unit/unité soin intensif	</item>
+        <item>	a showdown/confrontation;bras de fer	</item>
+        <item>	a struggle;a conflict/conflit	</item>
+        <item>	a fight/combat	</item>
+        <item>	a terrorist/terroriste	</item>
+        <item>	a weapon/arme	</item>
+        <item>	arms/armes	</item>
+        <item>	bombs/bombes	</item>
+        <item>	victims;casualties/victimes	</item>
+        <item>	an injured person/un blessé	</item>
+        <item>	atrocities/atrocités	</item>
+        <item>	massacre/massacre	</item>
+        <item>	bloodshed/bain de sang	</item>
+        <item>	persecutions/persécutions	</item>
+        <item>	censorship/censure	</item>
+        <item>	disaster/désastre	</item>
+        <item>	to trigger off/déclencher	</item>
+        <item>	earthquake/tremblement de terre	</item>
+        <item>	flood/inondation	</item>
+        <item>	drought/sécheresse	</item>
+        <item>	disease/maladie	</item>
+        <item>	defeat/défaite	</item>
+        <item>	an epidemic/épidémie	</item>
+        <item>	the flu/la grippe	</item>
+        <item>	a rebel/rebelle	</item>
+        <item>	a threat/une menace	</item>
+        <item>	to threaten/menacer	</item>
+        <item>	a border/une frontière	</item>
+        <item>	a riot/une émeute	</item>
+        <item>	a demonstration/une manifestation	</item>
+        <item>	subsidies/des subventions	</item>
+        <item>	shares;stock;equities/actions en bourse	</item>
+        <item>	social security/sécurité sociale (US)	</item>
+        <item>	welfare/sécurité sociale (GB)	</item>
+        <item>	to warn/prévenir	</item>
+        <item>	a lack/manque	</item>
+        <item>	law/loi	</item>
+        <item>	to ban;tu suppress/bannir	</item>
+        <item>	a grant/allocation;bourse	</item>
+        <item>	a committee/comité	</item>
+        <item>	a regional council/conseil régional	</item>
+        <item>	a back up;auspport/un soutien	</item>
+        <item>	a lay off/congédier	</item>
+        <item>	redundancies/chômage	</item>
+        <item>	a strike/grêve	</item>
+        <item>	a take over/OPA	</item>
+        <item>	a merger/fusion de 2 entreprises	</item>
+        <item>	a joint venture/entreprise en commun	</item>
+        <item>	a thief/voleur	</item>
+        <item>	a theft;a burglary;a robbery/un vol	</item>
+        <item>	a rape/un viol	</item>
+        <item>	a spy/espion	</item>
+        <item>	espionnage/espionnage	</item>
+        <item>	middle class/classe moyenne	</item>
+        <item>	to sue someone/attaquer en justice	</item>
+        <item>	a court of justice/cour de justice	</item>
+        <item>	a law suit/procès	</item>
+        <item>	to sue;to bring charges against/attaquer quelqu\'un en justice	</item>
+        <item>	to keep in jail/garder en prison	</item>
+        <item>	to release from prison/relâcher	</item>
+        <item>	a trial/jugement	</item>
+        <item>	smugglers/contrebandiers	</item>
+        <item>	drug dealer/vendeur de drogue	</item>
+        <item>	weather forecast/prévisions météo	</item>
+        <item>	fine weather/beau temps	</item>
+        <item>	sunny/ensoleillé	</item>
+        <item>	dry/sec	</item>
+        <item>	bright intervals/éclaircies	</item>
+        <item>	rain/pluie	</item>
+        <item>	shower/ondée	</item>
+        <item>	drizzle/crachin	</item>
+        <item>	overcast/couvert	</item>
+        <item>	cloudy/nuageux	</item>
+        <item>	fog patches/nappes de brouillard	</item>
+        <item>	sleet/neige fondue	</item>
+        <item>	snow/neige	</item>
+        <item>	wind/vent	</item>
+        <item>	storm/tempête	</item>
+        <item>	lightning/éclair	</item>
+        <item>	thunder/tonnerre	</item>
+        <item>	hot/très chaud	</item>
+        <item>	warm/chaud	</item>
+        <item>	tropical/tropical	</item>
+        <item>	humid/humide	</item>
+        <item>	cool/frais	</item>
+        <item>	tornado/tornade	</item>
+        <item>	hurricane/ouragan	</item>
+        <item>	depression/dépression	</item>
+        <item>	high pressure/haute pression	</item>
+        <item>	crop/récolte	</item>
+        <item>	to grow crops/cultiver	</item>
+        <item>	to raise sheep/élever des moutons	</item>
+        <item>	a scheme;projet/un projet	</item>
+        <item>	profits/bénéfice	</item>
+        <item>	to pose a problem/poser un problème	</item>
+        <item>	to address a problem/s\'attaquer à un problème	</item>
+        <item>	to sort out;solve a problem/résoudre un problème	</item>
+        <item>	to raise an issue/soulever une question;un problème	</item>
+        <item>	is at stake/est un enjeu;est en jeu	</item>
+        <item>	is a challenge/est un défi	</item>
+        <item>	consumption/consommation	</item>
+        <item>	savings/économies	</item>
+        <item>	erratic;irrational;unexpected/imprévisible;irrationnel	</item>
+        <item>	Scotland/Écosse	</item>
+        <item>	Scottish/écossais	</item>
+        <item>	the Scots/les écossais	</item>
+        <item>	Spanish/espagnol	</item>
+        <item>	the Spaniards/les espagnols	</item>
+        <item>	Wales/Pays de Galle	</item>
+        <item>	Welsh/Gallois	</item>
+        <item>	the Welsh/les Gallois	</item>
+        <item>	Italy/Italie	</item>
+        <item>	Italian/italien	</item>
+        <item>	the Italians/les italiens	</item>
+        <item>	the Netherlands/les Hollandais	</item>
+        <item>	Dutch/allemand	</item>
+        <item>	Swedish/suédois	</item>
+        <item>	Portuguese/portugais	</item>
+        <item>	the Portuguese/les portugais	</item>
+        <item>	China/Chine	</item>
+        <item>	the Chinese/les chinois	</item>
+        <item>	Danish/danois	</item>
+        <item>	the Danes/les danois	</item>
+        <item>	Breton/breton	</item>
+        <item>	the Bretons in Brittany/les bretons en Bretagne	</item>
+        <item>	the British in Britain/les britanniques en GB	</item>
+        <item>	Swiss/suisse	</item>
+        <item>	the Swiss/les suisses	</item>
+        <item>	Morocco/Maroc	</item>
+        <item>	Moroccans/les marocains	</item>
+        <item>	Norman/normand	</item>
+        <item>	Normans/les normands	</item>
+    </string-array>
+    <string-array name="Expressions_for_reactions_in_meetings_p74">
+        <item>	project;scheme/projet	</item>
+        <item>	investment/investissement	</item>
+        <item>	to pay off/rapporter	</item>
+        <item>	a return on investment/retour sur investissement	</item>
+        <item>	get money back/récupérer argent	</item>
+        <item>	loan/prêt	</item>
+        <item>	interest rates/taux d\'intérêt	</item>
+        <item>	advertising;ads/publicité	</item>
+        <item>	market research/étude de marché	</item>
+        <item>	feasibility study/étude de faisabilité	</item>
+        <item>	is likely to/il est probable que …	</item>
+        <item>	be a success/être un succès	</item>
+        <item>	a flop;a fiasco/un fiasco	</item>
+        <item>	a white elephant/une usine à gaz	</item>
+        <item>	to go over the advantages/passer en revue les avantages	</item>
+        <item>	financial aspects/aspects financiers	</item>
+        <item>	to anticipate;to forecast/prévoir	</item>
+        <item>	an estimate/estimation	</item>
+        <item>	it\'s worth it/ça vaut le coup	</item>
+        <item>	to put into perspective/mettre en perspective	</item>
+        <item>	in terms of costs/en termes de coût	</item>
+        <item>	already-existing/déjà existant;actuel	</item>
+        <item>	a quotation;an estimate/devis	</item>
+        <item>	to assess/estimer	</item>
+        <item>	to evaluate/évaluer	</item>
+        <item>	to set up/monter	</item>
+        <item>	to install/installer	</item>
+        <item>	in accordance with/en accord avec	</item>
+        <item>	a big gap;difference/un grand écart	</item>
+        <item>	construction work/des travaux	</item>
+        <item>	work methods/méthodes de travail	</item>
+        <item>	mentality/mentalité	</item>
+        <item>	way of life/mode de vie	</item>
+        <item>	way of thinking/façon de penser	</item>
+        <item>	salary;wages/salaire	</item>
+        <item>	income;revenue/revenus	</item>
+        <item>	to respect/respecter	</item>
+        <item>	raw material/matière première	</item>
+        <item>	the nature of the soil/nature du sol	</item>
+        <item>	climate/climat	</item>
+        <item>	wealth/richesse	</item>
+        <item>	poverty/pauvreté	</item>
+        <item>	arts and crafts/artisanat	</item>
+        <item>	a means of transport/moyen de transport	</item>
+        <item>	taxes/impôts	</item>
+        <item>	VAT;sales tax/TVA	</item>
+        <item>	compensation/indemnités	</item>
+        <item>	subsidies/subventions	</item>
+        <item>	grants/bourses	</item>
+        <item>	expenses/dépenses	</item>
+        <item>	to cause;to generate;to entail;to bring about;to result in/causer;entraîner	</item>
+        <item>	the bottom line/le coût final;au final	</item>
+        <item>	to be affected by/être touché par	</item>
+        <item>	economic/économique	</item>
+        <item>	savings/économies	</item>
+        <item>	that\'s debatable/sujet à discussion;pas sûr	</item>
+        <item>	that\'s negotiable/c\'est négociable	</item>
+        <item>	I\'m stuck/je suis coincé	</item>
+        <item>	lawyer/avocat	</item>
+        <item>	executive/cadre	</item>
+        <item>	manager/directeur	</item>
+        <item>	outsourcing/délocalisation	</item>
+        <item>	workers/ouvrier	</item>
+        <item>	manual work/travail manuel	</item>
+        <item>	skills;abilities;competence/compétences	</item>
+        <item>	to train/former	</item>
+        <item>	to retrain staff/recycler	</item>
+        <item>	training centers/centre de formation	</item>
+        <item>	qualifications/qualifications	</item>
+        <item>	requirements/exigences	</item>
+        <item>	specifications/cahier des charges	</item>
+        <item>	contract/contrat	</item>
+        <item>	agreement/accord	</item>
+        <item>	terms of a contract/conditions d\'un contrat	</item>
+        <item>	conditions/conditions	</item>
+        <item>	luxury goods/produits de luxe	</item>
+        <item>	supply/fourniture	</item>
+        <item>	supplier/fournisseur	</item>
+        <item>	investigation/enquête	</item>
+        <item>	survey/sondage	</item>
+        <item>	underdeveloped/sous-développé	</item>
+        <item>	developing/en voie de développement	</item>
+        <item>	western/occidental	</item>
+        <item>	a westerner/un occidental	</item>
+        <item>	an asset/un atout	</item>
+        <item>	an opportunity/une chance	</item>
+        <item>	a step/un pas	</item>
+        <item>	a progress/un progrès	</item>
+        <item>	a drawback/un inconvénient	</item>
+        <item>	to underestimate/sous-estimer	</item>
+        <item>	to minimise/minimiser	</item>
+        <item>	to exaggerate/exagérer	</item>
+        <item>	an obstacle/un obstacle	</item>
+        <item>	to adapt/s\'adapter	</item>
+        <item>	to attract;to appeal to/attirer	</item>
+        <item>	natural resources/ressources naturelles	</item>
+        <item>	planning;schedule/planning	</item>
+        <item>	is bound to/est certain de (forte proba)	</item>
+        <item>	is scheduled to/est prévu pour	</item>
+        <item>	to be confident that/est sûr que	</item>
+        <item>	the prospects/les perspectives d\'avenir	</item>
+        <item>	parameters/paramètres	</item>
+        <item>	to take into account/prendre en compte	</item>
+        <item>	a big potential/fort potentiel	</item>
+        <item>	to be flexible/être flexible	</item>
+        <item>	to set priorities/fixer des priorités	</item>
+        <item>	to recycle material/recycler matière	</item>
+        <item>	is at stake/est en jeu	</item>
+        <item>	to change the trend/changer tendance	</item>
+        <item>	to encourage;to promote;to foster;to develop/promouvoir	</item>
+        <item>	to address the question of/aborder la question de	</item>
+        <item>	to start from scratch/partir de zéro	</item>
+        <item>	whose aim is to/dont le but est de	</item>
+        <item>	consumption/consommation	</item>
+        <item>	consumer/consommateur	</item>
+        <item>	expected/prévu	</item>
+        <item>	predictable/prévisible	</item>
+        <item>	unexpected/imprévu	</item>
+        <item>	erratic/inattendu	</item>
+        <item>	I\'m trapped/je suis piégé	</item>
+        <item>	I\'m stuck/je suis coinçé	</item>
+        <item>	to make people aware of/sensibiliser	</item>
+        <item>	civil servant/fonctionnaire	</item>
+        <item>	personally;i think;i feel;i believe that / exprimer opinion	</item>
+        <item>	in my opinion;to my mind/exprimer opinion	</item>
+        <item>	you\'re right there;that\'s true;yes you can say that/exprimer accord	</item>
+        <item>	i agree with you there;so did I;neither did I/exprimer accord	</item>
+        <item>	no;I wouldn\'t say that;well I\'m not sure about that ! /exprimer désaccord	</item>
+        <item>	I don\'t know really;yes but don\'t you think it\'s a bit exaggerated/exprimer désaccord	</item>
+        <item>	that\'s all very weel but do you realise the impact ?/ exprimer désaccord	</item>
+        <item>	you seem to have forgotten the impact/exprimer désaccord	</item>
+        <item>	come on ! you must be joking ! that\'s impossible/exprimer désaccord	</item>
+    </string-array>
+    <string-array name="Technology_and_basic_engineering_p12">
+        <item>	engineering/génie	</item>
+        <item>	process/processus;déroulement	</item>
+        <item>	procedure/procédure;méthode	</item>
+        <item>	step;stage/étape	</item>
+        <item>	to set up/monter	</item>
+        <item>	a set up/un montage	</item>
+        <item>	carry out/effectuer	</item>
+        <item>	wood/bois	</item>
+        <item>	glass/verre	</item>
+        <item>	steel/acier	</item>
+        <item>	iron/fer	</item>
+        <item>	fissure;crack/fissure	</item>
+        <item>	stainless steel/acier inox	</item>
+        <item>	aluminium/aluminium	</item>
+        <item>	tape;band;stripe/bande	</item>
+        <item>	spray can/bombe;vaporisateur	</item>
+        <item>	wire/fil métallique	</item>
+        <item>	string/ficelle	</item>
+        <item>	rope/corde	</item>
+        <item>	plastic/plastique	</item>
+        <item>	polymer/polymère	</item>
+        <item>	cement/ciment	</item>
+        <item>	concrete/béton	</item>
+        <item>	glue/colle	</item>
+        <item>	brick/brique	</item>
+        <item>	stone/pierre	</item>
+        <item>	to recharge a battery/recharger une pile	</item>
+        <item>	weight/poids	</item>
+        <item>	to weigh/peser	</item>
+        <item>	lead/plomb	</item>
+        <item>	paint/peinture	</item>
+        <item>	varnish/vernis	</item>
+        <item>	a bench/établi	</item>
+        <item>	benchmark/repère;comparaison	</item>
+        <item>	a layer;a coating/couche	</item>
+        <item>	pipe/tuyau	</item>
+        <item>	joint/raccord	</item>
+        <item>	seal/joint	</item>
+        <item>	to split/diviser	</item>
+        <item>	to spill/renverser	</item>
+        <item>	utilities/eau;gaz;électricité	</item>
+        <item>	to repair;mend;fix/réparer	</item>
+        <item>	maintenance/entretien	</item>
+        <item>	safety/sécurité	</item>
+        <item>	regulations/réglementation	</item>
+        <item>	scheduling/planification	</item>
+        <item>	material/matière;matériau	</item>
+        <item>	equipment/matériel;équipement	</item>
+        <item>	a coat/blouse	</item>
+        <item>	overalls/bleu;combinaison	</item>
+        <item>	a helmet;a hard hat/casque	</item>
+        <item>	goggles;protection/casque	</item>
+        <item>	to remove/enlever	</item>
+        <item>	deadline/date limite	</item>
+        <item>	to weld/souder	</item>
+        <item>	welding/soudure	</item>
+        <item>	to drive a nail/enfoncer un clou	</item>
+        <item>	pin/épingle	</item>
+        <item>	screw/vis	</item>
+        <item>	nail/clou	</item>
+        <item>	nuts/boulons	</item>
+        <item>	bolt/écrou	</item>
+        <item>	hinge/charnière	</item>
+        <item>	handle/poignée	</item>
+        <item>	lever/levier	</item>
+        <item>	tool/outil	</item>
+        <item>	workshop/atelier	</item>
+        <item>	sheet/plaque;feuille;film	</item>
+        <item>	brush/pinceau	</item>
+        <item>	bar/barre	</item>
+        <item>	hammer/marteau	</item>
+        <item>	adjustable spanner/clef à molette	</item>
+        <item>	facilities/installations	</item>
+        <item>	efficient;effective/performant	</item>
+        <item>	drill/perceuse	</item>
+        <item>	bridge/pont	</item>
+        <item>	conveyor (belt)/tapis roulant	</item>
+        <item>	to set/régler	</item>
+        <item>	to adjust/régler;ajuster	</item>
+        <item>	to put together/monter	</item>
+        <item>	to put into pieces/démonter	</item>
+        <item>	to assemble/monter	</item>
+        <item>	to disassemble/démonter	</item>
+        <item>	grease/graisse	</item>
+        <item>	lubricant/lubrifiant	</item>
+        <item>	to bend/courber	</item>
+        <item>	to tighten/serrer	</item>
+        <item>	to lengthen/allonger	</item>
+        <item>	to widen/élarger	</item>
+        <item>	to deepen/approfondir	</item>
+        <item>	to release/relâcher	</item>
+        <item>	to press;to push/appuyer	</item>
+        <item>	to unscrew/desserrer;dévisser	</item>
+        <item>	to link;to connect/lier	</item>
+        <item>	to saw/scier	</item>
+        <item>	to stop;to jam;to block/bloquer	</item>
+        <item>	to fit/ajuster	</item>
+        <item>	to fix/installer;fixer;réparer	</item>
+        <item>	to lift/soulever	</item>
+        <item>	a beam/poutre;rayon	</item>
+        <item>	insulation/isolation	</item>
+        <item>	to lay something down/poser quelque chose	</item>
+        <item>	to lie down/se reposer;s\'allonger	</item>
+        <item>	a wheel/roue	</item>
+        <item>	guard/garde	</item>
+        <item>	to operate;run/faire fonctionner	</item>
+        <item>	operations/fonctionnement	</item>
+        <item>	specifications;data-sheet/cahier des charges	</item>
+        <item>	an amount/quantité	</item>
+        <item>	a feature/caractéristique	</item>
+        <item>	to enable us to/nous permettre	</item>
+        <item>	to make it possible to/permettre de	</item>
+        <item>	bottom/fond	</item>
+        <item>	container/conteneur;récipient	</item>
+        <item>	a cap;stopper/bouchon	</item>
+        <item>	robot/robot	</item>
+        <item>	automated/automatisé	</item>
+        <item>	automation/automatisation	</item>
+        <item>	a load/chargement	</item>
+        <item>	to unload/décharger	</item>
+        <item>	to recharge a battery/recharger une pile	</item>
+        <item>	blade/pale;lame	</item>
+        <item>	gear/roue dentée;engrenage	</item>
+        <item>	shaft/arbre	</item>
+        <item>	pallets/pallettes	</item>
+        <item>	fork lift truck/chariot élévateur	</item>
+        <item>	warehouse/entrepôt	</item>
+        <item>	pattern/dessin	</item>
+        <item>	grid/réseau;maillage	</item>
+        <item>	guarantee;waranty/garantie	</item>
+        <item>	law/loi	</item>
+        <item>	rule/règle	</item>
+        <item>	network/réseau	</item>
+        <item>	surface area/surface;superficie	</item>
+        <item>	nozzle/buse;tuyère embout	</item>
+        <item>	root/racine	</item>
+        <item>	to determine/déterminer	</item>
+        <item>	to examine/examiner	</item>
+        <item>	to get better/s\'améliorer	</item>
+        <item>	to get torn/se déchirer	</item>
+        <item>	to assume/supposer	</item>
+        <item>	assumption/supposition	</item>
+        <item>	a board/planche	</item>
+        <item>	to design/concevoir	</item>
+        <item>	design/conception	</item>
+        <item>	to investigate/étudier;enquêter	</item>
+        <item>	to prove/prouver	</item>
+        <item>	justify/justifier	</item>
+    </string-array>
+    <string-array name="Basic_managment_p22">
+        <item>	to activate;to trigger/déclencher	</item>
+        <item>	to function;to operate;to run/fonctionner	</item>
+        <item>	a stock/stock	</item>
+        <item>	zero stock/zéro stock	</item>
+        <item>	just in time system/juste à temps;à flux tendus	</item>
+        <item>	return on investment/retour sur investissement	</item>
+        <item>	profit/bénéfice	</item>
+        <item>	interest rate/taux d\'intérêt	</item>
+        <item>	to pay off/rapporter de l\'argent	</item>
+        <item>	pay back;reimburse;refund/rembourser	</item>
+        <item>	I reckon/je suppose;j\'imagine	</item>
+        <item>	exaggeration/exagération	</item>
+        <item>	excessive optimism/optimisme excessif	</item>
+        <item>	expansion/expansion	</item>
+        <item>	to take over/faire reprise;OPA	</item>
+        <item>	a recession/recessionn	</item>
+        <item>	in the red/dans le rouge	</item>
+        <item>	to go bankrupt;to go in the red/tomber en faillite	</item>
+        <item>	a fiasco;a flop/un fiasco	</item>
+        <item>	an invoice/une facture	</item>
+        <item>	orders/commandes	</item>
+        <item>	to meet the deadline/respecter les dates	</item>
+        <item>	delivery dates/dates de livraison	</item>
+        <item>	delivery time/délais de livraison	</item>
+        <item>	supply/approvisionnement	</item>
+        <item>	demand/demande	</item>
+        <item>	make it possible to/permettre	</item>
+        <item>	infrastructure/infrastructure	</item>
+        <item>	facilities/installations	</item>
+        <item>	equipment/matériel	</item>
+        <item>	tools/outils	</item>
+        <item>	logistics;supply chain/logistique	</item>
+        <item>	scheduling/planning	</item>
+        <item>	forecast/prévision	</item>
+        <item>	to anticipate/prévoir	</item>
+        <item>	to satisfy the requirements/satisfaire les exigences	</item>
+        <item>	hypothesis/hypothèse	</item>
+        <item>	a joint venture/un projet en commun	</item>
+        <item>	figures/chiffres;schémas	</item>
+        <item>	tangible results/résultats tangibles	</item>
+        <item>	to fail to/échouer;ne pas réussir	</item>
+        <item>	to file a patent/déposer un brevet	</item>
+        <item>	to protect/protéger	</item>
+        <item>	a license/licence	</item>
+        <item>	a loan/un prêt	</item>
+        <item>	a margin/marge	</item>
+        <item>	to motivate/motiver	</item>
+        <item>	flexitime/horaires flexibles	</item>
+        <item>	negotiable/négociable	</item>
+        <item>	a compromise/compromis	</item>
+        <item>	a gesture/geste	</item>
+        <item>	an effort/effort	</item>
+        <item>	a favor/une faveur	</item>
+        <item>	up to date ≠ obsolete/moderne ≠ dépassé	</item>
+        <item>	to promote/promouvoir	</item>
+        <item>	to encourage/encourager	</item>
+        <item>	to support;to back up/soutenir	</item>
+        <item>	financial aid/aide financière	</item>
+        <item>	funds;fundings/fonds	</item>
+        <item>	cash/argent liquide	</item>
+        <item>	to get involved in/s\'impliquer dans	</item>
+        <item>	attractive/attirant;intéressant	</item>
+        <item>	extensive/vaste	</item>
+        <item>	the bottom line/le coût final	</item>
+        <item>	compensation/dédommagement	</item>
+        <item>	a lawyer/avocat	</item>
+        <item>	to undergo/subir	</item>
+        <item>	a quotation;an estimate/un devis	</item>
+        <item>	flexible/flexible	</item>
+        <item>	adaptable/adaptable	</item>
+        <item>	resourceful/débrouillard	</item>
+        <item>	an asset/un atout	</item>
+        <item>	a strong ≠ weak point/un point fort ≠ faible	</item>
+        <item>	a threat/une menace	</item>
+        <item>	a setback/un retard;des problèmes	</item>
+        <item>	the morale/le moral	</item>
+        <item>	trade unions/syndicats	</item>
+        <item>	representatives/représentants	</item>
+        <item>	customer service/service consommateur	</item>
+        <item>	feedback/retour d\'information	</item>
+        <item>	creative/créatif	</item>
+        <item>	to design/concevoir	</item>
+        <item>	leadership/la faculté de commander	</item>
+        <item>	steering committee/un groupe de pilotage	</item>
+        <item>	an incentive/une incitation	</item>
+        <item>	a deterrent/une dissuasion	</item>
+        <item>	reticent;reluctant/réticent	</item>
+        <item>	an offer/une offre	</item>
+        <item>	an option/une option	</item>
+        <item>	an alternative/une alternative	</item>
+        <item>	outstanding results/résultats remarquables	</item>
+        <item>	to manage/gérer;contrôler	</item>
+        <item>	a criterion/un critère	</item>
+        <item>	2 criteria/2 critères	</item>
+        <item>	phenomenon/phénomène	</item>
+        <item>	phenomena/phénomènes	</item>
+        <item>	priorities/priorités	</item>
+        <item>	objectives;targets;goals/objectifs	</item>
+        <item>	training/formation	</item>
+        <item>	proposal/proposition	</item>
+        <item>	approval/approbation	</item>
+        <item>	criticism/critique	</item>
+        <item>	access/accès	</item>
+        <item>	agenda/ordre du jour	</item>
+        <item>	to allocate funds/allouer des fonds	</item>
+        <item>	to appreciate/apprécier;prendre valeur	</item>
+        <item>	to balance/équilibrer	</item>
+        <item>	a balance/un équilibre	</item>
+        <item>	a bargain/une affaire	</item>
+        <item>	a campaign/une campagne	</item>
+        <item>	on a long term basis/sur le long terme	</item>
+        <item>	short term/court terme	</item>
+        <item>	in the long run/à la longue	</item>
+        <item>	recovery/la reprise	</item>
+        <item>	cost effective/rentable;performant	</item>
+        <item>	efficient/efficace;performant	</item>
+        <item>	reliable/fiable	</item>
+        <item>	crisis/crise	</item>
+        <item>	a deadline/date limite	</item>
+        <item>	to depreciate/perdre de la valeur	</item>
+        <item>	to amortise/amortir	</item>
+        <item>	to earn money/gagner de l\'argent	</item>
+        <item>	to save money/économiser de l\'argent	</item>
+        <item>	a factor/un facteur	</item>
+        <item>	to fluctuate/fluctuer	</item>
+        <item>	guidelines;strategy/lignes directrices	</item>
+        <item>	e mail/courrier électronique	</item>
+        <item>	perks/avantages en nature	</item>
+        <item>	wealth/richesse	</item>
+        <item>	it pays off/ça rapporte	</item>
+        <item>	a good balance/bon équilibre	</item>
+        <item>	prospects/perspectives d\'avenir	</item>
+        <item>	trend;tendency/tendance	</item>
+        <item>	to purchase/acheter	</item>
+        <item>	to refund/rembourser	</item>
+        <item>	to take risks/prendre des risques	</item>
+        <item>	a market niche;a market share/une part de marché	</item>
+        <item>	participants/participants	</item>
+        <item>	an original concept/concept original	</item>
+        <item>	it\'s up to you/ça dépend de vous	</item>
+        <item>	duration/durée	</item>
+        <item>	to get a loan/obtenir un prêt	</item>
+        <item>	it\'s not fair/ce n\'est pas juste	</item>
+        <item>	it implies big changes/entraîne des changements profonds	</item>
+        <item>	to go over;to exceed/dépasser	</item>
+        <item>	to get money back/récupérer argent	</item>
+        <item>	to satisfy the demand/satisfaire la demande	</item>
+        <item>	to affect a sector/toucher un secteur	</item>
+        <item>	to venture into new directions/se lancer dans de nouvelles directions	</item>
+        <item>	to entail;to cause;to generate;to bring about problems/entraîner des problèmes	</item>
+        <item>	to encounter problems;to meet problems/rencontrer des problèmes	</item>
+        <item>	to minimise the risk/minimiser les risques	</item>
+        <item>	a misunderstanding/malentendu	</item>
+        <item>	step by step;gradually/pas à pas	</item>
+        <item>	to address a problem;an issue/aborder un problème;une question	</item>
+        <item>	to start from scratch/partir de zéro	</item>
+        <item>	sick leave/congé maladie	</item>
+    </string-array>
+    <string-array name="Publications_and_reports_p31">
+        <item>	subscription to a review/abonnement à une revue	</item>
+        <item>	surface area/surface, superficie	</item>
+        <item>	diameter/diamètre	</item>
+        <item>	radius/rayon	</item>
+        <item>	radii/rayons	</item>
+        <item>	perimeter/périmètre	</item>
+        <item>	border/bordure	</item>
+        <item>	parameter/paramètre	</item>
+        <item>	theory/théorie	</item>
+        <item>	theoretical/théorique	</item>
+        <item>	process/processus, procédé	</item>
+        <item>	procedure/procédure, méthode	</item>
+        <item>	method, technique/méthode	</item>
+        <item>	to classify/classer	</item>
+        <item>	to define/définir	</item>
+        <item>	to increase, to grow, to rise/augmenter	</item>
+        <item>	to decrease/décroître	</item>
+        <item>	to fall, to drop/chuter	</item>
+        <item>	a trend, tendency/tendance	</item>
+        <item>	to compare to,with/comparer	</item>
+        <item>	squared/carré	</item>
+        <item>	cubed/cubique	</item>
+        <item>	to the power of/à la puissance	</item>
+        <item>	to divide, to break down into/diviser en	</item>
+        <item>	to multiply/multiplier	</item>
+        <item>	according to/selon	</item>
+        <item>	in accordance with/en accord avec	</item>
+        <item>	to comply with/se conformer à	</item>
+        <item>	compared with/par rapport à	</item>
+        <item>	as follows/comme suit	</item>
+        <item>	it proves that/cela prouve que	</item>
+        <item>	some evidence, proof/preuve	</item>
+        <item>	calculation/calcul	</item>
+        <item>	to evaluate, to assess/évaluer	</item>
+        <item>	equation/équation	</item>
+        <item>	to refer to/se référer à	</item>
+        <item>	graph, chart/graphique	</item>
+        <item>	piechart/camembert	</item>
+        <item>	barchart/histogramme	</item>
+        <item>	function/fonction	</item>
+        <item>	serves as/sert à	</item>
+        <item>	values/valeurs	</item>
+        <item>	figures/chiffres	</item>
+        <item>	figure/figure	</item>
+        <item>	pattern/motif	</item>
+        <item>	drawings/dessins	</item>
+        <item>	chemical reaction/réaction chimique	</item>
+        <item>	mean value, average/moyenne	</item>
+        <item>	twice as much as/2 fois plus que	</item>
+        <item>	half as much as/2 fois moins que	</item>
+        <item>	to exceed, to go beyond/dépasser	</item>
+        <item>	edge/bord	</item>
+        <item>	a lack of/manque de	</item>
+        <item>	a level/niveau	</item>
+        <item>	pressure/pression	</item>
+        <item>	rate/taux	</item>
+        <item>	flowrate/débit	</item>
+        <item>	ratio/rapport	</item>
+        <item>	seminar/séminaire	</item>
+        <item>	workshop/atelier	</item>
+        <item>	video projector/projecteur vidéo	</item>
+        <item>	threshold, limit/seuil	</item>
+        <item>	content/contenu	</item>
+        <item>	container/récipient	</item>
+        <item>	to affect/affecter, toucher	</item>
+        <item>	to sort/trier	</item>
+        <item>	(be) worth doing something/valoir la peine de faire quelque chose	</item>
+        <item>	vacuum/vide	</item>
+        <item>	to make it possible to/permettre	</item>
+        <item>	a meter reading/une lecture	</item>
+        <item>	pace/vitesse	</item>
+        <item>	caption, legend/légende	</item>
+        <item>	scale/échelle	</item>
+        <item>	results from, is due to/vient de	</item>
+        <item>	yard (yd)/1 mètre	</item>
+        <item>	foot (ft)/33cm	</item>
+        <item>	inch (in)/2.5cm	</item>
+        <item>	pound (lb)/livre (450g)	</item>
+        <item>	ounce (oz)/once (28g)	</item>
+        <item>	conference, convention/congrès	</item>
+        <item>	acknowledgements/remerciements	</item>
+        <item>	assumtionn/supposition	</item>
+        <item>	equivalent/équivalent	</item>
+        <item>	criterion/critère	</item>
+        <item>	criteria/critères	</item>
+        <item>	to address a problem, to tackle a problem/aborder un problème	</item>
+        <item>	ethics/éthique	</item>
+        <item>	to speed up/accélérer	</item>
+        <item>	to slow down/ralentir	</item>
+        <item>	thus, thereby + Ving/Vant + ainsi	</item>
+        <item>	hence, therefore/donc	</item>
+        <item>	irrespective of, regardless of/indépendamment de	</item>
+        <item>	whatever the result/quel que soit le résultat	</item>
+        <item>	to apply/appliquer	</item>
+        <item>	to assign/attribuer	</item>
+        <item>	to turn out to be/s’avérer être	</item>
+        <item>	balance/équilibre	</item>
+        <item>	purpose/but	</item>
+        <item>	feature/caractéristique	</item>
+        <item>	to feature/comprendre	</item>
+        <item>	to cause, to generate/entraîner	</item>
+        <item>	to investigate/enquêter, étudier	</item>
+        <item>	to make up for/compenser	</item>
+        <item>	behaviour/comportement	</item>
+        <item>	design/conception	</item>
+        <item>	significant/significatif	</item>
+        <item>	to depend on/dépendre de	</item>
+        <item>	defect, fault/défaut	</item>
+        <item>	thoroughly/complètement, à fond	</item>
+        <item>	is prone to/est sujet à	</item>
+        <item>	together with/avec	</item>
+        <item>	remaining/qui reste, restant	</item>
+        <item>	state/état	</item>
+        <item>	possibly/éventuellement	</item>
+        <item>	great ease/beaucoup de facilité	</item>
+        <item>	to focus on/se concentrer sur	</item>
+        <item>	shape/forme	</item>
+        <item>	pattern/dessin	</item>
+        <item>	motif/motif	</item>
+        <item>	frame/cadre	</item>
+        <item>	range/éventail	</item>
+        <item>	roughly, globally/grossièrement, en gros	</item>
+        <item>	to insert/insérer	</item>
+        <item>	a gap/écart	</item>
+        <item>	a lack of, to be short of/manquer de	</item>
+        <item>	slightly/légèrement	</item>
+        <item>	batch, set/lot, ensemble	</item>
+        <item>	gear/matériel, engrenage	</item>
+        <item>	except/excepté	</item>
+        <item>	movement, gesture/mouvement	</item>
+        <item>	rhythm/rythme	</item>
+        <item>	panel/panneau	</item>
+        <item>	interference/interférence	</item>
+        <item>	disturbance/perturbation	</item>
+        <item>	phenomenon(na)/phénomène(s)	</item>
+        <item>	provided that/pourvu que	</item>
+        <item>	to claim/revendiquer, déclarer	</item>
+        <item>	tentative, temporary/provisoire	</item>
+        <item>	response/réponse, réaction	</item>
+        <item>	to become a reality/se réaliser	</item>
+        <item>	to resort to/avoir recours à	</item>
+        <item>	steady/régulier	</item>
+        <item>	output/sortie production	</item>
+        <item>	to spot, to identify/identifier, repérer	</item>
+        <item>	to withstand, to resist/résister	</item>
+        <item>	to make people aware of/sensibiliser à	</item>
+        <item>	mile/1.6 km	</item>
+        <item>	gallon/US 3.7L  GB 4.5L	</item>
+    </string-array>
+    <string-array name="Vocabulary_p38">
+        <item>	a build-up/accumulation	</item>
+        <item>	to add/ajouter	</item>
+        <item>	adhesion/adhésion	</item>
+        <item>	alloy/alliage	</item>
+        <item>	amount;quantity/dose	</item>
+        <item>	average;mean value/moyenne	</item>
+        <item>	balance;equilibrium/équilibre	</item>
+        <item>	stainless steel bar/barre acier inoxydable	</item>
+        <item>	barrel;drum/baril	</item>
+        <item>	batch/quantité;lot	</item>
+        <item>	in bulk/en vrac	</item>
+        <item>	to bear;withstand;resist/porter supporter	</item>
+        <item>	behaviour/comportement	</item>
+        <item>	to blend;to mix;to beat/mélanger;battre	</item>
+        <item>	board/planche	</item>
+        <item>	to boil/bouillir	</item>
+        <item>	bubble/bulle	</item>
+        <item>	to handle/manipuler	</item>
+        <item>	bucket/godet;coupelle + seau	</item>
+        <item>	buffer/tampon	</item>
+        <item>	burner/brûleur;bec bunsen	</item>
+        <item>	cap;stopper/capuchon	</item>
+        <item>	to carry out an experiment/effectuer	</item>
+        <item>	casing;housing/boîtier	</item>
+        <item>	cluster/agglomérat	</item>
+        <item>	bunch/groupe	</item>
+        <item>	coating/couche	</item>
+        <item>	layer/dépôt	</item>
+        <item>	spray can/bombe aérosol	</item>
+        <item>	coil/serpentin;bobine	</item>
+        <item>	column/colonne	</item>
+        <item>	component/composant	</item>
+        <item>	compound/composé	</item>
+        <item>	condensor;cooler/réfrigérant	</item>
+        <item>	conveyoor/tapis roulant	</item>
+        <item>	to cool down/refroidir	</item>
+        <item>	cool/frais	</item>
+        <item>	stacked;piled up/empilé	</item>
+        <item>	copper/cuivre	</item>
+        <item>	gold/or	</item>
+        <item>	silver/argent	</item>
+        <item>	iron/fer	</item>
+        <item>	valve/vanne	</item>
+        <item>	crude oil/pétrole brut	</item>
+        <item>	to drain/égoutter;drainer	</item>
+        <item>	a drain/égout	</item>
+        <item>	to drop ≠ to rise/baisser ≠ s\'élever	</item>
+        <item>	to stretch/étirer	</item>
+        <item>	to dry/sécher	</item>
+        <item>	deposit/dépôt	</item>
+        <item>	duct;pipe/conduit	</item>
+        <item>	dye stuff/colorant	</item>
+        <item>	glue/colle	</item>
+        <item>	to stick/coller	</item>
+        <item>	edge/rebord	</item>
+        <item>	electron/électron	</item>
+        <item>	to enable;make it possible/permettre	</item>
+        <item>	to enhance;to improve/accroître;améliorer	</item>
+        <item>	to exceed;to go beyond/dépasser	</item>
+        <item>	excess/excédent	</item>
+        <item>	to expand/prendre du volume	</item>
+        <item>	feed;supply/alimentation	</item>
+        <item>	filter/filtre	</item>
+        <item>	to heat/chauffer	</item>
+        <item>	to cook/cuire	</item>
+        <item>	to boil/bouillir	</item>
+        <item>	frying pan/poêle	</item>
+        <item>	sauce pan/casserole	</item>
+        <item>	flour/farine	</item>
+        <item>	salt and pepper/sel et poivre	</item>
+        <item>	herbs/herbes	</item>
+        <item>	steam/cuire vapeur	</item>
+        <item>	stir/agiter	</item>
+        <item>	flask/flacon;ballon	</item>
+        <item>	flow;stream/débit;flot;courant	</item>
+        <item>	to overflow/déborder	</item>
+        <item>	flowmeter/débitmètre	</item>
+        <item>	flowrate/vitesse;écoulement;débit	</item>
+        <item>	flowchart/schéma de procédé	</item>
+        <item>	to hold;support/tenir;maintenir	</item>
+        <item>	hose/tuyau de caoutchouc	</item>
+        <item>	implementation/mise en œuvre	</item>
+        <item>	to include/inclure;comprendre	</item>
+        <item>	inlet/entrée	</item>
+        <item>	outlet/sortie	</item>
+        <item>	insulation/isolation	</item>
+        <item>	Environmental Protection Agency/EPA	</item>
+        <item>	Food &#38; Drug Administration/FDA	</item>
+        <item>	lack of;shortage of/manque de	</item>
+        <item>	to evolve/évoluer	</item>
+        <item>	to progress/progresser	</item>
+        <item>	leak/fuite	</item>
+        <item>	to leak/fuir	</item>
+        <item>	level/niveau	</item>
+        <item>	load/charge	</item>
+        <item>	loop/boucle	</item>
+        <item>	loophole/échappatoire	</item>
+        <item>	loss ≠ gain/perte ≠ gain	</item>
+        <item>	material/matériau	</item>
+        <item>	equipment/matériel	</item>
+        <item>	to melt/faire fondre	</item>
+        <item>	moisture;humidity/humidité	</item>
+        <item>	speed;velocity/vitesse	</item>
+        <item>	network/réseau	</item>
+        <item>	nozzle/bec;buse;tuyère;embout	</item>
+        <item>	nucleus/noyau	</item>
+        <item>	nuclei/noyaux	</item>
+        <item>	occur;happen;take place/se passer	</item>
+        <item>	to offset;make up for;compensate/compenser	</item>
+        <item>	yield/rendement	</item>
+        <item>	output/production	</item>
+        <item>	oven;furnace/four	</item>
+        <item>	strain/contrainte	</item>
+        <item>	stress/fatigue	</item>
+        <item>	pattern/schéma;dessin	</item>
+        <item>	plant/usine	</item>
+        <item>	plastic/plastique	</item>
+        <item>	glass fiber/fibre de verre	</item>
+        <item>	derivative/dérivé	</item>
+        <item>	plate;tray/plateau	</item>
+        <item>	polymer/polymère	</item>
+        <item>	to pour/verser	</item>
+        <item>	pressure/pression	</item>
+        <item>	probe/sonde	</item>
+        <item>	to proceed;carry on/continuer;poursuivre	</item>
+        <item>	to purge/purger	</item>
+        <item>	a foil;a metal sheet/une feuille de métal	</item>
+        <item>	ice cube/glaçon	</item>
+        <item>	frozen/congelé	</item>
+        <item>	ratio/rapport	</item>
+        <item>	folded/plié	</item>
+        <item>	to fold/plier	</item>
+        <item>	a folder/dossier	</item>
+        <item>	step;stage/étape	</item>
+        <item>	reaction/réaction	</item>
+        <item>	remainder/reste	</item>
+        <item>	to remain/rester	</item>
+        <item>	to remove/retire;ôter	</item>
+        <item>	residue/résidu	</item>
+        <item>	to retrieve/récupérer	</item>
+        <item>	ring/cycle;anneau	</item>
+        <item>	sample/échantillon	</item>
+        <item>	to seal/sceller hermétiquement	</item>
+        <item>	shaft/arbre	</item>
+        <item>	to shake/secouer	</item>
+        <item>	to beat/battre	</item>
+        <item>	to stir with a spoon/remuer avec cuillère	</item>
+        <item>	hot plate/plaque	</item>
+        <item>	tray/plateau	</item>
+        <item>	dish/plat	</item>
+        <item>	a can of soda/boîte de soda	</item>
+        <item>	a can of mushroom/une boîte de champignons	</item>
+        <item>	sheet/feuille	</item>
+        <item>	shield/bouclier de protection	</item>
+        <item>	shift;move/déplacement	</item>
+        <item>	spray/vaporiser	</item>
+        <item>	to wind up a spring/remonter le ressort	</item>
+        <item>	the spring unwinds/le ressort se relâche	</item>
+    </string-array>
+    <string-array name="Electronic_equipment_and_measuring_devices_p46">
+        <item>	accurate/précis	</item>
+        <item>	to allow;permit;enable/permettre;laisser	</item>
+        <item>	apparatus;set up/montage	</item>
+        <item>	appliance;unit;device/appareil	</item>
+        <item>	to apply/appliquer	</item>
+        <item>	set;a series/ensemble;série	</item>
+        <item>	arrow;pointer/flèche;indicateur	</item>
+        <item>	to avoid;prevent;stop/éviter;empêcher	</item>
+        <item>	back-up/de rechange;relais	</item>
+        <item>	band/bande;zone	</item>
+        <item>	broad band/ADSL	</item>
+        <item>	batch/lot	</item>
+        <item>	in bulk/en vrac	</item>
+        <item>	battery/pile	</item>
+        <item>	fuel cell/pile à combustible	</item>
+        <item>	beam;ray/rayon	</item>
+        <item>	beep;alarm/sonnerie	</item>
+        <item>	break;power cut/coupure de courant	</item>
+        <item>	built-in/incorporé	</item>
+        <item>	cable;lead;wire;cord/fil;câble	</item>
+        <item>	to calibrate;set;adjust/régler;étalonner	</item>
+        <item>	feedback/info en retour	</item>
+        <item>	casing/capôt	</item>
+        <item>	housing/boîtier	</item>
+        <item>	meter/appareil de mesure	</item>
+        <item>	chart;graph;plot/diagramme;graphique	</item>
+        <item>	chip/puce	</item>
+        <item>	retrofitted/installé après coup	</item>
+        <item>	clockwise/sens aiguilles d\'une montre	</item>
+        <item>	coil/serpentin	</item>
+        <item>	loop/boucle	</item>
+        <item>	to compute;calculer/calculer	</item>
+        <item>	connect;switch on;plug in/brancher;allumer	</item>
+        <item>	to control;to check;to monitor/vérifier;contrôler;surveiller	</item>
+        <item>	to remove/enlever	</item>
+        <item>	to enlarge;zoom in/grossir	</item>
+        <item>	signal processing/traitement de signal	</item>
+        <item>	dial/cadran	</item>
+        <item>	digital/numérique	</item>
+        <item>	analog/analogique	</item>
+        <item>	to disconnect;unplug/débrancher	</item>
+        <item>	display/affichage	</item>
+        <item>	to display/afficher	</item>
+        <item>	gap/décalage;écart	</item>
+        <item>	drop ≠ rise/montée ≠ baisse	</item>
+        <item>	to activate;trigger;start off/déclencher	</item>
+        <item>	to fail/échouer	</item>
+        <item>	feed;input/alimentation	</item>
+        <item>	flow;flux/flot;écoulement	</item>
+        <item>	flowrate/débit	</item>
+        <item>	focus/mise au point	</item>
+        <item>	forward ≠ backward/en avant ≠ en arrière	</item>
+        <item>	fuse/fusible	</item>
+        <item>	customized/fait à la demande	</item>
+        <item>	gauge/jauge;appareil de mesure	</item>
+        <item>	ground (GND)/terre	</item>
+        <item>	graph/graphique	</item>
+        <item>	curve/courbe	</item>
+        <item>	slope/pente	</item>
+        <item>	front ≠ rear/avant ≠ arrière	</item>
+        <item>	handle/manipuler	</item>
+        <item>	high precision/haute précision	</item>
+        <item>	to hold;to stand by;to wait/attendre	</item>
+        <item>	actuator/actionneur	</item>
+        <item>	indicator-lamp/témoin	</item>
+        <item>	to initiate;launch;start up/démarrer;commencer	</item>
+        <item>	AC,DC adapter/adaptateur courant	</item>
+        <item>	i.e./c\'est-à-dire	</item>
+        <item>	e.g./par exemple	</item>
+        <item>	circa/environ	</item>
+        <item>	et al/et les autres	</item>
+        <item>	input/entrée de données;entrée de fluides	</item>
+        <item>	instructions/instructions	</item>
+        <item>	interface/interface	</item>
+        <item>	jack;plug;hook;socket/prise	</item>
+        <item>	keyboard;keypad/clavier	</item>
+        <item>	kit/kit	</item>
+        <item>	knob;button/bouton	</item>
+        <item>	liquid crystal display/LCD	</item>
+        <item>	light emitting diode/LED	</item>
+        <item>	lens/lentille;objectif	</item>
+        <item>	level/niveau	</item>
+        <item>	by-pass/déviation;contournement	</item>
+        <item>	to measure;determine/mesurer	</item>
+        <item>	real time measurement/mesure en temps réel	</item>
+        <item>	operate;function;run;work/fonctionner;faire marcher	</item>
+        <item>	output/production;rendement	</item>
+        <item>	pattern/motif;dessin	</item>
+        <item>	printed circuit/circuit imprimé	</item>
+        <item>	time slot/créneau horaire	</item>
+        <item>	to perform;to carry out;to complete;to achieve/effectuer	</item>
+        <item>	plot/courbe	</item>
+        <item>	plotter/traceur	</item>
+        <item>	probe;sensor/sonde;capteur	</item>
+        <item>	prompt/message (écran)	</item>
+        <item>	to provide;supply/procurer	</item>
+        <item>	pound per square inch/psi	</item>
+        <item>	pulse/impulsion	</item>
+        <item>	range;span/gamme;zone	</item>
+        <item>	rate;rating;ratio/débit;rapport	</item>
+        <item>	reading/mesure	</item>
+        <item>	read-out/lecture de mesure	</item>
+        <item>	to record/enregistrer	</item>
+        <item>	recorder/enregistreur	</item>
+        <item>	reliable/fiable	</item>
+        <item>	to require/exiger;demander	</item>
+        <item>	sample/échantillon	</item>
+        <item>	specimen/référence	</item>
+        <item>	scale/échelle;graduation	</item>
+        <item>	to scan;sweep/balayer	</item>
+        <item>	screen/écran	</item>
+        <item>	screw/vis	</item>
+        <item>	to screw/visser	</item>
+        <item>	sealed/scellé;hermétique	</item>
+        <item>	a route/cheminement;voie	</item>
+        <item>	serial/en série	</item>
+        <item>	to set/régler	</item>
+        <item>	reset/remettre à zéro	</item>
+        <item>	shaft/arbre	</item>
+        <item>	slit/fente	</item>
+        <item>	slot/case	</item>
+        <item>	spectrum/spectre	</item>
+        <item>	spectra/spectres	</item>
+        <item>	split/fendre;couper	</item>
+        <item>	spring/ressort	</item>
+        <item>	step;stage/une étape	</item>
+        <item>	technique/une technique	</item>
+        <item>	torque/couple de torsion	</item>
+        <item>	track/voie;piste	</item>
+        <item>	shift;move/déplacement	</item>
+        <item>	vacuum/vide	</item>
+        <item>	wave/onde	</item>
+        <item>	to weigh/peser	</item>
+        <item>	weight/poids	</item>
+        <item>	AD converter/convertisseur numérique	</item>
+        <item>	RE/objet;sujet (lettre;rapport)	</item>
+        <item>	Enclosed (Encl)/Pièje jointe	</item>
+        <item>	Attached (Attch)/Fichier attaché	</item>
+    </string-array>
+    <string-array name="Legal_english_and_computers_p53">
+        <item>	liability/responsabilité	</item>
+        <item>	promise/promesse	</item>
+        <item>	compensation/dédommagement	</item>
+        <item>	hereinafter/ci-après dans ce document	</item>
+        <item>	to comply with/suivre;se conformer à	</item>
+        <item>	regulation;rule/règlement	</item>
+        <item>	to waive/supprimer;exempter	</item>
+        <item>	may/est autorisé à	</item>
+        <item>	to file a claim/porter plainte	</item>
+        <item>	clause/clause	</item>
+        <item>	amendment/amendement	</item>
+        <item>	penalty/penalité	</item>
+        <item>	sanction/sanction	</item>
+        <item>	lawyer/avocat	</item>
+        <item>	shall/devra;sera tenu de	</item>
+        <item>	in accordance with/en accord avec	</item>
+        <item>	to sue/attaquer en justice	</item>
+        <item>	a law suit/procès	</item>
+        <item>	proprietary/qui appartient à quelqu\'un;protégé	</item>
+        <item>	agreement/accord	</item>
+        <item>	to file a law suit;take legal action/faire un procès	</item>
+        <item>	computer science;IT;data-processing/informatique	</item>
+        <item>	hardware/matériel	</item>
+        <item>	mainframe computer/ordinateur central	</item>
+        <item>	terminal/terminal	</item>
+        <item>	a workstation/une station de travail	</item>
+        <item>	a network/réseau	</item>
+        <item>	local area network (LAN)/réseau local	</item>
+        <item>	laptop computer/ordinateur portable	</item>
+        <item>	chip/puce	</item>
+        <item>	printed circuit/circuit imprimé	</item>
+        <item>	speaker/haut-parleur	</item>
+        <item>	mike/micro	</item>
+        <item>	screen;moniteur;VDU/écran	</item>
+        <item>	display/affichage	</item>
+        <item>	read only memory/ROM	</item>
+        <item>	random access memory/RAM	</item>
+        <item>	hard disk/disque dur	</item>
+        <item>	disk drive/lecteur	</item>
+        <item>	keyboard/clavier	</item>
+        <item>	key/touche	</item>
+        <item>	space bar/barre d\'espacement	</item>
+        <item>	font/fonte;police	</item>
+        <item>	hyphen;dash/tiret	</item>
+        <item>	slash/barre;oblique	</item>
+        <item>	dot/point	</item>
+        <item>	colon/deux points	</item>
+        <item>	period/point	</item>
+        <item>	brackets/parenthèses	</item>
+        <item>	array;table;spreadsheet/tableau	</item>
+        <item>	space/espace	</item>
+        <item>	blank/blanc	</item>
+        <item>	shift key/touche majuscule	</item>
+        <item>	trashcan;bin/corbeille	</item>
+        <item>	key/touche	</item>
+        <item>	slot/fente;créneau	</item>
+        <item>	operating system/système d\'exploitation	</item>
+        <item>	mouse/souris	</item>
+        <item>	click/click	</item>
+        <item>	to click/cliquer	</item>
+        <item>	connector;jack;port/branchement	</item>
+        <item>	joystick/manche à balai;joystick	</item>
+        <item>	memory storage/stockage sur mémoire	</item>
+        <item>	backlit display/écran rétro-éclairé	</item>
+        <item>	USB key/clé USB	</item>
+        <item>	ink-jet printer/imprimante jet d\'encre	</item>
+        <item>	toner cartridge;ink cartridge/cartouche de toner	</item>
+        <item>	a print-out/une sortie imprimante	</item>
+        <item>	a task queue/une file de tâches	</item>
+        <item>	buffer/mémoire tampon	</item>
+        <item>	cache memory/mémoire cache	</item>
+        <item>	a scanner/scanner	</item>
+        <item>	to scroll/défiler à l\'écran	</item>
+        <item>	time sharing for tasks/partage du temps	</item>
+        <item>	feed/alimentation	</item>
+        <item>	modem/modem	</item>
+        <item>	to download software/télécharger un logiciel	</item>
+        <item>	app/application	</item>
+        <item>	application/programme	</item>
+        <item>	driver/pilote pour périphérique	</item>
+        <item>	Personal digital assistant/PDA	</item>
+        <item>	dongle/clé de communication	</item>
+        <item>	geek/passionné d\'info	</item>
+        <item>	clip art;graphics/clip art;dessins	</item>
+        <item>	virtual reality/réalité virtuelle	</item>
+        <item>	simulation/simulation	</item>
+        <item>	modelling/modélisation	</item>
+        <item>	grid/grille	</item>
+        <item>	mesh/maillage	</item>
+        <item>	pattern;motif/motif	</item>
+        <item>	to copy and paste/copier-coller	</item>
+        <item>	to drag and drop/glisser-déposer	</item>
+        <item>	to delete;to erase/effacer	</item>
+        <item>	hacker/pirate	</item>
+        <item>	to reset;to reboot/rebouter;relancer	</item>
+        <item>	to uninstall/désinstaller	</item>
+        <item>	a track/piste	</item>
+        <item>	inquiry/demande	</item>
+        <item>	query/recherche	</item>
+        <item>	prompt/message affiché	</item>
+        <item>	customised application/programme sur mesure	</item>
+        <item>	spreadsheet/tableur	</item>
+        <item>	data base/base de données	</item>
+        <item>	e learning/apprentissage sur ordinateur	</item>
+        <item>	algorithm/algorithme	</item>
+        <item>	multi-tasking/multi-tâche	</item>
+        <item>	overflow/dépassement de mémoire	</item>
+        <item>	virus infection/infection par virus	</item>
+        <item>	cookie/cookie	</item>
+        <item>	command/commande	</item>
+        <item>	statement/déclaration	</item>
+        <item>	to enhance;to upgrade/améliorer	</item>
+        <item>	password for access/mot de passe pour accès	</item>
+        <item>	login/identifiant	</item>
+        <item>	to log in/se connecter	</item>
+        <item>	chat session/session de bavardage	</item>
+        <item>	tool bar/barre des outils	</item>
+        <item>	scrolling menu/menu déroulant	</item>
+        <item>	pop-up/pop-up	</item>
+        <item>	beep/bip;signal sonore	</item>
+        <item>	remote/a distance	</item>
+        <item>	wi-fi/wi-fi	</item>
+        <item>	modem/modem	</item>
+        <item>	server/serveur	</item>
+        <item>	to swap/échanger	</item>
+        <item>	to subscribe/souscrire	</item>
+        <item>	subscription/abonnement	</item>
+        <item>	to abort/terminer	</item>
+        <item>	to crash/se planter	</item>
+        <item>	to edit/modifier	</item>
+        <item>	to retrieve/récupérer	</item>
+        <item>	bug;error/erreur;bogue	</item>
+        <item>	data compression/compression des données	</item>
+        <item>	shareware;freeware/logiciel libre (de droits)	</item>
+        <item>	browser/navigateur	</item>
+        <item>	search engine/moteur de recherche	</item>
+        <item>	spam/pourriel	</item>
+        <item>	default/par défaut	</item>
+        <item>	plugin/module d\'extension;plugin	</item>
+        <item>	dial up access/accès par ligne de téléphone	</item>
+        <item>	off line/hors ligne	</item>
+        <item>	on line/en ligne	</item>
+        <item>	to plug and play/brancher et utiliser	</item>
+        <item>	spelling checker/vérificateur d\'orthographe	</item>
+        <item>	pod/pod	</item>
+        <item>	podcast/podcast	</item>
+        <item>	blog/blog	</item>
+    </string-array>
+
+    <string-array name="Verbes">
+        <item>être/be/was, were/been</item>
+        <item>avoir/have/had/had</item>
+        <item>devenir/become/became/become</item>
     </string-array>
     <string-array name="Models1">
         <item>1_Model_p4/Model p4/stpi1_model_p4</item>

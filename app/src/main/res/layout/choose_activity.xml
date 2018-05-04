@@ -16,7 +16,7 @@
         android:id="@+id/vocabulaire"
         android:height="30dp"
         android:width="200dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="35dp"
         android:layout_marginBottom="5dp"
         android:gravity="center"
         android:layout_gravity="center"/>
@@ -31,7 +31,7 @@
         android:id="@+id/model"
         android:height="30dp"
         android:width="200dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="35dp"
         android:layout_marginBottom="5dp"
         android:gravity="center"
         android:layout_gravity="center"/>
@@ -46,7 +46,7 @@
         android:id="@+id/verbes"
         android:height="30dp"
         android:width="200dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="35dp"
         android:layout_marginBottom="5dp"
         android:gravity="center"
         android:layout_gravity="center"/>
@@ -61,7 +61,7 @@
         android:id="@+id/abbréviations"
         android:height="30dp"
         android:width="200dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="35dp"
         android:layout_marginBottom="5dp"
         android:gravity="center"
         android:layout_gravity="center"/>
