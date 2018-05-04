@@ -216,7 +216,7 @@ public class DataBaseBuilder {
     }
 
     private Models setModel(String[] separatedModel){
-        Models aModel = new Models(separatedModel[0], separatedModel[1], separatedModel[2]);
+        Models aModel = new Models(separatedModel[0], separatedModel[1]);
         return aModel;
     }
 

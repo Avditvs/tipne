@@ -22,8 +22,8 @@ public interface ModelsDAO {
     @Query("SELECT properNameOfModel FROM models")
     String[] getProperNames();
 
-    @Query("SELECT nameOfModel FROM models WHERE properNameOfModel Like :properName")
-    String getNameOfModel(String properName);
+  //  @Query("SELECT nameOfModel FROM models WHERE properNameOfModel Like :properName")
+  //  String getNameOfModel(String properName);
 
     @Query("SELECT audioName FROM models WHERE properNameOfModel Like :properName")
     String getAudioName(String properName);

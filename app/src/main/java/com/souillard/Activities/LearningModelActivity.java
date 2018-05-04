@@ -38,7 +38,7 @@ public class LearningModelActivity extends Activity {
 
         Intent previousIntent = getIntent();
         String properName = previousIntent.getStringExtra(nameModel);
-        String rawName = dbModels.getNameOfModel(properName);
+        //String rawName = dbModels.getNameOfModel(properName);
         String fileName = dbModels.getAudioName(properName);
 
         nomModel.setText(properName);

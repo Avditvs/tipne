@@ -5,6 +5,8 @@
     <string name="speech_prompt">Say something&#8230;</string>
     <string name="speech_not_supported">Sorry! Your device doesn\'t support speech input</string>
     <string name="tap_on_mic">Tap on mic to speak</string>
+
+
     <string-array name="ListesSTPI1">
         <item>Help_p19/137/69/Help p19</item>
         <item>Help_p35/212/110/Help p35</item>
@@ -27,6 +29,7 @@
         <item>Electronic_equipment_and_measuring_devices_p46/138/0/Electronic equipment and measuring devices p46</item>
         <item>Legal_english_and_computers_p53/147/0/Legal english and computers p53</item>
     </string-array>
+
 
     <string-array name="Help_p19">
         <item>abroad;overseas/à l\'étranger</item>
@@ -3102,16 +3105,212 @@
         <item>	blog/blog	</item>
     </string-array>
 
+
     <string-array name="Verbes">
-        <item>être/be/was, were/been</item>
-        <item>avoir/have/had/had</item>
-        <item>devenir/become/became/become</item>
+        <item>be/was, were/been/être</item>
+        <item>bear/bore/borne / born/supporter (naître)</item>
+        <item>beat/beat/beaten/battre</item>
+        <item>become/became/become/devenir</item>
+        <item>begin/began/begun/commencer</item>
+        <item>bend/bent/bent/courber</item>
+        <item>bet/bet/bet/parier</item>
+        <item>bid/bid/bid/proposer un prix, enchérir</item>
+        <item>bind/bound/bound/lier</item>
+        <item>bite/bit/bitten/mordre</item>
+        <item>bleed/bled/bled/saigner</item>
+        <item>blow/blew/blown/souffler</item>
+        <item>break/broke/broken/casser</item>
+        <item>breed/bred/bred/élever (des animaux)</item>
+        <item>bring/brought/brought/apporter</item>
+        <item>build/built/built/construire</item>
+        <item>burn/burnt/burnt/brûler</item>
+        <item>burst/burst/burst/éclater</item>
+        <item>buy/bought/bought/acheter</item>
+        <item>can/could/been able to/pouvoir</item>
+        <item>cast/cast/cast/couler, mouler - jeter</item>
+        <item>catch/caught/caught/attraper</item>
+        <item>choose/chose/chosen/choisir</item>
+        <item>cling/clung/clung/s\'accrocher</item>
+        <item>come/came/come/venir</item>
+        <item>cost/cost/cost/coûter</item>
+        <item>creep/crept/crept/ramper</item>
+        <item>cut/cut/cut/couper</item>
+        <item>deal/dealt/dealt/négocier, traiter</item>
+        <item>dig/dug/dug/creuser</item>
+        <item>do/did/done/faire</item>
+        <item>draw/drew/drawn/tirer, dessiner</item>
+        <item>dream/dreamt / dreamed/dreamt / dreamed/rêver</item>
+        <item>drink/drank/drunk/boire</item>
+        <item>drive/drove/driven/conduire</item>
+        <item>eat/ate/eaten/manger</item>
+        <item>fall/fell/fallen/tomber</item>
+        <item>feed/fed/fed/nourrir, alimenter</item>
+        <item>feel/felt/felt/sentir, éprouver</item>
+        <item>fight/fought/fought/se battre, combattre</item>
+        <item>find/found/found/trouver</item>
+        <item>flee/fled/fled/fuir</item>
+        <item>fling/flung/flung/lancer</item>
+        <item>fly/flew/flown/voler (dans l\'air)</item>
+        <item>forbid/forbade/forbidden/interdire</item>
+        <item>forget/forgot/forgotten/oublier</item>
+        <item>forgive/forgave/forgiven/pardonner</item>
+        <item>get/got/got/obtenir</item>
+        <item>give/gave/given/donner</item>
+        <item>go/went/gone/aller</item>
+        <item>grind/ground/ground/moudre</item>
+        <item>grow/grew/grown/pousser, s\'agrandir, augmenter</item>
+        <item>hang/hung/hung/prendre, suspendre</item>
+        <item>have/had/had/avoir</item>
+        <item>hear/heard/heard/entendre</item>
+        <item>hide/hid/hidden/cacher</item>
+        <item>hit/hit/hit/frapper</item>
+        <item>hold/held/held/tenir</item>
+        <item>hurt/hurt/hurt/blesser, faire mal</item>
+        <item>keep/kept/kept/garder, conserver</item>
+        <item>kneel/knelt/knelt/s\'agenouiller</item>
+        <item>knit/knit/knit/tricoter</item>
+        <item>know/knew/known/savoir</item>
+        <item>lay/laid/laid/poser (étendre)</item>
+        <item>lead/led/led/mener, conduire quelqu\'un</item>
+        <item>lean/leant/leant/s\'appuyer, se pencher</item>
+        <item>leap/leapt/leapt/bondir</item>
+        <item>learn/learnt/learnt/apprendre</item>
+        <item>leave/left/left/laisser</item>
+        <item>lend/lent/lent/prêter</item>
+        <item>let/let/let/laisser, permettre</item>
+        <item>lie/lay/lain/être couché</item>
+        <item>light/lit/lit/allumer, éclairer</item>
+        <item>lose/lost/lost/perdre</item>
+        <item>make/made/made/faire, fabriquer</item>
+        <item>may/might/…/pouvoir (probabilité)</item>
+        <item>mean/meant/meant/vouloir dire</item>
+        <item>meet/met/met/(se) rencontrer</item>
+        <item>mistake/mistook/mistaken/se méprendre</item>
+        <item>mow/mowed/mown/faucher, tondre</item>
+        <item>must/(had to)/…/devoir</item>
+        <item>pay/paid/paid/payer</item>
+        <item>put/put/put/mettre, poser</item>
+        <item>read/read/read/lire</item>
+        <item>rend/rent/rent/déchirer</item>
+        <item>rid/rid/rid/débarrasser, délivrer,pb</item>
+        <item>ride/rode/ridden/aller à cheval, à vélo</item>
+        <item>ring/rang/rung/sonner, résonner</item>
+        <item>rise/rose/risen/se lever</item>
+        <item>run/ran/run/courir</item>
+        <item>saw/sawed/sawn/scier</item>
+        <item>say/said/said/dire</item>
+        <item>see/saw/seen/voir</item>
+        <item>seek/sought/sought/chercher</item>
+        <item>sell/sold/sold/vendre</item>
+        <item>send/sent/sent/envoyer</item>
+        <item>set/set/set/mettre en place, régler</item>
+        <item>sew/sewed/sewn/coudre</item>
+        <item>shake/shook/shaken/secouer</item>
+        <item>shear/sheared/shorn/tondre, cisailler</item>
+        <item>shed/shed/shed/verser (larme), perdre (feuilles)</item>
+        <item>shine/shone/shone/briller</item>
+        <item>shoot/shot/shot/tirer (fusil - but)</item>
+        <item>show/showed/shown/montrer</item>
+        <item>shrink/shrank/shrunk/(se) rétrécir</item>
+        <item>shut/shut/shut/fermer</item>
+        <item>sing/sang/sung/chanter</item>
+        <item>sink/sank/sunk/couler, sombrer</item>
+        <item>sit/sat/sat/être assis</item>
+        <item>sleep/slept/slept/dormir</item>
+        <item>slide/slid/slid/glisser</item>
+        <item>sling/slung/slung/lancer</item>
+        <item>smell/smelt/smelt/sentir (odeur)</item>
+        <item>sow/sowed/sown/semer</item>
+        <item>speak/spoke/spoken/parler</item>
+        <item>speed/sped/sped/se hâter, accélérer</item>
+        <item>spell/spelt/spelt/épeler, orthographier</item>
+        <item>spend/spent/spent/dépenser</item>
+        <item>spill/spilt/spilt/répendre, renverser</item>
+        <item>spin/spun/spun/pivoter, filer (textile)</item>
+        <item>split/split/split/fendre, diviser</item>
+        <item>spoil/spoilt/spoilt/gâcher</item>
+        <item>spread/spread/spread/étaer</item>
+        <item>spring/sprang/sprung/jaillir</item>
+        <item>stand/stood/stood/être debout</item>
+        <item>steal/stole/stolen/voler, dérober</item>
+        <item>stick/stuck/stuck/coller, coincer</item>
+        <item>sting/stung/stung/piquer (insecte)</item>
+        <item>stink/stank/stunk/puer</item>
+        <item>strew/strewed/strewn/joncher</item>
+        <item>strike/struck/struck/frapper</item>
+        <item>strive/strove/striven/s\'efforcer de</item>
+        <item>swear/swore/sworn/jurer</item>
+        <item>sweep/swept/swept/balayer</item>
+        <item>swell/swelled/swollen/enfler</item>
+        <item>swim/swam/swum/nager</item>
+        <item>swing/swung/swung/(se) balancer</item>
+        <item>take/took/taken/prendre</item>
+        <item>teach/taught/taught/enseigner</item>
+        <item>tear/tore/torn/déchirer</item>
+        <item>tell/told/told/dire, raconter</item>
+        <item>think/thought/thought/penser</item>
+        <item>throw/threw/thrown/lancer</item>
+        <item>thrust/thrust/thrust/pousser, fourrer</item>
+        <item>tread/trod/trodden/fouler</item>
+        <item>understand/understood/understood/comprendre</item>
+        <item>undertake/undertook/undertaken/entreprendre</item>
+        <item>upset/upset/upset/renverser, bouleverser</item>
+        <item>wake/woke/woken/(s\')éveiller</item>
+        <item>wear/wore/worn/porter (vêtement)</item>
+        <item>weave/wove/woven/tisser</item>
+        <item>weep/wept/wept/pleurer</item>
+        <item>win/won/won/gagner</item>
+        <item>wind/wound/wound/enrouler</item>
+        <item>withdraw/withdrew/withdrawn/(se) retirer</item>
+        <item>wring/wrung/wrung/tordre</item>
+        <item>write/wrote/written/écrire</item>
     </string-array>
+
+
     <string-array name="Models1">
-        <item>1_Model_p4/Model p4/stpi1_model_p4</item>
-        <item>1_Model_p6/Model p6/stpi1_model_p6</item>
+        <item>Model p4/stpi1_model_p4</item>
+        <item>Model p10/stpi1_model_p10</item>
+        <item>Model p13/stpi1_model_p13</item>
+        <item>Model p15/stpi1_model_p15</item>
+        <item>Model p23/stpi1_model_p23</item>
+        <item>Model p27/stpi1_model_p27</item>
+        <item>Model p32/stpi1_model_p32</item>
+        <item>Model p39/stpi1_model_p39</item>
+        <item>Model p43/stpi1_model_p43</item>
+        <item>Model p48/stpi1_model_p48</item>
+        <item>Model p49/stpi1_model_p49</item>
+        <item>Model p54/stpi1_model_p54</item>
+        <item>Model p64/stpi1_model_p64</item>
+        <item>Model p65/stpi1_model_p65</item>
+        <item>Model p74/stpi1_model_p74</item>
+        <item>Model p79/stpi1_model_p79</item>
+        <item>Model p83/stpi1_model_p83</item>
+        <item>Model p91/stpi1_model_p91</item>
+        <item>Model p94/stpi1_model_p94</item>
     </string-array>
     <string-array name="Models2">
-
+        <item>Model part1 p9-1/stpi2_model_partie1_p9_1</item>
+        <item>Model part1 p9-2/stpi2_model_partie1_p9_2</item>
+        <item>Model part1 p21/stpi2_model_partie1_p21</item>
+        <item>Model part1 p23/stpi2_model_partie1_p23</item>
+        <item>Model part1 p33/stpi2_model_partie1_p33</item>
+        <item>Model part1 p34/stpi2_model_partie1_p34</item>
+        <item>Model part1 p45/stpi2_model_partie1_p45</item>
+        <item>Model part1 p57/stpi2_model_partie1_p57</item>
+        <item>Model part1 p58/stpi2_model_partie1_p58</item>
+        <item>Model part1 p69/stpi2_model_partie1_p69</item>
+        <item>Model part1 p73/stpi2_model_partie1_p73</item>
+        <item>Model part1 p81/stpi2_model_partie1_p81</item>
+        <item>Model part2 p8/stpi2_model_partie2_p8</item>
+        <item>Model part2 p18/stpi2_model_partie2_p18</item>
+        <item>Model part2 p26/stpi2_model_partie2_p26</item>
+        <item>Model part2 p27/stpi2_model_partie2_p27</item>
+        <item>Model part2 p35/stpi2_model_partie2_p35</item>
+        <item>Model part2 p42/stpi2_model_partie2_p42</item>
+        <item>Model part2 p43/stpi2_model_partie2_p43</item>
+        <item>Model part2 p50/stpi2_model_partie2_p50</item>
+        <item>Model part2 p57/stpi2_model_partie2_p57</item>
+        <item>Model part2 p58/stpi2_model_partie2_p58</item>
     </string-array>
+
 </resources>

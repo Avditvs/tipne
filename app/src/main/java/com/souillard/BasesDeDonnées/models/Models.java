@@ -10,8 +10,8 @@ public class Models {
     @PrimaryKey(autoGenerate = true)
     private int uid;
 
-    @ColumnInfo(name = "nameOfModel")
-    private String nameOfModel;
+//    @ColumnInfo(name = "nameOfModel")
+//    private String nameOfModel;
 
     @ColumnInfo(name = "properNameOfModel")
     private String properNameOfModel;
@@ -25,8 +25,8 @@ public class Models {
 
     }
 
-    public Models(String modelName, String properModelName, String nameOfAudio){
-        this.nameOfModel = modelName;
+    public Models(String properModelName, String nameOfAudio){
+//        this.nameOfModel = modelName;
         this.properNameOfModel = properModelName;
         this.audioName = nameOfAudio;
     }
@@ -38,9 +38,9 @@ public class Models {
         return uid;
     }
 
-    public String getNameOfModel() {
-        return nameOfModel;
-    }
+ //   public String getNameOfModel() {
+  //      return nameOfModel;
+   // }
 
     public String getProperNameOfModel() {
         return properNameOfModel;
@@ -57,9 +57,9 @@ public class Models {
         this.uid = uid;
     }
 
-    public void setNameOfModel(String nameOfModel) {
-        this.nameOfModel = nameOfModel;
-    }
+  //  public void setNameOfModel(String nameOfModel) {
+    //    this.nameOfModel = nameOfModel;
+    //}
 
     public void setProperNameOfModel(String properNameOfModel) {
         this.properNameOfModel = properNameOfModel;
