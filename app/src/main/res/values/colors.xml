@@ -9,18 +9,19 @@
     <color name="fond_ecran">#1C2836</color>
     <color name="fond_ecran_noir">#292929</color>
     <color name="light_grey">#4286f4</color>
+    <color name="fond_bouton_menu">#888e9b</color>
+    <color name="text_menu">#d1d3d4</color>
     <color name="fond_bouton">#4472C4</color>
     <color name="vert_kaki">#417B3E</color>
     <color name="black">#000000</color>
-
+    <color name="caption">#616d7c</color>
+    <color name="bleu_fond">#ffffff</color>
     <color name="midnight_blue">#1E1F26</color>
     <color name="indigo_ink">#283655</color>
     <color name="blueberry">#4D648D</color>
     <color name="periwinkle">#D0E1F9</color>
-
     <color name="moss">#AEBD38</color>
     <color name="meadow">#598234</color>
-
     <color name="emerauld">#265C00</color>
     <color name="green_bean">#65A225</color>
 </resources>
