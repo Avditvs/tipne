@@ -18,5 +18,5 @@ public interface EvaluationsDAO {
     void insertEvaluation (Evaluations evaluation);
 
     @Query("DELETE FROM evaluations")
-    void nukeTableEveluations();
+    void nukeTableEvaluations();
 }
