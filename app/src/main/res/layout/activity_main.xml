@@ -7,6 +7,22 @@
     tools:context="Activities.MainActivity"
     >
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/title_Text_Size"
+        android:textColor="@color/caption"
+        android:text="English for professionnal \npurposes"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.12"
+
+        />
+
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -14,7 +30,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.75">
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -34,16 +51,16 @@
                 android:layout_margin="10dp"
                 android:clickable="true"
                 android:foreground="?android:attr/selectableItemBackground"
-                android:minHeight="100dp"
-                android:minWidth="100dp"
-                app:background_color="@color/light_grey"
-                app:corner_radius="20dp"
-                app:image_color="@color/white"
-                app:margin="10dp"
-                app:src="@drawable/speaker"
-                app:text="Test \nApprentissage"
-                app:textColor="@color/white"
-                app:textSize="10dp"
+                android:minHeight="@dimen/button_Height"
+                android:minWidth="@dimen/button_Width"
+                app:background_color="@color/fond_bouton_menu"
+                app:corner_radius="@dimen/corner_Radius"
+                app:image_color="@color/text_menu"
+                app:margin="@dimen/button_Margin"
+                app:src="@drawable/learn"
+                app:text="Test Appr."
+                app:textColor="@color/text_menu"
+                app:textSize="@dimen/text_Size"
 
                 />
 
@@ -53,18 +70,18 @@
                 android:id="@+id/STT"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:src="@drawable/speaker"
-                app:text="Test STT"
-                app:textColor="@color/white"
-                app:textSize="10dp"
-                app:image_color="@color/white"
-                android:minHeight="70dp"
-                android:minWidth="70dp"
-                app:margin="10dp"
                 android:layout_margin="10dp"
-                app:background_color="@color/fond_bouton"
-                app:corner_radius="5dp"
                 android:foreground="?android:attr/selectableItemBackground"
+                android:minHeight="@dimen/button_Height"
+                android:minWidth="@dimen/button_Width"
+                app:background_color="@color/fond_bouton_menu"
+                app:corner_radius="@dimen/corner_Radius"
+                app:image_color="@color/text_menu"
+                app:margin="@dimen/button_Margin"
+                app:src="@drawable/stats"
+                app:text="Test STT"
+                app:textColor="@color/text_menu"
+                app:textSize="@dimen/text_Size"
 
                 />
 
@@ -76,49 +93,45 @@
             android:orientation="vertical">
 
             <com.souillard.customViews.MenuButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-
-                app:src="@drawable/speaker"
-                app:text="Apprentissage \ndes verbes"
-                app:textColor="@color/white"
-                app:textSize="10dp"
-                app:image_color="@color/white"
-                android:minHeight="100dp"
-                android:minWidth="80dp"
-                app:margin="10dp"
                 android:id="@+id/bt_verbes"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
                 android:layout_margin="10dp"
-                app:corner_radius="15dp"
-                app:background_color="@color/bg_gradient_end"
                 android:foreground="?android:attr/selectableItemBackground"
+                android:minHeight="@dimen/button_Height"
+                android:minWidth="@dimen/button_Width"
+                app:background_color="@color/fond_bouton_menu"
+                app:corner_radius="@dimen/corner_Radius"
+                app:image_color="@color/text_menu"
+                app:margin="@dimen/button_Margin"
+                app:src="@drawable/evaluate"
+                app:text="Appr. Vb"
+                app:textColor="@color/text_menu"
+                app:textSize="@dimen/text_Size"
 
                 />
 
             <com.souillard.customViews.MenuButton
+                android:id="@+id/bt_eval"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:src="@drawable/speaker"
-                app:text="Evaluation"
-                app:textColor="@color/white"
-                app:textSize="10dp"
-                app:image_color="@color/white"
-                android:minHeight="100dp"
-                android:minWidth="80dp"
-                app:margin="10dp"
-                android:id="@+id/bt_eval"
-                android:layout_margin="10dp"
-                app:corner_radius="15dp"
-                app:background_color="@android:color/holo_red_dark"
+                android:layout_margin="@dimen/button_Margin"
                 android:foreground="?android:attr/selectableItemBackground"
+                android:minHeight="@dimen/button_Height"
+                android:minWidth="@dimen/button_Width"
+                app:background_color="@color/fond_bouton_menu"
+                app:corner_radius="@dimen/corner_Radius"
+                app:image_color="@color/text_menu"
+                app:margin="@dimen/button_Margin"
+                app:src="@drawable/settings"
+                app:text="Evaluation"
+                app:textColor="@color/text_menu"
+                app:textSize="@dimen/text_Size"
 
                 />
 
         </LinearLayout>
-
-
-
-
 
 
     </LinearLayout>

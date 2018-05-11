@@ -55,13 +55,13 @@ public class MenuButton extends LinearLayout{
         int margin = (int)a.getDimension(R.styleable.MenuButton_margin, 0);
 
         LayoutParams lpTextView = new LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT);
-        lpTextView.setMargins(margin, 0, margin, margin);
+        lpTextView.setMargins(margin, 20, margin, margin);
         textView.setLayoutParams(lpTextView);
 
         LayoutParams lpImageView = new LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT);
         lpImageView.setMargins(margin, margin, margin, 0);
-        lpImageView.height = this.getMinimumHeight() - textView.getHeight() - 2*margin;
-        lpImageView.width = this.getMinimumHeight() - 2*margin;
+        lpImageView.height = 150; //this.getMinimumHeight() - textView.getHeight() - 2*margin;
+        lpImageView.width = 150; //this.getMinimumHeight() - 2*margin;
         imageView.setLayoutParams(lpImageView);
         imageView.setScaleType(ImageView.ScaleType.FIT_XY);
 
@@ -69,7 +69,9 @@ public class MenuButton extends LinearLayout{
         GradientDrawable sp = new GradientDrawable();
         sp.setColor(a.getColor(R.styleable.MenuButton_background_color, Color.WHITE));
         sp.setCornerRadius((int)a.getDimension(R.styleable.MenuButton_corner_radius, 0f));
+
         this.setBackground(sp);
+
 
 
 

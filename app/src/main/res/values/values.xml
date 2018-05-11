@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="button_Width">150dp</dimen>
+    <dimen name="button_Height">150dp</dimen>
+    <dimen name="button_Margin">10dp</dimen>
+    <dimen name="layout_Margin">10dp</dimen>
+    <dimen name="layout_Width">350dp</dimen>
+    <dimen name="layout_Height">350dp</dimen>
+    <dimen name="text_Size">8dp</dimen>
+    <dimen name="title_Text_Size">30dp</dimen>
+    <dimen name="corner_Radius">20dp</dimen>
+    <dimen name="image_Height">150dp</dimen>
+    <dimen name="image_Width">150dp</dimen>
+</resources>
