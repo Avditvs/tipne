@@ -45,9 +45,8 @@
                 android:layout_height="match_parent"
                 android:clickable="true"
                 android:onClick="onClick"
-                android:text="c oooouuucucucuucucuc oooouuucucucuucucuc oooouuucucucuucucuc oooouuucucucuucucuc oooouuucucucuucucuc oooouuucucucuucucuc oooouuucucucuucucuc oooouuucucucuucucuc ucucucuucucucucucucucucucucuucucucucucucucujjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj  frufhrijfr f rifjr frijgf rifrifjr if rirjifjrijf ijfirjfirjif rijf irjf rijf irjf rijfir jf irjfijrifjirjf irjfijrifjirfj irjfrijfirjfirjf irjifjirfji"
                 android:textColor="@color/white"
-                android:textSize="35dp"
+                android:textSize="15dp"
                 />
 
         </ScrollView>

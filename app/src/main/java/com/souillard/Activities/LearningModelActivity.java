@@ -27,6 +27,9 @@ public class LearningModelActivity extends Activity {
     private TextView model;
     private int audioID;
     private int drawID;
+    private int textID;
+    private String[] textModel;
+    private int fond_ecran;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,15 +41,19 @@ public class LearningModelActivity extends Activity {
 
         Intent previousIntent = getIntent();
         String properName = previousIntent.getStringExtra(nameModel);
-        //String rawName = dbModels.getNameOfModel(properName);
         String fileName = dbModels.getAudioName(properName);
 
         nomModel.setText(properName);
 
         final int speakerNoir = getResources().getIdentifier("speaker_noir", "drawable", getPackageName());
         final int speakerBleu = getResources().getIdentifier("speaker_bleu", "drawable", getPackageName());
+        fond_ecran = getResources().getIdentifier("fond_ecran", "color", getPackageName());
         audioID = getResources().getIdentifier(fileName,"raw", getPackageName());
         drawID = getResources().getIdentifier(fileName, "drawable", getPackageName());
+        textID = getResources().getIdentifier(fileName, "array", getPackageName());
+
+        textModel = getResources().getStringArray(textID);
+        model.setText(textModel[0]);
 
 
         mediaPlayer = MediaPlayer.create(this, audioID);
@@ -77,8 +84,9 @@ public class LearningModelActivity extends Activity {
 
     public void onClick(View v){
         if (prompt){
-            model.setText("Ceci est le dialogue complet");
+            model.setText(textModel[0]);
             prompt = false;
+            model.setBackgroundResource(fond_ecran);
         }
         else {
             model.setText("");

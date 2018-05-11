@@ -3289,8 +3289,8 @@
         <item>Model p94/stpi1_model_p94</item>
     </string-array>
     <string-array name="Models2">
-        <item>Model part1 p9-1/stpi2_model_partie1_p9_1</item>
-        <item>Model part1 p9-2/stpi2_model_partie1_p9_2</item>
+        <item>Model part1 p9&#8211;1/stpi2_model_partie1_p9_1</item>
+        <item>Model part1 p9&#8211;2/stpi2_model_partie1_p9_2</item>
         <item>Model part1 p21/stpi2_model_partie1_p21</item>
         <item>Model part1 p23/stpi2_model_partie1_p23</item>
         <item>Model part1 p33/stpi2_model_partie1_p33</item>
@@ -3313,4 +3313,833 @@
         <item>Model part2 p58/stpi2_model_partie2_p58</item>
     </string-array>
 
+
+    <string-array name="stpi1_model_p4">
+        <item>L – Hello! My name is Lisa. I’m from Wales. \n
+                F – Hi, Lisa. Pleased to meet you. I’m Francis, and this is my friend Patrick. \n
+                L – Hello, Patrick, nice to meet you. \n
+                F – When did you arrive on campus? \n
+                L – Just two days ago, but I wish I had come earlier. \n
+                F – Really? What for?  \n
+                L – Simply to have enough time to adapt before courses start. \n
+                F – Of course. That sounds sensible. I suppose you feel a bit lost away from home. \n
+                L – A little bit. \n
+                F – Don’t worry. I’m sure things will turn out all right in a few days. \n
+                L – I hope so. And what about you? Have you been here long?  \n
+                F – Well, you see, I live in the area myself. \n
+                L – I’m very surprised to hear that. I thought you were a foreign student on the Erasmus programme.
+                \n
+                F – That’s exactly the case. But you see, my parents recently got a double position in a multinational company in the area. \n
+                L – I see. I suppose you are quite good at speaking French, then. \n
+                F – Not really: I’m afraid my French is very poor. \n
+                L – Cheer up. I’m sure it will soon improve by speaking to the French students. \n
+                F – Yes, of course it will. Anyway, the French students learn how to speak English, don’t they? \n
+                L – Sure. By the way, I think most courses will be in English. So, you will survive …
+                F – Survive? Hey! … What about having some lunch? \n
+                L – That’s a very good idea. \n
+                F – Let’s go to the university restaurant, then! \n
+                L – Well, I’d rather not because it’s packed at that time. Why don’t we try the new campus cafeteria instead? \n
+                F – All right, that suits me perfectly. \n</item>
+    </string-array>
+    <string-array name="stpi1_model_p10">
+        <item>
+            S – Good afternoon ! \n
+            SA – May I help you? \n
+            S – Yes, please. I would like to get some information about the organisation of my studies. \n
+            SA – Sure. What exactly would you like to know? \n
+            S – Well, you see, I applied to study physics and data-processing; and I have been told that I will have to work in industry. you see what I mean? Er … what’s the word for this work? \n
+            SA – You mean an industrial training period? \n
+            S – That’s it! So, may I have more details about this requirement? \n
+            SA – Certainly. This training period is a must; you need to do a total of six months’ training in industry. \n
+            S – When am I supposed to carry out this training period? \n
+            SA – Well, it’s up to you. Either you take six months off university or you can do it during the summer holidays. \n
+            S – Will the university provide me with contacts in industry? \n
+            SA – I’m afraid not. Let me explain: we publish a list of offers coming from various companies and then you get in touch with these firms. \n
+            S – Is it possible to have a placement overseas? \n
+            SA – Yes, it’s quite possible but it’s more difficult. \n
+            S – The aim of such a training period would be to practise a foreign language in order to acquire more fluency. \n
+            SA – I agree with you completely. The trouble is that some companies abroad are reluctant to employ foreign trainees. Moreover, it means a lot of paperwork. But come on! If I were you, I would give it a try since you’re interested.
+        </item>
+    </string-array>
+    <string-array name="stpi1_model_p13">
+        <item>
+            You are probably familiar with the USA. But did you know that the surface area of the States is ten times as big as that of France? Well, that’s exactly what I am going to tell you about. \n
+            1 – First, let me tell you that in the States, distances are huge. Let me explain. It takes four days non-stop to travel from New York City to San Francisco by car. \n
+            2 – Moreover, I would like to point out that there are numerous highways and speedways across the country. Their main advantage is that driving is more relaxing. Is that clear so far? Fine. \n
+            3 – Finally, I would like to add that cars are spacious and comfortable. However, we should not forget that a lot of Americans travel by plane. \n
+            I will conclude by saying that you should travel around the USA and experience American driving. And now my colleague will take over.
+        </item>
+    </string-array>
+    <string-array name="stpi1_model_p15">
+        <item>
+            H – Hi ! You must be Mr Dupont from D.I.Y. International. \n
+            V – Yes, that’s right. \n
+            H – My name is Jane Moss. I’m in charge of Public Relations. How do you do? Nice to meet you. \n
+            V – How do you do, Mrs Moss. Pleased to meet you. \n
+            H – Did you have a pleasant trip? \n
+            V – Yes thank you, but it was a bit long. You see, we had to stop over in Quebec for 6 hours in order to do some kind of repair. \n
+            H – Oh dear, I’m sorry to hear that. I’m sure you must be very tired, then. \n
+            V – A little bit, but don’t worry. I feel alright at the moment. \n
+            H – Fine. Let me take your luggage. My car is over there in the parking lot. When did you leave Paris? \n
+            V – Well, I left yesterday, about thirteen hours ago. \n
+            H – What was the weather like over there? \n
+            V – Very wet and windy. The sort of weather I don’t like. \n
+            H – I see what you mean. Is this your first visit to Atlanta? \n
+            V – Not really. What I mean is that I stopped over in Atlanta airport three years ago, on my way to Miami. In fact, I’ve already come twice to the States. \n
+            H – What part of France do you come from? \n
+            V – Well, I come from Normandy but I was born on the French Riviera. \n
+            H – I see. Well, here we are at your hotel. I hope it’ll be alright. \n
+            V – I’m sure it will. Thank you for making the hotel reservation. \n
+            H – You’re welcome. Do you have any special plans for your stay? \n
+            V – I was wondering if you could show me round your plant tomorrow morning, before I meet my project partners. \n
+            H – No problem. I won’t pick you up too early. What about 10 a.m.? Would that suit you? \n
+            V – That suits me perfectly. And would you mind driving me back to the airport on Friday? \n
+            H – Not at all. \n
+            V – I really appreciate it. \n
+            H – Ah! Tomorrow, I would like to introduce you to one of my colleagues, Mr Jones. He is the company Personnel Manager. He may be able to help you with your work. \n
+            V – That’s great. I’m looking forward to that. \n
+            H – Do you mind if I leave you now?  \n
+            V – Of course not. I would appreciate some rest.
+        </item>
+    </string-array>
+    <string-array name="stpi1_model_p23">
+        <item>
+            TO – Euro-Tech Park. Good afternoon. \n
+            P – Good afternoon. I’m calling from France. Could you put me through to the person in charge of the Euro-Engineer Training Programme, please? \n
+            TO – Certainly. Hold on. I’ll put you through to a Training Officer.    Hullo, Training Centre! May I help you? \n
+            P – Yes, please. My name’s Michelle Potel and I would like to have more information on how to apply for your training scheme. \n
+            TO – Well, the procedure is very simple. All you need to do is fill in the application form and send your résumé as well. \n
+            P – Oh dear, I’m afraid I haven’t got an application form. Would you mind sending it to me? \n
+            TO – Not at all. Oh, one more thing! Don’t forget to enclose a covering letter. \n
+            P – All right, I’ll do that. \n
+            TO – Now, can I have your name, please? \n
+            P – I’m Miss Michelle POTEL. (replace by your name) \n
+            TO – I’m sorry but I didn’t catch your name. You see, I’m not familiar with French names. Could you spell it please? \n
+            P – Certainly. That’s Potel, P-O-T-E-L (spell your name) \n
+            TO – Fine. Can I have your address now, Miss Potel? I’m afraid you’ll have to spell it too. \n
+            P – No problem. So, that’s 8 rue R-U-E de D-E la L-A République R-E-P-U-B-L-I-Q-U-E. The area code is 7-6-0-0-0 and the town is Rouen. That’s R-O-U-E-N. France. \n
+            TO – That’s superb. I will send you the application form straightaway. And don’t worry, you’ve got plenty of time to send it back. \n
+            P – Thank goodness for that. Thank you very much, sir. You have been most helpful. \n
+            TO – You’re very welcome. Bye-bye and thank you for calling. \n
+            P – Good-bye.
+        </item>
+    </string-array>
+    <string-array name="stpi1_model_p27">
+        <item>
+            A – Hi ! How are you today ? \n
+            B – I’m fine, thanks. And what about you ? \n
+            A – Well, so so. \n
+            B – What’s the matter with you ? Is there anything wrong? \n
+            A – You see, I’m upset because my expensive calculator is out of order. \n
+            B – You mean your new calculator ? What bad luck ! I’m really sorry to hear that. Er…, I suppose it must be a battery problem. I can give you a spare battery, if you like. \n
+            A – Thanks, but you see, the trouble is that the circuit is damaged? I mean, the calculator doesn’t work anymore. \n
+            B – Really ? In that case, you should send it back to the manufacturer and complain about the breakdown. \n
+            A – You’re right, but the trouble is that I didn’t keep the receipt and the guarantee. You see what I mean ? \n
+            B – Oh dear. I think you should have been more careful. \n
+            A – I know. I wish I had not thrown away the receipt ! But there’s nothing I can do about it now ! \n
+            B – Um let me think about that. Well, if I were you, I would only buy cheap calculators now. Let me tell you why : the great advantage of having very cheap ones is that you change them regularly. \n
+            A – I don’t think it’s a good idea because you see, a cheap calculator is too simple to help with maths exercises. \n
+            B – No problem. Please go ahead. What can I do for you ?  \n
+            A – Er… could I ask you a favour ? \n
+            B – I’m sorry but it won’t be possible. You see, I need it for a test tomorrow at eight o’clock. What I can offer you instead is lend it to you for the next two or three hours. Would that be convenient ? \n
+            A – Well, I wish I could have a super calculator right now, in order to do my physics exercise. Would you mind lending me your high-tech calculator for a few days ? \n
+            B – You’re welcome. Here it is. And cheer up, I’m sur things will turn out all right. \n
+            A – Sure. That suits me fine. Hopefully, two hours will be enough. Thanks a lot. I am most grateful. \n
+            B – See you later. \n
+            A – I hope so. I promise to hand it back in 2 hours’ time. You can count on me. See you later. \n
+        </item>
+    </string-array>
+    <string-array name="stpi1_model_p32">
+        <item>
+            I – Do come in and have a seat. \n
+            A – Thank you, madam/sir. \n
+            I – Now, tell me about your present job. \n
+            A – All right. I’m sales representative for a small company in France which deals with pharmaceuticals
+            I – How long have you been working for this firm? \n
+            A – Well, I started working for them five years ago. \n
+            I – And why do you want to leave this firm and join the Training Programme? \n
+            A – Let me explain. I love my work, but I would like to get on with my career. I wish I could work for a larger company. \n
+            I – And now, why don’t you tell me about your academic background? \n
+            A – I’ve got a first-class degree in chemistry as well as a diploma in business management. \n
+            I – I see. Did you get a job then, I mean as soon as you completed your studies? \n
+            A – Not exactly. I decided that it would be useful to speak a foreign language fluently. That’s why I stayed in England for a year. \n
+            I – That was a very good move. Are you married or single? \n
+            A – I’m not married yet. \n
+            I – Would you mind having to travel? \n
+            A – Not at all. Actually, that is one of the reasons why I find this job very attractive. \n
+            I – Thank you for coming and answering my questions. I promise to let you know about the position shortly.
+        </item>
+    </string-array>
+    <string-array name="stpi1_model_p39">
+        <item>
+            F – Good afternoon. May I speak to Mr Brown, please? \n
+            B – Certainly, sir. Hang on please, I’ll put you through. \n
+            F – Thank you. \n
+            B – Hullo, caller! I’m afraid the line is busy. Would you like to hold or will you call back later? \n
+            F – I’d rather hold on. \n
+            B – Extension 2-3-5. What can I do for you? \n
+            F – Er …, who’s speaking? \n
+            B – This is John Brown speaking. \n
+            F – Hello Mr Brown, this is Peter Fields.
+            B – Oh hello, Peter, nice to hear from you. \n
+            F – I have just arrived at the Park and I wanted to thank you for sending a taxi to pick me up at the airport. I really appreciated it.
+            B – Don’t mention it, you’re very welcome. I must apologise for not picking you up myself, but it won’t surprise you to hear that I have a very busy schedule. \n
+            F – That’s all right, you needn’t apologise. \n
+            B – Did you have a pleasant trip? \n
+            F – Yes, thanks, but I feel very tired. \n
+            B – How come? you had a very short flight, didn’t you? \n
+            F – Not really. Let me explain: I flew back from Japan only a couple of days ago. \n
+            B – I suppose you are still suffering from jet lag, then. If I were you, I would take it easy for the next few days. \n
+            F – You’re right. That sounds sensible enough. \n
+            B – Well, I’m afraid I have to hang up now because I have a call on the other line and I also have an appointment soon. It has been very nice talking to you. \n
+            F – Thanks again for arranging everything for my arrival. It was very kind of you. \n
+            B – That’s nothing, really. See you soon. \n
+            F – I’m looking forward to meeting you. \n
+            B – So am I. Bye-bye, and thanks for calling.
+        </item>
+    </string-array>
+    <string-array name="stpi1_model_p43">
+        <item>
+            Introduction : I would like to give you some information on … (+ title of presentation). \n \n
+                         Did you know that … (+ statement / affirmation) … ?      (= Are you aware that … ?)  (= Do you have any idea why / how / when / what / how many … ?)  \n  \n
+                         Well, that’s exactly what I am going to tell you about. \n  \n
+            Announce organisation : To start with, I will describe the visual. \n \n
+            Description : As you can see, the slide represents different scenes of … / various aspects of … \n
+            1. First description + paragraph \n       2. Second description + paragraph    \n    3. Final description + paragraph \n  \n
+
+                                    And now my colleague will take over.         \n             Thank you, Miss A ..  / Mr B …  \n \n
+            Announce organisation : Let me now explain what my colleague has just described. \n \n
+            Explanation : 1. First explanation + paragraph  \n  2. Second explanation + paragraph  \n  3. Final explanation + paragraph    4. Just one more thing : (statement) + final paragraph = improvisation.   (more than 2 sentences!) \n \n
+            Conclusion : I will conclude / I would like to conclude by saying that  … + paragraph.
+        </item>
+    </string-array>
+    <string-array name="stpi1_model_p48">
+        <item>
+            PRO – How do you do, Mr Fields? Pleased to meet you. \n
+            F – How do you do? Glad to meet you. (shake hands) \n
+            PRO – How was your trip? \n
+            F – It was fine, thanks. \n
+            PRO – How long will you stay in Japan? \n
+            F – Just a couple of days. \n
+            PRO – And what will you be doing during those two days? \n
+            F – I will be visiting factories and meeting engineers and senior executives. \n
+            PRO – Where are you staying? \n
+            F – I’m staying at the Sheraton Hotel in downtown Tokyo. It’s very comfortable and quite convenient. \n
+            PRO – That’s a nice hotel indeed. Tell me, how do you find Japanese life? \n
+            F – I find it interesting! You see, this is my third visit to Japan; that’s why I’m familiar with this country. But the trouble is that the climate is too hot and humid. \n
+            PRO – Fortunately, we are equipped with air-conditioning. By the way, I have been told that you are likely to relocate one of your American subsidiaries in Hawaii. \n
+            F – As a matter of fact, we are in the process of expanding. We indeed agree to relocate our Illinois subsidiary in Hawaii; and we plan to start operating over there next September. \n
+            PRO – That sounds fine : it’s a convenient location since Hawaii is half-way between Japan and the States.
+            F – We also intend to set up a few branches on the American continent, more precisely on the West and East coasts. \n
+            PRO – I see. Well, I’m sure you will get along with our executives. Would you care to join us for a drink and a meal at a local restaurant? \n
+            F – I would be delighted. Thanks a lot.
+        </item>
+    </string-array>
+    <string-array name="stpi1_model_p49">
+        <item>
+            H – Hello, Mary. How are you today? \n
+            G – Hi. I’m doing fine, thanks. \n
+            H – Dis you have any trouble getting here? \n
+            G – No problem. The directions you gave me were easy to follow. \n
+            H – Fine. \n
+            G – I apologise for being late. You see, I didn’t realise you lived so far away. \n
+            H – That’s all right. Don’t worry about that. Come on in. Make yourself at home. \n
+            G – Thanks. Hey, you look great today! I mean, your new hair-cut suits you well. \n
+            H – You’re very kind. \n
+            G – By the way, you know what? I’ve just been offered a position. \n
+            H – Really? I’m surprised to hear that. I suppose you’ve been looking for a job for a long time, haven’t you? \n
+            G – Oh no, I wouldn’t say that! You see, it was really quick. I mean it took only two weeks. \n
+            H – Wow! That’s incredible! How on earth did you manage to get that job so quickly? \n
+            G – Well, let me tell you one thing. It’s very simple. All you need to do is send the right résumé at the right moment. \n
+            H –  You may be right, but on the other hand I’m sure that you’ve had a bit of luck or some connections. \n
+            G – Well, yes, up to a point. However, you seem to have forgotten that companies are recruiting a lot at the moment. \n
+            H – You mean they are short of staff? \n
+            G – Yes you can say that. \n
+            H – Anyway, congratulations for getting your first job so quickly.
+            G – Well, anyone can do that at the moment. \n
+            H – Perhaps we could celebrate that good news. Why don’t we go to the restaurant tonight? It’s on me. \n
+            G – That’s a very good idea, thanks a lot for the invitation. I really appreciate it. \n
+            H – It’s a pleasure. What kind of cuisine would you prefer? \n
+            G – Any kind, really. It makes no difference to me. \n
+            H – I’ve been told that you like eating Italian food. Is that correct? \n
+            G – Yes, that’s right. Do you mind if we eat Chinese instead? \n
+            H – Not at all. I would be delighted to try Chinese food. That’s settled, then. And now, let’s have a drink to celebrate! Here you are. Cheers! \n
+            G –  Cheers!
+        </item>
+    </string-array>
+    <string-array name="stpi1_model_p54">
+        <item>
+            RE – Hullo ! May I speak to the manager, please? \n
+            SR – Hold on a minute! I will see if he is in. I’m afraid he is out. Would you like to speak to the sales representative instead? \n
+            RE – I beg your pardon? I didn’t hear what you said. Could you repeat that, please? \n
+            SR – Would you like to speak to someone in the sales department? \n
+            RE – I would appreciate it, thanks. \n
+            SR – All right, sir! I will connect you. Hullo, Mary Smith speaking! May I help you? \n
+            RE – Yes, please. This is Mr McKenzie speaking, from Refineries Ltd. \n
+            SR – What’s the matter, Mr McKenzie? What can I do for you? \n
+            RE – I am calling to complain about your standard pumps. \n
+            SR – How come? Would you mind telling me what happened? \n
+            RE – Not at all. You will never believe it but while I was using one of your pumps, it stopped working for no reason at all. \n
+            SR – What a pity! Well, I’m very surprised to hear that! By the way, what sort of liquid did you pump? \n
+            RE – Actually, I pumped oil. \n
+            SR – I suppose you pumped very thick oil, didn’t you? \n
+            RE – Er …, yes, you can say that. \n
+            SR – You shouldn’t have pumped thick oil with such a small pump! I’m afraid there’s nothing I can do about it. \n
+            RE – Well you see, the instruction manual wasn’t too clear about that. I wish you had warned me before. \n
+            SR – Don’t worry Mr McKenzie, things will turn out all right. Hopefully, we will find a solution. \n
+            RE – I hope so. \n
+            SR – Why don’t you buy our special heavy-duty pump? \n
+            RE – I’m sorry but I’d rather not because you see, it’s quite expensive. \n
+            SR – In that case, what about getting a medium-size pump instead? That’s the solution, isn’t it? \n
+            RE – All right, that’s a good idea. However, I wish you could replace the first pump free of charge. \n
+            SR – Let me think about that. I’m sorry but it won’t be possible. You see, it was your fault! \n
+            RE – Yes, up to a point. But do you realise that the instruction manual was not clear enough? \n
+            SR – Come on, take it easy, Mr McKenzie! What I can propose is to have your pump repaired. I promise it will be free of charge. \n
+            RE – Really? Oh, thank you, it’s very kind of you. \n
+            SR – You’re welcome, it’s a pleasure. \n
+            RE – Excuse me. I’m sorry to bother you. Could you tell me how to go to the repair-shop from the train station, please? \n
+            SR – Certainly. You go straight to the traffic lights, you turn right and then left, and there you are. You can’t miss it.
+            RE – Thanks! I will go there tomorrow morning. \n
+            SR – Fine! I will have a word with the person in charge there. Have a nice day! Good-bye!
+        </item>
+    </string-array>
+    <string-array name="stpi1_model_p64">
+        <item>
+            D – Hullo ! This is Helen Turner from Agro-Distribution Limited. Turner, T-U-R-N-E-R. May I speak to Mr Wright, please? \n
+            SC – Hold on a minute, please! You’re through now. Mr Wright speaking. What can I do for you, Mrs Turner? \n
+            D – Well, I will be visiting a company in your area on Friday the fifteenth in the afternoon. So, I was wondering if we could possibly meet in the morning. \n
+            SC – I see. Hang on, please. I’ll check in my diary if I have any commitments. Um, … let me see … I’m afraid I will be busy from nine till ten. I’ll be visiting a factory, a new subsidiary actually. \n
+            D – Would ten thirty be convenient? \n
+            SC – I’m sorry but it’s a bit early. You see, traffic is sometimes bad, so I may be delayed. \n
+            D – Shall we say eleven a.m., then? \n
+            SC – Fine. That suits me perfectly. \n
+            D – Perhaps we could have lunch together, if you’re available. \n
+            SC – I do apologise but I’m scheduled to have lunch with a designer. \n
+            D – Never mind. We can have lunch together another time. \n
+            SC – By all means! So, I’ll be expecting you on Friday the fifteenth at eleven a.m. \n
+            D – I’m looking forward to seeing you, then. \n
+            SC – So am I. And please give my regards to Mr Jones. \n
+            D – I will. Good-bye. \n
+            SC – Bye-bye, and thanks for calling.
+        </item>
+    </string-array>
+    <string-array name="stpi1_model_p65">
+        <item>
+            S – Hullo! Could you put me through to Mr Geoffrey Miles, please? \n
+            PA – Hold on please, the line is busy. I will transfer your call to his P.A.\n
+            S – Thanks a lot. \n
+            PA – Hullo! Mr Miles’s personal assistant speaking. What can I do for you? \n
+            S – This is Mrs Simpson from Glaxo U.K. speaking. May I speak to Mr Miles, please? \n
+            PA – I’m afraid he isn’t available at the moment. Can I take a message? \n
+            S – Yes, please. I would like to inform Mr Miles that we have received only half of the custom-made computers that we had ordered for our research unit. \n
+            PA – Really? One moment please, I am going to check in our files. (…) Well, we dispatched all the equipment two weeks ago. \n
+            S – On top of that, I would like to complain because some PC.s were damaged. \n
+            PA – Oh dear, what a pity. I’m surprised to hear that. We’ve never heard of any complaint before. Sorry about this mix-up. \n
+            S – Well, you’d better send the missing half as soon as possible. \n
+            PA – Why don’t you wait for a few days? The missing part of the shipment may be delivered in the meantime. \n
+            S – I’m sorry but I’d rather not. You see, we cannot do without those PC.s. I’m afraid our efficiency is bound to drop without the necessary hardware. \n
+            PA – I will pass on the message to Mr Miles. I will also contact the person in charge of the after-sales service and see what he can do about it. \n
+            S – Thanks a lot. I really appreciate it. \n
+            PA – You are very welcome, madam. Have a nice day and thank you for calling.
+        </item>
+    </string-array>
+    <string-array name="stpi1_model_p74">
+        <item>
+            To solve this problem, we must examine all the data given by the figure. \n We know that this figure is made up of a square and a triangle. We also know that the square and the triangle have got equal sides. \n Let T1 represent the equilateral triangle. Let T2 represent the second triangle containing angle x. Note that the latter has got two equals sides, which means that it is an isosceles triangle. Let x represent each of the smallest angles of triangle T2 and let y represent the widest angle of triangle T2. \n Given that angle y includes on angles of the square, that is to say 90 degrees, and one angle of triangle T1, that is to say 60°, this means that angle y is a 150-degree angle. \n Taking into account the fact that the sum of the three angles of a triangle equals 180 degrees, it implies that the sum of the two small angles is 180° minus 150°, that is 30 degrees. \n We can therefore draw the following conclusion : the value of angle x is 30° divided by 2, which equals 15 degrees.
+        </item>
+    </string-array>
+    <string-array name="stpi1_model_p79">
+        <item>
+            (May I have your attention please?) \n \n
+            1 – This graph represents the evolution in the amounts of soot emissions measured within a one hundred metre radius around the plant. \n
+            2 – The quantities of soot in grammes are plotted against the twelve months of the past year. \n
+            3 – Overall, we can notice that the curve reveals an upward trend during the first seven months, followed by a downward trend. \n
+            4 – This line graph can be broken down into five parts. \n
+            5 – The first portion of the graph, that is from January to late March, shows a plateau at fifty grammes. This plateau can be explained by the fact that the weather is very windy at this time of the year and that strong winds blow the soot particles far away. \n
+            6 – As shown on the curve, the second part, that is to say from April to July, reveals a gradual increase from fifty grammes up to two hundred grammes. This gradual increase is due to the fact that winds become less strong in the summer time and the soot particles drop very quickly all around the plant. \n
+            7 – It is striking to realise that, in August, the graph reaches a peak at four hundred grammes since rain-storms are frequent in this season and make the soot particles drop straight down to the ground. \n
+            8 – The next portion of the curve indicates a dramatic decrease from four hundred grammes down to sixty grammes, between early September and mid-October. This dramatic drop is caused by the decreasing frequency of showers in autumn. \n
+            9 – Finally, it should be noted that the last part of the line graph presents a levelling-off at around fifty grammes. Once more, the windy weather accounts for this levelling-off. As I said earlier, strong winds blow the soot particles and scatter them away. \n
+            (Thank you for your attention. Do you have any questions? = Are there any questions?)
+        </item>
+    </string-array>
+    <string-array name="stpi1_model_p83">
+        <item>
+            MO – Mrs Tyler, I suppose? \n
+            C – That’s right. Do come in. And thank you for coming so quickly. \n
+            MO – You’re welcome. I’ve just been told that you needed some maintenance for your new particle-sizer and that is was urgent. Could you be a little more specific about the break-down, please? \n
+            C – Well, in fact, there’s nothing wrong with the particle-sizer itself. The trouble is that it is equipped with an alarm system which doesn’t work properly. \n
+            MO – How come? It’s brand new! Do you mean it’s already out of order? \n
+            C – No, I wouldn’t say that. Let me explain: the alarm is triggered off for no reason at all. \n
+            MO – I understand. Let me have a look at it. Would you mind showing me where the device is installed? \n
+            C – Not at all. It’s installed in the small building opposite the R &#38; D unit, next to the entrance. This way, please. \n
+            MO – Don’t worry, Mrs Tyler. To my mind, this is likely to be a minor adjustment problem. \n
+            C – You may be right, but on the other hand it could be a real breakdown. Who knows? \n
+            MO – Well, I’m afraid there’s nothing I can do about it right now. I will have to come back and replace a faulty sensor. A pity, really! If I had been given a detailed account of the malfunctioning, I would have come with a few spare parts. And then I wouldn’t have wasted your time. I do apologise. \n
+            C – That’s all right. It’s not your fault. I only wish the person in charge of claims in your company had given you a full report on my telephone call. But never mind, it’s no use complaining, is it? Now, when do you plan to come back? What about fixing an appointment for this afternoon? \n
+            MO – I wish I could make it, but I’m afraid it won’t be possible. I mean, I have got too many commitments. But I can arrange an appointment tomorrow. Let’s say … 10 a.m. or 3 p.m. Would that be convenient? \n
+            C – 10 a.m. would be best, if you don’t mind. You know, the sooner the better. \n
+            MO – All right. Anyway, the unit is under guarantee, so the replacement will be free of charge. \n
+            C – That’s perfect! And hopefully, there will be no more trouble afterwards. \n
+            MO – By the way, do you mind if I bring along a young trainee? \n
+            C – Of course not. \n
+            MO – Thanks, I appreciate it. See you tomorrow. I will do my best to arrive on time. \n
+            C – Fine. I’ll be expecting you around ten, then. Have a nice day. Good-bye.
+        </item>
+    </string-array>
+    <string-array name="stpi1_model_p91">
+        <item>
+            May I have your attention please? \n \n
+            1.a. It’s obvious that, when carrying out their processing or production activities, factories require electrical power on a regular basis. However, you must admit that they often face the problem of a lack of electricity supply due to all sorts of power-cuts. \n
+            1.b It is clear that one way to solve this problem is provided by wind power, since we have plenty of windy sites in this area. \n
+            2. Windmills can be defined as aerogenerators, and modern mills can be classified into two types, namely rotor windmills and vertical axis windmills. \n
+            3.a. As shown on this diagram, the windmill is made up of two main parts: first of all, it includes a tower or a mast which is made of metal; second, it features two blades which are made of the same material. Now, let’s consider the vertical axis mill. \n
+            3.b. The mast is usually ninety metres high; in other words, its height is 90 metres. As for the measurement of the blades, it varies from fifty metres in diameter up to eighty metres. \n
+            4. This device is designed to produce power. \n
+            5. Obviously, the blades rotate thanks to the wind. You will be surprised to hear that, in so doing, they generate electricity with an output of 1 megawatt per mill. \n
+            6. The main advantage of this system is that it requires no raw material, just wind, and as you already know, there are plenty of windy sites in this area. On top of that, let’s not forget that it is pollution-free. \n
+            7. The only drawback, however, is that such windmills are expensive to install; that is to say, they are not money-saving yet. \n
+            8. In conclusion, I would like to stress that this device would offer marvellous opportunities to provide alternative energy. And let me remind you that it is environment-friendly. What I’m suggesting is that it will enable you to protect the quality of the environment. \n
+            (Thank you for your attention.) Do you have any questions?
+        </item>
+    </string-array>
+    <string-array name="stpi1_model_p94">
+        <item>
+            Give instructions (=Procedure): \n
+            The first step is to pour one measure of Tequila into an electric blender or mixer. \n
+            The second step consists in pouring five measures of lime juice into the blender. \n
+            Next, add half a measure of Triple Sec or Cointreau in order to improve the taste. \n
+            Afterwards, throw a few ice cubes into the mixture. \n
+            The final step is to blend the mixture for fifteen seconds inside the electric blender. \n
+            Your Margarita cocktail is now ready to be served. \n
+            \n
+            Describe the Process: \n
+            First of all, 1 measure of Tequila is poured into a blender. \n
+            Secondly, 5 measures of lime juice are poured into the blender. \n
+            Subsequently, half a measure of Triple Sec is added in order to improve the taste. \n
+            After throwing a few ice cubes into the mixture, the latter is blended for 15 seconds. \n
+            When the electric blender is activated, the different ingredients are mixed; as a result, a new ice texture is created, which is known as slush. \n
+            \n
+            Make a Recommendation: \n
+            Prior to pouring the blended mixture (i.e. slush) into a glass, it is recommended to put salt on the wet rim of the glass. \n
+            Obviously, make sure that you drink with moderation. Cheers!
+        </item>
+    </string-array>
+
+
+    <string-array name="stpi2_model_partie1_p9_1">
+        <item>
+            Let me tell you, about my trip to the States First I called a taxi. The taxi picked me up at 9 and drove me to
+            Heathrow airport. It took 2 hours because traffic was dense. The taxi dropped me off at Terminal 2 at 11. I went to the check-in counter and gave my ticket. I registered my luggage and went through security. My cabin luggage was X-rayed there. \n
+            Afterwards, I went round the duty-free shops where I had a look around. I heard the announcement of my flight and looked at the video displays. l proceeded to gate 12, gave my boarding pass and boarded the plane. I placed my cabin luggage in the overhead compartment and took my seat. We took off at 12.30. The flight attendant gave us some headsets to listen to music. The flight was 7 hours long. Fortunately, we were shown a film and given magazines. A meal was also served. \n
+            We landed in JFK at 3 pm local time. I went through immigration where I showed my visa. I picked up my luggage from the carrousel (= conveyor belt) in the baggage claim area. I went through customs. I took a courtesy (= free of charge) shuttle to downtown Manhattan. The shuttle dropped me off at the Plaza hotel. I went to the reception in the lobby. \n
+            The clerk told me that they were expecting me and that my room was booked. The porter showed me to my room. l gave him a 2-dollar tip. At last, I could rest because I was tired. In fact, I had already started suffering from jetlag.
+        </item>
+    </string-array>
+    <string-array name="stpi2_model_partie1_p9_2">
+        <item>
+            Speaking of security, you'll never believe what happened to me last week while l was visiting our branch in Boston.
+            This is the most incredible story. \n
+            First of all, I had called John Smith, my new colleague in the R &#38; D department over there to tell him that I would arrive at the airport at 9. Since we had never met before, I suggested that he should wear a badge with his name on it. As soon as I had arrived and collected my luggage at baggage claim, I went to the exit. Suddenly I noticed someone with a badge on his jacket. It read John Smith. ''That's my man all right!" I thought. l didn't know what he looked like, having only had contact with him on the phone. Everything was normal so far, but hang on! \n
+            Well, we shook hands and started talking about the weather, my flight, etc … A casual conversation in actual fact. As we were driving and starting to discuss business, I had the funny feeling that we didn't share the same background To make things worse, I even wondered if we were going to the plant since I knew it was located near the airport. That was strange, wasn't it? Eventually I couldn't stand it any longer. You know what I did? I simply asked him which company he worked for. \n
+            As a matter of fact, he turned out to be a research engineer from one of our rival firms. I'm glad I had not revealed any secret about our future patent. Eventually, he drove me back to the airport where we met our respective colleagues. But all is well that ends well. This story proves that we should always be careful before giving information concerning our company activities.
+        </item>
+    </string-array>
+    <string-array name="stpi2_model_partie1_p21">
+        <item>
+            O – Hullo ! Could you put me through to the production department? I’d like to speak to Mr Smith, please. \n
+            S – Hold on just a moment, I’ll connect you … It’s ringing for you now.   Mr Smith speaking. What can I do for you? \n
+            O – Good morning. My name is Jane O’Brian from Freshpack company. I’m calling you because I will be visiting a milk processing unit in your area and I was wondering if it would be possible to visit your site and hear your comments about our new packaging model that you’ve been using for 3 months now. \n
+            S – Certainly! Let me check in my diary. Would Monday morning be alright? I’m also available on Tuesday. Which day would suit you best? \n
+            O – I’m sorry, I can’t make it on Monday morning. Tuesday would be more convenient if you don’t mind. \n
+            S – Alright. Let’s say 9 o’clock. Would that be convenient? \n
+            O – I’m afraid it would be a little too early for me. You see, I will be traveling from London. What I can propose is to meet a bit later. In fact, 10 would be ideal, if that’s all right with you. By the way, could you tell me the best way to reach your plant? \n
+            S – Well, it’s rather simple. I suppose you will be coming from London by motorway. Just take exit 6 and at the first traffic lights, turn left. Our plant is about one mile down the A235. You should have no problem. It’s well sign-posted. If you like, I can send you a map by fax. \n
+            O – Yes. Thanks a lot. That would be very kind of you. My fax number is 567 897. See you on Tuesday at ten, then. It was nice talking to you. Good-bye. \n
+            S – Thank you for calling. Good-bye! \n
+            O – Good morning! I have an appointment at 10 with Mr Smith. He’s expecting me. \n
+            S – Just a moment, please! I’ll see if Mr Smith is available … Would you like to take a seat, while waiting? Well, Mr Smith is expecting you. Would you please go up to the second floor. The lift is right on your left.
+        </item>
+    </string-array>
+    <string-array name="stpi2_model_partie1_p23">
+        <item>
+            A – Mr Jones, there’s something I wanted to talk to you about. You usually park your car in the back of the warehouse, don’t you? \n
+            B – Yes, that’s right. Any problem with that? \n
+            A – Well, you’re probably not aware of it but you’re usually parked right in front of the emergency exit. \n
+            B – Is that so? But it has never been used in the 5 years I’ve been working here. \n
+            A – I agree it’s never been used. But we never know. If there were an accident, we would be in trouble. \n
+            B – I am not so sure about that. You see, I wonder what kind of accident there could be in the warehouse. I mean everything is automated and robotised. \n
+            A – Yes, there’s little chance of an accident. I agree with you. But as the person responsible for Health and Safety, I thought it was my duty to tell you that you are not complying with the safety rules of the site. On top of that this is putting me in a difficult situation. You see, if there were an accident, I would be responsible. And frankly, I’m a little bit worried about that. \n
+            B – I understand your concern. I’m sorry I didn’t realise it would cause you problems. So, what would you like me to do then? You will agree with me that I’ve got to park somewhere and you probably know that the staff parking lot is a nightmare. \n
+            A – Well yes, there’s the staff parking lot. I know it’s always full but it would be better to double park there rather than go against the safety regulations. Safety is a priority, you see. \n
+            B – Ok. I’ll do my best. I understand your position. But I think we ought to do something about the lack of parking space. \n
+            A – I agree with you there. We should mention this point at the next staff meeting. Thanks anyway for your understanding, Mr Jones. \n
+            B – You’re welcome. Sorry for the inconvenience.
+        </item>
+    </string-array>
+    <string-array name="stpi2_model_partie1_p33">
+        <item>
+            May I have your attention, please? Shall we start? \n \n
+            1. My speech will last about 3 minutes. Before starting, I'd like to give you some background information on the
+            subject of my talk today, which is oenology. Well, oenology can be defined as the science of wine. What I mean is that it concerns both wine-making and wine-tasting. \n \n
+            2. First, let me say a few words about their classification. French wines can be classified according to their colour, their regional origin and their use. \n \n
+            As you can see on this table, wine colours can be broken down into 3 main types, namely white, red and rosé,
+            which in turn can be dry or sweet, fruity or woody in flavour. The main regional origins of wines can be listed as
+            follows: Bordeaux wines, Burgundy wines, Alsace wines and the wines of the Loire Valley. \n \n
+            3. You may now be wondering how wine is produced. So, let me explain the process of wine production I have
+            brought a flowchart with me on a transparency which I hope will help you visualise this process. \n
+            First of all, the grapes are collected in autumn. Then, they are pressed and stored in big containers where
+            fermentation takes place. Afterwards, once the proper alcohol level has been reached, the wine is kept in wooden barrels for maturation. Eventually, it is bottled and labelled. Is that clear so far? \n \n
+            4. We now come to the third point of my presentation which concerns the use of the different types of wine.
+            When considering the best use of wine in relation to food, we can recommend a white wine for fish or white meat. On the other hand, a red wine would be more suitable for red meat and cheese. If we compare a red Bordeaux wine with a Burgundy, we realise that the latter has a deeper red colour and a thicker texture. Red Bordeaux wines tend to be lighter. That's the reason why the British sometimes call it Claret. Now concerning white wines, Riesling and Chablis for example have always been very popular because of their fruity flavour. As I said before, white wines can be either dry or sweet. \n
+            Well, that's about all! I'm now ready to answer any questions you might have.
+        </item>
+    </string-array>
+    <string-array name="stpi2_model_partie1_p34">
+        <item>
+            Good morning, Ladies and Gentlemen. May I have your attention please? Shall we start? \n
+            \n
+            I would like to present our company and give you some information about our plant here in North London. At the entrance, you were handed out some descriptive literature and the annual report of our company. \n
+            \n
+            As you probably know, our plant belongs to the EIGER group, E.I.G.E.R., whose headquarters are located in Detroit, USA. This company is engaged in a wide range of activities including agrochemical and pharmaceutical products. The group operates more than 15 plants and 8 subsidiaries all over the world. The group employs 45,000 staff. \n
+            As you can see on my transparency, our plant is situated in the suburbs of London, off the M25 motorway. It was set up in 1997. The site which specialises in agrochemicals has a three-fold function: first, we carry out R &#38; D activities in the fields of pesticides and fungicides; second, we produce a whole line of fertilisers; finally, we are in charge of marketing and consumer relations for Europe. \n
+            \n
+            As you can see on this graph, our output is 5 million tons of fertiliser per year. The estimated turnover amounts to 3 million Euros for the whole of Europe. \n
+            \n
+            But what about the future? Well, what I can say is that we are now in the process of developing and diversifying our activities. What I mean is that we plan to develop our research concerning drugs for animals. Moreover, let me tell you that the management intends to take over the British company called Pharmapet and to set up a joint venture with a Dutch company called Animacare. Therefore, we can foresee a major development of the company in the next 10 years. \n
+            That's about all. Do you have any questions? \n
+            \n
+            Audience: Yes, I have one question. You mentioned "pesticides" as one of your major products. Could we have more details about the exact type of pesticide you produce? \n
+            Presenter: Certainly! I see what you mean. Maybe I wasn't clear enough on that point. So, let me explain. What I can say is that our pesticides aim at protecting crops from all kinds of insects such as flies and worms. Does that answer your question? \n
+            Audience: Yes. Thank you.
+        </item>
+    </string-array>
+    <string-array name="stpi2_model_partie1_p45">
+        <item>
+            PM – Please come in. Have a seat! \n Did you have a good trip? \n
+            I – Yes thank you. I arrived last night. By the way, thank you for making the (hotel) reservation. \n
+            PM – Well, we’re here today to get to know each other a little bit better. If you don’t mind, we’ll start with a few questions concerning your motivations for this post as an engineer. \n
+            I – Well, let me see. The study of heating systems was my favourite subject at the institute. On top of that, I had a strong interest in data-processing. Personally, I feel that this post in your design department would enable me to combine those two skills. \n
+            PM – I agree with you there but do you have any experience in this field? \n
+            I – Yes, I carried out a project in ventilation and heating at THERMEX LTD two years ago. \n
+            PM – What were your responsibilities during this project? \n
+            I – I was in charge of comparing various air-conditioning systems for the R &#38; D department. \n
+            PM – Could you tell me what you liked about the job at THERMEX? \n
+            I – Here again, as I said before, it combined my two interests, on the one hand in heating systems and, on the other hand in computers and automation. \n Moreover, I enjoyed the fact of being part of bigger projects within the whole R &#38; D team. \n
+            PM – I’d like to know if THERMEX was your only contact with the working world? I mean, if you carried out other internships for instance. \n
+            I – I see what you mean. Actually, I carried out various training periods in industry and I was also a summer camp instructor in the USA one Summer. \n
+            PM – Have you got a first aid certificate? \n
+            I – Yes, I got it as part of a Health and Safety course offered at my institute. \n
+            PM – Well, thank you very much. Do you have any questions concerning the position or the company? \n
+            I – Yes, I’d like to know what the prospects for promotion would be within your group. \n
+        </item>
+    </string-array>
+    <string-array name="stpi2_model_partie1_p57">
+        <item>
+            You will agree with me that communication nowadays is a major factor of success in business. What I mean is that you need to be in touch with your head office and your customers all the time. And frankly, this can be problematic! But I've got the solution for you. Why not buy a 3rd Generation mobile telephone with built-in screens and hook-ups for your computer? \n
+            \n
+            You'll be surprised to hear that, wherever you are, you will be able to make and receive telephone calls and have access to the internet, TV or company files. Can you imagine the situation? : You're sitting in your car and when there is a change of schedule or technical details for your project, you are immediately informed by your head office. You must admit that this would enable you to save both time and money. \n
+            \n
+            I am convinced that a 3rd generation mobile telephone could make your life easier. I'd like to stress the fact that nowadays the whole territory of Europe is equipped with relays. What I mean is that you can travel from Barcelona to Stockholm and constantly be in touch with your office, your friends and relatives. Do you remember the time when your conversation was interrupted or inaudible? This time is definitely over! \n
+            \n
+            What's more, are you aware that, thanks to a high 2,000 kilobytes per second flowrate, you can now have access to the internet, receive and transmit photos, music and videos? \n
+            \n
+            I suppose you are going to tell me that a 3rd generation mobile telephone is costly, but let me reassure you on this point. You will be surprised to hear that the unit costs only 200 Euros and that the monthly subscription is 20 Euros. \n
+            \n
+            So there's no hesitation possible. Contact your local telecom agency now!
+        </item>
+    </string-array>
+    <string-array name="stpi2_model_partie1_p58">
+        <item>
+            I'd like to tell you about the city where I'm carrying out my studies, that is to say Rouen. Let me first go over the ways of reaching the capital of Normandy. Indeed, there are many ways of access such as the train, the plane and excellent motorways. \n
+            \n
+            Can you imagine a city that dates back to Roman times and that still retains a medieval atmosphere? I suppose you have seen Monet's paintings of the cathedral. I would also like to remind you that Joan of Arc was tried and burnt there. Let's not forget either that this city was heavily bombed and damaged during the second World War just before D day. All those
+            historical facts should be borne in mind when walking down the streets. It is therefore striking to see old and new buildings side by side. The architecture arouses a feeling of nostalgia for the glorious past, especially the Renaissance period when the town was rich as a result of the wool and textile industry. \n
+            \n
+            It is obvious that Rouen is a big industrial and commercial centre. What I mean is that its excellent location on the River Seine between Paris and the sea has always been an asset. At first sight, the harbour seems to concentrate the major activity, but if we take a closer look, especially in the suburbs, we realise that Rouen is heavily industrialised. I must stress the fact that refineries and car manufacturing plants provide thousands of jobs to local residents. \n
+            \n
+            Another important feature of this town resides in its campus including the university, a college of engineering and a school of business administration. \n
+            \n
+            So, I suppose you're going to tell me that it is polluted and crowded. But let me reassure you on this point. You don't need to worry about that. The local authorities are trying hard to provide clean air, public transportation and cultural activities. \n
+            \n
+            To conclude, let me say that it would be a pity not to come and visit this attractive town. The most sensible thing to do is to make a reservation because hotels are full from April till September.
+        </item>
+    </string-array>
+    <string-array name="stpi2_model_partie1_p69">
+        <item>
+            1. You must admit that we are facing a serious problem. I mean that recently the number of car accidents and casualties has been increasing dramatically. \n
+            2. You will agree with me that we must react now. Surely, the most sensible thing to do is to take measures at the national level. \n
+            3. The project consists in applying - implementing - a series of traffic regulations. It can be divided (broken down) into 6 parts. Let me go over the various parts in turn. \n
+            \n
+            The first action consists in making it compulsory to install frontal and lateral airbags in all existing cars. \n
+            4. I would like to add that car speed should be reduced to 95 km/h on motorways. Moreover, I think that laws should enforce a 30 km/h speed limit downtown. Contrary to what is done in Germany and Italy, we should follow the American example that has proved to be so successful in limiting road casualties. \n
+            5. It is a well-known fact that the number of trucks is excessive on week-ends. Therefore, I suggest that we ban trucks on roads on week-ends, I mean, from Friday 8 pm till Sunday 8 pm. \n
+            6. Let me finish! I would like to remind you that the majority of accidents results from drinking and driving. Therefore I propose that we multiply police controls. \n
+            7. Just one more thing. I would like to focus on one particular sensitive point. What's the use of having fast and powerful engines? We may wonder. \n
+            I therefore plan to increase tax rates on cars whose power exceeds 9 HP. \n
+            8. There is one striking advantage to that project: it should reduce the number of casualties substantially. \n
+            9. I suppose you are going to tell me there is a drawback: it would cost too much, mostly in police controls. Let me reassure you on this point: the government intends to multiply the number of automatic radars and speed cameras. \n
+            10. The estimated cost -the bottom line - for the government would amount to one million Euros. But let me put that into perspective! If we consider the number of lives it would save, it is clear that this would be money well spent. \n
+            11. At first sight, it seems that those measures would reduce the citizens' freedom, but if we take a closer look, it turns out that it would save lives. \n
+            12. To sum up, I would like to stress that this project has the main advantage of making our roads safer and more pleasant.
+        </item>
+    </string-array>
+    <string-array name="stpi2_model_partie1_p73">
+        <item>
+            1. Let's start with a quick survey. I'd like to know who owns a car. Could you please raise your hands? \n
+            2. Do you see any reason that might motivate this law? \n
+            Well, it's obvious that the main reason is the number of casualties on motorways. The statistics are very clear. Do you realise that thousands of people die on roads each year? \n
+            I think Mr X would like to intervene. Please go ahead! \n
+            I'm sorry but I don't think this is the main reason. I suppose the real motivation is to reduce fuel consumption. \n
+            3. What could be the implications of this law? \n
+            Well some people argue that it would save lives. Others complain that they will fall asleep and be less vigilant. \n
+            I suppose Mr X has got a different point of view. \n
+            Yes indeed. In my opinion, people will no longer use motorways if they have to drive slowly. \n
+            4. Do you see any alternative if we want to reduce oil consumption? \n
+            As far as I know, biofuels could be a good solution. \n
+            5. What is your general feeling? \n
+            Personally I think we should have both controls to prevent speeding and incentives to generalise biofuels. \n
+            6. Do you have any objection to this law? \n
+            If the main objective is to reduce oil consumption, I don't think a speed limit is the best solution. I am convinced that electric cars with fuel cells would be the ideal solution. \n
+            7. Let's sum up what we have discussed so far. We have two views: some of you are in favour of a speed limit for safety and energy saving reasons. Others propose to use more biofuels and electricity. \n
+            8. Could we have a quick vote? Those in favour of the speed limit? Those in favour of alternative sources of energy? Well there seems to be a lot of support in favour of the first /second proposal. \n
+            Thank you all for your participation.
+        </item>
+    </string-array>
+    <string-array name="stpi2_model_partie1_p81">
+        <item>
+            Shall we start? \n
+            Let me first introduce myself: My name is Simon Jones and I represent Architect LTD based in Finland. \n
+            We have examined the situation of your harbour carefully and we have come to the conclusion that the ideal solution for you would be an extension of the harbour. \n
+            Let me go over the main points of this project in detail. \n
+            Firstly, we plan to build an outside harbour to accommodate the big ferries. Secondly, we propose to transform the existing harbour into a marina for sailing boats and small yachts, I'd like to stress the fact that this innovative idea could help develop tourism and consequently encourage the economy of the city. \n
+            My colleague will now take over and talk about the financial aspect. \n
+            Thank you, Simon. Let me then say a few words about the estimated cost of the project. I reckon that the whole cost of the transformation would amount to 3 billion dollars, which could be supported jointly by the city and the region. \n
+            We now come to the advantages of this project. It is clear that this would satisfy the number of boat owners waiting for a harbour space. Secondly, it will attract a lot of French and British tourists. Finally, it will make the city centre more pleasant and modern. However, we should not forget that the marina will reduce access to the fishing harbour. Therefore, access to the latter should be enlarged. \n
+            I think we have covered all the aspects of the question. \n
+            To conclude, I’d like to say that, according to our simulation and our estimate, this investment could be paid back within a period of 10 years thanks to the return from tourism. \n
+            We are now ready to answer your questions. \n
+            \n
+            Audience: Yes, there is one point that worries me in your project. Do you really think the cost could be supported only by the city and the region? Personally, I think it won't be enough. \n
+            Presenter: I understand your concern. And I think you are right there. We have already thought about the problem and we think that the national government and the European Union could also provide additional funds. Would that satisfy you? / Does that answer your question? \n
+            Audience: Yes, that sounds more feasible / better. Thank you.
+        </item>
+    </string-array>
+
+
+    <string-array name="stpi2_model_partie2_p8">
+        <item>
+            C: The reason why we got together this afternoon, as mentioned in the memo, is that we have to tackle (address) the problem (the issue) of competition. I'd like to start by presenting the details of the problem that we have recently come up against. As a result of world-wide overproduction, the price of alarm systems has dropped considerably so that our product is now far more expensive than some of our competitors'. I would like to have your suggestions, ideas and proposals about how to proceed in order to bring our prices down. \n
+            Mrs A, would you like to start and give us one of your ideas? \n
+            \n
+            A: Yes, I have one simple proposal to put forward: why don't we try to automate production? We could then produce in large batches instead of producing small quantities of different products. \n
+            \n
+            C: That's an interesting suggestion. Mrs B, I think you have another idea. Please go ahead! \n
+            \n
+            B: We could also envisage reducing the funds allocated to R&#38;D. The money invested into research could be more limited in the future. I must say that patents are another area that could be improved. \n
+            \n
+            C: Mrs B, could you be more specific about this point? \n
+            \n
+            B: Certainly, what I mean is that there is no point in systematically applying for a patent. This procedure is definitely too costly. \n
+            \n
+            C: I think Mr D would like to intervene. \n
+            \n
+            D: Personally, I think that a reorganisation of our distribution system would enable us to reduce prices. We could try to reduce storage costs by shipping goods immediately. Furthermore, I'm convinced that transporting big quantities to a single wholesaler could bring substantial savings. \n
+            \n
+            E: May I intervene? We should also take packaging into consideration. The present one is definitely too costly. Instead of using plastic containers, resistant cardboard boxes would be just as good. \n
+            \n
+            C: We have already a list of 5 items. I'm sure we could come up with a couple more. \n
+            \n
+            F: If you want my opinion, I get the impression that we are spending too much time, energy and money on manufacturing sub-components. We could easily resort to specialist sub-contractors in the Far East for instance. \n
+            \n
+            C: And what about the marketing sector? Would you have any suggestion concerning that field? \n
+            \n
+            G: In the past we diversified our advertising impact by appearing in various media. It is obvious that a well-planned marketing strategy focusing on one particular media would enable us to minimize expenses. \n
+            \n
+            C: Thank you ladies and gentlemen. I think we have covered most aspects of the question Thank you for your collaboration
+        </item>
+    </string-array>
+    <string-array name="stpi2_model_partie2_p18">
+        <item>
+            Let me first introduce myself. \n
+            My name is John Smith and I am representing McTavish Consultancy. \n
+            We have examined the economic situation of your region carefully and we have come to the conclusion that your major problem resides in the lack of adequate facilities for your industrial development. As a result we have several proposals to put forward. \n
+            \n
+            Let me go over the main parts of our project. \n
+            First, we intend to develop your transport infrastructure, what I mean is that we plan to extend your main harbour and to build new access bridges and motorways. \n
+            Secondly, we think that setting up a new electricity power station is a priority if you want to modernize your region and to provide energy to your local industry. I am sure you will agree with me on this last point since at the moment you are depending on neighbouring regions for your energy supply. \n
+            We now come to the financial aspect and my colleague will take over. \n
+            \n
+            Yes thank you John. So, let me say a few words about the cost involved by such a project. I suppose you are going to tell me that the cost is enormous. And indeed the estimated bottom line amounts to 3 billion dollars. But I would like to reassure you on this point. We are convinced that you could easily get subsidies or loans from the central government or banks at low interest rates. I think we have now covered all the aspects of the question. \n
+            To conclude, I'd just like to stress the urgency of the situation if you want your economy to get a new start. \n
+            I'm now ready to answer your questions. \n
+            \n
+            R1: I have one question concerning the interest rates. What do you mean exactly by "low interest rates»? Could you be more specific on this point? \n
+            \n
+            R2: I'd like to comment on the project as a whole. I think it makes sense. But I would like to remind you of our primary objective which was to develop our industry. Therefore I was surprised to realize that you talked about transport and energy but never mentioned any specific industrial development. Do you have any specific proposal regarding this point? \n
+            \n
+            D: I see what you mean. Let me first answer the question regarding interest rates. We can reasonably expect them to be of the order of 12 %. Would that be acceptable? \n
+            Now to come back to the question of industrial development, I can assure you that we have thought about the question. We are convinced that if you provide the adequate infrastructure, local, national or foreign firms will spontaneously come to set up their facilities in your region. Similar experiments elsewhere in the European Union have proved that this is always the case. Does that answer your question?
+        </item>
+    </string-array>
+    <string-array name="stpi2_model_partie2_p26">
+        <item>
+            GRAPH \n
+            This graph represents the pressure variation at the nozzle. The pressure in pounds per square inch is plotted versus the time in minutes. Overall, we can say that after an upward trend till the 3rd minute, the graph shows a downward trend. \n
+            This graph can be broken down into 4 parts. The first part shows a rapid increase from o psi up to a peak at 80 psi. This sharp rise can be explained by the powerful acceleration of the turbine. The second portion reveals a dramatic decrease from 80 psi down to 40 psi. The introduction of the liquid accounts for this drop. In the third part, the graph levels off at a plateau. The pressure remains constant at 40 psi, which corresponds to the normal operation of the compressor. Finally the graph gradually decreases down to 10 psi, when the system is switched off. \n
+            \n
+            \n
+            A SET UP \n
+            Let me give you some details about this set up. As you can see in this figure, this set up is designed to measure the temperature inside an engine combustion chamber. This set up is made up of (consists of) a laser, an engine combustion chamber, a detector, an amplifier and a computer. Let me describe the process in detail: a laser beam is sent out by a laser. This beam goes through the quartz window of the piston. The optical signal is picked up by a detector and transformed into an electronic signal. The electronic signal is amplified by an amplifier before being processed by a computer that can give a print out. Do you follow me? To finish, I'd like to say a few words of recommendation. Prior to using this set-up, it is strongly advised to check the alignment of the laser beam with the quartz windows and the detector. Otherwise, the data obtained may not be in agreement with the theoretical model.
+        </item>
+    </string-array>
+    <string-array name="stpi2_model_partie2_p27">
+        <item>
+            In order to solve this problem, we must refer to Ohm's law. According to Ohm's law, the resistance of a wire is proportional to the cross-section area and inversely proportional to its length. Moreover, we know that the cross-section area is proportional to diameter over 2 squared. Therefore Ohm's law can be written as follows: R is proportional to 1 over L, times d over 2 squared equals d squared over 4 L where d is the diameter and where L is the length. If L and d are doubled, therefore/hence the resistance will be multiplied by 2 squared over 2, that is to say by 2. We can therefore draw the following conclusion: the resistance will be twice as significant (big) as before.
+        </item>
+    </string-array>
+    <string-array name="stpi2_model_partie2_p35">
+        <item>
+            C: Good afternoon, Ladies and Gentlemen. Shall we get down to business? \n
+            I suppose you all have a copy of the agenda. Let's go over the main items. We will begin by discussing the installation of an integrated computerized network on our site. Then we will proceed with the second item on the agenda which concerns the new municipal measures concerning the traffic of lorries around our plant. \n
+            Mr Richard, would you like to be the session secretary, then? Yes, Thank you. Now concerning the installation of the network I would like to call on Mr Smith to present the results of his investigation. \n
+            \n
+            S: Thank you. My name is Mr Smith and I'm the computer system engineer. I'd like to present the various options we have to consider before making our choice. \n
+            Concerning networks we have two options: we can either install a completely integrated one or separate the needs of administration and production into two different networks. I'd like to stress that the integrated one would of course be less costly. However we should not forget that its main disadvantage resides in its lack of flexibility. On the other hand, the separate system would allow the different departments to use different software packages and separate resources such as printers. I should however draw your attention to the fact that this last system is inevitably more costly. \n
+            \n
+            C: Thank you Mr Smith. Do you have any questions or suggestions? Mrs Jones, could I have your opinion, please? \n
+            \n
+            J: To my mind the separate network is better adapted to our needs. \n
+            \n
+            C: Hold on a minute! We can't speak all at once. Mrs Jones, please go on. \n
+            \n
+            J: Certainly. As l said before, the separate network suits us perfectly since production and administration use different software packages and printers. \n
+            \n
+            C: I think Mr Roberts would like to intervene. Please go ahead. \n
+            \n
+            R: I'm afraid I don't share this point of view. It is true that we use different software packages and printers but you must admit that we could share the same storage and processing facilities of a common mainframe computer. \n
+            \n
+            C: And what about you Mr Tanner? Could we have your views? \n
+            \n
+            T: I'm afraid, I'm not in a position to comment. I'm in charge of health and safety and, as such, was invited for the question of traffic. It's difficult for me to express my views on this particular subject. \n
+            \n
+            C: I think we have covered all the aspects of the question. We now have to decide on the best option. Those in favour of the separate network? Those against? Any abstentions? 6 to 3! We will adopt the second proposal and install a separate network, then. Mr Smith will be in charge of the installation and will report to us regularly on the advancement of the project. \n
+            We won't have time today to discuss the question of lorry traffic. This will be done at our next meeting. \n
+            Thank you, Ladies and Gentlemen. The meeting is adjourned.
+        </item>
+    </string-array>
+    <string-array name="stpi2_model_partie2_p42">
+        <item>
+            Now that we have heard the presentations of the projects from our consultants, we have to decide on the best project to adopt. To start with, I'd like to remind you of our objectives and priorities which are quality, reliability and efficiency. I must also stress that our main constraint concerns the cost which should not exceed 2 million dollars. \n
+            Could I have your comments? \n
+            \n
+            1. If we look at the first project in terms of aesthetics, it is clear that it will disfigure our building. Personally, I think we should put it aside (= reject it). \n
+            \n
+            2. If we consider our main objectives which are efficiency and reliability, we can say that the second project, I mean the electric radiator system, would be ranked first. \n
+            \n
+            3. Bearing the financial constraint in mind, I can say right-away that the third project of complete change of the heating and ventilation system goes far beyond what we can afford. \n
+            \n
+            4. That means that we are left with projects number 4 and 5. Now, if we compare those two, it is clear that the fourth project is the cheapest. However, I am not so sure that installing vents will solve our air conditioning problem in Summer. I would therefore be much more in favour of the fifth one which proposes a change of the boiler.
+        </item>
+    </string-array>
+    <string-array name="stpi2_model_partie2_p43">
+        <item>
+            Buyer: Good afternoon. Please have a seat! I am glad we could arrange an appointment so soon. \n
+            \n
+            Seller: Well, we try to respond to our clients' calls as quickly as possible. \n
+            \n
+            Buyer: I appreciate it. As you probably know, safety regulations concerning work environment have recently become stricter \n
+            \n
+            Seller: Certainly. But what particular safety aspect do you have in mind? \n
+            \n
+            Buyer: Let me explain! As a result of our special chemical production process, some chlorine may be found in the air around our plant. As you know this gas can be hazardous to health. \n
+            \n
+            Seller: Therefore you need to monitor the level of chlorine in the air. Is that right? \n
+            \n
+            Buyer: That's exactly the case. As you know, our manufacturing process is located in a workshop with no temperature control, so that the detection device should be able to operate between -10° C and 40° C. \n
+            \n
+            Seller: No problem! Our model 7564 is perfectly adapted to your needs. It features an electrochemical gel-filled sensor with a polyvinyl chloride protection housing. The device operates over ambient temperatures of – 20° C up to 50° C. \n
+            \n
+            Buyer: And what about the detection level? You know, we have special requirements. \n
+            \n
+            Seller: You don't need to worry about that. The range of detection falls right within your requirements, that is to say between 0 and 20 p.p.m. And I would like to add that the unit can be mounted on a wide variety of supports such as pipes or walls. \n
+            \n
+            Buyer: That sounds good. Could we talk about prices now? As you probably know, we would need about 50 of those units. We would appreciate if you could offer us a substantial discount. \n
+            \n
+            Seller: I do understand. Let me see what we can offer. I am sure we could go as far as a 20 % discount in that case, thus putting each sensor at a price of $80. Would that satisfy you? \n
+            \n
+            Buyer: Certainly! I am ready to place my order now.
+        </item>
+    </string-array>
+    <string-array name="stpi2_model_partie2_p50">
+        <item>
+            A: As I mentioned in my letter, the reason for our meeting today is to renegotiate the terms of our present contract. Let me explain the situation. We presently order 10,000 car wheels a month from you and, so far, you have granted us a 10% reduction on your usual price. We are planning to increase our car production and will need 25,000 wheels a month in the near future. We therefore hope you will be ready to increase your reduction in similar proportions. \n
+            \n
+            B: Let me ask you a question first. What exactly do you mean by "near future»? You must realise that we have other customers to satisfy and that your order increase is quite substantial. \n
+            \n
+            A: Well, we plan to reach this production level in about 8 months. Do you think you could manage in that period of time? \n
+            \n
+            B: I must admit this would put heavy pressure on us and require the purchase of new equipment to satisfy this new order. This would indeed mean heavy investment. \n
+            \n
+            A: I have one proposal: why not sell your stock and excess production to us during those 8
+            months? We would then have a ready supply of wheels when the day comes. \n
+            \n
+            B: This is an interesting but temporary solution. Setting up new production facilities will require time and investment. Would you be ready to confirm this regular order of 25,000 wheels over a period of 5 years? \n
+            \n
+            A: Three years would be more realistic since car models change regularly. But let us now discuss the discount you could offer. We were expecting something in the order of 25%. \n
+            \n
+            B: Frankly, that won't be possible considering the amount of investment required, especially at the start. We would be much more in favour of a gradual increase over the years, that is to say 15% the first year, 20% the second and 25% the third one. If you were ready to promise a regular order over 5 years, we could even go as far as 30% for the last two years. \n
+            \n
+            A: We could accept that proposal provided you promise to adapt to any changes in design and specifications in the course or those 5 years. \n
+            \n
+            B: This would be quite feasible. We thank you for your understanding and cooperation. Our legal
+            experts will draft a preliminary contract and we could meet again to make amendments before signing the final documents.
+        </item>
+    </string-array>
+    <string-array name="stpi2_model_partie2_p57">
+        <item>
+            1. Good morning. Jane Black speaking. What can I do for you? \n
+            2. Good morning. I'm calling from France. My name is Stephane Dupont. I'm calling because we have had a problem with a machine we bought from you last year. \n
+            3. I'm sorry to hear that. Could you please tell me exactly what the problem is? \n
+            4. Well, this machine is an automated packaging unit. Sometimes boxes are fed too quickly into the machine and it gets stuck. \n
+            5. Could you give me the reference number of the machine, please? We have so many different models. \n
+            6. Certainly. It's a P45. \n
+            7. I see. When did you buy it? Is it still under guarantee? \n
+            8. We bought it just over a year ago. In fact, we are just 2 days beyond the guarantee deadline. \n
+            9. In that case, we could send you a repair team to investigate the problem and fix it. But it would be at your own expense, I'm afraid. \n
+            10. I must tell you that we were expecting some kind of an effort on your part since, as I told you, the guarantee expired just 2 days ago. \n
+            11. I see what you mean. But I'm afraid I am not myself in a position to decide. I would have to refer to our manager. Could you remind me of your telephone number and l will get back to you on this matter. \n
+            12. OK. It's 33 for France, then 2 35 52 64 60. My name is Stephane Dupont. Once again, I hope you will be able to make an effort. \n
+            13. I’ll see what I can do. You can count on me. Bye!
+        </item>
+    </string-array>
+    <string-array name="stpi2_model_partie2_p58">
+        <item>
+            A1: As I mentioned in my last memo, the reason for our meeting today is the decision by management to relocate the offices some 40 kilometres from here. I must say that, as a result of this decision, the personnel is faced with big problems. \n
+            \n
+            B2: We appreciate the difficulties caused by the decision. But frankly, there is no alternative. The present building is too old and too small. \n
+            \n
+            A3: We are aware of that, but it is clear that this relocation will mean a waste of time and money for the personnel. \n
+            \n
+            B4: Could you be more specific on this point? I don't understand all the implications. \n
+            \n
+            A5: Well, it's clear that this will cause extra expenses for transport and longer travel time due to the heavy traffic when going to the other side of the city. \n
+            \n
+            B6: What would you suggest, then? \n
+            \n
+            A7: We would appreciate it if the company could offer some financial compensation for the inconvenience. \n
+            \n
+            B8: I'm afraid this is not possible at the moment. Let me explain our situation! We have been confronted with enormous financial expenses as a result of this compulsory relocation. On top of that, business is not as good at the moment because of the recession. \n
+            \n
+            A9: We are aware of that, but you should take into account the difficulties imposed on the staff. \n
+            \n
+            B10: We see your point but let me propose an alternative solution which would not affect our financial situation. What about setting up a flexitime system? With this system, employees could travel at the most suitable time and therefore avoid traffic jams. \n
+            \n
+            A11: This proposal is acceptable because it solves the question of traffic jams. But what about the travel expenses? We could accept the relocation provided you also grant us a monthly travel allowance of 50 euros. \n
+            \n
+            B12: We are ready to make this effort but only for those workers who live at least 40 kilometres away from the new offices. \n
+            \n
+            A13: I'm glad we could reach an agreement. Thank you for your understanding and cooperation.
+        </item>
+    </string-array>
 </resources>
