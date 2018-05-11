@@ -46,11 +46,13 @@
         <activity android:name=".Activities.ChooseActivity">
 
         </activity>
-        <activity android:name=".Activities.LearningModelActivity"
+        <activity android:name=".Activities.LearningModelActivity">
             android:screenOrientation="landscape">
 
         </activity>
+        <activity android:name=".Activities.StatsActivity">
 
+        </activity>
     </application>
 
 </manifest>

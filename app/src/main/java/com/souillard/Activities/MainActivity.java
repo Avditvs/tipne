@@ -75,7 +75,7 @@ public class MainActivity extends Activity {
         @Override
         public void onClick(View v) {
 
-            intent2 = new Intent(getApplicationContext(), testSTT.class);
+            intent2 = new Intent(getApplicationContext(), StatsActivity.class);
             Handler handler = new Handler();
             handler.postDelayed(new Runnable(){
                 public void run() {
