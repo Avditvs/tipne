@@ -104,9 +104,7 @@ public class LearningVerbsActivity extends Activity {
     private View.OnClickListener clickTextToSpeech = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            voice.speak(verbBv[verbeActuel], TextToSpeech.QUEUE_FLUSH, null);
-            voice.speak(verbPret[verbeActuel], TextToSpeech.QUEUE_FLUSH, null);
-            voice.speak(verbPart[verbeActuel], TextToSpeech.QUEUE_FLUSH, null);
+            voice.speak(verbBv[verbeActuel] + ' ' + verbPret[verbeActuel] + ' ' + verbPart[verbeActuel], TextToSpeech.QUEUE_FLUSH, null);
         }
     };
 

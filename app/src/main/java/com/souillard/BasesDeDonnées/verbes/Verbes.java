@@ -51,7 +51,7 @@ public class Verbes {
         this.nb_fautes = nb_fautes;
     }
 
-    public Verbes(String trad, String bv, String pret, String pp){
+    public Verbes(String bv, String pret, String pp, String trad){
         this.tradFr = trad;
         this.baseVerbale = bv;
         this.preterit = pret;
