@@ -79,7 +79,7 @@
                 app:image_color="@color/text_menu"
                 app:margin="@dimen/button_Margin"
                 app:src="@drawable/stats"
-                app:text="Test STT"
+                app:text="Stats"
                 app:textColor="@color/text_menu"
                 app:textSize="@dimen/text_Size"
 
