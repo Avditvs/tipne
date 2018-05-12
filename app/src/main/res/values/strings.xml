@@ -4142,4 +4142,99 @@
             A13: I'm glad we could reach an agreement. Thank you for your understanding and cooperation.
         </item>
     </string-array>
+
+    <string-array name="stpi1_abreviations__list1_p10">
+        <item>  A\’levels/advanced levels </item>
+        <item>  B.A./bachelor of arts </item>
+        <item>  B.Eng./bachelor of engineering </item>
+        <item>  B.Sc.;B.S./bachelor of science  </item>
+        <item>  C.Eng./chartered engineer  </item>
+        <item>  C.P.D./continuing personal development </item>
+        <item>  Co./Company</item>
+        <item>  E.C.T.S./European credit transfer system   </item>
+        <item>  e.g./for instance;for example </item>
+        <item>  E.U./European Union </item>
+        <item>  F.A.Q./frequently asked questions </item>
+        <item>  F.E./further education </item>
+        <item>  G.B./Great Britain </item>
+        <item>  G.C.S.E./general certificate of secondary education </item>
+        <item>  I.D./identification document </item>
+        <item>  i.e./that is to say </item>
+        <item>  I.T./information technology </item>
+        <item>  M.B.A./master of business administration </item>
+        <item>  M.Eng/master of engineering </item>
+        <item>  M.I.T./Massachusetts institute of technology </item>
+        <item>  M.Sc.;M.S/master of science </item>
+        <item>  O\’levels/ordinary levels   </item>
+        <item>  Ph.D/philosopher's doctorate   </item>
+        <item>  S.U./students' union   </item>
+        <item>  T.O.E.F.L./test of English as a foreign language   </item>
+        <item>  T.O.E.I.C./test of English for international communication   </item>
+        <item>  U./university   </item>
+        <item>  U.K./United Kingdom   </item>
+        <item>  U.S.A./United States of America</item>
+    </string-array>
+    <string-array name="stpi1_abreviations__list2_p32">
+        <item>  a.m./ante meridiem</item>
+        <item>  A.S.A.P./as soon as possible</item>
+        <item>  Attn/attention;for the attention of</item>
+        <item>  B#38;B/bed and breakfast</item>
+        <item>  c.o/care of</item>
+        <item>  C.E.T./central European time</item>
+        <item>  C.V./curriculum vitae</item>
+        <item>  Co./company;firm</item>
+        <item>  dept/department</item>
+        <item>  D.V.D./digital versatile disk</item>
+        <item>  encl./enclosed;enclosure</item>
+        <item>  G.M.T./Greenwich mean time</item>
+        <item>  H.O./head office</item>
+        <item>  H.Q./head quarter(s)</item>
+        <item>  Hi-Tech./high technology</item>
+        <item>  Inc./incorporated</item>
+        <item>  lab/laboratory</item>
+        <item>  Ltd/limited</item>
+        <item>  O.H.P./overhead projector</item>
+        <item>  P.A./personal assistant</item>
+        <item>  PIN/personal identification number</item>
+        <item>  p.m./post meridiem</item>
+        <item>  P.R./public relations</item>
+        <item>  P.R.O./public relations officer</item>
+        <item>  P.T.O./please turn over</item>
+        <item>  R#38;D/research and development</item>
+        <item>  re;RE/with reference to</item>
+        <item>  s.a.e./stamped self-addressed envelope</item>
+        <item>  WAP/wireless application protocol</item>
+        <item>  WiFi network/network using wireless communication</item>
+    </string-array>
+    <string-array name="stpi1_abreviations__list3_p48">
+        <item>  a.m./ante meridiem </item>
+        <item>  A.T.M./automatic teller machine </item>
+        <item>  C.E.O./chief executive offcier </item>
+        <item>  C.E.T./central European time </item>
+        <item>  D.P./data-processing </item>
+        <item>  D.V.D./digital versatile disk </item>
+        <item>  e-mail/electronic mail </item>
+        <item>  encl.(poste)/enclosed;enclosure </item>
+        <item>  encl.(courriel)/an attached file; an attachment </item>
+        <item>  G.M.T./Greenwich mean time  </item>
+        <item>  H.D./hard disk;high definition  </item>
+        <item>  H.T.T.P./hyper-text transfer protocol  </item>
+        <item>  IAP/Internet access provider  </item>
+        <item>  ISP/Internet service provider  </item>
+        <item>  Ms X/Miss X;Mrs X  </item>
+        <item>  P.A./personal assistant  </item>
+        <item>  P.C./personal computer  </item>
+        <item>  p.c./per cent  </item>
+        <item>  P.M./participative management  </item>
+        <item>  p.m./post meridiem  </item>
+        <item>  P.R./public relations  </item>
+        <item>  P.R.O./public relations officer  </item>
+        <item>  R#38;D/research and development  </item>
+        <item>  R.A.M./random access memory  </item>
+        <item>  re;RE/with reference to;regarding  </item>
+        <item>  R.O.M./read only memory  </item>
+        <item>  W.T.O./world trade organisation  </item>
+        <item>  W.W.W./world-wide web  </item>
+    </string-array>
+
 </resources>
