@@ -3,20 +3,68 @@
     xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
 
-        <ScrollView
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/scrollingLayout">
 
-            <TextView
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Verbes"/>
+                android:orientation="horizontal">
 
-        </ScrollView>
-    </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="5dp"
+                    android:text="Nom"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="5dp"
+                    android:text="Nb evals"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="5dp"
+                    android:text="Dernière note"/>
 
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="5dp"
+                    android:text="Moyenne"/>
+
+            </LinearLayout>
+
+            <com.souillard.customViews.ResizingListView
+                android:layout_width="wrap_content"
+                android:id="@+id/listView"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="50dp">
+            </com.souillard.customViews.ResizingListView>
+
+
+
+
+            <Spinner
+                android:layout_width="150dp"
+                android:layout_height="30dp"
+                android:id="@+id/spinnerselector"/>
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:id="@+id/lineChart"/>
+
+        </LinearLayout>
+
+    </ScrollView>
 </android.support.constraint.ConstraintLayout>

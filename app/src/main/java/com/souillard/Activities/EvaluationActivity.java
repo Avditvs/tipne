@@ -212,7 +212,7 @@ public class EvaluationActivity extends VoiceRecognitionActivity {
     private void onTestEnd(){
         EvaluationsDAO evaluationsDAO = AppDataBase.getAppDatabase(getBaseContext()).EvaluationsDAO();
         MotsDAO motsDAO = AppDataBase.getAppDatabase(getBaseContext()).MotsDao();
-        Evaluations resultats = new Evaluations(listId, listeInfo.getNbWords()-nbBonnesRep, System.currentTimeMillis());
+        Evaluations resultats = new Evaluations(listId, listeInfo.getNbWords()-nbBonnesRep, (nbBonnesRep*20)/maxScore,   System.currentTimeMillis());
         evaluationsDAO.insertEvaluation(resultats);
         motsDAO.insertListe(dataMots);
         showResults();

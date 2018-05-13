@@ -23,6 +23,9 @@ public class Evaluations {
     @ColumnInfo
     private int idListe;
 
+    @ColumnInfo
+    private float note;
+
     @Ignore
     private Date date;
 
@@ -33,10 +36,11 @@ public class Evaluations {
 
     }
 
-    public Evaluations(int idListe, int nbFautes, long epoch){
+    public Evaluations(int idListe, int nbFautes, float note, long epoch){
         this.epoch = epoch;
         this.idListe = idListe;
         this.nbFautes = nbFautes;
+        this.note = note;
     }
 
 
@@ -64,6 +68,10 @@ public class Evaluations {
         return epoch;
     }
 
+    public float getNote(){
+        return note;
+    }
+
 
 
 
@@ -85,6 +93,10 @@ public class Evaluations {
 
     public void setNbFautes(int nbFautes) {
         this.nbFautes = nbFautes;
+    }
+
+    public void setNote(float note){
+        this.note = note;
     }
 
     public void setEpoch(long epoch) {
