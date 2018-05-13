@@ -40,13 +40,14 @@
 
         </activity>
         
-        <activity android:name=".Activities.EvaluationActivity">
+        <activity android:name=".Activities.EvaluationActivity"
+            android:screenOrientation="portrait">
 
         </activity>
         <activity android:name=".Activities.ChooseActivity">
 
         </activity>
-        <activity android:name=".Activities.LearningModelActivity">
+        <activity android:name=".Activities.LearningModelActivity"
             android:screenOrientation="landscape">
 
         </activity>

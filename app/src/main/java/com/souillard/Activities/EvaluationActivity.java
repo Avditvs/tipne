@@ -14,6 +14,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
+import android.widget.ListView;
 import android.widget.PopupWindow;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -28,6 +29,8 @@ import com.souillard.BasesDeDonnées.mots.MotsDAO;
 import com.souillard.R;
 import com.souillard.SpeechToText.VoiceRecognitionActivity;
 
+import java.lang.reflect.Array;
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Objects;
@@ -74,7 +77,7 @@ public class EvaluationActivity extends VoiceRecognitionActivity {
 
         editText.setOnKeyListener(textEnterListener);
 
-        listId = getIntent().getIntExtra("listId", 1);
+        listId = getIntent().getIntExtra("listId", 10);
 
         listeInfo = listesDAO.getListesById(listId);
         listNameView.setText(listeInfo.getNameOfList());
@@ -127,7 +130,7 @@ public class EvaluationActivity extends VoiceRecognitionActivity {
     public void onResults(Bundle bundle){
         super.onResults(bundle);
         String res = bundle.getStringArrayList(SpeechRecognizer.RESULTS_RECOGNITION).get(0);
-        editText.setText(res);
+        editText.setText(editText.getText()+" "+res);
     }
 
     private void changerMot(int indice){
@@ -152,27 +155,44 @@ public class EvaluationActivity extends VoiceRecognitionActivity {
     private void valide(){
         String reponse = editText.getText().toString().toLowerCase();
         editText.setText("");
-        if(verifierMot(reponse, dataMots.get(indiceMot-1).getMotsEn())){
+        ArrayList<String> corrections = new ArrayList<>();
+        int partielrep = 0;
+        for(String mot : dataMots.get(indiceMot-1).getTabMotsEn()){
+            mot = mot.split("\\(")[0];
+            if (mot.split("\\)").length>1){
+                mot = mot.split("\\)")[1];
+            }
+            mot = mot.trim();
+            maxScore++;
+            if(verifierMot(reponse,mot)){
+                nbBonnesRep++;
+                partielrep++;
+            }
+
+        }
+
+        if(partielrep==dataMots.get(indiceMot-1).getTabMotsEn().length){
             onCorrectAnswer();
         }
         else{
-            onWrongAnswer();
+            if(partielrep==0){
+                onWrongAnswer();
+            }
+            else{
+                onPartialAnswer();
+            }
         }
+
+
 
         if(indiceMot+1>dataMots.size()){
             onTestEnd();
         }
         else {
-            maxScore++;
             indiceMot++;
             changerMot(indiceMot);
             Log.i("Reponse: ", dataMots.get(indiceMot - 1).getMotsEn());
 
-            if (indiceMot > listeInfo.getNbWords()) {
-
-                //trigger la fin cad balancer les résultats et mettre en bdd
-
-            }
         }
 
     }
@@ -181,11 +201,12 @@ public class EvaluationActivity extends VoiceRecognitionActivity {
         /*TODO: prendre en entrée le tableau traductions possibles, les chercher toutes dans la réponse
 
          */
-        return Objects.equals(entree, attente);
+
+
+        return entree.contains(attente);
     }
 
     private void onCorrectAnswer(){
-        nbBonnesRep++;
         Log.i("rep", "bonnerep");
         toast = Toast.makeText(getBaseContext(), "Bonne réponse", Toast.LENGTH_SHORT);
         toast.setGravity(Gravity.TOP, 0, bodyEval.getBottom()+20);
@@ -194,7 +215,7 @@ public class EvaluationActivity extends VoiceRecognitionActivity {
 
     private void onWrongAnswer() {
         dataMots.get(indiceMot-1).incrementNbFaults(1);
-        String toastText = "Mauvaise réponse, la(les) réponses\ncorrectes étaient :";
+        String toastText = "Réponse incorrecte, la(les) réponses\ncorrectes étaient :";
         int i;
         for (i = 0; i < dataMots.get(indiceMot - 1).getTabMotsEn().length; i++){
             toastText = toastText +"\n" + dataMots.get(indiceMot-1).getTabMotsEn()[i];
@@ -206,7 +227,16 @@ public class EvaluationActivity extends VoiceRecognitionActivity {
     }
 
     private void onPartialAnswer(){
+        dataMots.get(indiceMot-1).incrementNbFaults(1);
+        String toastText = "Réponse partiellle, la(les) réponses\ncorrectes étaient :";
+        int i;
+        for (i = 0; i < dataMots.get(indiceMot - 1).getTabMotsEn().length; i++){
+            toastText = toastText +"\n" + dataMots.get(indiceMot-1).getTabMotsEn()[i];
 
+        }
+        toast = Toast.makeText(getBaseContext(), toastText, Toast.LENGTH_LONG);
+        toast.setGravity(Gravity.TOP, 0, bodyEval.getBottom()+20);
+        toast.show();
     }
 
     private void onTestEnd(){
