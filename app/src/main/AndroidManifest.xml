@@ -24,12 +24,6 @@
         <activity android:name="com.souillard.Activities.MainActivity">
 
         </activity>
-        <activity android:name="com.souillard.Activities.MainMenu">
-
-        </activity>
-        <activity android:name=".Activities.testSTT">
-
-        </activity>
         <activity android:name=".Activities.ChooseListActivity">
 
         </activity>

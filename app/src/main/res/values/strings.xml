@@ -2690,7 +2690,7 @@
         <item>	component/composant	</item>
         <item>	compound/composé	</item>
         <item>	condensor;cooler/réfrigérant	</item>
-        <item>	conveyoor/tapis roulant	</item>
+        <item>	conveyor/tapis roulant	</item>
         <item>	to cool down/refroidir	</item>
         <item>	cool/frais	</item>
         <item>	stacked;piled up/empilé	</item>
@@ -4178,7 +4178,7 @@
         <item>  a.m./ante meridiem</item>
         <item>  A.S.A.P./as soon as possible</item>
         <item>  Attn/attention;for the attention of</item>
-        <item>  B#38;B/bed and breakfast</item>
+        <item>  B&#38;B/bed and breakfast</item>
         <item>  c.o/care of</item>
         <item>  C.E.T./central European time</item>
         <item>  C.V./curriculum vitae</item>
@@ -4200,7 +4200,7 @@
         <item>  P.R./public relations</item>
         <item>  P.R.O./public relations officer</item>
         <item>  P.T.O./please turn over</item>
-        <item>  R#38;D/research and development</item>
+        <item>  R&#38;D/research and development</item>
         <item>  re;RE/with reference to</item>
         <item>  s.a.e./stamped self-addressed envelope</item>
         <item>  WAP/wireless application protocol</item>
@@ -4229,7 +4229,7 @@
         <item>  p.m./post meridiem  </item>
         <item>  P.R./public relations  </item>
         <item>  P.R.O./public relations officer  </item>
-        <item>  R#38;D/research and development  </item>
+        <item>  R&#38;D/research and development  </item>
         <item>  R.A.M./random access memory  </item>
         <item>  re;RE/with reference to;regarding  </item>
         <item>  R.O.M./read only memory  </item>

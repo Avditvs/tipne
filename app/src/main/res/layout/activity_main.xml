@@ -45,7 +45,7 @@
 
             <com.souillard.customViews.MenuButton
 
-                android:id="@+id/entrainement"
+                android:id="@+id/apprentissage"
                 android:layout_width="wrap_content"
 
                 android:layout_height="wrap_content"
@@ -59,7 +59,7 @@
                 app:image_color="@color/text_menu"
                 app:margin="@dimen/button_Margin"
                 app:src="@drawable/learn"
-                app:text="Test Appr."
+                app:text="Apprentissage"
                 app:textColor="@color/text_menu"
                 app:textSize="@dimen/text_Size"
 
@@ -94,7 +94,7 @@
             android:orientation="vertical">
 
             <com.souillard.customViews.MenuButton
-                android:id="@+id/bt_verbes"
+                android:id="@+id/evaluations"
                 android:layout_width="wrap_content"
 
                 android:layout_height="wrap_content"
@@ -107,14 +107,14 @@
                 app:image_color="@color/text_menu"
                 app:margin="@dimen/button_Margin"
                 app:src="@drawable/evaluate"
-                app:text="Appr. Vb"
+                app:text="Evaluation"
                 app:textColor="@color/text_menu"
                 app:textSize="@dimen/text_Size"
 
                 />
 
             <com.souillard.customViews.MenuButton
-                android:id="@+id/bt_eval"
+                android:id="@+id/options"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/button_Margin"
@@ -126,7 +126,7 @@
                 app:image_color="@color/text_menu"
                 app:margin="@dimen/button_Margin"
                 app:src="@drawable/settings"
-                app:text="Evaluation"
+                app:text="Options"
                 app:textColor="@color/text_menu"
                 app:textSize="@dimen/text_Size"
 
