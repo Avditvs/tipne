@@ -75,6 +75,11 @@ public class ChooseListActivity extends Activity {
                     i.putExtra(nameList, nomliste);
                     startActivity(i);
                 }
+                else if (modeChoisi.equals("evaluation")){
+                    Intent i = new Intent (ChooseListActivity.this, EvaluationActivity.class);
+                    i.putExtra(nameList, nomliste);
+                    startActivity(i);
+                }
             }
         });
     }

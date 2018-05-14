@@ -82,7 +82,8 @@ public class DataBaseChecker {
         boolean ok = true;
         int i = 1;
         for(int nb : nbWordsList){
-            ok = (nb==motsDAO.countNbWordInlist(i))&&ok;
+            int nbWords = motsDAO.countNbWordInlist(i);
+            ok = (nb==nbWords)&&ok;
             i++;
         }
         return ok;

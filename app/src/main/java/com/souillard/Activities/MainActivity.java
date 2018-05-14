@@ -22,8 +22,10 @@ public class MainActivity extends Activity {
     private MenuButton btVerbes = null;
     private MenuButton btEval = null;
     private Intent intent = null;
+    private Intent intent4 = null;
     private Intent intent2 = null;
     public final static String mode = "";
+    public final static String choixUtilisateur = "";
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -46,8 +48,12 @@ public class MainActivity extends Activity {
     private View.OnClickListener listenerbtEval = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            final Intent intent4 = new Intent(getApplicationContext(), EvaluationActivity.class);
+            intent4 = new Intent(getApplicationContext(), ChooseListActivity.class);
             Handler handler = new Handler();
+            Bundle extras = new Bundle();
+            extras.putString("mode", "evaluation");
+            extras.putString("choixUtilisateur", "mots");
+            intent4.putExtras(extras);
             handler.postDelayed(new Runnable(){
                 public void run() {
                     startActivity(intent4);

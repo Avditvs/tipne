@@ -35,6 +35,8 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Objects;
 
+import static com.souillard.Activities.ChooseListActivity.nameList;
+
 public class EvaluationActivity extends VoiceRecognitionActivity {
 
     private Button micro;
@@ -77,10 +79,10 @@ public class EvaluationActivity extends VoiceRecognitionActivity {
 
         editText.setOnKeyListener(textEnterListener);
 
-        listId = getIntent().getIntExtra("listId", 10);
+        listId = listesDAO.idDeListe(getIntent().getStringExtra(nameList));
 
         listeInfo = listesDAO.getListesById(listId);
-        listNameView.setText(listeInfo.getNameOfList());
+        listNameView.setText(listeInfo.getProperName());
 
 
         dataMots = motsDAO.getList(listId);
