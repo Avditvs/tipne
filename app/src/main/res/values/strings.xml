@@ -4143,6 +4143,15 @@
         </item>
     </string-array>
 
+    <string-array name="ListesAbreviations">
+        <item> stpi1_abreviations__list1_p10 </item>
+        <item> stpi1_abreviations__list2_p32 </item>
+        <item> stpi1_abreviations__list3_p48 </item>
+        <item> stpi1_abreviations__list4_p60 </item>
+        <item> stpi1_abreviations__list5_p69 </item>
+        <item> stpi1_abreviations__list6_p95 </item>
+    </string-array>
+
     <string-array name="stpi1_abreviations__list1_p10">
         <item>  A\’levels/advanced levels </item>
         <item>  B.A./bachelor of arts </item>
@@ -4215,7 +4224,7 @@
         <item>  D.V.D./digital versatile disk </item>
         <item>  e-mail/electronic mail </item>
         <item>  encl.(poste)/enclosed;enclosure </item>
-        <item>  encl.(courriel)/an attached file; an attachment </item>
+        <item>  encl.(courriel)/an attached file;an attachment </item>
         <item>  G.M.T./Greenwich mean time  </item>
         <item>  H.D./hard disk;high definition  </item>
         <item>  H.T.T.P./hyper-text transfer protocol  </item>
@@ -4235,6 +4244,94 @@
         <item>  R.O.M./read only memory  </item>
         <item>  W.T.O./world trade organisation  </item>
         <item>  W.W.W./world-wide web  </item>
+    </string-array>
+    <string-array name="stpi1_abreviations__list4_p60">
+        <item>  C.A.O./chief accounting officer </item>
+        <item>  C.Eng/chartered engineer </item>
+        <item>  C.E.O./chief executive officer </item>
+        <item>  C.R.M./customer relations management </item>
+        <item>  F.T./fair trade </item>
+        <item>  G.P.S./global positioning system </item>
+        <item>  G.S.M./global system for mobile communications </item>
+        <item>  H.O./head office </item>
+        <item>  H.Q./head-quarters </item>
+        <item>  H.R.M./human resources manager </item>
+        <item>  Inc./incorporated </item>
+        <item>  Ltd/limited </item>
+        <item>  O#38;M/organisation and method </item>
+        <item>  P.C./personal computer </item>
+        <item>  p.c./per cent </item>
+        <item>  p.p./per pro </item>
+        <item>  P.R./public relations </item>
+        <item>  P.R.O./public relations officer </item>
+        <item>  R#38;D/research and development </item>
+        <item>  R.S.V.P./répondez s'il vous plait </item>
+        <item>  Rd/road </item>
+        <item>  St/street </item>
+        <item>  reg.;regd./registered </item>
+        <item>  S.M.E./small and medium sized enterprise </item>
+        <item>  S.M.S./short message service </item>
+        <item>  T.O./turnover </item>
+        <item>  U.M.T.S./universal mobile telecommunications system </item>
+        <item>  V.A.T./value added tax </item>
+        <item>  V.D.U./visual display unit </item>
+    </string-array>
+    <string-array name="stpi1_abreviations__list5_p69">
+        <item>  c.c./cubic centimetre(s) </item>
+        <item>  cu. in./cubic inches </item>
+        <item>  cu. ft/cubic foot;cubic feet </item>
+        <item>  fl.oz/fluid ounce(s) </item>
+        <item>  ft/foot;feet </item>
+        <item>  gal/gallon </item>
+        <item>  in./inch </item>
+        <item>  lb/pound </item>
+        <item>  m./metre </item>
+        <item>  m./mile </item>
+        <item>  m.p.h./mile per hour </item>
+        <item>  M.W./megawatt </item>
+        <item>  oz/ounce </item>
+        <item>  p.s.i./pound per square inch </item>
+        <item>  r.p.m./rotation per minute;revolution per minute </item>
+        <item>  sq. ft/square foot;square feet </item>
+        <item>  sq. m./square metre;square mile </item>
+        <item>  V/volt </item>
+        <item>  W/watt </item>
+    </string-array>
+    <string-array name="stpi1_abreviations__list6_p95">
+        <item>  a.m./ante meridiem </item>
+        <item>  p.m./post meridiem </item>
+        <item>  A.T.M./automatic teller machine </item>
+        <item>  CCTV/closed circuit television camera </item>
+        <item>  C.I.A./cash in advance </item>
+        <item>  P.I.A./payment in advance </item>
+        <item>  C.I.F./cost insurance freight </item>
+        <item>  C.O.D./cash on delivery </item>
+        <item>  C.W.O./cash with order </item>
+        <item>  D.I.Y./do it yourself </item>
+        <item>  D.P./data processing </item>
+        <item>  D.V.D./digital versatile disk </item>
+        <item>  e.g./for instance;for example </item>
+        <item>  F.A.Q./frequently asked questions </item>
+        <item>  F.O.B./free on board </item>
+        <item>  F.O.R./free on rail </item>
+        <item>  G.P.O./general post office </item>
+        <item>  H.T.T.P./hyper-text transfer protocol </item>
+        <item>  i.e./that is to say </item>
+        <item>  ISO/international standards organisation </item>
+        <item>  N.G.O./non-governmental organisation </item>
+        <item>  P.O.Box/post office box </item>
+        <item>  p#38;p/packaging and postage </item>
+        <item>  P.D.A./personal digital assistant </item>
+        <item>  P.D.F./portable document format </item>
+        <item>  P.T.O./please turn over </item>
+        <item>  P2P/peer to peer </item>
+        <item>  Q.R./quick response </item>
+        <item>  R.F.I.D./radio-frequency identification </item>
+        <item>  stby/stand-by </item>
+        <item>  T.Q.M./total quality management </item>
+        <item>  U.R.L./uniform resource locator </item>
+        <item>  WAP/wireless application protocol </item>
+        <item>  W.W.W./world-wide web </item>
     </string-array>
 
 </resources>

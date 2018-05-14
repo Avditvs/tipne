@@ -5,6 +5,8 @@ import android.arch.persistence.room.Room;
 import android.arch.persistence.room.RoomDatabase;
 import android.content.Context;
 
+import com.souillard.BasesDeDonnées.abreviations.Abreviations;
+import com.souillard.BasesDeDonnées.abreviations.AbreviationsDAO;
 import com.souillard.BasesDeDonnées.evaluations.Evaluations;
 import com.souillard.BasesDeDonnées.evaluations.EvaluationsDAO;
 import com.souillard.BasesDeDonnées.models.Models;
@@ -16,7 +18,7 @@ import com.souillard.BasesDeDonnées.listes.ListesDAO;
 import com.souillard.BasesDeDonnées.verbes.Verbes;
 import com.souillard.BasesDeDonnées.verbes.VerbesDAO;
 
-@Database(entities = {Mots.class, Listes.class, Evaluations.class, Verbes.class, Models.class}, version = 1, exportSchema = false)
+@Database(entities = {Mots.class, Listes.class, Evaluations.class, Verbes.class, Models.class, Abreviations.class}, version = 1, exportSchema = false)
 public abstract class AppDataBase extends RoomDatabase {
 
     public abstract MotsDAO MotsDao();
@@ -26,6 +28,8 @@ public abstract class AppDataBase extends RoomDatabase {
     public abstract VerbesDAO VerbesDAO();
 
     public abstract ModelsDAO ModelsDAO();
+
+    public abstract AbreviationsDAO AbreviationsDAO();
 
     public abstract EvaluationsDAO EvaluationsDAO();
 
