@@ -14,7 +14,7 @@
     <color name="fond_bouton">#4472C4</color>
     <color name="vert_kaki">#417B3E</color>
     <color name="black">#000000</color>
-    <color name="caption">#616d7c</color>
+    <color name="caption">#30302c</color>
     <color name="bleu_fond">#ffffff</color>
     <color name="midnight_blue">#1E1F26</color>
     <color name="indigo_ink">#283655</color>
@@ -24,4 +24,9 @@
     <color name="meadow">#598234</color>
     <color name="emerauld">#265C00</color>
     <color name="green_bean">#65A225</color>
+    <color name="bleu_drapeau">#8fa4e9</color>
+    <color name="beige_drapeau">#f9f6e9</color>
+    <color name="rouge_drapeau">#e7655b</color>
+
+
 </resources>

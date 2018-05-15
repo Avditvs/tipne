@@ -23,6 +23,7 @@ import android.view.animation.AnimationSet;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.PopupWindow;
+import android.widget.RelativeLayout;
 import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -38,7 +39,7 @@ public class DataBaseActivity  extends Activity {
     private Intent intent = null;
     private TextView text;
     private SharedPreferences sharedPreferences;
-    private LinearLayout layout;
+    private RelativeLayout layout;
     private PopupWindow popup;
     private SharedPreferences.Editor spEditor;
 

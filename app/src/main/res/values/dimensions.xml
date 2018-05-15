@@ -3,12 +3,12 @@
     <dimen name="button_Width">150dp</dimen>
     <dimen name="button_Height">150dp</dimen>
     <dimen name="button_Margin">10dp</dimen>
-    <dimen name="layout_Margin">10dp</dimen>
+    <dimen name="layout_Margin">16dp</dimen>
     <dimen name="layout_Width">350dp</dimen>
-    <dimen name="layout_Height">350dp</dimen>
-    <dimen name="text_Size">8sp</dimen>
+    <dimen name="layout_Height">80dp</dimen>
+    <dimen name="text_Size">24sp</dimen>
     <dimen name="title_Text_Size">30sp</dimen>
-    <dimen name="corner_Radius">20dp</dimen>
-    <dimen name="image_Height">150dp</dimen>
-    <dimen name="image_Width">150dp</dimen>
+    <dimen name="corner_Radius">8dp</dimen>
+    <dimen name="image_Height">70dp</dimen>
+    <dimen name="image_Width">70dp</dimen>
 </resources>
