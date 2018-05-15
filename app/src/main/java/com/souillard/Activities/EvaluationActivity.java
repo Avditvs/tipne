@@ -105,7 +105,7 @@ public class EvaluationActivity extends VoiceRecognitionActivity {
     @Override
     protected void speechTriggered(){
         super.speechTriggered();
-        toast.cancel();
+
         //choses supplémentaires à l'appui du bouton
 
     }
@@ -244,7 +244,7 @@ public class EvaluationActivity extends VoiceRecognitionActivity {
     private void onTestEnd(){
         EvaluationsDAO evaluationsDAO = AppDataBase.getAppDatabase(getBaseContext()).EvaluationsDAO();
         MotsDAO motsDAO = AppDataBase.getAppDatabase(getBaseContext()).MotsDao();
-        Evaluations resultats = new Evaluations(listId, listeInfo.getNbWords()-nbBonnesRep, (nbBonnesRep*20)/maxScore,   System.currentTimeMillis());
+        Evaluations resultats = new Evaluations(listId, listeInfo.getNbWords()-nbBonnesRep, (float)(nbBonnesRep*20)/(float)(maxScore),   System.currentTimeMillis());
         evaluationsDAO.insertEvaluation(resultats);
         motsDAO.insertListe(dataMots);
         showResults();
