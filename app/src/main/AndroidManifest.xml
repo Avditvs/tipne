@@ -2,9 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.souillard">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
-
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
 
     <application
         android:allowBackup="true"
@@ -13,41 +12,31 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.souillard.Activities.DataBaseActivity">
+        <activity android:name=".Activities.DataBaseActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".Activities.MainActivity"></activity>
+        <activity android:name=".Activities.ChooseListActivity"></activity>
+        <activity
+            android:name=".Activities.LearningMotsActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".Activities.LearningVerbsActivity"></activity>
+        <activity
+            android:name=".Activities.EvaluationActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".Activities.ChooseActivity"></activity>
+        <activity
+            android:name=".Activities.LearningModelActivity"
+            android:screenOrientation="landscape"></activity>
+        <activity
+            android:name=".Activities.ParamsActivity"
+            ></activity>
 
-        <activity android:name="com.souillard.Activities.MainActivity">
-
-        </activity>
-        <activity android:name=".Activities.ChooseListActivity">
-
-        </activity>
-        <activity android:name=".Activities.LearningMotsActivity"
-                android:screenOrientation="portrait">
-        </activity>
-        <activity android:name=".Activities.LearningVerbsActivity">
-
-        </activity>
-        
-        <activity android:name=".Activities.EvaluationActivity"
-            android:screenOrientation="portrait">
-
-        </activity>
-        <activity android:name=".Activities.ChooseActivity">
-
-        </activity>
-        <activity android:name=".Activities.LearningModelActivity"
-            android:screenOrientation="landscape">
-
-        </activity>
-        <activity android:name=".Activities.StatsActivity">
-
-        </activity>
+        <activity android:name=".Activities.StatsActivity"></activity>
     </application>
 
 </manifest>

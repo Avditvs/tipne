@@ -4333,5 +4333,6 @@
         <item>  WAP/wireless application protocol </item>
         <item>  W.W.W./world-wide web </item>
     </string-array>
+    <string name="title_activity_params">ParamsActivity</string>
 
 </resources>

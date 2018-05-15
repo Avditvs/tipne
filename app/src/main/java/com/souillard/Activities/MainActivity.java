@@ -9,6 +9,7 @@ import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
 
@@ -17,9 +18,10 @@ import com.souillard.customViews.MenuButton;
 
 
 public class MainActivity extends Activity {
-    private MenuButton btApprentissage = null;
-    private MenuButton btStt = null;
-    private MenuButton btEval = null;
+    private ViewGroup btApprentissage = null;
+    private ViewGroup btEval = null;
+    private ViewGroup btStats = null;
+    private ViewGroup  btParams;
     private Intent intent = null;
     private Intent intent4 = null;
     private Intent intent2 = null;
@@ -34,28 +36,28 @@ public class MainActivity extends Activity {
         btApprentissage = findViewById(R.id.apprentissage);
         btApprentissage.setOnClickListener(listenerBtApprentissage);
 
-        btStt = findViewById(R.id.STT);
-        btStt.setOnClickListener(listenerBtStt);
+        btStats = findViewById(R.id.statistiques);
+        btStats.setOnClickListener(listenerBtStats);
 
         btEval = findViewById(R.id.evaluations);
         btEval.setOnClickListener(listenerBtEval);
+
+        btParams = findViewById(R.id.options);
+        btParams.setOnClickListener(listenerBtParams);
+
     }
 
 
     private View.OnClickListener listenerBtEval = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            intent4 = new Intent(getApplicationContext(), ChooseListActivity.class);
-            Handler handler = new Handler();
+            intent = new Intent(getApplicationContext(), ChooseListActivity.class);
             Bundle extras = new Bundle();
             extras.putString("mode", "evaluation");
             extras.putString("choixUtilisateur", "mots");
-            intent4.putExtras(extras);
-            handler.postDelayed(new Runnable(){
-                public void run() {
-                    startActivity(intent4);
-                }
-            }, 300);
+            intent.putExtras(extras);
+            startActivity(intent);
+
         }
     };
 
@@ -64,28 +66,27 @@ public class MainActivity extends Activity {
         public void onClick(View v) {
 
             intent = new Intent(getApplicationContext(), ChooseActivity.class);
-            Handler handler = new Handler();
             intent.putExtra(mode, "apprentissage");
-            handler.postDelayed(new Runnable(){
-                public void run() {
-                    startActivity(intent);
-                }
-            }, 300);
+            startActivity(intent);
 
         }
     };
-    private View.OnClickListener listenerBtStt = new View.OnClickListener() {
+    private View.OnClickListener listenerBtStats = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
 
-            intent2 = new Intent(getApplicationContext(), StatsActivity.class);
-            Handler handler = new Handler();
-            handler.postDelayed(new Runnable(){
-                public void run() {
-                    startActivity(intent2);
-                }
-            }, 300);
+            intent = new Intent(getApplicationContext(), StatsActivity.class);
+            startActivity(intent);
 
+        }
+    };
+
+    private View.OnClickListener listenerBtParams = new View.OnClickListener(){
+
+        @Override
+        public void onClick(View v) {
+            intent = new Intent(getApplicationContext(), ParamsActivity.class);
+            startActivity(intent);
         }
     };
 
