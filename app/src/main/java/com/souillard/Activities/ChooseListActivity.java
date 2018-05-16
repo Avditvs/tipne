@@ -60,7 +60,7 @@ public class ChooseListActivity extends Activity {
     private void motsChoosed () {
         //Défini les données à afficher et comment on les affiche
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(ChooseListActivity.this,
-                R.layout.button_choix_liste,R.id.liste, namesListDisplay);
+                R.layout.card_view,R.id.file_name_text, namesListDisplay);
 
         //On associe ces données à la ListView
         mListView.setAdapter(adapter);
