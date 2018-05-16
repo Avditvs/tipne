@@ -81,12 +81,13 @@
             android:id="@+id/reponse"
             android:lines="1"
             android:textSize="20dp"
-            android:inputType="text|textNoSuggestions|textVisiblePassword"
+            android:inputType="text|textVisiblePassword"
             android:background="@drawable/clear_background_stroke"
             android:padding="10dp"
             android:textColor="@color/periwinkle"
             android:layout_marginBottom="20dp"
             android:layout_marginTop="10dp"
+            android:focusable="auto"
             />
 
         <LinearLayout

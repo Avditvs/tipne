@@ -117,7 +117,8 @@ public class EvaluationActivity extends VoiceRecognitionActivity {
                 valide();
                 return true;
             }
-            return true;
+
+            return false;
         }
     };
 
