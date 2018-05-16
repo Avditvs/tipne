@@ -8,12 +8,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:weightSum="10"
+    android:weightSum="3"
     android:background="@drawable/background">
 
 
         <RelativeLayout
-            android:layout_weight="8"
+            android:layout_weight="2.25"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
@@ -34,7 +34,7 @@
             android:id="@+id/mainGrid"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="2"
+            android:layout_weight="0.75"
             android:alignmentMode="alignMargins"
             android:columnCount="2"
             android:columnOrderPreserved="false"
@@ -53,10 +53,7 @@
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:layout_columnWeight="1"
-                android:layout_marginBottom="@dimen/layout_Margin"
-                android:layout_marginTop="@dimen/layout_Margin"
-                android:layout_marginLeft="@dimen/layout_Margin"
-                android:layout_marginRight="@dimen/layout_Margin"
+                android:layout_margin="@dimen/cardview_menu_margin"
                 android:layout_rowWeight="1"
                 app:cardCornerRadius="@dimen/corner_Radius"
                 android:backgroundTint="@color/bleu_drapeau"
@@ -86,7 +83,8 @@
                         android:textAlignment="center"
                         android:textColor="@color/beige_drapeau"
                         android:textSize="14sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:layout_marginTop="@dimen/text_menu_margin"/>
 
                 </LinearLayout>
 
@@ -99,13 +97,11 @@
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:layout_columnWeight="1"
-                android:layout_marginBottom="@dimen/layout_Margin"
-                android:layout_marginTop="@dimen/layout_Margin"
-                android:layout_marginLeft="@dimen/layout_Margin"
-                android:layout_marginRight="@dimen/layout_Margin"
+                android:layout_margin="@dimen/cardview_menu_margin"
                 android:layout_rowWeight="1"
                 android:backgroundTint="@color/bleu_drapeau"
                 app:cardCornerRadius="@dimen/corner_Radius"
+                android:foreground="?android:attr/selectableItemBackground"
                 app:cardElevation="@dimen/cardview_default_elevation">
 
                 <LinearLayout
@@ -131,7 +127,8 @@
                         android:textAlignment="center"
                         android:textColor="@color/beige_drapeau"
                         android:textSize="14sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:layout_marginTop="@dimen/text_menu_margin" />
 
                 </LinearLayout>
 
@@ -147,13 +144,11 @@
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:layout_columnWeight="1"
-                android:layout_marginBottom="@dimen/layout_Margin"
-                android:layout_marginTop="@dimen/layout_Margin"
-                android:layout_marginLeft="@dimen/layout_Margin"
-                android:layout_marginRight="@dimen/layout_Margin"
+                android:layout_margin="@dimen/cardview_menu_margin"
                 android:layout_rowWeight="1"
                 app:cardCornerRadius="@dimen/corner_Radius"
                 app:cardElevation="@dimen/cardview_default_elevation"
+                android:foreground="?android:attr/selectableItemBackground"
                 app:cardBackgroundColor="@color/bleu_drapeau">
 
                 <LinearLayout
@@ -179,7 +174,8 @@
                         android:textAlignment="center"
                         android:textColor="@color/beige_drapeau"
                         android:textSize="14sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:layout_marginTop="@dimen/text_menu_margin" />
 
                 </LinearLayout>
 
@@ -192,13 +188,11 @@
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:layout_columnWeight="1"
-                android:layout_marginBottom="@dimen/layout_Margin"
-                android:layout_marginTop="@dimen/layout_Margin"
-                android:layout_marginLeft="@dimen/layout_Margin"
-                android:layout_marginRight="@dimen/layout_Margin"
+                android:layout_margin="@dimen/cardview_menu_margin"
                 android:layout_rowWeight="1"
                 android:backgroundTint="@color/bleu_drapeau"
                 app:cardCornerRadius="@dimen/corner_Radius"
+                android:foreground="?android:attr/selectableItemBackground"
                 app:cardElevation="@dimen/cardview_default_elevation">
 
                 <LinearLayout
@@ -224,7 +218,8 @@
                         android:textAlignment="center"
                         android:textColor="@color/beige_drapeau"
                         android:textSize="14sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:layout_marginTop="@dimen/text_menu_margin" />
 
                 </LinearLayout>
 
@@ -233,142 +228,4 @@
         </GridLayout>
 
     </LinearLayout>
-
-    <!--<TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="@dimen/title_Text_Size"
-        android:textColor="@color/white"
-        android:text="English for professionnal \npurposes"
-        android:layout_centerHorizontal="true"
-        android:gravity="center"
-        android:shadowDx="2"
-        android:shadowDy="2"
-        android:fontFamily="sans-serif-condensed"/>
-    app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.12"
-
-
-        />
-
-
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.75">
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
-
-            <com.souillard.customViews.MenuButton
-
-                android:id="@+id/apprentissage"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:clickable="true"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:minHeight="@dimen/button_Height"
-                android:minWidth="@dimen/button_Width"
-                android:fontFamily="sans-serif-condensed"
-                app:background_color="@color/fond_bouton_menu"
-                app:corner_radius="@dimen/corner_Radius"
-                app:image_color="@color/text_menu"
-                app:margin="@dimen/button_Margin"
-                app:src="@drawable/learn"
-                app:text="Apprendre"
-                app:textColor="@color/text_menu"
-                app:textSize="@dimen/text_Size"
-
-                />
-
-
-            <com.souillard.customViews.MenuButton
-
-                android:id="@+id/STT"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:minHeight="@dimen/button_Height"
-                android:minWidth="@dimen/button_Width"
-                android:fontFamily="sans-serif-condensed"
-                app:background_color="@color/fond_bouton_menu"
-                app:corner_radius="@dimen/corner_Radius"
-                app:image_color="@color/text_menu"
-                app:margin="@dimen/button_Margin"
-                app:src="@drawable/stats"
-                app:text="Stats"
-                app:textColor="@color/text_menu"
-                app:textSize="@dimen/text_Size"
-
-                />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <com.souillard.customViews.MenuButton
-                android:id="@+id/evaluations"
-                android:layout_width="wrap_content"
-
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:minHeight="@dimen/button_Height"
-                android:minWidth="@dimen/button_Width"
-                android:fontFamily="sans-serif-condensed"
-                app:background_color="@color/fond_bouton_menu"
-                app:corner_radius="@dimen/corner_Radius"
-                app:image_color="@color/text_menu"
-                app:margin="@dimen/button_Margin"
-                app:src="@drawable/emote100"
-                app:text="Evaluation"
-                app:textColor="@color/text_menu"
-                app:textSize="@dimen/text_Size"
-
-                />
-
-            <com.souillard.customViews.MenuButton
-                android:id="@+id/options"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="@dimen/button_Margin"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:minHeight="@dimen/button_Height"
-                android:minWidth="@dimen/button_Width"
-                android:fontFamily="sans-serif-condensed"
-                app:background_color="@color/fond_bouton_menu"
-                app:corner_radius="@dimen/corner_Radius"
-                app:image_color="@color/text_menu"
-                app:margin="@dimen/button_Margin"
-                app:src="@drawable/settings"
-                app:text="Options"
-                app:textColor="@color/text_menu"
-                app:textSize="@dimen/text_Size"
-
-                />
-
-        </LinearLayout>
-
-
-    </LinearLayout>-->
 

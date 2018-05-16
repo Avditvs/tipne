@@ -1,92 +1,117 @@
 <?xml version="1.0" encoding="utf-8"?>
-<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:alignmentMode="alignMargins"
-    android:background="@color/beige_drapeau"
-    android:columnCount="2"
-    android:columnOrderPreserved="false"
-    android:rowCount="2"
-    android:layout_weight="2">
+    android:orientation="vertical"
+    android:background="@color/beige_drapeau">
 
-    <android.support.v7.widget.CardView
-        android:id="@+id/vocabulaire"
-        android:layout_width="0dp"
+    <View
+        android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_columnWeight="1"
-        android:layout_rowWeight="1"
-        android:layout_margin="@dimen/layout_Margin"
-        android:elevation="@dimen/cardview_default_elevation"
-        app:cardCornerRadius="@dimen/cardview_default_radius"
-        >
+        android:layout_weight="0.25">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="Vocabulaire"
-            android:textAllCaps="true"
-            android:textSize="20sp" />
-    </android.support.v7.widget.CardView>
+    </View>
 
-    <android.support.v7.widget.CardView
-        android:id="@+id/model"
-        android:layout_width="0dp"
+    <GridLayout
+        android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:alignmentMode="alignMargins"
+        android:columnCount="2"
+        android:columnOrderPreserved="false"
+        android:rowCount="2"
+        android:layout_weight="1">
 
-        android:layout_columnWeight="1"
-        android:layout_rowWeight="1"
-        android:layout_margin="@dimen/layout_Margin"
-        android:elevation="@dimen/cardview_default_elevation"
-        app:cardCornerRadius="@dimen/cardview_default_radius">
+        <android.support.v7.widget.CardView
+            android:id="@+id/vocabulaire"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="@dimen/cardview_menu_margin"
+            app:cardBackgroundColor="@color/bleu_drapeau"
+            android:layout_rowWeight="1"
+            android:elevation="@dimen/cardview_default_elevation"
+            app:cardCornerRadius="@dimen/corner_Radius"
+            android:foreground="?android:attr/selectableItemBackground">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="Model Speech"
-            android:textAllCaps="true"
-            android:textSize="20sp" />
-    </android.support.v7.widget.CardView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Vocabulaire"
+                android:textColor="@color/beige_drapeau"
+                android:textSize="20sp" />
+        </android.support.v7.widget.CardView>
 
-    <android.support.v7.widget.CardView
-        android:id="@+id/verbes"
-        android:layout_width="0dp"
+        <android.support.v7.widget.CardView
+            android:id="@+id/model"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:cardBackgroundColor="@color/bleu_drapeau"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="@dimen/cardview_menu_margin"
+            android:elevation="@dimen/cardview_default_elevation"
+            app:cardCornerRadius="@dimen/corner_Radius"
+            android:foreground="?android:attr/selectableItemBackground">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Model Speech"
+                android:textColor="@color/beige_drapeau"
+                android:textSize="20sp" />
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/verbes"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            app:cardBackgroundColor="@color/bleu_drapeau"
+            android:layout_margin="@dimen/cardview_menu_margin"
+            android:elevation="@dimen/cardview_default_elevation"
+            app:cardCornerRadius="@dimen/corner_Radius"
+            android:foreground="?android:attr/selectableItemBackground">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Verbes"
+                android:textColor="@color/beige_drapeau"
+                android:textSize="20sp" />
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/abbréviations"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            app:cardBackgroundColor="@color/bleu_drapeau"
+            android:layout_margin="@dimen/cardview_menu_margin"
+            android:elevation="@dimen/cardview_default_elevation"
+            app:cardCornerRadius="@dimen/corner_Radius"
+            android:foreground="?android:attr/selectableItemBackground">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/beige_drapeau"
+                android:text="Abbreviations"
+                android:textSize="20sp" />
+        </android.support.v7.widget.CardView>
+
+
+    </GridLayout>
+
+    <View
+        android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_columnWeight="1"
-        android:layout_rowWeight="1"
-        android:layout_margin="@dimen/layout_Margin"
-        android:elevation="@dimen/cardview_default_elevation"
-        app:cardCornerRadius="@dimen/cardview_default_radius">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="Verbes"
-            android:textAllCaps="true"
-            android:textSize="20sp" />
-    </android.support.v7.widget.CardView>
-
-    <android.support.v7.widget.CardView
-        android:id="@+id/abbréviations"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_columnWeight="1"
-        android:layout_rowWeight="1"
-        android:layout_margin="@dimen/layout_Margin"
-        android:elevation="@dimen/cardview_default_elevation"
-        app:cardCornerRadius="@dimen/cardview_default_radius">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="Abbreviations"
-            android:textAllCaps="true"
-            android:textSize="20sp" />
-    </android.support.v7.widget.CardView>
-
-
-</GridLayout>
+        android:layout_weight="0.25"/>
+</LinearLayout>
