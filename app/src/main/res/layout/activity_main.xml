@@ -60,7 +60,8 @@
                 android:layout_rowWeight="1"
                 app:cardCornerRadius="@dimen/corner_Radius"
                 android:backgroundTint="@color/bleu_drapeau"
-                app:cardElevation="@dimen/cardview_default_elevation">
+                app:cardElevation="@dimen/cardview_default_elevation"
+                android:foreground="?android:attr/selectableItemBackground">
 
                 <LinearLayout
                     android:layout_width="wrap_content"

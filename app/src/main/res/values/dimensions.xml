@@ -3,7 +3,7 @@
     <dimen name="button_Width">150dp</dimen>
     <dimen name="button_Height">150dp</dimen>
     <dimen name="button_Margin">10dp</dimen>
-    <dimen name="layout_Margin">16dp</dimen>
+    <dimen name="layout_Margin">8dp</dimen>
     <dimen name="layout_Width">350dp</dimen>
     <dimen name="layout_Height">80dp</dimen>
     <dimen name="text_Size">24sp</dimen>

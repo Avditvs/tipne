@@ -3,6 +3,7 @@ package com.souillard.Activities;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.widget.CardView;
 import android.view.View;
 import android.widget.Button;
 
@@ -13,10 +14,10 @@ public class ChooseActivity extends Activity {
 
 
     private String choixMode;
-    private Button mots = null;
-    private Button model = null;
-    private Button verbes = null;
-    private Button abbrev = null;
+    private CardView mots = null;
+    private CardView model = null;
+    private CardView verbes = null;
+    private CardView abbrev = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -88,7 +88,7 @@ public class ChooseListActivity extends Activity {
         final String[] properNames = dbModels.getProperNames();
 
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(ChooseListActivity.this,
-                R.layout.button_choix_liste,R.id.liste, properNames);
+                R.layout.card_view,R.id.file_name_text, properNames);
 
         mListView.setAdapter(adapter);
 
