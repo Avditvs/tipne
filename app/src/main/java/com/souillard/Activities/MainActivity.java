@@ -54,7 +54,7 @@ public class MainActivity extends Activity {
             intent = new Intent(getApplicationContext(), ChooseListActivity.class);
             Bundle extras = new Bundle();
             extras.putString("mode", "evaluation");
-            extras.putString("choixUtilisateur", "mots");
+            extras.putString("choixUtilisateur", "mots");;
             intent.putExtras(extras);
             startActivity(intent);
 
