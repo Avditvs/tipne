@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.graphics.PorterDuff;
+import android.graphics.drawable.Animatable;
 import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
 import android.icu.text.Normalizer2;
@@ -21,8 +22,10 @@ import android.view.ViewGroup;
 import android.view.ViewGroupOverlay;
 import android.view.animation.AnimationSet;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.PopupWindow;
+import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
 import android.widget.Switch;
 import android.widget.TextView;
@@ -39,8 +42,10 @@ public class DataBaseActivity  extends Activity {
     private Intent intent = null;
     private TextView text;
     private SharedPreferences sharedPreferences;
-    private RelativeLayout layout;
+    private LinearLayout layout;
     private PopupWindow popup;
+    private ProgressBar progressBar;
+    private ImageView check;
     private SharedPreferences.Editor spEditor;
 
 
@@ -51,6 +56,8 @@ public class DataBaseActivity  extends Activity {
         setContentView(R.layout.database_activity);
         layout = findViewById(R.id.databaseact);
         text = findViewById(R.id.affdb);
+        progressBar = findViewById(R.id.progressbar_db);
+        check = findViewById(R.id.check_db);
         intent = new Intent(this, MainActivity.class);
 
         sharedPreferences = getSharedPreferences("APP_SHARED_PREFERENCES", Context.MODE_PRIVATE);
@@ -91,6 +98,7 @@ public class DataBaseActivity  extends Activity {
                 @Override
                 public void run() {
                     text.setText("Chargement terminé, appuyez pour continuer");
+                    progressBar.animate().alpha(0.0f).setDuration(300);
                 }
             });
 
