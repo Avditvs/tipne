@@ -173,4 +173,9 @@ public class DataBaseActivity  extends Activity {
         ViewGroupOverlay overlay = parent.getOverlay();
         overlay.clear();
     }
+
+    @Override
+    public void onBackPressed(){
+
+    }
 }
