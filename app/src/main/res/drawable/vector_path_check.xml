@@ -7,7 +7,7 @@
         <path
             android:name="check_path"
             android:pathData="M6,10 l0,0 l,0"
-            android:strokeColor="@color/green_bean"
-            android:strokeWidth="2" />
+            android:strokeColor="@color/bleu_drapeau"
+            android:strokeWidth="3" />
     </group>
 </vector>

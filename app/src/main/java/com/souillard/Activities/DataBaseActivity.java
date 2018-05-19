@@ -7,6 +7,7 @@ import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.graphics.PorterDuff;
 import android.graphics.drawable.Animatable;
+import android.graphics.drawable.AnimatedVectorDrawable;
 import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
 import android.icu.text.Normalizer2;
@@ -45,7 +46,7 @@ public class DataBaseActivity  extends Activity {
     private LinearLayout layout;
     private PopupWindow popup;
     private ProgressBar progressBar;
-    private ImageView check;
+    private ImageView checkView;
     private SharedPreferences.Editor spEditor;
 
 
@@ -57,7 +58,7 @@ public class DataBaseActivity  extends Activity {
         layout = findViewById(R.id.databaseact);
         text = findViewById(R.id.affdb);
         progressBar = findViewById(R.id.progressbar_db);
-        check = findViewById(R.id.check_db);
+        checkView = findViewById(R.id.check_db);
         intent = new Intent(this, MainActivity.class);
 
         sharedPreferences = getSharedPreferences("APP_SHARED_PREFERENCES", Context.MODE_PRIVATE);
@@ -99,6 +100,8 @@ public class DataBaseActivity  extends Activity {
                 public void run() {
                     text.setText("Chargement terminé, appuyez pour continuer");
                     progressBar.animate().alpha(0.0f).setDuration(300);
+                    AnimatedVectorDrawable check = (AnimatedVectorDrawable) checkView.getDrawable();
+                    check.start();
                 }
             });
 

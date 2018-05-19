@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/verbe_card"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_gravity="center"
+        android:foreground="?android:attr/selectableItemBackground"
+        card_view:cardCornerRadius="4dp"
+        card_view:cardElevation="3dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="2dp">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <TextView
+                android:id="@+id/trad"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="file_name"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:padding="7dp"
+                android:lines="3"
+                android:fontFamily="sans-serif-condensed"
+                android:textStyle="bold"
+                android:layout_weight="1"/>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="65dp"
+                android:background="@color/rouge_drapeau"
+                android:layout_gravity="center"
+                android:alpha="100"
+                ></View>
+
+            <TextView
+                android:id="@+id/base_verbale"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="file_name"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:padding="7dp"
+                android:fontFamily="sans-serif-condensed"
+                android:textStyle="bold"
+                android:layout_weight="1"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="65dp"
+                android:background="@color/bleu_drapeau"
+                android:layout_gravity="center"
+                android:alpha="100"
+                ></View>
+
+            <TextView
+                android:id="@+id/preterit"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="file_name"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:padding="7dp"
+                android:fontFamily="sans-serif-condensed"
+                android:textStyle="bold"
+                android:layout_weight="1"/>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="65dp"
+                android:background="@color/bleu_drapeau"
+                android:layout_gravity="center"
+                android:alpha="100"
+                ></View>
+
+            <TextView
+                android:id="@+id/participe_passe"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="file_name"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:padding="7dp"
+                android:fontFamily="sans-serif-condensed"
+                android:textStyle="bold"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

@@ -3,6 +3,7 @@ package com.souillard.Activities;
 import android.app.Activity;
 import android.os.Bundle;
 import android.speech.tts.TextToSpeech;
+import android.support.v7.widget.CardView;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -27,7 +28,7 @@ public class LearningVerbsActivity extends Activity {
 
     private Button clickGauche = null;
     private Button clickDroite = null;
-    private Button textToSpeech = null;
+    private CardView textToSpeech = null;
 
     private String[] verbFr;
     private String[] verbBv;
@@ -39,7 +40,7 @@ public class LearningVerbsActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.learning_verbs_activity);
+        setContentView(R.layout.choix_liste);
 
         textFr = findViewById(R.id.trad);
         textBv = findViewById(R.id.base_verbale);
@@ -48,7 +49,7 @@ public class LearningVerbsActivity extends Activity {
 
         clickGauche = findViewById(R.id.clickGauche);
         clickDroite = findViewById(R.id.clickDroite);
-        textToSpeech = findViewById(R.id.TextToSpeech);
+        textToSpeech = findViewById(R.id.verbe_card);
 
         verbFr = dbVerbs.getFr();
         verbBv = dbVerbs.getBv();
@@ -56,13 +57,13 @@ public class LearningVerbsActivity extends Activity {
         verbPart = dbVerbs.getPart();
 
         textFr.setText(verbFr[verbeActuel]);
-        textBv.setText(verbBv[verbeActuel]);
-        textPret.setText(verbPret[verbeActuel]);
-        textPart.setText(verbPart[verbeActuel]);
+        //textBv.setText(verbBv[verbeActuel]);
+        //textPret.setText(verbPret[verbeActuel]);
+        //textPart.setText(verbPart[verbeActuel]);
 
-        clickGauche.setOnClickListener(clickListenerGauche);
-        clickDroite.setOnClickListener(clickListenerDroite);
-        textToSpeech.setOnClickListener(clickTextToSpeech);
+        //clickGauche.setOnClickListener(clickListenerGauche);
+       // clickDroite.setOnClickListener(clickListenerDroite);
+        //textToSpeech.setOnClickListener(clickTextToSpeech);
 
         voice = new TextToSpeech(getApplicationContext(), new TextToSpeech.OnInitListener() {
             @Override

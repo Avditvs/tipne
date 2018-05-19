@@ -15,7 +15,7 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="3">
+        android:layout_weight="2.5">
     </View>
 
 
@@ -41,11 +41,11 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="2">
+        android:layout_weight="1">
         <ProgressBar
             android:id="@+id/progressbar_db"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:indeterminateDrawable="@drawable/progress"
             >
 
@@ -54,12 +54,21 @@
         <ImageView
             android:id="@+id/check_db"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:scaleType="fitXY"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"
+            android:layout_centerHorizontal="true"
             android:src="@drawable/animated_vector_check"/>
     </RelativeLayout>
+
+        <!--<TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2.5"
+            android:textSize="10dp"
+            android:paddingBottom="2dp"
+            android:gravity="bottom|center_horizontal"
+            android:text=" TIPNE 2018 \n GERMAIN Louis | SIMOES-MARICATO Hugo | LENOIR Louis | BECARELLI Clément"
+            ></TextView>-->
 
     </LinearLayout>
 

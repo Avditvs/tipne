@@ -95,7 +95,7 @@
                     android:singleLine="false"
                     android:textColor="@color/periwinkle"
                     android:textSize="20dp"
-                    android:text="test"
+                    android:text="MotFr"
                     android:lines="3"/>
 
                 <FrameLayout

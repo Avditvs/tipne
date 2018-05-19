@@ -22,7 +22,6 @@ import com.souillard.BasesDeDonnées.DataBaseBuilder;
 import com.souillard.BasesDeDonnées.evaluations.EvaluationsDAO;
 import com.souillard.BasesDeDonnées.listes.ListesDAO;
 import com.souillard.BasesDeDonnées.models.ModelsDAO;
-import com.souillard.BasesDeDonnées.models.ModelsDAO_Impl;
 import com.souillard.BasesDeDonnées.mots.MotsDAO;
 import com.souillard.Fragments.ChangeClassFragment;
 import com.souillard.R;
