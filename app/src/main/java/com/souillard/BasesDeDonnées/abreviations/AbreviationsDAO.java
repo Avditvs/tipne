@@ -13,7 +13,7 @@ public interface AbreviationsDAO {
     @Query("SELECT * FROM abreviations")
     List<Abreviations> getAll();
 
-    @Query("SELECT * FROM Abreviations WHERE idInList like :idList")
+    @Query("SELECT * FROM abreviations WHERE idInList like :idList")
     Abreviations getUnique(int idList);
 
     @Insert
@@ -22,16 +22,19 @@ public interface AbreviationsDAO {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     void insertListe(List<Abreviations> list);
 
-    @Query("SELECT * FROM abreviations WHERE idList like :list")
+    @Query("SELECT * FROM abreviations WHERE idlist like :list")
     List<Abreviations> getList(Integer list);
 
-    @Query("SELECT Abrev FROM abreviations WHERE idList like :idList")
+    @Query("SELECT Abrev FROM abreviations WHERE idlist like :idList")
     String[] getAbrev(int idList);
 
-    @Query("SELECT signification FROM Abreviations WHERE idList like :idList")
-    String[] getsignification(int idList);
+    @Query("SELECT signification FROM abreviations WHERE idlist like :idList")
+    String[] getSignification(int idList);
 
     @Query("DELETE FROM abreviations")
     void nukeTableAbreviations();
+
+    @Query("SELECT COUNT(*) FROM abreviations WHERE idlist like :idList")
+    int countNbAbbrevInlist(int idList);
 
 }

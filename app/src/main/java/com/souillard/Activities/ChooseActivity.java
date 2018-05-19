@@ -91,6 +91,7 @@ public class ChooseActivity extends Activity {
         mots.setOnClickListener(clickListenerMots);
         model.setOnClickListener(clickListenerModel);
         verbes.setOnClickListener(clickListenerVerbes);
+        abbrev.setOnClickListener(clickListenerAbbrev);
 
     }
 
@@ -136,14 +137,15 @@ public class ChooseActivity extends Activity {
         }
     };
 
-    //private View.OnClickListener clickListenerAbbrev = new View.OnClickListener() {
-    // @Override
-    // public void onClick(View v) {
-    //        Intent intent = new Intent(ChooseActivity.this, ChooseListActivity.class);
-    //        Bundle extras = new Bundle();
-    //            extras.putString(choixUtilisateur, "mots");
-    //            extras.putString(mode, choixMode);
-    //            intent.putExtras(extras);
-    //        startActivity(intent);
-    //    };
+    private View.OnClickListener clickListenerAbbrev = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            Intent intent = new Intent(ChooseActivity.this, ChooseListActivity.class);
+            Bundle extras = new Bundle();
+            extras.putString("choixUtilisateur", "abbrev");
+            extras.putString("mode", choixMode);
+            intent.putExtras(extras);
+            startActivity(intent);
+        }
+    };
 }

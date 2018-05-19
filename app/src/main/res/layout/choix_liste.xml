@@ -6,7 +6,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="Activities.ChooseListActivity"
     android:background="@color/beige_drapeau"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:id="@+id/choix_liste">
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"

@@ -1,13 +1,17 @@
 package com.souillard.Activities;
 
 import android.content.Context;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.app.Activity;
+import android.view.Gravity;
+import android.view.LayoutInflater;
 import android.speech.tts.TextToSpeech;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.LinearLayout;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 
@@ -16,6 +20,8 @@ import com.souillard.BasesDeDonnées.verbes.VerbesDAO;
 import com.souillard.R;
 import android.content.Intent;
 import android.widget.ArrayAdapter;
+import android.widget.PopupWindow;
+import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Button;
 import android.widget.Toast;
@@ -23,6 +29,8 @@ import com.souillard.BasesDeDonnées.listes.ListesDAO;
 import com.souillard.BasesDeDonnées.models.ModelsDAO;
 import com.souillard.BasesDeDonnées.AppDataBase;
 import java.lang.String;
+import android.widget.Toast;
+
 import java.util.Locale;
 
 
@@ -37,6 +45,9 @@ public class ChooseListActivity extends Activity {
     public final static String nameModel ="";
     private TextView text;
     private int position;
+    private SharedPreferences sharedPreferences;
+    private PopupWindow popup;
+    private int nbMots;
 
     AppDataBase db = AppDataBase.getAppDatabase(ChooseListActivity.this);
     ListesDAO dbListes = db.ListesDAO();
@@ -50,6 +61,7 @@ public class ChooseListActivity extends Activity {
     String[] verbPart = dbVerbes.getPart();
     String choixUser;
     String modeChoisi;
+    LinearLayout layout;
 
 
 
@@ -57,6 +69,7 @@ public class ChooseListActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.choix_liste);
+        layout = findViewById(R.id.choix_liste);
 
         //Défini notre listView
         mListView = (ListView) findViewById(R.id.listView);
@@ -76,6 +89,9 @@ public class ChooseListActivity extends Activity {
             verbsChoosed();
             toolbar.setVisibility(View.GONE);
             header.setVisibility(View.GONE);
+        }
+        else if (choixUser.equals("abbrev")){
+            abbrevsChoosed();
         }
     }
 
@@ -115,17 +131,44 @@ public class ChooseListActivity extends Activity {
         mListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                String nomliste = namesList[position];
-                if (modeChoisi.equals("apprentissage")) {
-                    Intent i = new Intent(ChooseListActivity.this, LearningMotsActivity.class);
-                    i.putExtra(nameList, nomliste);
-                    startActivity(i);
+                final String nomliste = namesList[position];
+                sharedPreferences = getSharedPreferences("APP_SHARED_PREFERENCES", Context.MODE_PRIVATE);
+                int annee = sharedPreferences.getInt("user_year", 1);
+                if (annee == 1) {
+                    Toast.makeText(ChooseListActivity.this, "Liste entière ?", Toast.LENGTH_SHORT).show();
+                    LayoutInflater inflater = (LayoutInflater) getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+                    View aview = inflater.inflate(R.layout.half_list, null);
+                    popup = new PopupWindow(aview, LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT);
+                    final Switch aSwitch = aview.findViewById(R.id.hlchoose);
+
+                    Button quitButton = aview.findViewById(R.id.btchoose);
+
+                    quitButton.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                            if (aSwitch.isChecked()) {
+                                nbMots = dbListes.getNbWordsHalf(nomliste);
+                            } else {
+                                nbMots = dbListes.getNbWords(nomliste);
+                            }
+                            popup.dismiss();
+                        }
+                    });
+                    popup.showAtLocation(layout, Gravity.CENTER, 0, 0);
                 }
-                else if (modeChoisi.equals("evaluation")){
-                    Intent i = new Intent (ChooseListActivity.this, EvaluationActivity.class);
-                    i.putExtra(nameList, nomliste);
-                    startActivity(i);
-                }
+                    if (modeChoisi.equals("apprentissage")) {
+                        Intent i = new Intent(ChooseListActivity.this, LearningMotsActivity.class);
+                        Bundle extras = new Bundle();
+                        extras.putString("nameList", nomliste);
+                        extras.putString("choixUtilisateur", "mots");
+                        extras.putInt("nbMots", nbMots);
+                        i.putExtras(extras);
+                        startActivity(i);
+                    } else if (modeChoisi.equals("evaluation")) {
+                        Intent i = new Intent(ChooseListActivity.this, EvaluationActivity.class);
+                        i.putExtra(nameList, nomliste);
+                        startActivity(i);
+                    }
             }
         });
     }
@@ -151,5 +194,47 @@ public class ChooseListActivity extends Activity {
         });
     }
 
+    private void abbrevsChoosed(){
+        final String[] abbrevList = getResources().getStringArray(R.array.ListesAbreviations);
+
+        String[] properAbbrevList = setProperList(abbrevList);
+
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(ChooseListActivity.this,
+                R.layout.card_view,R.id.file_name_text, properAbbrevList);
+
+        mListView.setAdapter(adapter);
+
+        mListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                String nameList = abbrevList[position];
+                Intent i = new Intent(ChooseListActivity.this, LearningMotsActivity.class);
+                Bundle extras = new Bundle();
+                extras.putString("nameList", nameList);
+                extras.putString("choixUtilisateur", "abbrev");
+                i.putExtras(extras);
+                startActivity(i);
+            }
+        });
+    }
+
+    private String[] setProperList (String[] nonProperList){
+        int i = 0;
+        String[] properList = new String[6];
+        for (String linkedList : nonProperList){
+            String[] parsedList = linkedList.split("_");
+            String aProperList = "";
+            for (String pieceList : parsedList){
+                aProperList = aProperList + ' ' + pieceList;
+            }
+            properList[i] = aProperList;
+            i++;
+        }
+        return properList;
+    }
+
 
 }
+
+
+
