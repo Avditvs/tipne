@@ -46,7 +46,11 @@ public interface ListesDAO {
     @Query("SELECT idList FROM listes WHERE properName LIKE :name")
     Integer getIdFromProperName(String name);
 
+    @Query("SELECT nbWords FROM listes WHERE nameOfList LIKE :nameList")
+    int getNbWords(String nameList);
 
+    @Query("SELECT nbWordsHalf FROM listes WHERE nameOfList LIKE :nameList")
+    int getNbWordsHalf(String nameList);
 
 
 }
