@@ -46,6 +46,7 @@ public class ChooseListActivity extends Activity {
     private SharedPreferences sharedPreferences;
     private PopupWindow popup;
     private int nbMots;
+    private String nomliste;
 
     AppDataBase db = AppDataBase.getAppDatabase(ChooseListActivity.this);
     ListesDAO dbListes = db.ListesDAO();
@@ -123,7 +124,7 @@ public class ChooseListActivity extends Activity {
         mListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                final String nomliste = namesList[position];
+                nomliste = namesList[position];
                 sharedPreferences = getSharedPreferences("APP_SHARED_PREFERENCES", Context.MODE_PRIVATE);
                 int annee = sharedPreferences.getInt("user_year", 1);
                 if (annee == 1) {
@@ -145,9 +146,10 @@ public class ChooseListActivity extends Activity {
                                 nbMots = dbListes.getNbWords(nomliste);
                             }
                             popup.dismiss();
+                            launchingActivity(nomliste);
                         }
                     });
-                    launchingActivity(nomliste);
+
                 }
 
                 else {
