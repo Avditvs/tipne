@@ -4,6 +4,9 @@ import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.app.Activity;
+import android.speech.tts.TextToSpeech;
+import android.support.v7.widget.CardView;
+import android.support.v7.widget.Toolbar;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -13,6 +16,7 @@ import android.widget.ListAdapter;
 import android.widget.ListView;
 
 import com.souillard.BasesDeDonnées.AppDataBase;
+import com.souillard.BasesDeDonnées.verbes.VerbesDAO;
 import com.souillard.R;
 import android.content.Intent;
 import android.widget.ArrayAdapter;
@@ -25,16 +29,20 @@ import com.souillard.BasesDeDonnées.listes.ListesDAO;
 import com.souillard.BasesDeDonnées.models.ModelsDAO;
 import com.souillard.BasesDeDonnées.AppDataBase;
 import java.lang.String;
+import java.util.Locale;
 import android.widget.Toast;
-
-
 
 public class ChooseListActivity extends Activity {
 
     private ListView mListView;
+    private Toolbar toolbar;
+    private TextView header;
+    private CardView textToSpeech = null;
+    private TextToSpeech voice;
     public final static String nameList = "";
     public final static String nameModel ="";
     private TextView text;
+    private int position;
     private SharedPreferences sharedPreferences;
     private PopupWindow popup;
     private int nbMots;
@@ -42,8 +50,13 @@ public class ChooseListActivity extends Activity {
     AppDataBase db = AppDataBase.getAppDatabase(ChooseListActivity.this);
     ListesDAO dbListes = db.ListesDAO();
     ModelsDAO dbModels = db.ModelsDAO();
+    VerbesDAO dbVerbes = db.VerbesDAO();
     String[] namesList = dbListes.getNames();
     String[] namesListDisplay = dbListes.getProperNames();
+    String[] verbFr = dbVerbes.getFr();
+    String[] verbBv = dbVerbes.getBv();
+    String[] verbPret = dbVerbes.getPret();
+    String[] verbPart = dbVerbes.getPart();
     String choixUser;
     String modeChoisi;
     LinearLayout layout;
@@ -56,7 +69,8 @@ public class ChooseListActivity extends Activity {
 
         //Défini notre listView
         mListView = (ListView) findViewById(R.id.listView);
-
+        toolbar = findViewById(R.id.toolbar);
+        header = findViewById(R.id.instructions);
         Bundle extras = getIntent().getExtras();
         choixUser = extras.getString("choixUtilisateur");
         modeChoisi = extras.getString("mode");
@@ -67,9 +81,34 @@ public class ChooseListActivity extends Activity {
         else if (choixUser.equals("model")) {
             modelsChoosed();
         }
+        else if (choixUser.equals("verbes")){
+            verbsChoosed();
+            toolbar.setVisibility(View.GONE);
+            header.setVisibility(View.GONE);
+        }
         else if (choixUser.equals("abbrev")){
             abbrevsChoosed();
         }
+    }
+
+    private void verbsChoosed() {
+        CustomAdapter adapter = new CustomAdapter(ChooseListActivity.this, verbFr, verbBv, verbPret, verbPart);
+        mListView.setAdapter(adapter);
+        voice = new TextToSpeech(getApplicationContext(), new TextToSpeech.OnInitListener() {
+            @Override
+            public void onInit(int status) {
+                if (status != TextToSpeech.ERROR){
+                    voice.setLanguage(Locale.ENGLISH);
+                }
+            }
+        });
+        mListView.setOnItemClickListener(new AdapterView.OnItemClickListener(){
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id){
+                voice.speak(verbBv[position] + ' ' + verbPret[position] + ' ' + verbPart[position], TextToSpeech.QUEUE_FLUSH, null);
+            }
+
+        });
     }
 
     private void motsChoosed () {

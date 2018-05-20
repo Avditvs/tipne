@@ -12,14 +12,14 @@
                 <objectAnimator
                     android:duration="300"
                     android:propertyName="pathData"
-                    android:valueFrom="M 6,10 L 0,0 L 0,0"
-                    android:valueTo="M 6,10 L 4,4.5 L 0,0"
+                    android:valueFrom="M 6,10 l 0,0 l 0,0"
+                    android:valueTo="M 6,10 l 4,4.5 l 0,0"
                     android:valueType="pathType" />
                 <objectAnimator
                     android:duration="@android:integer/config_shortAnimTime"
                     android:propertyName="pathData"
-                    android:valueFrom="M 6,10 L 4,4.5 L 0,0"
-                    android:valueTo="M 6,10 L 4,4.5 L 9,-8"
+                    android:valueFrom="M 6,10 l 4,4.5 l 0,0"
+                    android:valueTo="M 6,10 l 4,4.5 l 9,-8"
                     android:valueType="pathType" />
             </set>
         </aapt:attr>
