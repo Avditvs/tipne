@@ -38,4 +38,6 @@ public interface MotsDAO {
     @Query("SELECT COUNT(*) FROM mots WHERE idList like :list")
     int countNbWordInlist(int list);
 
+    @Query ("SELECT * FROM mots WHERE idInList < :halfWords AND idList LIKE :list ")
+    List<Mots> getHalfList(int list, int halfWords);
 }

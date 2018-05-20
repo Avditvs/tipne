@@ -6,7 +6,7 @@
     <group android:name="check">
         <path
             android:name="check_path"
-            android:pathData="M6,10 l0,0 l,0"
+            android:pathData="M 6,10 L 0,0 L 0,0"
             android:strokeColor="@color/bleu_drapeau"
             android:strokeWidth="3" />
     </group>

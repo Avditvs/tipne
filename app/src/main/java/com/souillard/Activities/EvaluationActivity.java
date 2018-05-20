@@ -3,6 +3,7 @@ package com.souillard.Activities;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.speech.SpeechRecognizer;
 import android.support.v7.app.AppCompatActivity;
@@ -54,7 +55,9 @@ public class EvaluationActivity extends VoiceRecognitionActivity {
     private LinearLayout bodyEval;
     private Toast toast;
     private int maxScore;
+    private int nbWords;
     private LinearLayout layout;
+    private SharedPreferences sharedPreferences;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -62,6 +65,7 @@ public class EvaluationActivity extends VoiceRecognitionActivity {
         micro = findViewById(R.id.TextToSpeech);
         setTriggerButton(micro);
         super.onCreate(savedInstanceState);
+        Bundle extras = getIntent().getExtras();
 
 
         MotsDAO motsDAO = AppDataBase.getAppDatabase(getApplicationContext()).MotsDao();
@@ -79,13 +83,24 @@ public class EvaluationActivity extends VoiceRecognitionActivity {
 
         editText.setOnKeyListener(textEnterListener);
 
-        listId = listesDAO.idDeListe(getIntent().getStringExtra(nameList));
+        listId = listesDAO.idDeListe(extras.getString("nameList"));
 
+        sharedPreferences = getSharedPreferences("APP_SHARED_PREFERENCES", Context.MODE_PRIVATE);
+        int annee = sharedPreferences.getInt("user_year", 1);
         listeInfo = listesDAO.getListesById(listId);
-        listNameView.setText(listeInfo.getProperName());
 
 
-        dataMots = motsDAO.getList(listId);
+        if ((annee == 1) && (extras.getInt("nbMots") < 126)) {
+            listNameView.setText("Moitié Liste " + listesDAO.getProperName(listId));
+            dataMots = motsDAO.getHalfList(extras.getInt("nbMots"), listId);
+        }
+        else {
+            listNameView.setText(listesDAO.getProperName(listId));
+            dataMots = motsDAO.getList(listId);
+        }
+
+        //dataMots = motsDAO.getList(listId);
+        nbWords = extras.getInt("nbMots");
 
         Collections.shuffle(dataMots);
 
@@ -138,7 +153,7 @@ public class EvaluationActivity extends VoiceRecognitionActivity {
 
     private void changerMot(int indice){
         infoSuppView.setText("");
-        indiceMotView.setText("Mot " + indice + " sur " + listeInfo.getNbWords());
+        indiceMotView.setText("Mot " + indice + " sur " + nbWords);
         Mots motActuel  = dataMots.get(indice-1);
         dataMots.get(indice-1).incrementNbEval(1);
         String request = "";

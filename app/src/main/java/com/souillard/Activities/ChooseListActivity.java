@@ -6,9 +6,6 @@ import android.os.Bundle;
 import android.app.Activity;
 import android.view.Gravity;
 import android.view.LayoutInflater;
-import android.speech.tts.TextToSpeech;
-import android.support.v7.widget.CardView;
-import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.LinearLayout;
@@ -16,7 +13,6 @@ import android.widget.ListAdapter;
 import android.widget.ListView;
 
 import com.souillard.BasesDeDonnées.AppDataBase;
-import com.souillard.BasesDeDonnées.verbes.VerbesDAO;
 import com.souillard.R;
 import android.content.Intent;
 import android.widget.ArrayAdapter;
@@ -31,20 +27,14 @@ import com.souillard.BasesDeDonnées.AppDataBase;
 import java.lang.String;
 import android.widget.Toast;
 
-import java.util.Locale;
 
 
 public class ChooseListActivity extends Activity {
 
     private ListView mListView;
-    private Toolbar toolbar;
-    private TextView header;
-    private CardView textToSpeech = null;
-    private TextToSpeech voice;
     public final static String nameList = "";
     public final static String nameModel ="";
     private TextView text;
-    private int position;
     private SharedPreferences sharedPreferences;
     private PopupWindow popup;
     private int nbMots;
@@ -52,18 +42,11 @@ public class ChooseListActivity extends Activity {
     AppDataBase db = AppDataBase.getAppDatabase(ChooseListActivity.this);
     ListesDAO dbListes = db.ListesDAO();
     ModelsDAO dbModels = db.ModelsDAO();
-    VerbesDAO dbVerbes = db.VerbesDAO();
     String[] namesList = dbListes.getNames();
     String[] namesListDisplay = dbListes.getProperNames();
-    String[] verbFr = dbVerbes.getFr();
-    String[] verbBv = dbVerbes.getBv();
-    String[] verbPret = dbVerbes.getPret();
-    String[] verbPart = dbVerbes.getPart();
     String choixUser;
     String modeChoisi;
     LinearLayout layout;
-
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -73,8 +56,7 @@ public class ChooseListActivity extends Activity {
 
         //Défini notre listView
         mListView = (ListView) findViewById(R.id.listView);
-        toolbar = findViewById(R.id.toolbar);
-        header = findViewById(R.id.instructions);
+
         Bundle extras = getIntent().getExtras();
         choixUser = extras.getString("choixUtilisateur");
         modeChoisi = extras.getString("mode");
@@ -85,38 +67,10 @@ public class ChooseListActivity extends Activity {
         else if (choixUser.equals("model")) {
             modelsChoosed();
         }
-        else if (choixUser.equals("verbes")){
-            verbsChoosed();
-            toolbar.setVisibility(View.GONE);
-            header.setVisibility(View.GONE);
-        }
         else if (choixUser.equals("abbrev")){
             abbrevsChoosed();
         }
     }
-
-    private void verbsChoosed() {
-        CustomAdapter adapter = new CustomAdapter(ChooseListActivity.this, verbFr, verbBv, verbPret, verbPart);
-        mListView.setAdapter(adapter);
-        voice = new TextToSpeech(getApplicationContext(), new TextToSpeech.OnInitListener() {
-            @Override
-            public void onInit(int status) {
-                if (status != TextToSpeech.ERROR){
-                    voice.setLanguage(Locale.ENGLISH);
-                }
-            }
-        });
-        mListView.setOnItemClickListener(new AdapterView.OnItemClickListener(){
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id){
-                voice.speak(verbBv[position] + ' ' + verbPret[position] + ' ' + verbPart[position], TextToSpeech.QUEUE_FLUSH, null);
-            }
-
-        });
-
-
-    }
-
 
     private void motsChoosed () {
         //Défini les données à afficher et comment on les affiche
@@ -125,7 +79,6 @@ public class ChooseListActivity extends Activity {
 
         //On associe ces données à la ListView
         mListView.setAdapter(adapter);
-
 
         //que faire lorsqu'on clique sur un item ?
         mListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -141,6 +94,7 @@ public class ChooseListActivity extends Activity {
                     popup = new PopupWindow(aview, LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT);
                     final Switch aSwitch = aview.findViewById(R.id.hlchoose);
 
+
                     Button quitButton = aview.findViewById(R.id.btchoose);
 
                     quitButton.setOnClickListener(new View.OnClickListener() {
@@ -154,21 +108,13 @@ public class ChooseListActivity extends Activity {
                             popup.dismiss();
                         }
                     });
-                    popup.showAtLocation(layout, Gravity.CENTER, 0, 0);
+                    launchingActivity(nomliste);
                 }
-                    if (modeChoisi.equals("apprentissage")) {
-                        Intent i = new Intent(ChooseListActivity.this, LearningMotsActivity.class);
-                        Bundle extras = new Bundle();
-                        extras.putString("nameList", nomliste);
-                        extras.putString("choixUtilisateur", "mots");
-                        extras.putInt("nbMots", nbMots);
-                        i.putExtras(extras);
-                        startActivity(i);
-                    } else if (modeChoisi.equals("evaluation")) {
-                        Intent i = new Intent(ChooseListActivity.this, EvaluationActivity.class);
-                        i.putExtra(nameList, nomliste);
-                        startActivity(i);
-                    }
+
+                else {
+                    launchingActivity(nomliste);
+                }
+                popup.showAtLocation(layout, Gravity.CENTER, 0, 0);
             }
         });
     }
@@ -233,8 +179,25 @@ public class ChooseListActivity extends Activity {
         return properList;
     }
 
+    private void launchingActivity(String nomliste){
+        if (modeChoisi.equals("apprentissage")) {
+            Intent i = new Intent(ChooseListActivity.this, LearningMotsActivity.class);
+            Bundle extras = new Bundle();
+            extras.putString("nameList", nomliste);
+            extras.putString("choixUtilisateur", "mots");
+            extras.putInt("nbMots", nbMots);
+            i.putExtras(extras);
+            startActivity(i);
+        } else if (modeChoisi.equals("evaluation")) {
+            Intent i = new Intent(ChooseListActivity.this, EvaluationActivity.class);
+            Bundle extras = new Bundle();
+            extras.putString("nameList", nomliste);
+            extras.putInt("nbMots", nbMots);
+            i.putExtras(extras);
+            startActivity(i);
+        }
+    }
 
 }
-
 
 
