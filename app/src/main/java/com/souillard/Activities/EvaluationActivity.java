@@ -99,7 +99,7 @@ public class EvaluationActivity extends VoiceRecognitionActivity {
             dataMots = motsDAO.getList(listId);
         }
 
-        //dataMots = motsDAO.getList(listId);
+        dataMots = motsDAO.getList(listId);
         nbWords = extras.getInt("nbMots");
 
         Collections.shuffle(dataMots);
