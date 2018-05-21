@@ -53,7 +53,7 @@ public class MainActivity extends Activity {
         public void onClick(View v) {
             intent = new Intent(getApplicationContext(), ChooseListActivity.class);
             Bundle extras = new Bundle();
-            extras.putString("mode", "evaluation");
+            extras.putString("mode", "entrainement");
             extras.putString("choixUtilisateur", "mots");;
             intent.putExtras(extras);
             startActivity(intent);

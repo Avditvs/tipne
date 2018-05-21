@@ -237,6 +237,13 @@ public class ChooseListActivity extends Activity {
             i.putExtras(extras);
             startActivity(i);
         }
+        else if (modeChoisi.equals("entrainement")){
+            Intent i = new Intent(ChooseListActivity.this, GameOneActivity.class);
+            Bundle extras = new Bundle();
+            extras.putString("nameList", nomliste);
+            i.putExtras(extras);
+            startActivity(i);
+        }
     }
 
 }
