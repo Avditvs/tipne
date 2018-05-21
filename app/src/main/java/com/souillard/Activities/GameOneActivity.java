@@ -115,10 +115,10 @@ public class GameOneActivity extends Activity {
             buttons[i].setText(x);
             i++;
         }
-       // while (i<11); {
-          //  buttons[i].setText("a");
-          //  i++;
-       // }
+        while(i<11) {
+            buttons[i].setText("a");
+            i++;
+        }
     }
 
 }
