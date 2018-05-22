@@ -1,70 +1,173 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/beige_drapeau">
 
 
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:orientation="vertical"
-            android:id="@+id/scrollingLayout">
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="5dp"
-                    android:text="Nom"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="5dp"
-                    android:text="Nb evals"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="5dp"
-                    android:text="Dernière note"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="5dp"
-                    android:text="Moyenne"/>
-
-            </LinearLayout>
-
-            <com.souillard.customViews.ResizingListView
-                android:layout_width="wrap_content"
-                android:id="@+id/listView"
-                android:layout_height="match_parent"
-                android:layout_marginBottom="50dp">
-            </com.souillard.customViews.ResizingListView>
-
-
-
+            android:id="@+id/scrollingLayout"
+            android:weightSum="10">
 
             <Spinner
-                android:layout_width="150dp"
-                android:layout_height="30dp"
-                android:id="@+id/spinnerselector"/>
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:id="@+id/spinnerselector"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:layout_weight="1"/>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.5"
+                android:layout_margin="5dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:weightSum="9">
+
+                    <LinearLayout
+                        android:gravity="center_vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="5dp"
+                            android:text="Nb evals"
+                            android:lines="1"
+                            android:gravity="center"/>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginHorizontal="20dp"
+                            android:layout_marginVertical="10dp"
+                            android:background="@color/rouge_drapeau">
+
+                        </View>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="5dp"
+                            android:id="@+id/nbevaltest"
+                            android:text="Nb evals"
+                            android:lines="1"
+                            android:gravity="center"
+                            />
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginVertical="5dp"
+                        android:background="@color/bleu_drapeau"
+                        android:layout_gravity="center"
+                        android:alpha="200"
+                        ></View>
+
+                    <LinearLayout
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="5dp"
+                            android:text="Moyenne"
+                            android:lines="1"
+                            android:gravity="center"/>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginHorizontal="20dp"
+                            android:layout_marginVertical="10dp"
+                            android:background="@color/rouge_drapeau">
+
+                        </View>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="5dp"
+                            android:id="@+id/mean"
+                            android:text="Nb evals"
+                            android:lines="1"
+                            android:gravity="center"
+                            />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginVertical="5dp"
+                        android:background="@color/bleu_drapeau"
+                        android:layout_gravity="center"
+                        android:alpha="200"
+                        ></View>
+
+                    <LinearLayout
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="5dp"
+                            android:text="Dernière note"
+                            android:lines="1"
+                            android:gravity="center"/>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginHorizontal="20dp"
+                            android:layout_marginVertical="10dp"
+                            android:background="@color/rouge_drapeau">
+
+                        </View>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="5dp"
+                            android:id="@+id/last"
+                            android:text="Nb evals"
+                            android:lines="1"
+                            android:gravity="center"
+                            />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
 
             <com.github.mikephil.charting.charts.LineChart
                 android:layout_width="match_parent"
-                android:layout_height="400dp"
-                android:id="@+id/lineChart"/>
+                android:layout_height="0dp"
+                android:id="@+id/lineChart"
+                android:layout_weight="7"/>
 
         </LinearLayout>
-
-    </ScrollView>
 </android.support.constraint.ConstraintLayout>

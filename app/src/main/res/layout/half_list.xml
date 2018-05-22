@@ -6,61 +6,70 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <LinearLayout
-        android:layout_width="wrap_content"
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:orientation="vertical"
-        android:background="@drawable/year_choose_background"
-        android:id="@+id/half_list">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Souhaites-tu apprendre la liste entière ou seulement la moitié ?"
-            android:gravity="center_horizontal"
-            android:textSize="20dp"
-            android:layout_gravity="center"
-            android:layout_margin="5dp"
-            />
+        android:layout_margin="10dp"
+        app:cardCornerRadius="@dimen/corner_Radius"
+        android:backgroundTint="@color/beige_drapeau"
+        app:cardElevation="24dp">
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_gravity="center">
+            android:background="@color/beige_drapeau"
+            android:orientation="vertical"
+            android:id="@+id/half_list">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Entière"
-                android:textSize="10dp"/>
+                android:text="Souhaites-tu apprendre la liste entière ou seulement la moitié ?"
+                android:gravity="center_horizontal"
+                android:textSize="20dp"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                />
 
-            <Switch
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/hlchoose"
-                android:theme="@style/MySwitch"
-                android:layout_marginHorizontal="5dp"/>
+                android:orientation="horizontal"
+                android:layout_gravity="center">
 
-            <TextView
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Entière"
+                    android:textSize="10dp"/>
+
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/hlchoose"
+                    android:theme="@style/MySwitch"
+                    android:layout_marginHorizontal="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Moitié"
+                    android:textSize="10dp"/>
+
+
+            </LinearLayout>
+
+            <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Moitié"
-                android:textSize="10dp"/>
+                android:text="Valider"
+                android:layout_gravity="center"
+                android:id="@+id/btchoose"
+                android:layout_margin="5dp"
+                android:background="@color/bleu_drapeau"/>
 
 
         </LinearLayout>
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Valider"
-            android:layout_gravity="center"
-            android:id="@+id/btchoose"
-            android:layout_margin="5dp"/>
-
-
-    </LinearLayout>
+    </android.support.v7.widget.CardView>
 
 </android.support.constraint.ConstraintLayout>

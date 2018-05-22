@@ -10,15 +10,15 @@ import android.widget.TextView;
 
 import com.souillard.R;
 
-class CustomAdapter extends ArrayAdapter<String>
-{
-    String[] verbFr;
-    String[] verbBv;
+class VerbAdapter extends ArrayAdapter<String>
+    {
+        String[] verbFr;
+        String[] verbBv;
     String[] verbPret;
     String[] verbPart;
 
     LayoutInflater mInflater;
-    public CustomAdapter(Context context, String[] verbFr,String verbBv[], String[] verbPret,String verbPart[])
+    public VerbAdapter(Context context, String[] verbFr, String verbBv[], String[] verbPret, String verbPart[])
     {
         super(context,R.layout.verbes_card,verbFr);
         this.verbFr = verbFr;

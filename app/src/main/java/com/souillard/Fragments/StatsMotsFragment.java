@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -27,6 +28,7 @@ import com.github.mikephil.charting.data.LineData;
 import com.github.mikephil.charting.data.LineDataSet;
 import com.github.mikephil.charting.formatter.IAxisValueFormatter;
 import com.souillard.BasesDeDonnées.AppDataBase;
+import com.souillard.BasesDeDonnées.evaluations.Evaluations;
 import com.souillard.BasesDeDonnées.evaluations.EvaluationsDAO;
 import com.souillard.BasesDeDonnées.listes.ListesDAO;
 
@@ -46,7 +48,8 @@ public class StatsMotsFragment extends Fragment {
     private ListesDAO listesDAO;
     private EvaluationsDAO evaluationsDAO;
     ArrayList<StatsListeMot> listsStatsmots;
-    ResizingListView listView;
+    ListView listView;
+    TextView text;
     LinearLayout scrollingLayout;
     private static MotsAdapter adapter;
     private LineChart lineChart;
@@ -83,9 +86,9 @@ public class StatsMotsFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View view=  inflater.inflate(R.layout.fragment_stats_mots, container, false);
+        View view=  inflater.inflate(R.layout.fragment_stats_mots, container, false);/*
         listView = view.findViewById(R.id.listView);
-        adapter = new MotsAdapter(listsStatsmots, getContext());
+        adapter = new MotsAdapter(listsStatsmots, getContext());*/
         scrollingLayout = view.findViewById(R.id.scrollingLayout);
         lineChart = view.findViewById(R.id.lineChart);
         lineChart.getXAxis().setPosition(XAxis.XAxisPosition.BOTTOM);
@@ -94,28 +97,20 @@ public class StatsMotsFragment extends Fragment {
         spinner = view.findViewById(R.id.spinnerselector);
         spinner.setAdapter(spinnerAdapter);
         spinner.setOnItemSelectedListener(selectionListener);
-
-        listView.setAdapter(adapter);
-        if (listsStatsmots.isEmpty()){
-            int index = scrollingLayout.indexOfChild(listView);
-            scrollingLayout.removeViewAt(index);
-            TextView textView = new TextView(getContext());
-            textView.setText("Il n'y a rien à afficher ici");
-            scrollingLayout.addView(textView,index);
-        }
-       // adapter.notifyDataSetChanged();
-        //setListViewHeightBasedOnChildren(listView);
         return view;
 
     }
 
 
     AdapterView.OnItemSelectedListener selectionListener = new AdapterView.OnItemSelectedListener() {
+
         @Override
         public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
             List<Entry> entries= new ArrayList<>();
+            parent.getItemAtPosition(position);
             String test = uniqueNamesEvals.get(position);
             int idListe = listesDAO.getIdFromProperName(uniqueNamesEvals.get(position));
+            setTextView(idListe);
             List<Long> epochs = evaluationsDAO.getEpochs(idListe);
             List<Float> notes = evaluationsDAO.getListNotes(idListe);
 
@@ -127,14 +122,37 @@ public class StatsMotsFragment extends Fragment {
             lineChart.setData(lineData);
             lineChart.invalidate(); // refresh
 
-
         }
 
         @Override
         public void onNothingSelected(AdapterView<?> parent) {
 
         }
+
     };
+
+    public void setTextView(Integer idListe){
+        float mean;
+        View view;
+
+        view = getView();
+
+        text=view.findViewById(R.id.nbevaltest);
+        text.setText(String.valueOf(evaluationsDAO.countEvals(idListe)));
+        text=view.findViewById(R.id.mean);
+        mean = mean(evaluationsDAO.getListNotes(idListe));
+        text.setText(String.valueOf(mean));
+        text=view.findViewById(R.id.last);
+        text.setText(String.valueOf(evaluationsDAO.getLastNote(idListe)));
+    }
+
+    public float mean(List<Float> liste){
+        float somme = 0;
+        for(float note : liste){
+            somme +=note;
+        }
+        return somme/liste.size();
+    }
 
     private class StatsListeMot{
         private int idListe;

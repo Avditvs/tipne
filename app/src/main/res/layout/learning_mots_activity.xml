@@ -4,12 +4,12 @@
     android:layout_height="fill_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    android:background="@color/fond_ecran">
+    android:background="@color/beige_drapeau">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/indigo_ink"
+        android:background="@color/bleu_drapeau"
         android:orientation="vertical"
         android:id="@+id/header">
 
@@ -21,13 +21,13 @@
             android:layout_margin="10dp"
             android:gravity="center"
             android:text="Liste1"
-            android:textColor="@color/periwinkle"
+            android:textColor="@color/beige_drapeau"
             android:textSize="15dp" />
 
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="2px"
-            android:background="@color/periwinkle"
+            android:background="@color/rouge_drapeau"
             android:layout_marginHorizontal="60dp"/>
 
         <TextView
@@ -37,7 +37,7 @@
             android:layout_gravity="center"
             android:layout_margin="15dp"
             android:text="mot 120 sur 120"
-            android:textColor="@color/periwinkle"
+            android:textColor="@color/beige_drapeau"
             android:textSize="25dp"
             android:gravity="center"/>
 
@@ -76,7 +76,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="left|center_vertical"
-                android:background="@drawable/fleche_gauche" />
+                android:background="@drawable/fleche_gauche"
+                android:backgroundTint="@color/rouge_drapeau"/>
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -93,7 +94,7 @@
                     android:layout_gravity="bottom"
                     android:gravity="center"
                     android:singleLine="false"
-                    android:textColor="@color/periwinkle"
+                    android:textColor="@color/bleu_drapeau"
                     android:textSize="20dp"
                     android:text="MotFr"
                     android:lines="3"/>
@@ -102,7 +103,7 @@
                     android:layout_width="190dp"
                     android:layout_height="5dp"
                     android:layout_gravity="center"
-                    android:background="@color/vert_kaki"></FrameLayout>
+                    android:background="@color/rouge_drapeau"></FrameLayout>
 
                 <TextView
                     android:id="@+id/motEN"
@@ -111,7 +112,7 @@
                     android:layout_marginTop="5dp"
                     android:gravity="center"
                     android:singleLine="false"
-                    android:textColor="@color/periwinkle"
+                    android:textColor="@color/bleu_drapeau"
                     android:textSize="20dp"
                     android:lines="3"
                     android:layout_gravity="top"/>
@@ -123,7 +124,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:background="@drawable/fleche_droite" />
+                android:background="@drawable/fleche_droite"
+                android:backgroundTint="@color/rouge_drapeau"/>
 
 
         </LinearLayout>
@@ -142,7 +144,7 @@
                 android:layout_height="wrap_content"
                 android:text="Entendre le mot"
                 android:textSize="15dp"
-                android:textColor="@color/periwinkle"
+                android:textColor="@color/bleu_drapeau"
                 android:layout_gravity="center"
                 android:gravity="center"/>
 

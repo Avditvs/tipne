@@ -37,7 +37,7 @@ public class StatsActivity extends FragmentActivity {
     private void setViewPager(ViewPager viewPager) {
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
         adapter.addFragment(new StatsMotsFragment(), "Mots");
-        adapter.addFragment(new StatsVerbesFragment(), "Verbes");
+        //adapter.addFragment(new StatsVerbesFragment(), "Verbes");
         viewPager.setAdapter(adapter);
     }
 

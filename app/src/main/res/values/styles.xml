@@ -11,9 +11,9 @@
     <style name="MySwitch" parent="@style/Widget.AppCompat.CompoundButton.Switch">
         <item name="android:textColorPrimaryDisableOnly">#999999</item>
         <item name="android:colorControlActivated">#999999</item>
-        <item name="android:colorForeground">#999999</item>
+        <item name="android:colorForeground">@color/bleu_drapeau</item>
         <item name="android:textAppearance">@style/TextAppearance.AppCompat</item>
-        <item name="android:colorControlHighlight">#999999</item>
+        <item name="android:colorControlHighlight">@color/bleu_drapeau</item>
     </style>
 
     <style name="AppTheme.NoActionBar">

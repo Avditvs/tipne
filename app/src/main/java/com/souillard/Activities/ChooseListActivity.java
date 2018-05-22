@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.app.Activity;
+import android.os.SystemClock;
 import android.speech.tts.TextToSpeech;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.Toolbar;
@@ -96,7 +97,7 @@ public class ChooseListActivity extends Activity {
 
 
     private void verbsChosen() {
-        CustomAdapter adapter = new CustomAdapter(ChooseListActivity.this, verbFr, verbBv, verbPret, verbPart);
+        VerbAdapter adapter = new VerbAdapter(ChooseListActivity.this, verbFr, verbBv, verbPret, verbPart);
         mListView.setAdapter(adapter);
         voice = new TextToSpeech(getApplicationContext(), new TextToSpeech.OnInitListener() {
             @Override
@@ -109,7 +110,11 @@ public class ChooseListActivity extends Activity {
         mListView.setOnItemClickListener(new AdapterView.OnItemClickListener(){
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id){
-                voice.speak(verbBv[position] + ' ' + verbPret[position] + ' ' + verbPart[position], TextToSpeech.QUEUE_FLUSH, null);
+                voice.speak(verbBv[position], TextToSpeech.QUEUE_ADD, null);
+                SystemClock.sleep(100);
+                voice.speak(verbPret[position],TextToSpeech.QUEUE_ADD, null);
+                SystemClock.sleep(100);
+                voice.speak(verbPart[position],TextToSpeech.QUEUE_ADD, null);
             }
 
         });
@@ -128,6 +133,7 @@ public class ChooseListActivity extends Activity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 nomliste = namesList[position];
+                nbMots = dbListes.getNbWords(nomliste);
                 sharedPreferences = getSharedPreferences("APP_SHARED_PREFERENCES", Context.MODE_PRIVATE);
                 int annee = sharedPreferences.getInt("user_year", 1);
                 if (annee == 1) {
@@ -207,15 +213,6 @@ public class ChooseListActivity extends Activity {
             }
         });
     }
-
-
-
-
-
-
-
-
-
 
     private String[] setProperList (String[] nonProperList){
         int i = 0;

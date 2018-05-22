@@ -32,7 +32,9 @@ import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.souillard.BasesDeDonnées.AppDataBase;
 import com.souillard.BasesDeDonnées.DataBaseBuilder;
+import com.souillard.BasesDeDonnées.evaluations.Evaluations;
 import com.souillard.R;
 
 
@@ -77,7 +79,7 @@ public class DataBaseActivity  extends Activity {
         else{
             threadDb.start();
         }
-    }
+        }
 
     private Thread threadDb = new Thread(new Runnable() {
         @Override
@@ -85,6 +87,7 @@ public class DataBaseActivity  extends Activity {
             int annee = sharedPreferences.getInt("user_year", 1);
             DataBaseBuilder dataBaseBuilder = new DataBaseBuilder(getApplicationContext());
             dataBaseBuilder.buildDataBase(annee);
+
 
             try {
                 Thread.sleep(1000);
