@@ -2,6 +2,7 @@ package com.souillard.Activities;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.os.CountDownTimer;
 import android.view.Gravity;
 import android.view.View;
 import android.view.ViewDebug;
@@ -20,6 +21,8 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Random;
+import java.util.Timer;
+import java.util.TimerTask;
 
 
 public class GameOneActivity extends Activity {
@@ -88,6 +91,17 @@ public class GameOneActivity extends Activity {
         indice =0;
         score =0;
 
+        new CountDownTimer(60000, 1000) { //Sets 10 second remaining
+
+            public void onTick(long millisUntilFinished) {
+                chronometer.setText(Long.toString(millisUntilFinished / 1000));
+            }
+
+            public void onFinish() {
+                chronometer.setText("0");
+            }
+        }.start();
+
         updateView(mots.get(getNewWord()));
 
         for (int j = 0; j < 12; j++){
@@ -96,6 +110,7 @@ public class GameOneActivity extends Activity {
 
         restart.setOnClickListener(clickListenerRestart);
         confirm.setOnClickListener(clickListenerValidate);
+
 
     }
 
