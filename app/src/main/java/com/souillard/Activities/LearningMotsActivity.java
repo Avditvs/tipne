@@ -63,10 +63,10 @@ public class LearningMotsActivity extends Activity{
         String nameList = extras.getString("nameList");
 
         if (choixUser.equals("mots")) {
-            motsChoosed(nameList);
+            motsChosen(nameList);
         }
         else {
-            abbrevChoosed(nameList);
+            abbrevChosen(nameList);
         }
 
         voice = new TextToSpeech(getApplicationContext(), new TextToSpeech.OnInitListener() {
@@ -80,7 +80,7 @@ public class LearningMotsActivity extends Activity{
 
     }
 
-    private void abbrevChoosed(String nameList){
+    private void abbrevChosen(String nameList){
         idList = getIdListAbbrev(nameList);
 
         textListe.setText(setProperName(nameList));
@@ -98,7 +98,7 @@ public class LearningMotsActivity extends Activity{
         textToSpeech.setOnClickListener(clickTextToSpeechA);
     }
 
-    private void motsChoosed(String nameList){
+    private void motsChosen(String nameList){
         idList = getIdList(nameList);
 
         textListe.setText(dbListes.getProperName(idList));

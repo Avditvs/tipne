@@ -153,7 +153,7 @@ public class EvaluationActivity extends VoiceRecognitionActivity {
 
     private void changerMot(int indice){
         infoSuppView.setText("");
-        indiceMotView.setText("Mot " + indice + " sur " + nbWords);
+        indiceMotView.setText("Mot " + indice + " sur " + 20);
         Mots motActuel  = dataMots.get(indice-1);
         dataMots.get(indice-1).incrementNbEval(1);
         String request = "";
@@ -203,7 +203,7 @@ public class EvaluationActivity extends VoiceRecognitionActivity {
 
 
 
-        if(indiceMot+1>dataMots.size()){
+        if(indiceMot+1>20){
             onTestEnd();
         }
         else {

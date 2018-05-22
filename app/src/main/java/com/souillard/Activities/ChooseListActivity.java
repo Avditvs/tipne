@@ -77,22 +77,25 @@ public class ChooseListActivity extends Activity {
         modeChoisi = extras.getString("mode");
 
         if (choixUser.equals("mots")) {
-            motsChoosed();
+            motsChosen();
         }
         else if (choixUser.equals("model")) {
-            modelsChoosed();
+            modelsChosen();
         }
         else if (choixUser.equals("verbes")){
-            verbsChoosed();
+            verbsChosen();
             toolbar.setVisibility(View.GONE);
             header.setVisibility(View.GONE);
         }
         else if (choixUser.equals("abbrev")){
-            abbrevsChoosed();
+            abbrevsChosen();
         }
     }
 
-    private void verbsChoosed() {
+
+
+
+    private void verbsChosen() {
         CustomAdapter adapter = new CustomAdapter(ChooseListActivity.this, verbFr, verbBv, verbPret, verbPart);
         mListView.setAdapter(adapter);
         voice = new TextToSpeech(getApplicationContext(), new TextToSpeech.OnInitListener() {
@@ -112,7 +115,7 @@ public class ChooseListActivity extends Activity {
         });
     }
 
-    private void motsChoosed () {
+    private void motsChosen () {
         //Défini les données à afficher et comment on les affiche
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(ChooseListActivity.this,
                 R.layout.card_view,R.id.file_name_text, namesListDisplay);
@@ -146,21 +149,21 @@ public class ChooseListActivity extends Activity {
                                 nbMots = dbListes.getNbWords(nomliste);
                             }
                             popup.dismiss();
-                            launchingActivity(nomliste);
+                            launchingActivity(nomliste, nbMots);
                         }
                     });
-
+                    popup.showAtLocation(layout, Gravity.CENTER, 0, 0);
+                }
+                else if (annee==2) {
+                    nbMots = dbListes.getNbWords(nomliste);
+                    launchingActivity(nomliste, nbMots);
                 }
 
-                else {
-                    launchingActivity(nomliste);
-                }
-                popup.showAtLocation(layout, Gravity.CENTER, 0, 0);
             }
         });
     }
 
-    private void modelsChoosed(){
+    private void modelsChosen(){
         final String[] properNames = dbModels.getProperNames();
 
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(ChooseListActivity.this,
@@ -181,7 +184,7 @@ public class ChooseListActivity extends Activity {
         });
     }
 
-    private void abbrevsChoosed(){
+    private void abbrevsChosen(){
         final String[] abbrevList = getResources().getStringArray(R.array.ListesAbreviations);
 
         String[] properAbbrevList = setProperList(abbrevList);
@@ -205,6 +208,15 @@ public class ChooseListActivity extends Activity {
         });
     }
 
+
+
+
+
+
+
+
+
+
     private String[] setProperList (String[] nonProperList){
         int i = 0;
         String[] properList = new String[6];
@@ -220,7 +232,7 @@ public class ChooseListActivity extends Activity {
         return properList;
     }
 
-    private void launchingActivity(String nomliste){
+    private void launchingActivity(String nomliste, int nbMots){
         if (modeChoisi.equals("apprentissage")) {
             Intent i = new Intent(ChooseListActivity.this, LearningMotsActivity.class);
             Bundle extras = new Bundle();
