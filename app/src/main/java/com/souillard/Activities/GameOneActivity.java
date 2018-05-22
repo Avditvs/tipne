@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.Gravity;
 import android.view.View;
+import android.view.ViewDebug;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -18,13 +19,16 @@ import com.souillard.R;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-
+import java.util.Random;
 
 
 public class GameOneActivity extends Activity {
 
     private TextView nomListe;
     private TextView motFr;
+    private TextView motADeviner;
+    private TextView chronometer;
+    private TextView affichageScore;
     private int idList;
     private ListesDAO listesDAO;
     private MotsDAO motsDAO;
@@ -32,9 +36,8 @@ public class GameOneActivity extends Activity {
     private Button restart;
     private Button confirm;
     private  Button[] buttons = new Button[12];
-    private TextView motADeviner;
     private int indice;
-    private int score;
+    private double score;
     private Toast toast;
     private LinearLayout bodyEval;
 
@@ -58,6 +61,9 @@ public class GameOneActivity extends Activity {
         motADeviner = findViewById(R.id.motadeviner);
         motADeviner.setText("");
 
+        chronometer = findViewById(R.id.chronometer);
+        chronometer.setText("c");
+        affichageScore = findViewById(R.id.score);
         motFr = findViewById(R.id.motFr);
 
 
@@ -80,6 +86,8 @@ public class GameOneActivity extends Activity {
         Collections.shuffle(mots);
 
         indice =0;
+        score =0;
+
         updateView(mots.get(getNewWord()));
 
         for (int j = 0; j < 12; j++){
@@ -98,11 +106,11 @@ public class GameOneActivity extends Activity {
 
     private String shuffleWord (String word) {
         List<Character> l = new ArrayList<>();
-        for (char c : word.toCharArray()) //for each char of the word selectionned, put it in a list
+        for (char c : word.toCharArray()) // chaque caractère est mis dans une liste
             l.add(c);
-        Collections.shuffle(l); //shuffle the list
+        Collections.shuffle(l); //on mélange la liste avec shuffle
 
-        StringBuilder sb = new StringBuilder(); //now rebuild the word
+        StringBuilder sb = new StringBuilder(); //on reconstruit le mot
         for (char c : l)
             sb.append(c);
 
@@ -114,6 +122,7 @@ public class GameOneActivity extends Activity {
     private void updateView (Mots mots){
 
         updateNewRandomWord(mots);
+        affichageScore.setText(String.valueOf(score));
         String motMelange = shuffleWord(mots.getMotsEn());
 
         int i = 0;
@@ -123,7 +132,9 @@ public class GameOneActivity extends Activity {
             i++;
         }
         while(i<12) {
-            buttons[i].setText("a");
+            Random r = new Random();
+            char c = (char)(r.nextInt(26) + 'a');
+            buttons[i].setText(Character.toString(c));
             i++;
         }
     }
@@ -172,6 +183,7 @@ public class GameOneActivity extends Activity {
             onRightAnswer();
         }
         else {
+            score = score - 0.25;
             onWrongAnswer();
         }
         updateView(mots.get(getNewWord()));
@@ -181,7 +193,10 @@ public class GameOneActivity extends Activity {
         toast = Toast.makeText(getBaseContext(), "Bonne réponse", Toast.LENGTH_SHORT);
         toast.setGravity(Gravity.CENTER_VERTICAL, 0, 0);
         toast.show();
-    };
+        motADeviner.setText("");
+        for (int k = 0; k < 12; k++){
+            buttons[k].setVisibility(View.VISIBLE);}
+    }
 
     private void onWrongAnswer(){
         String toastText = "Réponse incorrecte, la(les) réponses\ncorrectes étaient :";
@@ -193,6 +208,8 @@ public class GameOneActivity extends Activity {
         toast = Toast.makeText(getBaseContext(), toastText, Toast.LENGTH_LONG);
         toast.setGravity(Gravity.CENTER_VERTICAL, 0, 0);
         toast.show();
-    };
-
+        motADeviner.setText("");
+        for (int k = 0; k < 12; k++){
+            buttons[k].setVisibility(View.VISIBLE);}
+    }
 }
