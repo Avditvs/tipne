@@ -167,7 +167,7 @@ public class GameOneActivity extends Activity {
 
     private void valide(){
         String motSolution = mots.get(indice).getMotsEn();
-        if (motADeviner.equals(motSolution)) {
+        if (motADeviner.getText().toString().equals(motSolution)) {
             score++;
             onRightAnswer();
         }
@@ -179,7 +179,7 @@ public class GameOneActivity extends Activity {
 
     private void onRightAnswer(){
         toast = Toast.makeText(getBaseContext(), "Bonne réponse", Toast.LENGTH_SHORT);
-        toast.setGravity(Gravity.TOP, 0, bodyEval.getBottom()+20);
+        toast.setGravity(Gravity.CENTER_VERTICAL, 0, 0);
         toast.show();
     };
 
@@ -191,7 +191,7 @@ public class GameOneActivity extends Activity {
 
         }
         toast = Toast.makeText(getBaseContext(), toastText, Toast.LENGTH_LONG);
-        toast.setGravity(Gravity.TOP, 0, bodyEval.getBottom()+20);
+        toast.setGravity(Gravity.CENTER_VERTICAL, 0, 0);
         toast.show();
     };
 
