@@ -3,6 +3,7 @@ package com.souillard.Activities;
 import android.app.Activity;
 import android.os.Bundle;
 import android.os.CountDownTimer;
+import android.os.Handler;
 import android.view.Gravity;
 import android.view.View;
 import android.view.ViewDebug;
@@ -23,6 +24,7 @@ import java.util.List;
 import java.util.Random;
 import java.util.Timer;
 import java.util.TimerTask;
+import java.util.concurrent.TimeUnit;
 
 
 public class GameOneActivity extends Activity {
@@ -91,17 +93,6 @@ public class GameOneActivity extends Activity {
         indice =0;
         score =0;
 
-        new CountDownTimer(60000, 1000) { //Sets 10 second remaining
-
-            public void onTick(long millisUntilFinished) {
-                chronometer.setText(Long.toString(millisUntilFinished / 1000));
-            }
-
-            public void onFinish() {
-                chronometer.setText("0");
-            }
-        }.start();
-
         updateView(mots.get(getNewWord()));
 
         for (int j = 0; j < 12; j++){
@@ -110,6 +101,34 @@ public class GameOneActivity extends Activity {
 
         restart.setOnClickListener(clickListenerRestart);
         confirm.setOnClickListener(clickListenerValidate);
+
+
+        new CountDownTimer(60000, 1000) {
+
+            public void onTick(long millisUntilFinished) {
+                chronometer.setText(Long.toString(millisUntilFinished / 1000));
+            }
+
+            public void onFinish() {
+                chronometer.setText("0");
+                String toastTextFin = "Temps écoulé !\nVotre score est de " + score;
+                int i;
+                toast = Toast.makeText(getBaseContext(), toastTextFin, Toast.LENGTH_LONG);
+                toast.setGravity(Gravity.CENTER_VERTICAL, 0, 0);
+                toast.show();
+                disableButtons();
+                final Handler handler = new Handler();
+                handler.postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        finish();
+                    }
+                }, 3000);
+
+            }
+
+        }.start();
+
 
 
     }
@@ -226,5 +245,12 @@ public class GameOneActivity extends Activity {
         motADeviner.setText("");
         for (int k = 0; k < 12; k++){
             buttons[k].setVisibility(View.VISIBLE);}
+    }
+
+    private void disableButtons(){
+        for (int x = 0; x < 12; x++){
+            buttons[x].setEnabled(false);}
+        restart.setEnabled(false);
+        confirm.setEnabled(false);
     }
 }
