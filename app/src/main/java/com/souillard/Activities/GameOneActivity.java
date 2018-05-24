@@ -1,12 +1,13 @@
 package com.souillard.Activities;
 
 import android.app.Activity;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.os.Handler;
+import android.preference.PreferenceManager;
 import android.view.Gravity;
 import android.view.View;
-import android.view.ViewDebug;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -22,9 +23,6 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Random;
-import java.util.Timer;
-import java.util.TimerTask;
-import java.util.concurrent.TimeUnit;
 
 
 public class GameOneActivity extends Activity {
@@ -34,6 +32,7 @@ public class GameOneActivity extends Activity {
     private TextView motADeviner;
     private TextView chronometer;
     private TextView affichageScore;
+    private TextView affichageHighscore;
     private int idList;
     private ListesDAO listesDAO;
     private MotsDAO motsDAO;
@@ -42,9 +41,8 @@ public class GameOneActivity extends Activity {
     private Button confirm;
     private  Button[] buttons = new Button[12];
     private int indice;
-    private double score;
+    private float score;
     private Toast toast;
-    private LinearLayout bodyEval;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -69,6 +67,7 @@ public class GameOneActivity extends Activity {
         chronometer = findViewById(R.id.chronometer);
         chronometer.setText("c");
         affichageScore = findViewById(R.id.score);
+        affichageHighscore = findViewById(R.id.highscore);
         motFr = findViewById(R.id.motFr);
 
 
@@ -93,6 +92,11 @@ public class GameOneActivity extends Activity {
         indice =0;
         score =0;
 
+        SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
+        SharedPreferences.Editor editor = preferences.edit();
+        float temp_1 = preferences.getFloat("HighScore",0);
+        editor.apply();
+        affichageHighscore.setText(String.valueOf(temp_1));
         updateView(mots.get(getNewWord()));
 
         for (int j = 0; j < 12; j++){
@@ -103,7 +107,7 @@ public class GameOneActivity extends Activity {
         confirm.setOnClickListener(clickListenerValidate);
 
 
-        new CountDownTimer(60000, 1000) {
+        new CountDownTimer(101000, 1000) {
 
             public void onTick(long millisUntilFinished) {
                 chronometer.setText(Long.toString(millisUntilFinished / 1000));
@@ -112,18 +116,18 @@ public class GameOneActivity extends Activity {
             public void onFinish() {
                 chronometer.setText("0");
                 String toastTextFin = "Temps écoulé !\nVotre score est de " + score;
-                int i;
-                toast = Toast.makeText(getBaseContext(), toastTextFin, Toast.LENGTH_LONG);
+                toast = Toast.makeText(getBaseContext(), toastTextFin, Toast.LENGTH_SHORT);
                 toast.setGravity(Gravity.CENTER_VERTICAL, 0, 0);
                 toast.show();
                 disableButtons();
+                keepHighscore();
                 final Handler handler = new Handler();
                 handler.postDelayed(new Runnable() {
                     @Override
                     public void run() {
                         finish();
                     }
-                }, 3000);
+                }, 4000);
 
             }
 
@@ -132,6 +136,7 @@ public class GameOneActivity extends Activity {
 
 
     }
+
 
 
     private void updateNewRandomWord(Mots mots) {
@@ -217,7 +222,7 @@ public class GameOneActivity extends Activity {
             onRightAnswer();
         }
         else {
-            score = score - 0.25;
+            score = score - (float)0.25;
             onWrongAnswer();
         }
         updateView(mots.get(getNewWord()));
@@ -227,6 +232,7 @@ public class GameOneActivity extends Activity {
         toast = Toast.makeText(getBaseContext(), "Bonne réponse", Toast.LENGTH_SHORT);
         toast.setGravity(Gravity.CENTER_VERTICAL, 0, 0);
         toast.show();
+        reduceToastTimeAppearing();
         motADeviner.setText("");
         for (int k = 0; k < 12; k++){
             buttons[k].setVisibility(View.VISIBLE);}
@@ -242,6 +248,7 @@ public class GameOneActivity extends Activity {
         toast = Toast.makeText(getBaseContext(), toastText, Toast.LENGTH_LONG);
         toast.setGravity(Gravity.CENTER_VERTICAL, 0, 0);
         toast.show();
+        reduceToastTimeAppearing();
         motADeviner.setText("");
         for (int k = 0; k < 12; k++){
             buttons[k].setVisibility(View.VISIBLE);}
@@ -253,4 +260,29 @@ public class GameOneActivity extends Activity {
         restart.setEnabled(false);
         confirm.setEnabled(false);
     }
-}
+
+    private void keepHighscore() {
+        SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
+        SharedPreferences.Editor editor = preferences.edit();
+        float temp = preferences.getFloat("HighScore", 0);
+        if (score > temp) {
+            editor.putFloat("HighScore", score);
+            editor.apply();
+            affichageHighscore.setText(String.valueOf(score));
+            String toastTextHighScore = "Nouveau meilleur score ! : \n      " + score;
+            toast = Toast.makeText(getBaseContext(), toastTextHighScore, Toast.LENGTH_LONG);
+            toast.setGravity(Gravity.CENTER_VERTICAL, 0, 0);
+            toast.show();
+        }
+    }
+
+    private void reduceToastTimeAppearing () {
+        Handler handler_2 = new Handler();
+        handler_2.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                toast.cancel();
+            }
+        }, 1100);
+    }
+    }
