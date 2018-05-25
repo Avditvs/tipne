@@ -127,7 +127,7 @@ public class GameOneActivity extends Activity {
         }
         Random random = new Random();
         for (byte k =0 ; (k<12) ; k++){
-            int nb = random.nextInt(11);
+            int nb = random.nextInt(12);
             char tmp = tableauLettres[k];
             tableauLettres[k] = tableauLettres[nb];
             tableauLettres[nb] = tmp;
