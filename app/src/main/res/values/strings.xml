@@ -8,7 +8,7 @@
 
 
     <string-array name="ListesSTPI1">
-        <item>Help_p19/137/69/Help p19</item>
+        <item>Help_p19/137/70/Help p19</item>
         <item>Help_p35/212/110/Help p35</item>
         <item>Help_p51/201/97/Help p51</item>
         <item>Help_p67/234/111/Help p67</item>
@@ -35,139 +35,215 @@
         <item>abroad;overseas/à l\'étranger</item>
         <item>accommodation;housing/logement</item>
         <item>to advise someone to do sthg/conseiller à qqn de faire qqc</item>
-        <item>aim;goal;purpose – to aim at/but;objectif – viser à</item>
+        <item>aim;goal;purpose/but;objectif </item>
+        <item>to aim at/viser à</item>
         <item>to allow s.o. to do .../permettre (donner autorisation)</item>
-        <item>applicant – application/candidat – candidature</item>
-        <item>to apply for + N ;to + V/faire acte de candidature</item>
+        <item>applicant/candidat</item>
+        <item>application/candidature</item>
+        <item>to apply for + N;to + V/faire acte de candidature</item>
         <item>assignment;paper;test/devoir (surveillé)</item>
         <item>attend a lecture/assister à une conférence</item>
-        <item>automation – automated/automatisation – automatisé</item>
-        <item>available – availability/disponible – disponibilité</item>
-        <item>benefit from = take advantage of/profiter de;tirer parti de</item>
-        <item>best - to do one\'s best to + Vb/mieux - faire de son mieux pour</item>
-        <item>break - time off (ex. : a week off)/congé;coupure (scolaire)</item>
+        <item>automation/automatisation</item>
+        <item>automated/automatisé</item>
+        <item>available/disponible</item>
+        <item>availability/disponibilité</item>
+        <item>benefit from/profiter de</item>
+        <item>take advantage of/tirer parti de</item>
+        <item>best/mieux</item>
+        <item>to do one\'s best to + Vb/faire de son mieux pour + V</item>
+        <item>break;time off (ex. : a week off)/congé;coupure (scolaire)</item>
         <item>to carry out/effectuer</item>
-        <item>charges – fees/frais (général) - frais (inscription)</item>
+        <item>charges/frais (général)</item>
+        <item>fees/frais (inscription)</item>
         <item>chemical engineering/génie chimique</item>
-        <item>chemistry – chemist/chimie – chimiste;ingénieur chimiste</item>
-        <item>college - university – campus/faculté - université – campus</item>
-        <item>to complement = to supplement/compléter</item>
+        <item>chemistry/chimie</item>
+        <item>chemist/chimiste;ingénieur chimiste</item>
+        <item>college/faculté</item>
+        <item>university/université</item>
+        <item>campus/campus</item>
+        <item>to complement;to supplement/compléter</item>
         <item>to complete/terminer;achever</item>
-        <item>computer - computer network/ordinateur - réseau informatique</item>
+        <item>computer/ordinateur</item>
+        <item>computer network/réseau informatique</item>
         <item>convenient/pratique</item>
-        <item>curriculum = syllabus/programme d\'études</item>
-        <item>c.v. = (USA) résumé/curriculum vitae;C.V.</item>
+        <item>curriculum;syllabus/programme d\'études</item>
+        <item>c.v.;résumé/curriculum vitae;C.V.</item>
         <item>data-processing/informatique (traitement données)</item>
-        <item>to deal with - (car-)dealer/traiter de - concessionnaire (auto)</item>
-        <item>degree - bachelor\'s degree/diplôme – licence</item>
-        <item>demand - to demand – demanding/exigence - exiger – exigeant</item>
-        <item>to depend on - depending on/dépendre de - en fonction de</item>
-        <item>to divide into – division/diviser en – division</item>
-        <item>document - hand-out – brochure/document - document distribué</item>
-        <item>duration - to last - how long ?/durée - durer - combien de tps ?</item>
-        <item>duty – duties/devoir - devoirs (obligation morale)</item>
+        <item>to deal with/traiter de </item>
+        <item>dealer/concessionnaire</item>
+        <item>car-dealer/concessionnaire auto</item>
+        <item>degree/diplôme</item>
+        <item>bachelor\'s degree/licence</item>
+        <item>demand/exigence</item>
+        <item>to demand/exiger</item>
+        <item>demanding/exigeant</item>
+        <item>to depend on/dépendre de</item>
+        <item>depending on/en fonction de</item>
+        <item>to divide into/diviser en</item>
+        <item>division/division</item>
+        <item>document/document</item>
+        <item>hand-out;brochure/document distribué</item>
+        <item>duration/durée</item>
+        <item>to last/durer</item>
+        <item>how long ?/combien de temps ?</item>
+        <item>duty/devoir</item>
+        <item>duties/devoirs (obligation morale)</item>
         <item>educational background/cursus;bagage (éducation)</item>
-        <item>effort = attempt – tentative/effort;essai – provisoire</item>
+        <item>effort;attempt/effort;essai</item>
+        <item>tentative/provisoire</item>
         <item>enable s.o.,sthg to do ... /permettre (rendre possible) à ... de</item>
         <item>to end up + Ving/finir par;se retrouver à faire</item>
-        <item>engineer - e\'s diploma/ingénieur - diplôme d\'ingénieur</item>
+        <item>engineer/ingénieur</item>
+        <item>e\'s diploma/diplôme d\'ingénieur</item>
         <item>engineering/ingénierie;génie</item>
         <item>to enroll;register;sign up/s\'inscrire</item>
-        <item>equipment - to equip/matériel – équiper</item>
-        <item>to evaluate - evaluation/évaluer – évaluation/</item>
-        <item>evidence - to prove/preuve;preuves – prouver</item>
+        <item>equipment/matériel</item>
+        <item>to equip/équiper</item>
+        <item>to evaluate/évaluer</item>
+        <item>evaluation/évaluation/</item>
+        <item>evidence/preuve</item>
+        <item>to prove/prouver</item>
         <item>exchange programme/programme d\'échange</item>
-        <item>to expand - to develop/développer (se)</item>
-        <item>expansion = development/expansion/</item>
-        <item>expenses - to spend ≠ to save/dépenses – dépenser ≠ économiser</item>
-        <item>extra;additional - further (abstrait)/supplémentaire</item>
-        <item>feedback - to feed/retour d\'information – alimenter</item>
-        <item>to figure out = to work out/résoudre;trouver;mettre au point</item>
-        <item>filing folder - filing cabinet/classeur : dossier – meuble</item>
-        <item>financial support - financial help/soutien financier</item>
+        <item>to expand;to develop/développer (se)</item>
+        <item>expansion;development/expansion</item>
+        <item>expenses/dépenses</item>
+        <item>to spend/dépenser</item>
+        <item>to save/économiser</item>
+        <item>extra;additional/supplémentaire</item>
+        <item>further/supplémentaire (abstrait)</item>
+        <item>feedback/retour d\'information</item>
+        <item>to feed/alimenter</item>
+        <item>to figure out;to work out/résoudre;trouver;mettre au point</item>
+        <item>filing folder/classeur (dossier)</item>
+        <item>filing cabinet/classeur (meuble)</item>
+        <item>financial support; financial help/soutien financier</item>
         <item>first-year student/étudiant de 1° année</item>
-        <item>fluency - to speak fluently/fluidité - parler couramment</item>
-        <item>food - to feed/nourriture – (s’)alimenter</item>
-        <item>foreign ≠ strange/étranger ≠ étrange;bizarre</item>
-        <item>form - to fill in a form/formulaire - remplir formulaire</item>
+        <item>fluency/fluidité</item>
+        <item>to speak fluently/parler couramment</item>
+        <item>food/nourriture</item>
+        <item>to feed/(s’)alimenter</item>
+        <item>foreign/étranger</item>
+        <item>strange/étrange;bizarre</item>
+        <item>form/formulaire</item>
+        <item>to fill in a form/remplir formulaire</item>
         <item>former student/ancien étudiant</item>
         <item>to fund;to finance/financer</item>
         <item>funds;funding;financing/financement</item>
-        <item>further (=continuing) education/formation continue;permanente</item>
+        <item>further education/formation continue;permanente</item>
         <item>to get mixed up/se tromper</item>
         <item>to graduate/obtenir un diplôme de fin d\'étude</item>
-        <item>graduate ≠ undergraduate (N-A)/licence : au-delà ≠ avant</item>
-        <item>to grant;to allocate/accorder;allouer</item>
-        <item>grant = scolarship/bourse (d\'études)</item>
-        <item>guest ≠ host - to invite/invité ≠ hôte – inviter</item>
+        <item>graduate/license : au-delà</item>
+        <item>undergraduate/licence : avant</item>
+        <item>to grant/accorder</item>
+        <item>to allocate/allouer</item>
+        <item>grant;scolarship/bourse (d\'études)</item>
+        <item>guest/invité</item>
+        <item>host/hôte</item>
+        <item>to invite/inviter</item>
         <item>hall of residence (USA : dorm)/résidence universitaire</item>
         <item>hand out literature/distribuer des documents</item>
         <item>hands-on experience/la pratique</item>
-        <item>highschool : junior highschool/collège</item>
-        <item>highschool : senior highschool/lycée</item>
+        <item>junior highschool/collège</item>
+        <item>senior highschool/lycée</item>
         <item>higher education/enseignement supéneur</item>
-        <item>holiday (vacation) - on holiday/vacances - en vacances</item>
-        <item>host - to host - to welcome/hôte – accuelllir – souhaiter bienvenu</item>
-        <item>to improve – improvement/améliorer – amélioration</item>
+        <item>holiday;vacation/vacances</item>
+        <item>on holiday/en vacances</item>
+        <item>host/hôte</item>
+        <item>to host/accueillir</item>
+        <item>to welcome/souhaiter bienvenue</item>
+        <item>to improve/améliorer</item>
+        <item>improvement/amélioration</item>
         <item>in-company training/formation en entreprise</item>
         <item>industrial training period;internship/stage en entreprise</item>
         <item>information technology (I.T.)/informatique</item>
-        <item>lab - lab practical session/labo - T.P. (séance de TP)</item>
-        <item>lecture - lecturer - lecture-hall/conférence - conférencier – amphi</item>
+        <item>lab/labo</item>
+        <item>lab practical session/T.P. (séance de TP)</item>
+        <item>lecture/conférence</item>
+        <item>lecturer/conférencier</item>
+        <item>lecture-hall/amphi</item>
         <item>level/niveau</item>
-        <item>link;connection - to link;connect/lien – relier</item>
+        <item>link;connection/lien</item>
+        <item>to link;connect/relier</item>
         <item>to look for a job/chercher un emploi</item>
-        <item>to look forward to + N-Ving/attendre avec impatience – plaisir</item>
-        <item>to make sure that = check that/s\'assurer que</item>
-        <item>many ≠ a few (books)/beaucoup ≠ peu (pluriel)</item>
-        <item>mark - (USA : grade)/note (d\'évaluation)</item>
-        <item>master\'s degree/mastère (ex maîtrise)</item>
-        <item>to match sthg;to correspond to/correspondre à;aller de pair avec</item>
+        <item>to look forward to + N-Ving/attendre avec impatience, plaisir</item>
+        <item>to make sure that;to check that/s\'assurer que</item>
+        <item>many/beaucoup</item>
+        <item>a few (books)/peu (pluriel)</item>
+        <item>mark;grade/note (d\'évaluation)</item>
+        <item>master\'s degree/master;(ex maîtrise)</item>
+        <item>to match sthg/correspondre à</item>
+        <item>to correspond to/aller de pair avec</item>
         <item>material/matière(s) - matériau(x)</item>
-        <item>much ≠ a little (work)/beaucoup ≠ peu (non comptable)</item>
-        <item>must (a must) – compulsory/obligation – obligatoire</item>
-        <item>office – desk/bureau : pièce – meuble</item>
+        <item>much/beaucoup</item>
+        <item>a little/peu (non comptable)</item>
+        <item>must/obligation</item>
+        <item>a must/une obligation</item>
+        <item>compulsory/obligatoire</item>
+        <item>office/bureau : pièce</item>
+        <item>desk/bureau : meuble</item>
         <item>opportunity/chance;opportunité</item>
-        <item>to opt for; to choose/choisir;décider en faveur de</item>
+        <item>to opt for;to choose/choisir;décider en faveur de</item>
         <item>to pass an exam/réussir un examen</item>
         <item>pass with distinction;honours/réussir avec mention</item>
-        <item>Ph. D - Ph.D student/doctorat – doctorant</item>
-        <item>to pick s.o. up ≠ drop s.o. off/passer prendre qqn ≠ déposer</item>
+        <item>Ph. D/doctorat</item>
+        <item>Ph.D student/doctorant</item>
+        <item>to pick s.o. up/passer prendre qqn</item>
+        <item>drop s.o. off/déposer qqn</item>
         <item>position;job;post/emploi;poste</item>
         <item>postgraduate/thésard - niveau 3° cycle</item>
-        <item>to profit from = make the most of/profiter de;tirer parti de</item>
+        <item>to profit from;make the most of/profiter de;tirer parti de</item>
         <item>provide;to supply (s.o. with sthg)/fournir (qqch à qqn)</item>
-        <item>quick(ly);fast (fast) ≠ slow(ly)/rapide(ment) ≠ lent(ement)</item>
-        <item>to require – required/nécessiter;requérir – requis</item>
+        <item>quick;fast/rapide</item>
+        <item>quickly/rapidement</item>
+        <item>slow/lent</item>
+        <item>slowly/lentement</item>
+        <item>to require/nécessiter;requérir</item>
+        <item>required/requis</item>
         <item>requirement/condition nécessaire</item>
         <item>to resume/reprendre (après un arrêt)</item>
-        <item>research – researcher/recherche (la - les) – chercheur</item>
-        <item>research - leading edge res./les-des recherches de pointe</item>
-        <item>room;one - room apartment;fiat/chambre – studio</item>
+        <item>research/recherche (la - les)</item>
+        <item>researcher/chercheur</item>
+        <item>leading edge research/les-des recherches de pointe</item>
+        <item>room/chambre</item>
+        <item>one-room apartment;fiat/studio</item>
         <item>room-mate/co-locataire</item>
-        <item>to run out of - to lack sthg/se trouver à court de - manquer de</item>
-        <item>safety - health – hazard/sécurité - santé - risque industriel</item>
+        <item>to run out of/se trouver à court de</item>
+        <item>to lack sthg/manquer de</item>
+        <item>safety/sécurité</item>
+        <item>health/santé</item>
+        <item>hazard/risque industriel</item>
         <item>sandwich courses/formation en alternance</item>
-        <item>school - college of engineering/école d\'ingénieur</item>
+        <item>college of engineering/école d\'ingénieur</item>
         <item>seminar/T.D. (séance de TD)</item>
-        <item>sensible = reasonable/sensé;raisonnable</item>
-        <item>series (a series)/série</item>
-        <item>to show s.o. round a place/montrer;faire visiter un endroit</item>
+        <item>sensible;reasonable/sensé;raisonnable</item>
+        <item>a series/série</item>
+        <item>to show someone round a place/montrer;faire visiter un endroit</item>
         <item>to specialise in a field/spécialiser (se) dans 1 domaine</item>
-        <item>to stand for - to mean/signifier (pour un sigle) – signifier</item>
+        <item>to stand for/signifier (pour un sigle)</item>
+        <item>to mean/signifier</item>
         <item>straightaway/immédiatement</item>
-        <item>studies - to study – student/études - étudier – étudiant</item>
+        <item>studies/études</item>
+        <item>to study/étudier</item>
+        <item>student/étudiant</item>
         <item>to suit s.o.;sthg/convenir à qqn</item>
-        <item>to sum up – summary/résumer- un résumé</item>
-        <item>to take an exam;sit for an exam/passer un examen</item>
-        <item>to teach ≠ to learn – teaching/enseigner ≠ apprendre – enseignement</item>
+        <item>to sum up/résumer</item>
+        <item>summary/un résumé</item>
+        <item>to take an exam;to sit for an exam/passer un examen</item>
+        <item>to teach/enseigner</item>
+        <item>to learn/apprendre</item>
+        <item>teaching/enseignement</item>
         <item>technical-sales engineer/ingénieur technico-commercial</item>
-        <item>thesis (pl. theses)/thèse – thèses</item>
-        <item>tuition;courses - a course;class/enseignement - un cours</item>
-        <item>to undertake - to set out to + V/entreprendre - entreprendre de</item>
-        <item>value – valuable/valeur - qui a de la valeur</item>
+        <item>thesis/thèse</item>
+        <item>theses/thèses</item>
+        <item>tuition;courses/enseigment</item>
+        <item>a course;class/un cours</item>
+        <item>to undertake/entreprendre</item>
+        <item>to set out to + V/entreprendre de</item>
+        <item>value/valeur</item>
+        <item>valuable/qui a de la valeur</item>
         <item>whole;full;complete;entire/entier;complet</item>
-        <item>willing to ≠ reluctant to/désireux de ≠ réticent à</item>
+        <item>willing to/désireux de</item>
+        <item>reluctant to/réticent à</item>
         <item>workshop/atelier</item>
     </string-array>
     <string-array name="Help_p35">
@@ -851,11 +927,11 @@
         <item>	compound/un composé	</item>
         <item>	connector/connecteur	</item>
         <item>	port/port (informatique)	</item>
-        <item>	consist in + Ving (to)/consister à + Verbe infinitif	</item>
-        <item>	consist of + N (to)/comporter;consister en + N	</item>
+        <item>	to consist in + Ving/consister à + Verbe infinitif	</item>
+        <item>	to consist of + N/comporter;consister en + N	</item>
         <item>	container/conteneur;récipient	</item>
         <item>	cargo/cargaison	</item>
-        <item>	control (to)/contrôler passivement	</item>
+        <item>	to control/contrôler passivement	</item>
         <item>	to monitor/contrôler activement	</item>
         <item>	cord;cable/cordon (câble)	</item>
         <item>	cordless/sans fil	</item>
@@ -864,15 +940,15 @@
         <item>	crude;crude oil/pétrole brut	</item>
         <item>	dam/barrage	</item>
         <item>	reservoir/retenue d\'eau artificielle	</item>
-        <item>	decrease (to) ≠ increase (by %)/diminuer ≠ augmenter (de %)	</item>
+        <item>	to decrease ≠ to increase (by %)/diminuer ≠ augmenter (de %)	</item>
         <item>	dial/cadran	</item>
         <item>	pointer/aiguille;pointeur	</item>
         <item>	display/affichage	</item>
         <item>	monitor display/affichage sur moniteur	</item>
         <item>	screen/écran	</item>
-        <item>	dispose of (to)/jeter	</item>
+        <item>	to dispose of/jeter	</item>
         <item>	disposable/jetable	</item>
-        <item>	drill (to)/forer	</item>
+        <item>	to drill/forer	</item>
         <item>	drilling/forage	</item>
         <item>	a drill/perceuse	</item>
         <item>	drive/transmission	</item>
@@ -884,10 +960,10 @@
         <item>	to have the leading edge/être en pointe	</item>
         <item>	emission/émanation	</item>
         <item>	to emit/dégager	</item>
-        <item>	empty (to)/vider	</item>
+        <item>	to empty/vider	</item>
         <item>	empty ≠ full/vide ≠ plein	</item>
         <item>	to fill/remplir	</item>
-        <item>	enlarge (to)/agrandir	</item>
+        <item>	to enlarge/agrandir	</item>
         <item>	large ≠ tiny/grand ≠ minuscule	</item>
         <item>	environment-friendly/écologique	</item>
         <item>	faulty;defective/défectueux	</item>
@@ -907,7 +983,7 @@
         <item>	to generate/causer;produire	</item>
         <item>	gloves/gants	</item>
         <item>	goggles/lunettes de protection	</item>
-        <item>	hand-operated (to be)/fonctionner manuellement	</item>
+        <item>	to be hand-operated/fonctionner manuellement	</item>
         <item>	handle/poignée	</item>
         <item>	to handle/manipuler	</item>
         <item>	lever/levier	</item>
@@ -929,7 +1005,7 @@
         <item>	to impact on/avoir un impact sur;affecter	</item>
         <item>	included/inclus	</item>
         <item>	to include/inclure	</item>
-        <item>	initiate (to);to start off/démarrer	</item>
+        <item>	to initiate;to start off/démarrer	</item>
         <item>	inlet ≠ outlet/entrée ≠ sortie	</item>
         <item>	instruction manual;user\'s manual/manuel de l\'utilisateur	</item>
         <item>	instructions/instructions	</item>
@@ -952,43 +1028,43 @@
         <item>	measuring instrument/appareil de mesure	</item>
         <item>	meter/mètre;compteur	</item>
         <item>	volt-meter/volt-mètre	</item>
-        <item>	miniaturise (to)/miniaturiser	</item>
+        <item>	to miniaturise/miniaturiser	</item>
         <item>	oil-rig;offshore platform/plateforme de forage	</item>
         <item>	outdoor/extérieur (adj.)	</item>
         <item>	outdoors/à l\'extérieur 👎	</item>
         <item>	outstanding ≠ substandard/extraordinaire ≠ sous la norme	</item>
         <item>	overlap/chevauchement	</item>
         <item>	to overlap/se chevaucher	</item>
-        <item>	overcome (to)/surmonter (un problème)	</item>
-        <item>	pack (to) ≠ to unpack/emballer ≠ déballer	</item>
+        <item>	to overcome/surmonter (un problème)	</item>
+        <item>	to pack ≠ to unpack/emballer ≠ déballer	</item>
         <item>	panel/panneau	</item>
         <item>	solar panel/panneau solaire	</item>
         <item>	peak ≠ low/pic;maximum ≠ minimum	</item>
         <item>	plateau/plateau	</item>
-        <item>	phase out;disappear (to)/être en train de disparaitre 	</item>
+        <item>	to phase out;to disappear/être en train de disparaitre 	</item>
         <item>	pipe/tuyau	</item>
         <item>	pipeline/pipeline	</item>
-        <item>	plot (to)/tracer	</item>
+        <item>	to plot/tracer	</item>
         <item>	plotter/traceur	</item>
         <item>	plug/prise mâle	</item>
         <item>	to plug in;into + complément/brancher;brancher dans	</item>
         <item>	pollution/pollution	</item>
         <item>	to pollute/polluer	</item>
         <item>	pollutant/un polluant	</item>
-        <item>	postpone (to)/remettre à plus tard	</item>
+        <item>	to postpone/remettre à plus tard	</item>
         <item>	power/énergie;électricité;courant;puissance	</item>
-        <item>	power (to)/faire fonctionner	</item>
+        <item>	to power/faire fonctionner	</item>
         <item>	powerful ≠ powerless/puissant ≠ impuissant	</item>
         <item>	power-cut/coupure de courant	</item>
         <item>	power-line/ligne haute tension	</item>
         <item>	power station;power plant/centrale électrique	</item>
-        <item>	print (to)/imprimer	</item>
+        <item>	to print/imprimer	</item>
         <item>	printer/imprimante	</item>
         <item>	print-out/tirage	</item>
         <item>	probe/sonde	</item>
         <item>	sensor/capteur	</item>
         <item>	procedure/mode opératoire;de fonctionnement	</item>
-        <item>	process (to)/transformer	</item>
+        <item>	to process/transformer	</item>
         <item>	processing unit/usine de transformation	</item>
         <item>	product/produit	</item>
         <item>	to produce/produire	</item>
@@ -1012,8 +1088,8 @@
         <item>	to meet requirements/répondre aux besoins	</item>
         <item>	to suit requirements/répondre aux exigences	</item>
         <item>	research station,unit,centre/unité de recherche(s)	</item>
-        <item>	reveal (to)/révéler;montrer	</item>
-        <item>	set up (to)/installer	</item>
+        <item>	to reveal/révéler;montrer	</item>
+        <item>	to set up/installer	</item>
         <item>	to reset/remettre à zéro;rebouter	</item>
         <item>	signal/signal	</item>
         <item>	emit a signal/émettre un signal	</item>
@@ -1050,8 +1126,8 @@
         <item>	tower/tour	</item>
         <item>	pylon/tour;pylône	</item>
         <item>	trend (upward ≠ downward)/tendance (à la hausse ≠ baisse)	</item>
-        <item>	trigger off (to);to activate/déclencher	</item>
-        <item>	type (to)/taper (sur clavier)	</item>
+        <item>	to trigger off;to activate/déclencher	</item>
+        <item>	to type/taper (sur clavier)	</item>
         <item>	to text a message/envoyer SMS	</item>
         <item>	valuable;worthwhile/précieux;qui a de la valeur	</item>
         <item>	value for money/rapport qualité-prix	</item>
@@ -1078,7 +1154,7 @@
     </string-array>
     <string-array name="Help_p101">
         <item>	above-mentioned/mentionné ci-dessus	</item>
-        <item>	activate (to)/déclencher (un mécanisme)	</item>
+        <item>	to activate/déclencher (un mécanisme)	</item>
         <item>	activation/déclenchement	</item>
         <item>	adapter/adaptateur	</item>
         <item>	to adapt/adapter	</item>
@@ -1095,7 +1171,7 @@
         <item>	autonomy/autonomie	</item>
         <item>	average/moyenne;moyen	</item>
         <item>	on average/en moyenne	</item>
-        <item>	avoid + N,Ving (to)/éviter quelque chose;éviter de faire quelque chose	</item>
+        <item>	to avoid + N,Ving/éviter quelque chose;éviter de faire quelque chose	</item>
         <item>	bargain;good deal/bonne affaire	</item>
         <item>	batch production ≠ continuous production/production par lot ≠ production continue	</item>
         <item>	battery-operated/qui fonctionne sur piles	</item>
@@ -1107,7 +1183,7 @@
         <item>	blender/mixeur	</item>
         <item>	break the law/enfreindre la loi	</item>
         <item>	break down into;to subdivide into/(se) décomposer en	</item>
-        <item>	build up (to)/(s\')accumuler	</item>
+        <item>	to build up/(s\')accumuler	</item>
         <item>	a build-up/accumulation	</item>
         <item>	calibration/étalonnage	</item>
         <item>	to calibrate/étalonner	</item>
@@ -1119,9 +1195,9 @@
         <item>	check-up/vérification	</item>
         <item>	to check/vérifier	</item>
         <item>	to check up/vérifier à 100%	</item>
-        <item>	coincide with (to)/coïncider avec	</item>
+        <item>	to coincide with/coïncider avec	</item>
         <item>	coincidence/coïncidence	</item>
-        <item>	compete with (to)/concurrencer	</item>
+        <item>	to compete with/concurrencer	</item>
         <item>	competitor/concurrent	</item>
         <item>	comply with regulations/respecter la réglementation	</item>
         <item>	connection/connexion;contact	</item>
@@ -1146,7 +1222,7 @@
         <item>	damages/dommages et intérêts	</item>
         <item>	deadline/date limite	</item>
         <item>	to meet a deadline/respecter échéance	</item>
-        <item>	debug (to)/ôter erreurs de programme	</item>
+        <item>	to debug/ôter erreurs de programme	</item>
         <item>	bug/virus	</item>
         <item>	supply and demand/l\'offre et la demande	</item>
         <item>	design/conception	</item>
@@ -1154,21 +1230,21 @@
         <item>	digital ≠ analogue/numérique ≠ analogique	</item>
         <item>	diversification/diversification	</item>
         <item>	to diversify/diversifier	</item>
-        <item>	download (to)/télécharger (informatique)	</item>
+        <item>	to download/télécharger (informatique)	</item>
         <item>	drop > droplet/goutte > gouttelette	</item>
-        <item>	emit (to)/émettre	</item>
+        <item>	to emit/émettre	</item>
         <item>	transmit/transmettre	</item>
         <item>	pick up/capter (signal)	</item>
-        <item>	estimate (to)/estimer	</item>
+        <item>	to estimate/estimer	</item>
         <item>	cost estimate/devis	</item>
         <item>	file/fichier	</item>
         <item>	to file ≠ to classify/classer (fichier ≠ catégorie)	</item>
-        <item>	fill (to)/remplir	</item>
+        <item>	to fill/remplir	</item>
         <item>	to fill up/remplir à 100%	</item>
         <item>	full (up)/plein (100%)	</item>
         <item>	final/dernier	</item>
         <item>	to finalise/finaliser;mettre au point	</item>
-        <item>	fit (to)/installer	</item>
+        <item>	to fit/installer	</item>
         <item>	to be fitted with/être équipé de	</item>
         <item>	flask/flacon	</item>
         <item>	container/récipient;conteneur	</item>
@@ -1180,7 +1256,7 @@
         <item>	shareware/partagiciels	</item>
         <item>	fuel/combustible(s)	</item>
         <item>	to fuel/alimenter en carburant	</item>
-        <item>	gather (to);to collect/rassembler	</item>
+        <item>	to gather;to collect/rassembler	</item>
         <item>	glue/colle	</item>
         <item>	to glue/coller	</item>
         <item>	copy and paste/copier-coller (informatique)	</item>
@@ -1193,28 +1269,28 @@
         <item>	heat up/chauffer	</item>
         <item>	heating/chauffage	</item>
         <item>	hot/chaud	</item>
-        <item>	hold up (to)/retarder;bloquer	</item>
+        <item>	to hold up/retarder;bloquer	</item>
         <item>	hold-up/bloquage	</item>
         <item>	implementation of a policy/mise en œuvre d\'une politique	</item>
-        <item>	interfere with (to)/entraver;contrarier;interférer avec	</item>
-        <item>	involved in (to be)/être impliqué dans	</item>
-        <item>	isolate (to) ≠ to insulate/isoler (seul) ≠ faire isolation	</item>
+        <item>	to interfere with/entraver;contrarier;interférer avec	</item>
+        <item>	to be involved in/être impliqué dans	</item>
+        <item>	to isolate ≠ to insulate/isoler (seul) ≠ faire isolation	</item>
         <item>	item/élément	</item>
         <item>	kit/kit;équipement	</item>
         <item>	set/ensemble	</item>
         <item>	joint venture/projet en commun	</item>
-        <item>	lift (to) + N;to raise + N/soulever;lever (+ complément)	</item>
+        <item>	to lift + N;to raise + N/soulever;lever (+ complément)	</item>
         <item>	link/lien;liaison	</item>
         <item>	to link With/relier à	</item>
         <item>	loop/boucle	</item>
         <item>	literature/de la documentation	</item>
         <item>	descriptive literature/documentation détaillée	</item>
-        <item>	log in data (to);enter data (to)/entrer les données	</item>
+        <item>	to log in data;to enter data/entrer les données	</item>
         <item>	log on to the Internet;to connect to/se connecter sur Internet	</item>
         <item>	machine-tool/machine-outil	</item>
         <item>	tool/outil	</item>
         <item>	machinery/les machines	</item>
-        <item>	made up of (to be) (≠ made of)/être composé de (parties) ≠ fait de	</item>
+        <item>	to made up of (≠ made of)/être composé de (parties) ≠ fait de	</item>
         <item>	mail-order firm/société de vente par correspondance	</item>
         <item>	mainframe computer/ordinateur central	</item>
         <item>	margin/marge	</item>
@@ -1223,7 +1299,7 @@
         <item>	market niche/créneau porteur	</item>
         <item>	mill/moulin (usine)	</item>
         <item>	to mill;to crush/broyer;moudre	</item>
-        <item>	mix (to)/mélanger	</item>
+        <item>	to mix/mélanger	</item>
         <item>	mixture/mélange	</item>
         <item>	mobile/portable;nomade	</item>
         <item>	telephone mast/antenne téléphone	</item>
@@ -1241,8 +1317,8 @@
         <item>	to overflow/déborder	</item>
         <item>	patent/brevet	</item>
         <item>	patented/breveté	</item>
-        <item>	pour (to) (≠poor)/verser (≠ pauvre)	</item>
-        <item>	press (to)/presser	</item>
+        <item>	to pour (≠poor)/verser (≠ pauvre)	</item>
+        <item>	to press/presser	</item>
         <item>	pressure/pression	</item>
         <item>	process ≠ procedure/précédé ≠ mode opératoire	</item>
         <item>	promotion/la promotion	</item>
@@ -1258,17 +1334,17 @@
         <item>	reduction/réduction	</item>
         <item>	to reduce/réduire	</item>
         <item>	refer to something/se référer à;faire référence à quelque chose	</item>
-        <item>	relay (to)/relayer	</item>
+        <item>	to relay/relayer	</item>
         <item>	a relay/un relais	</item>
-        <item>	release (to)/relâcher;libérer	</item>
+        <item>	to release/relâcher;libérer	</item>
         <item>	release/libération	</item>
         <item>	remote/loin	</item>
         <item>	remote control/commande à distance	</item>
-        <item>	remove (to)/ôter;retirer	</item>
+        <item>	to remove/ôter;retirer	</item>
         <item>	removal/retrait	</item>
         <item>	response/réaction	</item>
         <item>	to respond/réagir	</item>
-        <item>	retail at (to)/se vendre à + prix	</item>
+        <item>	to retail at/se vendre à + prix	</item>
         <item>	retail outlet/point de vente	</item>
         <item>	retrieve;collect;recover/récupérer	</item>
         <item>	retrofitted/installé après-coup	</item>
@@ -1285,7 +1361,7 @@
         <item>	to screw/visser	</item>
         <item>	screwdriver/tournevis	</item>
         <item>	secured payment/paiement sécurisé (Internet)	</item>
-        <item>	service (to);to maintain/entretenir (machine;matériel)	</item>
+        <item>	to service;to maintain/entretenir (machine;matériel)	</item>
         <item>	smart/intelligent	</item>
         <item>	smart card/carte à mémoire	</item>
         <item>	software package/ensemble de logiciels	</item>
@@ -1293,21 +1369,21 @@
         <item>	wrench/clé à molette	</item>
         <item>	stand/pied;support	</item>
         <item>	to stand/être debout	</item>
-        <item>	stir (to)/remuer	</item>
+        <item>	to stir/remuer	</item>
         <item>	test-tube/éprouvette;tube à essai	</item>
         <item>	storage/stockage	</item>
         <item>	storage space/espace pour stocker	</item>
-        <item>	store (to);to stock/stocker	</item>
+        <item>	to store;to stock/stocker	</item>
         <item>	a stock/un stock	</item>
         <item>	survey/étude	</item>
         <item>	market survey/étude de marché	</item>
-        <item>	switch on (to) ≠ to switch off/allumer ≠ éteindre	</item>
+        <item>	to switch on ≠ to switch off/allumer ≠ éteindre	</item>
         <item>	telescopic/télescopique	</item>
         <item>	expandable/extensible	</item>
         <item>	temperature/température	</item>
         <item>	tentative/provisoire	</item>
         <item>	tentative statistics/des statistiques provisoires	</item>
-        <item>	tighten (to) ≠ to loosen/serrer ≠ desserrer	</item>
+        <item>	to tighten ≠ to loosen/serrer ≠ desserrer	</item>
         <item>	trouble-shooting/dépannage;recherche de panne	</item>
         <item>	the last,past three years/les 3 ans passés	</item>
         <item>	the next three years/les 3 ans à venir	</item>
@@ -2572,7 +2648,7 @@
         <item>	container/récipient	</item>
         <item>	to affect/affecter, toucher	</item>
         <item>	to sort/trier	</item>
-        <item>	(be) worth doing something/valoir la peine de faire quelque chose	</item>
+        <item>	be worth doing something/valoir la peine de faire quelque chose	</item>
         <item>	vacuum/vide	</item>
         <item>	to make it possible to/permettre	</item>
         <item>	a meter reading/une lecture	</item>
