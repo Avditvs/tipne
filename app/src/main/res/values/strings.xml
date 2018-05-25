@@ -3334,7 +3334,7 @@
                 F – Not really: I’m afraid my French is very poor. \n
                 L – Cheer up. I’m sure it will soon improve by speaking to the French students. \n
                 F – Yes, of course it will. Anyway, the French students learn how to speak English, don’t they? \n
-                L – Sure. By the way, I think most courses will be in English. So, you will survive …
+                L – Sure. By the way, I think most courses will be in English. So, you will survive … \n
                 F – Survive? Hey! … What about having some lunch? \n
                 L – That’s a very good idea. \n
                 F – Let’s go to the university restaurant, then! \n
@@ -3347,7 +3347,7 @@
             SA – May I help you? \n
             S – Yes, please. I would like to get some information about the organisation of my studies. \n
             SA – Sure. What exactly would you like to know? \n
-            S – Well, you see, I applied to study physics and data-processing; and I have been told that I will have to work in industry. you see what I mean? Er … what’s the word for this work? \n
+            S – Well, you see, I applied to study physics and data-processing; and I have been told that I will have to work in industry. You see what I mean? Er … what’s the word for this work? \n
             SA – You mean an industrial training period? \n
             S – That’s it! So, may I have more details about this requirement? \n
             SA – Certainly. This training period is a must; you need to do a total of six months’ training in industry. \n
@@ -3437,16 +3437,18 @@
             A – You’re right, but the trouble is that I didn’t keep the receipt and the guarantee. You see what I mean ? \n
             B – Oh dear. I think you should have been more careful. \n
             A – I know. I wish I had not thrown away the receipt ! But there’s nothing I can do about it now ! \n
-            B – Um let me think about that. Well, if I were you, I would only buy cheap calculators now. Let me tell you why : the great advantage of having very cheap ones is that you change them regularly. \n
+            B – Um, let me think about that. Well, if I were you, I would only buy cheap calculators now. Let me tell you why : the great advantage of having very cheap ones is that you change them regularly. \n
             A – I don’t think it’s a good idea because you see, a cheap calculator is too simple to help with maths exercises. \n
-            B – No problem. Please go ahead. What can I do for you ?  \n
+            B – You are right, there. \n
             A – Er… could I ask you a favour ? \n
-            B – I’m sorry but it won’t be possible. You see, I need it for a test tomorrow at eight o’clock. What I can offer you instead is lend it to you for the next two or three hours. Would that be convenient ? \n
+            B - No problem. Please go ahead. What can I do for you ?  \n
             A – Well, I wish I could have a super calculator right now, in order to do my physics exercise. Would you mind lending me your high-tech calculator for a few days ? \n
-            B – You’re welcome. Here it is. And cheer up, I’m sur things will turn out all right. \n
+            B – I’m sorry but it won’t be possible. You see, I need it for a test tomorrow at eight o’clock. What I can offer you instead is lend it to you for the next two or three hours. Would that be convenient ? \n
             A – Sure. That suits me fine. Hopefully, two hours will be enough. Thanks a lot. I am most grateful. \n
-            B – See you later. \n
+            B – You’re welcome. Here it is. And cheer up, I’m sur things will turn out all right. \n
             A – I hope so. I promise to hand it back in 2 hours’ time. You can count on me. See you later. \n
+            B – See you later. \n
+
         </item>
     </string-array>
     <string-array name="stpi1_model_p32">
@@ -3454,7 +3456,7 @@
             I – Do come in and have a seat. \n
             A – Thank you, madam/sir. \n
             I – Now, tell me about your present job. \n
-            A – All right. I’m sales representative for a small company in France which deals with pharmaceuticals
+            A – All right. I’m a sales representative for a small company in France which deals with pharmaceuticals \n
             I – How long have you been working for this firm? \n
             A – Well, I started working for them five years ago. \n
             I – And why do you want to leave this firm and join the Training Programme? \n
@@ -3480,7 +3482,7 @@
             B – Extension 2-3-5. What can I do for you? \n
             F – Er …, who’s speaking? \n
             B – This is John Brown speaking. \n
-            F – Hello Mr Brown, this is Peter Fields.
+            F – Hello Mr Brown, this is Peter Fields. \n
             B – Oh hello, Peter, nice to hear from you. \n
             F – I have just arrived at the Park and I wanted to thank you for sending a taxi to pick me up at the airport. I really appreciated it.
             B – Don’t mention it, you’re very welcome. I must apologise for not picking you up myself, but it won’t surprise you to hear that I have a very busy schedule. \n
@@ -3539,7 +3541,7 @@
         <item>
             H – Hello, Mary. How are you today? \n
             G – Hi. I’m doing fine, thanks. \n
-            H – Dis you have any trouble getting here? \n
+            H – Did you have any trouble getting here? \n
             G – No problem. The directions you gave me were easy to follow. \n
             H – Fine. \n
             G – I apologise for being late. You see, I didn’t realise you lived so far away. \n
@@ -3555,7 +3557,7 @@
             G – Well, yes, up to a point. However, you seem to have forgotten that companies are recruiting a lot at the moment. \n
             H – You mean they are short of staff? \n
             G – Yes you can say that. \n
-            H – Anyway, congratulations for getting your first job so quickly.
+            H – Anyway, congratulations for getting your first job so quickly. \n
             G – Well, anyone can do that at the moment. \n
             H – Perhaps we could celebrate that good news. Why don’t we go to the restaurant tonight? It’s on me. \n
             G – That’s a very good idea, thanks a lot for the invitation. I really appreciate it. \n
@@ -3598,7 +3600,7 @@
             RE – Really? Oh, thank you, it’s very kind of you. \n
             SR – You’re welcome, it’s a pleasure. \n
             RE – Excuse me. I’m sorry to bother you. Could you tell me how to go to the repair-shop from the train station, please? \n
-            SR – Certainly. You go straight to the traffic lights, you turn right and then left, and there you are. You can’t miss it.
+            SR – Certainly. You go straight to the traffic lights, you turn right and then left, and there you are. You can’t miss it. \n
             RE – Thanks! I will go there tomorrow morning. \n
             SR – Fine! I will have a word with the person in charge there. Have a nice day! Good-bye!
         </item>
@@ -3645,7 +3647,7 @@
     </string-array>
     <string-array name="stpi1_model_p74">
         <item>
-            To solve this problem, we must examine all the data given by the figure. \n We know that this figure is made up of a square and a triangle. We also know that the square and the triangle have got equal sides. \n Let T1 represent the equilateral triangle. Let T2 represent the second triangle containing angle x. Note that the latter has got two equals sides, which means that it is an isosceles triangle. Let x represent each of the smallest angles of triangle T2 and let y represent the widest angle of triangle T2. \n Given that angle y includes on angles of the square, that is to say 90 degrees, and one angle of triangle T1, that is to say 60°, this means that angle y is a 150-degree angle. \n Taking into account the fact that the sum of the three angles of a triangle equals 180 degrees, it implies that the sum of the two small angles is 180° minus 150°, that is 30 degrees. \n We can therefore draw the following conclusion : the value of angle x is 30° divided by 2, which equals 15 degrees.
+            To solve this problem, we must examine all the data given by the figure. \n We know that this figure is made up of a square and a triangle. We also know that the square and the triangle have got equal sides. \n Let T1 represent the equilateral triangle. Let T2 represent the second triangle containing angle x. Note that the latter has got two equals sides, which means that it is an isosceles triangle. Let x represent each of the smallest angles of triangle T2 and let y represent the widest angle of triangle T2. \n Given that angle y includes one angle of the square, that is to say 90 degrees, and one angle of triangle T1, that is to say 60°, this means that angle y is a 150-degree angle. \n Taking into account the fact that the sum of the three angles of a triangle equals 180 degrees, it implies that the sum of the two small angles is 180° minus 150°, that is 30 degrees. \n We can therefore draw the following conclusion : the value of angle x is 30° divided by 2, which equals 15 degrees.
         </item>
     </string-array>
     <string-array name="stpi1_model_p79">
@@ -3729,7 +3731,7 @@
 
     <string-array name="stpi2_model_partie1_p9_1">
         <item>
-            Let me tell you, about my trip to the States First I called a taxi. The taxi picked me up at 9 and drove me to
+            Let me tell you, about my trip to the States. First I called a taxi. The taxi picked me up at 9 and drove me to
             Heathrow airport. It took 2 hours because traffic was dense. The taxi dropped me off at Terminal 2 at 11. I went to the check-in counter and gave my ticket. I registered my luggage and went through security. My cabin luggage was X-rayed there. \n
             Afterwards, I went round the duty-free shops where I had a look around. I heard the announcement of my flight and looked at the video displays. l proceeded to gate 12, gave my boarding pass and boarded the plane. I placed my cabin luggage in the overhead compartment and took my seat. We took off at 12.30. The flight attendant gave us some headsets to listen to music. The flight was 7 hours long. Fortunately, we were shown a film and given magazines. A meal was also served. \n
             We landed in JFK at 3 pm local time. I went through immigration where I showed my visa. I picked up my luggage from the carrousel (= conveyor belt) in the baggage claim area. I went through customs. I took a courtesy (= free of charge) shuttle to downtown Manhattan. The shuttle dropped me off at the Plaza hotel. I went to the reception in the lobby. \n
@@ -3738,10 +3740,10 @@
     </string-array>
     <string-array name="stpi2_model_partie1_p9_2">
         <item>
-            Speaking of security, you \' ll never believe what happened to me last week while l was visiting our branch in Boston.
+            Speaking of security, you\'ll never believe what happened to me last week while l was visiting our branch in Boston.
             This is the most incredible story. \n
             First of all, I had called John Smith, my new colleague in the R &#38; D department over there to tell him that I would arrive at the airport at 9. Since we had never met before, I suggested that he should wear a badge with his name on it. As soon as I had arrived and collected my luggage at baggage claim, I went to the exit. Suddenly I noticed someone with a badge on his jacket. It read John Smith. "That\'s my man all right!" I thought. l didn\'t know what he looked like, having only had contact with him on the phone. Everything was normal so far, but hang on! \n
-            Well, we shook hands and started talking about the weather, my flight, etc … A casual conversation in actual fact. As we were driving and starting to discuss business, I had the funny feeling that we didn\'t share the same background To make things worse, I even wondered if we were going to the plant since I knew it was located near the airport. That was strange, wasn\'t it? Eventually I couldn\'t stand it any longer. You know what I did? I simply asked him which company he worked for. \n
+            Well, we shook hands and started talking about the weather, my flight, etc … A casual conversation in actual fact. As we were driving and starting to discuss business, I had the funny feeling that we didn\'t share the same background. To make things worse, I even wondered if we were going to the plant since I knew it was located near the airport. That was strange, wasn\'t it? Eventually I couldn\'t stand it any longer. You know what I did? I simply asked him which company he worked for. \n
             As a matter of fact, he turned out to be a research engineer from one of our rival firms. I\'m glad I had not revealed any secret about our future patent. Eventually, he drove me back to the airport where we met our respective colleagues. But all is well that ends well. This story proves that we should always be careful before giving information concerning our company activities.
         </item>
     </string-array>
@@ -3912,7 +3914,7 @@
             Let me first introduce myself: My name is Simon Jones and I represent Architect LTD based in Finland. \n
             We have examined the situation of your harbour carefully and we have come to the conclusion that the ideal solution for you would be an extension of the harbour. \n
             Let me go over the main points of this project in detail. \n
-            Firstly, we plan to build an outside harbour to accommodate the big ferries. Secondly, we propose to transform the existing harbour into a marina for sailing boats and small yachts, I\'d like to stress the fact that this innovative idea could help develop tourism and consequently encourage the economy of the city. \n
+            Firstly, we plan to build an outside harbour to accommodate the big ferries. Secondly, we propose to transform the existing harbour into a marina for sailing boats and small yachts. I\'d like to stress the fact that this innovative idea could help develop tourism and consequently encourage the economy of the city. \n
             My colleague will now take over and talk about the financial aspect. \n
             Thank you, Simon. Let me then say a few words about the estimated cost of the project. I reckon that the whole cost of the transformation would amount to 3 billion dollars, which could be supported jointly by the city and the region. \n
             We now come to the advantages of this project. It is clear that this would satisfy the number of boat owners waiting for a harbour space. Secondly, it will attract a lot of French and British tourists. Finally, it will make the city centre more pleasant and modern. However, we should not forget that the marina will reduce access to the fishing harbour. Therefore, access to the latter should be enlarged. \n
@@ -3986,7 +3988,7 @@
         <item>
             GRAPH \n
             This graph represents the pressure variation at the nozzle. The pressure in pounds per square inch is plotted versus the time in minutes. Overall, we can say that after an upward trend till the 3rd minute, the graph shows a downward trend. \n
-            This graph can be broken down into 4 parts. The first part shows a rapid increase from o psi up to a peak at 80 psi. This sharp rise can be explained by the powerful acceleration of the turbine. The second portion reveals a dramatic decrease from 80 psi down to 40 psi. The introduction of the liquid accounts for this drop. In the third part, the graph levels off at a plateau. The pressure remains constant at 40 psi, which corresponds to the normal operation of the compressor. Finally the graph gradually decreases down to 10 psi, when the system is switched off. \n
+            This graph can be broken down into 4 parts. The first part shows a rapid increase from 0 psi up to a peak at 80 psi. This sharp rise can be explained by the powerful acceleration of the turbine. The second portion reveals a dramatic decrease from 80 psi down to 40 psi. The introduction of the liquid accounts for this drop. In the third part, the graph levels off at a plateau. The pressure remains constant at 40 psi, which corresponds to the normal operation of the compressor. Finally the graph gradually decreases down to 10 psi, when the system is switched off. \n
             \n
             \n
             A SET UP \n
@@ -4075,7 +4077,7 @@
         <item>
             A: As I mentioned in my letter, the reason for our meeting today is to renegotiate the terms of our present contract. Let me explain the situation. We presently order 10,000 car wheels a month from you and, so far, you have granted us a 10% reduction on your usual price. We are planning to increase our car production and will need 25,000 wheels a month in the near future. We therefore hope you will be ready to increase your reduction in similar proportions. \n
             \n
-            B: Let me ask you a question first. What exactly do you mean by "near future»? You must realise that we have other customers to satisfy and that your order increase is quite substantial. \n
+            B: Let me ask you a question first. What exactly do you mean by «near future»? You must realise that we have other customers to satisfy and that your order increase is quite substantial. \n
             \n
             A: Well, we plan to reach this production level in about 8 months. Do you think you could manage in that period of time? \n
             \n
@@ -4090,10 +4092,10 @@
             \n
             B: Frankly, that won\'t be possible considering the amount of investment required, especially at the start. We would be much more in favour of a gradual increase over the years, that is to say 15% the first year, 20% the second and 25% the third one. If you were ready to promise a regular order over 5 years, we could even go as far as 30% for the last two years. \n
             \n
-            A: We could accept that proposal provided you promise to adapt to any changes in design and specifications in the course or those 5 years. \n
+            A: We could accept that proposal provided you promise to adapt to any changes in design and specifications in the course of those 5 years. \n
             \n
             B: This would be quite feasible. We thank you for your understanding and cooperation. Our legal
-            experts will draft a preliminary contract and we could meet again to make amendments before signing the final documents.
+             experts will draft a preliminary contract and we could meet again to make amendments before signing the final documents.
         </item>
     </string-array>
     <string-array name="stpi2_model_partie2_p57">
