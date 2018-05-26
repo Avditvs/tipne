@@ -68,7 +68,10 @@ public class DataBaseBuilder {
             buildDbModels(modelsDAO, annee);
         }
 
-        buildDbAbreviations(abreviationsDAO);
+        if (!dataBaseChecker.dbAbrevCorrect()) {
+            abreviationsDAO.nukeTableAbreviations();
+            buildDbAbreviations(abreviationsDAO);
+        }
     }
 
 ////////////Fonctions de build de la dbMots////////////////////////

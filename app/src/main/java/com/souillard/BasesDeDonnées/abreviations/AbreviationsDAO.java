@@ -25,7 +25,7 @@ public interface AbreviationsDAO {
     @Query("SELECT * FROM abreviations WHERE idlist like :list")
     List<Abreviations> getList(Integer list);
 
-    @Query("SELECT Abrev FROM abreviations WHERE idlist like :idList")
+    @Query("SELECT abrev FROM abreviations WHERE idlist like :idList")
     String[] getAbrev(int idList);
 
     @Query("SELECT signification FROM abreviations WHERE idlist like :idList")

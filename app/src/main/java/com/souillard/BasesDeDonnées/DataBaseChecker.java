@@ -2,6 +2,7 @@ package com.souillard.BasesDeDonnées;
 
 import android.content.Context;
 
+import com.souillard.BasesDeDonnées.abreviations.AbreviationsDAO;
 import com.souillard.BasesDeDonnées.evaluations.EvaluationsDAO;
 import com.souillard.BasesDeDonnées.listes.ListesDAO;
 import com.souillard.BasesDeDonnées.models.ModelsDAO;
@@ -20,6 +21,7 @@ public class DataBaseChecker {
     private VerbesDAO verbesDAO;
     private ModelsDAO modelsDAO;
     private EvaluationsDAO evaluationsDAO;
+    private AbreviationsDAO abreviationsDAO;
 
 
     public DataBaseChecker(Context context){
@@ -30,6 +32,7 @@ public class DataBaseChecker {
         this.verbesDAO = appDataBase.VerbesDAO();
         this.evaluationsDAO = appDataBase.EvaluationsDAO();
         this.modelsDAO = appDataBase.ModelsDAO();
+        this.abreviationsDAO = appDataBase.AbreviationsDAO();
     };
 
 
@@ -66,6 +69,15 @@ public class DataBaseChecker {
             return false;
         }
         else{
+            return true;
+        }
+    }
+
+    public boolean dbAbrevCorrect(){
+        if (abreviationsDAO.getAll().isEmpty()){
+            return false;
+        }
+        else {
             return true;
         }
     }
