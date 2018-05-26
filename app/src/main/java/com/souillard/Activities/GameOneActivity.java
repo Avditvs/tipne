@@ -117,17 +117,24 @@ public class GameOneActivity extends Activity {
         affichageScore.setText(String.valueOf(score));
         String motMelange = shuffleWord(mots.getMotsEn());
 
-        int i = 0;
-
-        for (int x = 0; x < motMelange.length(); x++){       //génération lettres du mot sur boutons
-            buttons[x].setText(Character.toString(motMelange.charAt(x)));
-            i++;
+        char tableauLettres[] = new char[12];
+        Random r = new Random();
+        for (byte i =0; i< motMelange.length(); i++){
+            tableauLettres[i] = motMelange.charAt(i);
         }
-        while(i<12) {
-            Random r = new Random();                        //génération lettre sur boutons restants
-            char c = (char)(r.nextInt(26) + 'a');
-            buttons[i].setText(Character.toString(c));
-            i++;
+        for (int j = motMelange.length(); (j<12) ; j++){
+            tableauLettres[j] = (char)(r.nextInt(26) + 'a');
+        }
+        Random random = new Random();
+        for (byte k =0 ; (k<12) ; k++){
+            int nb = random.nextInt(12);
+            char tmp = tableauLettres[k];
+            tableauLettres[k] = tableauLettres[nb];
+            tableauLettres[nb] = tmp;
+        }
+
+        for (int x = 0; (x < 12); x++){       //application lettres sur boutons
+            buttons[x].setText(Character.toString(tableauLettres[x]));
         }
     };
 
@@ -287,4 +294,6 @@ public class GameOneActivity extends Activity {
         editor.apply();
         affichageHighscore.setText(String.valueOf(temp_1));
     }
+
+
 }
