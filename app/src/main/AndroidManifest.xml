@@ -40,6 +40,7 @@
         <activity android:name=".Activities.StatsActivity"></activity>
         <activity android:name=".Activities.GameOneActivity"
                   android:screenOrientation="portrait"></activity>
+        <receiver android:name=".Activities.Notifications" />
     </application>
 
 </manifest>

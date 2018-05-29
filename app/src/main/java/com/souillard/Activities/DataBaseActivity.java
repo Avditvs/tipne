@@ -1,6 +1,8 @@
 package com.souillard.Activities;
 
 import android.app.Activity;
+import android.app.AlarmManager;
+import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -37,6 +39,8 @@ import com.souillard.BasesDeDonnées.DataBaseBuilder;
 import com.souillard.BasesDeDonnées.evaluations.Evaluations;
 import com.souillard.R;
 
+import java.util.Calendar;
+
 
 public class DataBaseActivity  extends Activity {
 
@@ -50,6 +54,7 @@ public class DataBaseActivity  extends Activity {
     private ProgressBar progressBar;
     private ImageView checkView;
     private SharedPreferences.Editor spEditor;
+    private AlarmManager am;
 
 
     public void onCreate (Bundle savedInstanceState){
@@ -79,6 +84,11 @@ public class DataBaseActivity  extends Activity {
         else{
             threadDb.start();
         }
+
+
+        am = (AlarmManager) getSystemService(Context.ALARM_SERVICE);
+        ajouterAlarme();
+
         }
 
     private Thread threadDb = new Thread(new Runnable() {
@@ -182,6 +192,17 @@ public class DataBaseActivity  extends Activity {
 
     @Override
     public void onBackPressed(){
+    }
 
+    private void ajouterAlarme(){
+        Calendar cal = Calendar.getInstance();
+
+        cal.set(Calendar.DAY_OF_WEEK, 6);
+        cal.set(Calendar.HOUR_OF_DAY, 19);
+        cal.set(Calendar.MINUTE, 01);
+
+        Intent intent = new Intent(this, Notifications.class);
+        PendingIntent operation = PendingIntent.getBroadcast(this, 1, intent, PendingIntent.FLAG_ONE_SHOT);
+        am.set(AlarmManager.RTC_WAKEUP, cal.getTimeInMillis(), operation);
     }
 }
