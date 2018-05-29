@@ -3,12 +3,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@color/fond_ecran">
+    android:background="@color/beige_drapeau">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/indigo_ink"
+        android:background="@color/bleu_drapeau"
         android:orientation="vertical"
         android:id="@+id/header">
 
@@ -19,14 +19,14 @@
             android:layout_gravity="center"
             android:layout_margin="10dp"
             android:gravity="center"
-            android:textColor="@color/periwinkle"
+            android:textColor="@color/beige_drapeau"
             android:textSize="15dp"
             android:text="liste1"/>
 
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="2px"
-            android:background="@color/periwinkle"
+            android:background="@color/beige_drapeau"
             android:layout_marginHorizontal="60dp"/>
 
         <TextView
@@ -35,7 +35,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_margin="15dp"
-            android:textColor="@color/periwinkle"
+            android:textColor="@color/beige_drapeau"
             android:textSize="25dp"
             android:gravity="center"
             android:text="Mot i sur n"/>
@@ -43,7 +43,7 @@
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="5px"
-            android:background="@color/periwinkle"/>
+            android:background="@color/rouge_drapeau"/>
 
     </LinearLayout>
 
@@ -63,7 +63,8 @@
             android:id="@+id/requete"
             android:textSize="25dp"
             android:text="Test"
-            android:textColor="@color/periwinkle"
+            android:textColor="@color/black"
+            android:fontFamily="sans-serif-condensed"
             android:lines="2"
             android:gravity="center" />
 
@@ -72,8 +73,9 @@
             android:layout_height="wrap_content"
             android:textSize="10dp"
             android:id="@+id/infoSupp"
+            android:fontFamily="sans-serif-condensed"
             android:layout_gravity="center"
-            android:textColor="@color/periwinkle"/>
+            android:textColor="@color/black"/>
 
         <EditText
             android:layout_width="250dp"
@@ -102,14 +104,17 @@
                 android:gravity="center_horizontal|center"
                 android:layout_gravity="center"
                 android:id="@+id/TextToSpeech"
-                android:background="@drawable/speaker_bleu"
+                android:background="@drawable/microphone"
                 android:layout_marginHorizontal="15dp"/>
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Valider"
-                android:id="@+id/validerEval"/>
+                android:id="@+id/validerEval"
+                android:backgroundTint="@color/bleu_drapeau"
+                android:textColor="@color/beige_drapeau"
+                />
 
 
         </LinearLayout>
@@ -119,7 +124,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/indigo_ink"
+        android:background="@color/bleu_drapeau"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         android:id="@+id/baseEval">
@@ -127,7 +132,7 @@
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="5px"
-            android:background="@color/periwinkle"/>
+            android:background="@color/rouge_drapeau"/>
 
         <FrameLayout
             android:layout_width="match_parent"

@@ -67,24 +67,26 @@
             android:orientation="horizontal"
             android:gravity="center"
             android:layout_gravity="center"
-
+            android:weightSum="10"
 
             >
 
             <Button
                 android:id="@+id/clickGauche"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
                 android:layout_gravity="left|center_vertical"
                 android:background="@drawable/fleche_gauche"
-                android:backgroundTint="@color/rouge_drapeau"/>
+                android:backgroundTint="@color/rouge_drapeau"
+                android:layout_weight="2.5"/>
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:gravity="center"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:layout_weight="5">
 
                 <TextView
                     android:id="@+id/motTRAD"
@@ -121,11 +123,12 @@
 
             <Button
                 android:id="@+id/clickDroite"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
                 android:layout_gravity="center"
                 android:background="@drawable/fleche_droite"
-                android:backgroundTint="@color/rouge_drapeau"/>
+                android:backgroundTint="@color/rouge_drapeau"
+                android:layout_weight="2.5"/>
 
 
         </LinearLayout>

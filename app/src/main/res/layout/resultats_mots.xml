@@ -18,14 +18,14 @@
             android:layout_gravity="center"
             android:id="@+id/nomListe"
             android:layout_marginBottom="5dp"
-            android:textColor="@color/periwinkle"/>
+            android:textColor="@color/black"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="15dp"
             android:id="@+id/score"
-            android:textColor="@color/periwinkle"/>
+            android:textColor="@color/black"/>
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -36,12 +36,16 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Recommencer"
+                android:backgroundTint="@color/bleu_drapeau"
+                android:textColor="@color/beige_drapeau"
                 android:id="@+id/recommencer"/>
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Menu Principal"
+                android:backgroundTint="@color/bleu_drapeau"
+                android:textColor="@color/beige_drapeau"
                 android:id="@+id/toMenuPrincipal"/>
 
 

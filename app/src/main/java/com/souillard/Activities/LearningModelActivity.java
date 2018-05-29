@@ -47,7 +47,7 @@ public class LearningModelActivity extends Activity {
 
         final int speakerNoir = getResources().getIdentifier("speaker_noir", "drawable", getPackageName());
         final int speakerBleu = getResources().getIdentifier("speaker_bleu", "drawable", getPackageName());
-        fond_ecran = getResources().getIdentifier("fond_ecran", "color", getPackageName());
+        fond_ecran = getResources().getIdentifier("beige_drapeau", "color", getPackageName());
         audioID = getResources().getIdentifier(fileName,"raw", getPackageName());
         drawID = getResources().getIdentifier(fileName, "drawable", getPackageName());
         textID = getResources().getIdentifier(fileName, "array", getPackageName());

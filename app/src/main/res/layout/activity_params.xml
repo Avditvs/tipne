@@ -58,14 +58,27 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:text="Contact"
+            android:text="Contact : applisouillard@hotmail.com"
             android:gravity="center_vertical"
             android:id="@+id/about"
             android:layout_weight="1"
             android:padding="10dp"/>
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="8"
+            android:textSize="10dp"
+            android:paddingBottom="2dp"
+            android:gravity="bottom|center_horizontal"
+            android:text=" Tous droits réservés à M. et Mme SOUILLARD\n TIPNE 2018 \n GERMAIN Louis | SIMOES-MARICATO Hugo | LENOIR Louis | BECARELLI Clément"
+
+            >
+
+        </TextView>
 
     </LinearLayout>
+
 
 
 

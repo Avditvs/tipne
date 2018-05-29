@@ -22,6 +22,7 @@ public class MainActivity extends Activity {
     private ViewGroup btEval = null;
     private ViewGroup btStats = null;
     private ViewGroup  btParams;
+    private ViewGroup  btEntrain;
     private Intent intent = null;
     private Intent intent4 = null;
     private Intent intent2 = null;
@@ -44,6 +45,9 @@ public class MainActivity extends Activity {
 
         btParams = findViewById(R.id.options);
         btParams.setOnClickListener(listenerBtParams);
+
+        btEntrain = findViewById(R.id.entrainement);
+        btEntrain.setOnClickListener(listenerBtEntrain);
 
     }
 

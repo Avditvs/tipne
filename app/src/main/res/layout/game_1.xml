@@ -4,23 +4,171 @@
         xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:background="@color/beige_drapeau"
+        android:weightSum="20">
+
+
+
 
         <TextView
             android:id="@+id/ListName"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_height="0dp"
+            android:layout_weight="2"
             android:gravity="center"
             android:orientation="horizontal"
             android:text="Liste"
-            android:textSize="20dp"></TextView>
+            android:textSize="20dp"
+            ></TextView>
+
+
+
+        <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:layout_weight="3"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:weightSum="9">
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="5dp"
+                    android:text="Chrono"
+                    android:lines="1"
+                    android:gravity="center"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginVertical="10dp"
+                    android:background="@color/rouge_drapeau">
+
+                </View>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="5dp"
+                    android:id="@+id/chronometer"
+                    android:text="Nb evals"
+                    android:lines="1"
+                    android:gravity="center"
+                    />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginVertical="5dp"
+                android:background="@color/bleu_drapeau"
+                android:layout_gravity="center"
+                android:alpha="200"
+                ></View>
+
+            <LinearLayout
+                android:layout_gravity="center_vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="5dp"
+                    android:text="Score"
+                    android:lines="1"
+                    android:gravity="center"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginVertical="10dp"
+                    android:background="@color/rouge_drapeau">
+
+                </View>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="5dp"
+                    android:id="@+id/score"
+                    android:text="Nb evals"
+                    android:lines="1"
+                    android:gravity="center"
+                    />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginVertical="5dp"
+                android:background="@color/bleu_drapeau"
+                android:layout_gravity="center"
+                android:alpha="200"
+                ></View>
+
+            <LinearLayout
+                android:layout_gravity="center_vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="5dp"
+                    android:text="Highscore"
+                    android:lines="1"
+                    android:gravity="center"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginVertical="10dp"
+                    android:background="@color/rouge_drapeau">
+
+                </View>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="5dp"
+                    android:id="@+id/highscore"
+                    android:text="Nb evals"
+                    android:lines="1"
+                    android:gravity="center"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
 
         <TextView
             android:id="@+id/motFr"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_height="0dp"
+            android:layout_weight="2"
             android:gravity="center"
             android:orientation="horizontal"
             android:text="motFr"
@@ -30,156 +178,177 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_marginTop="60dp">
-
-            <TextView
-                android:id="@+id/chronometer"
-                android:layout_width="wrap_content"
-                android:layout_height="50dp"
-                android:gravity="center"
-                android:text="chrono"
-                android:textSize="20dp"></TextView>
-
-            <TextView
-                android:id="@+id/score"
-                android:layout_width="wrap_content"
-                android:layout_height="50dp"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:text="score"
-                android:textSize="20dp"></TextView>
-
-            <TextView
-                android:id="@+id/highscore"
-                android:layout_width="wrap_content"
-                android:layout_height="50dp"
-                android:gravity="center"
-                android:text="highscore"
-                android:textSize="20dp"></TextView>
+            android:weightSum="9">
 
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:layout_weight="9"
+            android:weightSum="10">
 
-            <TextView
-                android:id="@+id/motadeviner"
+            <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="70dp"
-                android:gravity="center"
-                android:orientation="horizontal"
-                android:text="motadeviner"
-                android:textSize="20dp"></TextView>
+                android:layout_margin="30dp"
+                android:layout_height="0dp"
+                android:layout_weight="2">
+                <TextView
+                    android:id="@+id/motadeviner"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:text="motadeviner"
+                    android:textSize="20dp"></TextView>
+            </android.support.v7.widget.CardView>
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="80dp"
-                android:layout_marginTop="30dp"
-                android:orientation="horizontal">
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:weightSum="10"
+                android:layout_weight="3">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"/>
                 <Button
                     android:id="@+id/restartButton"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="100dp"
-                    android:layout_weight="1"
-
-                    android:text="restartButton" />
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:backgroundTint="@color/bleu_drapeau"
+                    android:text="restart \n Button"
+                    android:textColor="@color/beige_drapeau"/>
                 <Button
                     android:id="@+id/confirmationButton"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="100dp"
-                    android:layout_weight="1"
-                    android:text="confirmationButton" />
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:backgroundTint="@color/bleu_drapeau"
+                    android:text="confirmation \n Button"
+                    android:textColor="@color/beige_drapeau"/>
 
             </LinearLayout>
         </LinearLayout>
 
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/rouge_drapeau"
+            android:layout_margin="10dp"></View>
+
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="2">
             <Button
                 android:id="@+id/char1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="A" />
+                android:text="A"
+                android:backgroundTint="@color/bleu_drapeau"
+                android:textColor="@color/beige_drapeau"
+                />
             <Button
                 android:id="@+id/char2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="A" />
+                android:text="A"
+                android:backgroundTint="@color/bleu_drapeau"
+                android:textColor="@color/beige_drapeau"/>
             <Button
                 android:id="@+id/char3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:backgroundTint="@color/bleu_drapeau"
+                android:textColor="@color/beige_drapeau"
                 android:text="A" />
             <Button
                 android:id="@+id/char4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:backgroundTint="@color/bleu_drapeau"
+                android:textColor="@color/beige_drapeau"
                 android:text="A" />
             <Button
                 android:id="@+id/char5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:backgroundTint="@color/bleu_drapeau"
+                android:textColor="@color/beige_drapeau"
                 android:text="A" />
             <Button
                 android:id="@+id/char6"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:backgroundTint="@color/bleu_drapeau"
+                android:textColor="@color/beige_drapeau"
                 android:text="A" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="2">
             <Button
                 android:id="@+id/char7"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:backgroundTint="@color/bleu_drapeau"
+                android:textColor="@color/beige_drapeau"
                 android:text="A" />
             <Button
                 android:id="@+id/char8"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:backgroundTint="@color/bleu_drapeau"
+                android:textColor="@color/beige_drapeau"
                 android:text="A" />
             <Button
                 android:id="@+id/char9"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:backgroundTint="@color/bleu_drapeau"
+                android:textColor="@color/beige_drapeau"
                 android:text="A" />
             <Button
                 android:id="@+id/char10"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:backgroundTint="@color/bleu_drapeau"
+                android:textColor="@color/beige_drapeau"
                 android:text="A" />
             <Button
                 android:id="@+id/char11"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:backgroundTint="@color/bleu_drapeau"
+                android:textColor="@color/beige_drapeau"
                 android:text="A" />
             <Button
                 android:id="@+id/char12"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:backgroundTint="@color/bleu_drapeau"
+                android:textColor="@color/beige_drapeau"
                 android:text="A" />
         </LinearLayout>
     </LinearLayout>
