@@ -256,6 +256,15 @@ public class GameOneActivity extends Activity {
         motsDAO = AppDataBase.getAppDatabase(getApplicationContext()).MotsDao();
         mots = motsDAO.getList(idList);
 
+        int nbWords = extras.getInt("nbMots");
+
+        for (int i =0; i < nbWords; i++){    //test suppression ce qu'il y a entre parenthèses
+            String newEn = mots.get(i).getMotsEn().replaceAll("\\(" + ".*" + "?" + "\\)", "");
+            Mots newWord = mots.get(i);
+            newWord.setMotsEn(newEn);
+            mots.set(i, newWord);
+        }
+
 
         Collections.shuffle(mots);
     }

@@ -102,6 +102,13 @@ public class EvaluationActivity extends VoiceRecognitionActivity {
         dataMots = motsDAO.getList(listId);
         nbWords = extras.getInt("nbMots");
 
+        for (int i =0; i < nbWords; i++){    //test suppression ce qu'il y a entre parenthèses
+            String newEn = dataMots.get(i).getMotsEn().replaceAll("\\(" + ".*" + "?" + "\\)", "");
+            Mots newWord = dataMots.get(i);
+            newWord.setMotsEn(newEn);
+            dataMots.set(i, newWord);
+        }
+
         Collections.shuffle(dataMots);
 
         boutonValidation.setOnClickListener(listenerValidation);
