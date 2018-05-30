@@ -9,10 +9,12 @@ import com.souillard.BasesDeDonnées.listes.ListesDAO;
 import com.souillard.BasesDeDonnées.mots.MotsDAO;
 import com.souillard.R;
 
+import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
+import android.widget.SeekBar;
 import android.widget.TextView;
 import android.view.View.OnClickListener;
 import android.speech.tts.TextToSpeech;
@@ -30,6 +32,7 @@ public class LearningMotsActivity extends Activity{
     private TextView textListe;
     private TextView textMot;
     private TextView textFr;
+    private SeekBar seekBar;
     private TextView textEn;
     private int motActuel = 0;
     private int nbDeMots = 0;
@@ -44,23 +47,53 @@ public class LearningMotsActivity extends Activity{
     private TextToSpeech voice;
     private int idList;
     private Bundle extras = new Bundle();
+    private int nbItems;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.learning_mots_activity);
+        extras = getIntent().getExtras();
+        final String choixUser = extras.getString("choixUtilisateur");
+        String nameList = extras.getString("nameList");
         textListe = findViewById(R.id.nomListe);
         textMot = findViewById(R.id.numeroMot);
         textEn = findViewById(R.id.motEN);
         textFr = findViewById(R.id.motTRAD);
 
+        seekBar = findViewById(R.id.seekbar);
+
+        seekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+            @Override
+            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+                motActuel = progress*nbItems/seekBar.getMax()-1;
+                if(motActuel == -1){
+                    motActuel =0;
+                }
+                if(choixUser.equals("mots")){
+                    updateTextViews();
+                }else{
+                    updateAbbrevViews();
+                }
+            }
+
+            @Override
+            public void onStartTrackingTouch(SeekBar seekBar) {
+
+            }
+
+            @Override
+            public void onStopTrackingTouch(SeekBar seekBar) {
+
+            }
+        });
+
+
         clickGauche = findViewById(R.id.clickGauche);
         clickDroite = findViewById(R.id.clickDroite);
         textToSpeech = findViewById(R.id.TextToSpeech);
 
-        extras = getIntent().getExtras();
-        String choixUser = extras.getString("choixUtilisateur");
-        String nameList = extras.getString("nameList");
+
 
         if (choixUser.equals("mots")) {
             motsChosen(nameList);
@@ -86,6 +119,7 @@ public class LearningMotsActivity extends Activity{
         textListe.setText(setProperName(nameList));
 
         abbrevs = dbAbbrev.getAbrev(idList);
+        nbItems = dbAbbrev.getAbrev(idList).length;
         significations = dbAbbrev.getSignification(idList);
         nbDabbrev = significations.length;
 
@@ -111,12 +145,16 @@ public class LearningMotsActivity extends Activity{
         textEn.setText(wordsEN[motActuel]);
         textFr.setText(wordsFR[motActuel]);
 
+        nbItems = dbListes.getNbWords(idList);
+
         clickGauche.setOnClickListener(clickListenerGaucheM);
         clickDroite.setOnClickListener(clickListenerDroiteM);
         textToSpeech.setOnClickListener(clickTextToSpeechM);
 
 
     }
+
+
 
     public int getIdList(String nomListe){
         int idDeList = dbListes.idDeListe(nomListe);
@@ -138,6 +176,7 @@ public class LearningMotsActivity extends Activity{
         public void onClick (View v) {
             if (motActuel+1 > 1) {
                 motActuel--;
+                seekBar.setProgress((motActuel+1)*seekBar.getMax()/nbItems);
                 updateTextViews();
             }
         }
@@ -148,6 +187,7 @@ public class LearningMotsActivity extends Activity{
         public void onClick(View v) {
             if (motActuel+1 < nbDeMots) {
                 motActuel++;
+                seekBar.setProgress((motActuel+1)*seekBar.getMax()/nbItems);
                 updateTextViews();
             }
         }
@@ -217,6 +257,7 @@ public class LearningMotsActivity extends Activity{
         public void onClick (View v) {
             if (motActuel+1 > 1) {
                 motActuel--;
+                seekBar.setProgress((motActuel+1)*seekBar.getMax()/nbItems);
                 updateAbbrevViews();
             }
         }
@@ -227,6 +268,7 @@ public class LearningMotsActivity extends Activity{
         public void onClick(View v) {
             if (motActuel+1 < nbDabbrev) {
                 motActuel++;
+                seekBar.setProgress((motActuel+1)*seekBar.getMax()/nbItems);
                 updateAbbrevViews();
             }
         }

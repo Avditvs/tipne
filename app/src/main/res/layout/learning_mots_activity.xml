@@ -134,7 +134,7 @@
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:gravity="center"
@@ -159,6 +159,14 @@
                 android:id="@+id/TextToSpeech"
                 android:background="@drawable/speaker_bleu"
                 android:layout_marginTop="15dp"/>
+            <SeekBar
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/seekbar"
+                android:min="1"
+                android:max="500"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="10dp"/>
 
         </LinearLayout>
 
