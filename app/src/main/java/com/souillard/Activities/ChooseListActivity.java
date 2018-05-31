@@ -250,6 +250,7 @@ public class ChooseListActivity extends Activity {
             Intent i = new Intent(ChooseListActivity.this, GameOneActivity.class);
             Bundle extras = new Bundle();
             extras.putString("nameList", nomliste);
+            extras.putInt("nbMots", nbMots);
             i.putExtras(extras);
             startActivity(i);
         }

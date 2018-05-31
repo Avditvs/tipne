@@ -37,6 +37,7 @@ import android.widget.Toast;
 import com.souillard.BasesDeDonnées.AppDataBase;
 import com.souillard.BasesDeDonnées.DataBaseBuilder;
 import com.souillard.BasesDeDonnées.evaluations.Evaluations;
+import com.souillard.Notifications.NotificationsReceiver;
 import com.souillard.R;
 
 import java.util.Calendar;
@@ -195,14 +196,20 @@ public class DataBaseActivity  extends Activity {
     }
 
     private void ajouterAlarme(){
+        Intent alarmIntent = new Intent(this, NotificationsReceiver.class);
+        PendingIntent pendingIntent = PendingIntent.getBroadcast(this, 0, alarmIntent, 0);
+
+        am = (AlarmManager) getSystemService(Context.ALARM_SERVICE);
+
         Calendar cal = Calendar.getInstance();
 
-        cal.set(Calendar.DAY_OF_WEEK, 6);
+        cal.setTimeInMillis(System.currentTimeMillis());
+        cal.set(Calendar.DAY_OF_WEEK, 7);
         cal.set(Calendar.HOUR_OF_DAY, 19);
-        cal.set(Calendar.MINUTE, 01);
+        cal.set(Calendar.MINUTE, 0);
+        cal.set(Calendar.SECOND, 1);
 
-        Intent intent = new Intent(this, Notifications.class);
-        PendingIntent operation = PendingIntent.getBroadcast(this, 1, intent, PendingIntent.FLAG_ONE_SHOT);
-        am.set(AlarmManager.RTC_WAKEUP, cal.getTimeInMillis(), operation);
+
+        am.setRepeating(AlarmManager.RTC_WAKEUP, cal.getTimeInMillis(),7 * AlarmManager.INTERVAL_DAY, pendingIntent);
     }
 }

@@ -4,6 +4,7 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
 
     <application
         android:allowBackup="true"
@@ -40,7 +41,14 @@
         <activity android:name=".Activities.StatsActivity"></activity>
         <activity android:name=".Activities.GameOneActivity"
                   android:screenOrientation="portrait"></activity>
-        <receiver android:name=".Activities.Notifications" />
+        <receiver android:name=".Notifications.NotificationsReceiver"
+                    android:enabled="true"
+            android:exported="true"></receiver>
+        <service
+            android:name=".Notifications.NotificationsService"
+            android:exported="false"
+            android:permission="android.permission.BIND_JOB_SERVICE">
+        </service>
     </application>
 
 </manifest>

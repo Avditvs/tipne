@@ -42,6 +42,7 @@ public class GameOneActivity extends Activity {
     private int indice;
     private float score;
     private Toast toast;
+    private CountDownTimer cd;
 
 
     ///////////////////////////////////////////activité////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -69,7 +70,7 @@ public class GameOneActivity extends Activity {
         restart.setOnClickListener(clickListenerRestart);
         confirm.setOnClickListener(clickListenerValidate);
 
-        new CountDownTimer(101000, 1000) {                      //compte à rebours du jeu
+        cd = new CountDownTimer(101000, 1000) {                      //compte à rebours du jeu
 
             public void onTick(long millisUntilFinished) {
                 chronometer.setText(Long.toString(millisUntilFinished / 1000));         //on affiche le temps restant chaque seconde
@@ -92,6 +93,12 @@ public class GameOneActivity extends Activity {
                 }, 4000);
             }
         }.start();
+    }
+
+    @Override
+    protected void onPause(){
+        super.onPause();
+        cd.cancel();
     }
 
     ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
