@@ -210,6 +210,6 @@ public class DataBaseActivity  extends Activity {
         cal.set(Calendar.SECOND, 1);
 
 
-        am.setRepeating(AlarmManager.RTC_WAKEUP, cal.getTimeInMillis(),7 * AlarmManager.INTERVAL_DAY, pendingIntent);
+        am.setRepeating(AlarmManager.RTC_WAKEUP, cal.getTimeInMillis(),AlarmManager.INTERVAL_DAY * 7, pendingIntent);
     }
 }

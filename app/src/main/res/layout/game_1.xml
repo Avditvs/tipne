@@ -221,7 +221,7 @@
                     android:layout_height="match_parent"
                     android:layout_weight="4"
                     android:backgroundTint="@color/bleu_drapeau"
-                    android:text="restart \n Button"
+                    android:text="Clear"
                     android:textColor="@color/beige_drapeau"/>
                 <Button
                     android:id="@+id/confirmationButton"
@@ -229,7 +229,7 @@
                     android:layout_height="match_parent"
                     android:layout_weight="4"
                     android:backgroundTint="@color/bleu_drapeau"
-                    android:text="confirmation \n Button"
+                    android:text="Confirm"
                     android:textColor="@color/beige_drapeau"/>
 
             </LinearLayout>
