@@ -35,6 +35,7 @@ public class LearningMotsActivity extends Activity{
     private SeekBar seekBar;
     private TextView textEn;
     private int motActuel = 0;
+    private int motActuelBis;
     private int nbDeMots = 0;
     private int nbDabbrev = 0;
     private Button clickGauche = null;
@@ -48,6 +49,7 @@ public class LearningMotsActivity extends Activity{
     private int idList;
     private Bundle extras = new Bundle();
     private int nbItems;
+    private int avancement;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -66,15 +68,18 @@ public class LearningMotsActivity extends Activity{
         seekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
-                motActuel = progress*nbItems/seekBar.getMax()-1;
-                if(motActuel == -1){
-                    motActuel =0;
+                motActuelBis = progress*nbDeMots/seekBar.getMax()-1;
+                if(motActuelBis == -1){
+                    motActuelBis =0;
                 }
+
+
                 if(choixUser.equals("mots")){
                     updateTextViews();
                 }else{
                     updateAbbrevViews();
                 }
+                avancement = progress;
             }
 
             @Override
@@ -145,8 +150,6 @@ public class LearningMotsActivity extends Activity{
         textEn.setText(wordsEN[motActuel]);
         textFr.setText(wordsFR[motActuel]);
 
-        nbItems = dbListes.getNbWords(idList);
-
         clickGauche.setOnClickListener(clickListenerGaucheM);
         clickDroite.setOnClickListener(clickListenerDroiteM);
         textToSpeech.setOnClickListener(clickTextToSpeechM);
@@ -176,8 +179,8 @@ public class LearningMotsActivity extends Activity{
         public void onClick (View v) {
             if (motActuel+1 > 1) {
                 motActuel--;
-                seekBar.setProgress((motActuel+1)*seekBar.getMax()/nbItems);
-                updateTextViews();
+                seekBar.setProgress((motActuel+1)*seekBar.getMax()/nbDeMots);
+                //updateTextViews();
             }
         }
     };
@@ -187,8 +190,8 @@ public class LearningMotsActivity extends Activity{
         public void onClick(View v) {
             if (motActuel+1 < nbDeMots) {
                 motActuel++;
-                seekBar.setProgress((motActuel+1)*seekBar.getMax()/nbItems);
-                updateTextViews();
+                seekBar.setProgress((motActuel+1)*seekBar.getMax()/nbDeMots);
+               // updateTextViews();
             }
         }
     };
@@ -230,6 +233,7 @@ public class LearningMotsActivity extends Activity{
         textFr.setText(strFR);
         textMot.setText("Mot " + (motActuel+1) + " sur " + nbDeMots);
 
+
     }
 
     private int getIdListAbbrev(String nameList){
@@ -257,8 +261,8 @@ public class LearningMotsActivity extends Activity{
         public void onClick (View v) {
             if (motActuel+1 > 1) {
                 motActuel--;
-                seekBar.setProgress((motActuel+1)*seekBar.getMax()/nbItems);
-                updateAbbrevViews();
+                seekBar.setProgress((motActuel+1)*seekBar.getMax()/nbDeMots);
+                //updateAbbrevViews();
             }
         }
     };
@@ -268,8 +272,8 @@ public class LearningMotsActivity extends Activity{
         public void onClick(View v) {
             if (motActuel+1 < nbDabbrev) {
                 motActuel++;
-                seekBar.setProgress((motActuel+1)*seekBar.getMax()/nbItems);
-                updateAbbrevViews();
+                seekBar.setProgress((motActuel+1)*seekBar.getMax()/nbDeMots);
+                //updateAbbrevViews();
             }
         }
     };
@@ -310,6 +314,7 @@ public class LearningMotsActivity extends Activity{
         textEn.setText(strSign);
         textFr.setText(strAbbrev);
         textMot.setText("Abreviation " + (motActuel + 1) + " sur " + nbDabbrev);
+
     }
 
 }
