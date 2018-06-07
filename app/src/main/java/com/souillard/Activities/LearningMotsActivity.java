@@ -200,7 +200,7 @@ public class LearningMotsActivity extends Activity{
     private OnClickListener clickTextToSpeechM = new OnClickListener() {
         @Override
         public void onClick(View v) {
-            voice.speak(wordsEN[motActuel], TextToSpeech.QUEUE_FLUSH, null);
+            voice.speak(wordsEN[motActuel-1], TextToSpeech.QUEUE_FLUSH, null);
         }
     };
 
@@ -282,7 +282,7 @@ public class LearningMotsActivity extends Activity{
     private OnClickListener clickTextToSpeechA = new OnClickListener() {
         @Override
         public void onClick(View v) {
-            voice.speak(significations[motActuel], TextToSpeech.QUEUE_FLUSH, null);
+            voice.speak(significations[motActuel-1], TextToSpeech.QUEUE_FLUSH, null);
         }
     };
 
