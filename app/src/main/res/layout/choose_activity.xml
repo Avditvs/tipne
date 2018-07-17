@@ -7,12 +7,25 @@
     android:orientation="vertical"
     android:background="@color/beige_drapeau">
 
+    <com.google.android.gms.ads.AdView
+        xmlns:ads = "http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.15"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-3940256099942544/6300978111">
+
+    </com.google.android.gms.ads.AdView>
+
     <View
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="0.25">
+        android:layout_weight="0.15">
 
     </View>
+
+
 
     <android.support.v7.widget.GridLayout
         android:layout_width="match_parent"
@@ -20,7 +33,7 @@
         app:alignmentMode="alignMargins"
         app:columnCount="2"
         app:columnOrderPreserved="false"
-        app:rowCount="2"
+        app:rowCount="3"
         android:layout_weight="1">
 
         <android.support.v7.widget.CardView
@@ -107,6 +120,47 @@
                 android:textSize="20sp" />
         </android.support.v7.widget.CardView>
 
+        <android.support.v7.widget.CardView
+            android:id="@+id/grammar"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:cardBackgroundColor="@color/bleu_drapeau"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            android:layout_margin="@dimen/cardview_menu_margin"
+            android:elevation="@dimen/cardview_default_elevation"
+            app:cardCornerRadius="@dimen/corner_Radius"
+            android:foreground="?android:attr/selectableItemBackground">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Grammar"
+                android:textColor="@color/beige_drapeau"
+                android:textSize="20sp" />
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/others"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:cardBackgroundColor="@color/bleu_drapeau"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            android:layout_margin="@dimen/cardview_menu_margin"
+            android:elevation="@dimen/cardview_default_elevation"
+            app:cardCornerRadius="@dimen/corner_Radius"
+            android:foreground="?android:attr/selectableItemBackground">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Others"
+                android:textColor="@color/beige_drapeau"
+                android:textSize="20sp" />
+        </android.support.v7.widget.CardView>
 
     </android.support.v7.widget.GridLayout>
 

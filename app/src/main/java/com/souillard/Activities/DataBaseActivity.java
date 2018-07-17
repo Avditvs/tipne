@@ -41,6 +41,7 @@ import com.souillard.Notifications.NotificationsReceiver;
 import com.souillard.R;
 
 import java.util.Calendar;
+import com.google.android.gms.ads.MobileAds;
 
 
 public class DataBaseActivity  extends Activity {
@@ -69,6 +70,7 @@ public class DataBaseActivity  extends Activity {
         checkView = findViewById(R.id.check_db);
         intent = new Intent(this, MainActivity.class);
 
+        MobileAds.initialize(this, "ca-app-pub-5703356156338006~8507828990");
         sharedPreferences = getSharedPreferences("APP_SHARED_PREFERENCES", Context.MODE_PRIVATE);
         spEditor = sharedPreferences.edit();
         boolean firstLaunch = sharedPreferences.getBoolean("first_launch", true);

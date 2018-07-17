@@ -13,6 +13,8 @@ import android.widget.Button;
 
 import com.astuetz.PagerSlidingTabStrip;
 import com.souillard.R;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.AdRequest;
 
 
 public class ChooseActivity extends Activity {
@@ -25,6 +27,7 @@ public class ChooseActivity extends Activity {
     private CardView abbrev = null;
     private PagerSlidingTabStrip tabs;
     private ViewPager pager;
+    private AdView mAdView;
 
     //@Override
 
@@ -87,6 +90,10 @@ public class ChooseActivity extends Activity {
         model = findViewById(R.id.model);
         verbes = findViewById(R.id.verbes);
         abbrev = findViewById(R.id.abbréviations);
+
+        mAdView = findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
 
         mots.setOnClickListener(clickListenerMots);
         model.setOnClickListener(clickListenerModel);
