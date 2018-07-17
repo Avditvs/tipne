@@ -148,4 +148,11 @@ public class ChooseActivity extends Activity {
             startActivity(intent);
         }
     };
+
+    private View.OnClickListener clickListenerGrammar = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+
+        }
+    };
 }
