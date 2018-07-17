@@ -34,6 +34,36 @@ public class LearningModelActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        main();
+    }
+
+    @Override
+    protected void onPause(){
+        super.onPause();
+        mediaPlayer.stop();
+        mediaPlayer.release();
+    }
+
+    @Override
+    protected void onResume(){
+        super.onResume();
+        main();
+    }
+
+    public void onClick(View v){
+        if (prompt){
+            model.setText(textModel[0]);
+            prompt = false;
+            model.setBackgroundResource(fond_ecran);
+        }
+        else {
+            model.setText("");
+            prompt = true;
+            model.setBackgroundResource(drawID);
+        }
+    }
+
+    protected void main(){
         setContentView(R.layout.learning_model_activity);
         nomModel = findViewById(R.id.name);
         listeningButton = findViewById(R.id.TextToSpeech);
@@ -73,26 +103,6 @@ public class LearningModelActivity extends Activity {
                 }
             }
         });
-    }
-
-    @Override
-    protected void onPause(){
-        super.onPause();
-        mediaPlayer.stop();
-        mediaPlayer.release();
-    }
-
-    public void onClick(View v){
-        if (prompt){
-            model.setText(textModel[0]);
-            prompt = false;
-            model.setBackgroundResource(fond_ecran);
-        }
-        else {
-            model.setText("");
-            prompt = true;
-            model.setBackgroundResource(drawID);
-        }
     }
 }
 

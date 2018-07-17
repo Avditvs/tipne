@@ -51,56 +51,22 @@ public class GameOneActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);       //lancement de l'activité
-        setContentView(R.layout.game_1);          //on choisit l'interface graphique de l'activité
-
-        indice =0;
-        score =0;
-
-        initialisationEtMelangeListes();          //récupération des listes de mots et mélange de la liste de mots
-        initialisationElementGraphique();
-        recupererHighScore();                     //récupération du highscore stocker en preferences
-
-
-        updateView(mots.get(getNewWord()));       //maj IHM
-
-        for (int j = 0; j < 12; j++){             //mise en fonctionnement des boutons
-            buttons[j].setOnClickListener(clickListenerButton);
-        }
-
-        restart.setOnClickListener(clickListenerRestart);
-        confirm.setOnClickListener(clickListenerValidate);
-
-        cd = new CountDownTimer(101000, 1000) {                      //compte à rebours du jeu
-
-            public void onTick(long millisUntilFinished) {
-                chronometer.setText(Long.toString(millisUntilFinished / 1000));         //on affiche le temps restant chaque seconde
-            }
-
-            public void onFinish() {
-                chronometer.setText("0");                                                 //actions effectuées à l'arrêt du chrono
-                String toastTextFin = "Temps écoulé !\nVotre score est de " + score;
-                toast = Toast.makeText(getBaseContext(), toastTextFin, Toast.LENGTH_SHORT);
-                toast.setGravity(Gravity.CENTER_VERTICAL, 0, 0);
-                toast.show();
-                disableButtons();
-                keepHighscore();
-                final Handler handler = new Handler();
-                handler.postDelayed(new Runnable() {
-                    @Override
-                    public void run() {
-                        finish();
-                    }
-                }, 4000);
-            }
-        }.start();
+        main();
     }
 
     @Override
     protected void onPause(){
         super.onPause();
         cd.cancel();
+        score =0;
     }
 
+    @Override
+    protected void onResume(){
+        super.onResume();
+        cd.start();
+        affichageScore.setText(String.valueOf(score));
+    }
     ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
@@ -311,5 +277,48 @@ public class GameOneActivity extends Activity {
         affichageHighscore.setText(String.valueOf(temp_1));
     }
 
+    protected void main(){
+        setContentView(R.layout.game_1);          //on choisit l'interface graphique de l'activité
 
+        indice =0;
+        score =0;
+
+        initialisationEtMelangeListes();          //récupération des listes de mots et mélange de la liste de mots
+        initialisationElementGraphique();
+        recupererHighScore();                     //récupération du highscore stocker en preferences
+
+
+        updateView(mots.get(getNewWord()));       //maj IHM
+
+        for (int j = 0; j < 12; j++){             //mise en fonctionnement des boutons
+            buttons[j].setOnClickListener(clickListenerButton);
+        }
+
+        restart.setOnClickListener(clickListenerRestart);
+        confirm.setOnClickListener(clickListenerValidate);
+
+        cd = new CountDownTimer(101000, 1000) {                      //compte à rebours du jeu
+
+            public void onTick(long millisUntilFinished) {
+                chronometer.setText(Long.toString(millisUntilFinished / 1000));         //on affiche le temps restant chaque seconde
+            }
+
+            public void onFinish() {
+                chronometer.setText("0");                                                 //actions effectuées à l'arrêt du chrono
+                String toastTextFin = "Temps écoulé !\nVotre score est de " + score;
+                toast = Toast.makeText(getBaseContext(), toastTextFin, Toast.LENGTH_SHORT);
+                toast.setGravity(Gravity.CENTER_VERTICAL, 0, 0);
+                toast.show();
+                disableButtons();
+                keepHighscore();
+                final Handler handler = new Handler();
+                handler.postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        finish();
+                    }
+                }, 4000);
+            }
+        }.start();
+    }
 }

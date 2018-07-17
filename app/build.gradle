@@ -22,7 +22,7 @@ android {
 }
 
 dependencies {
-    compile 'com.android.support:gridlayout-v7:27.1.1'
+    implementation 'com.android.support:gridlayout-v7:27.1.0'
     implementation 'com.android.support:design:27.1.0'
 
     //library pour acceder au debug de la bdd sur le port 8080

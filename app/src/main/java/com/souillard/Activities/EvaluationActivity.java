@@ -118,8 +118,16 @@ public class EvaluationActivity extends VoiceRecognitionActivity {
         indiceMot = 1;
         changerMot(indiceMot);
 
+    }
 
 
+    @Override
+    protected void onPause(){
+        super.onPause();
+        Collections.shuffle(dataMots);
+        indiceMot = 1;
+        maxScore=0;
+        nbBonnesRep=0;
 
     }
 
