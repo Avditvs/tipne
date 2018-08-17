@@ -22,6 +22,7 @@ import com.souillard.R;
 import android.content.Intent;
 import android.widget.ArrayAdapter;
 import android.widget.PopupWindow;
+import android.widget.Spinner;
 import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Button;
@@ -48,6 +49,8 @@ public class ChooseListActivity extends Activity {
     private PopupWindow popup;
     private int nbMots;
     private String nomliste;
+    private String[] temp;
+    private int choixExo;
 
     AppDataBase db = AppDataBase.getAppDatabase(ChooseListActivity.this);
     ListesDAO dbListes = db.ListesDAO();
@@ -90,6 +93,9 @@ public class ChooseListActivity extends Activity {
         }
         else if (choixUser.equals("abbrev")){
             abbrevsChosen();
+        }
+        else if (choixUser.equals("grammar")){
+            grammarChosen();
         }
     }
 
@@ -214,6 +220,74 @@ public class ChooseListActivity extends Activity {
         });
     }
 
+    private void grammarChosen(){
+        final String[] grammarList = getResources().getStringArray(R.array.Liste_Names_Exos_Grammar);
+
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(ChooseListActivity.this,
+                R.layout.card_view,R.id.file_name_text, grammarList);
+
+        mListView.setAdapter(adapter);
+        mListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, final int position, long id) {
+
+                String[] listeExercices = getResources().getStringArray(R.array.Liste_Exos_Grammar);
+                String param = listeExercices[position]; //Récupère les paramètres de l'exo choisi
+                String[] params = param.split("/");
+
+                int nombreExos = Integer.parseInt(params[1]);
+
+                if (nombreExos>1){
+                    Toast.makeText(ChooseListActivity.this, "Quel exercice ?", Toast.LENGTH_SHORT).show();
+                    LayoutInflater inflater = (LayoutInflater) getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+                    View aview = inflater.inflate(R.layout.choose_grammar_exercice, null);
+                    popup = new PopupWindow(aview, LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT);
+
+
+                    final Spinner aSpinner = aview.findViewById(R.id.choixExo);
+
+
+                    if (nombreExos==2){
+                        temp = getResources().getStringArray(R.array.deux_exos);
+                    }
+                    else if (nombreExos==3){
+                        temp = getResources().getStringArray(R.array.trois_exos);
+                    }
+                    else if (nombreExos==4){
+                        temp = getResources().getStringArray(R.array.quatre_exos);
+                    }
+
+                    ArrayAdapter<String> adapter = new ArrayAdapter<String>(ChooseListActivity.this, android.R.layout.simple_spinner_item, temp);
+                    adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                    aSpinner.setAdapter(adapter);
+
+
+                    Button quitButton = aview.findViewById(R.id.btchoose);
+
+                    quitButton.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                            choixExo = aSpinner.getSelectedItemPosition();
+                            popup.dismiss();
+                            launchingGrammarActivity(choixExo, position);
+                        }
+                    });
+
+                    popup.showAtLocation(layout, Gravity.CENTER, 0, 0);
+                }
+                else {
+                    choixExo = 1;
+                    launchingGrammarActivity(choixExo, position);
+                }
+
+
+                //
+
+            }
+        });
+    }
+
+
     private String[] setProperList (String[] nonProperList){
         int i = 0;
         String[] properList = new String[6];
@@ -254,6 +328,15 @@ public class ChooseListActivity extends Activity {
             i.putExtras(extras);
             startActivity(i);
         }
+    }
+
+    private void launchingGrammarActivity(int choixExo, int position){
+        Intent i = new Intent(ChooseListActivity.this, GrammarExerciceActivity.class);
+        Bundle extras = new Bundle();
+        extras.putInt("exoChoisi", position);
+        extras.putInt("partieExo", choixExo);
+        i.putExtras(extras);
+        startActivity(i);
     }
 
 }

@@ -25,58 +25,10 @@ public class ChooseActivity extends Activity {
     private CardView model = null;
     private CardView verbes = null;
     private CardView abbrev = null;
+    private CardView grammar = null;
     private PagerSlidingTabStrip tabs;
     private ViewPager pager;
     private AdView mAdView;
-
-    //@Override
-
-/*    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-
-        pager = (ViewPager) findViewById(R.id.pager);
-        pager.setAdapter(new MyAdapter(getSupportFragmentManager()));
-        tabs = (PagerSlidingTabStrip) findViewById(R.id.tabs);
-        tabs.setViewPager(pager);
-    }
-
-    public class MyAdapter extends FragmentPagerAdapter {
-        private String[] titles = { "Vocabulaire","Model","Verbes","Abbrevs" };
-
-        public MyAdapter(FragmentManager fm) {
-            super(fm);
-        }
-
-        @Override
-        public Fragment getItem(int position) {
-            switch(position){
-                case 0:{
-                    return ChooseListActivity.newInstance(position);
-                }
-                case 1:{
-                    return FileViewerFragment.newInstance(position);
-                }
-                case 3:{
-                    return FileViewerFragment.newInstance(position);
-                }
-                case 4:{
-                    return FileViewerFragment.newInstance(position);
-                }
-            }
-            return null;
-        }
-
-        @Override
-        public int getCount() {
-            return titles.length;
-        }
-
-        @Override
-        public CharSequence getPageTitle(int position) {
-            return titles[position];
-        }
-    }*/
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -90,15 +42,20 @@ public class ChooseActivity extends Activity {
         model = findViewById(R.id.model);
         verbes = findViewById(R.id.verbes);
         abbrev = findViewById(R.id.abbréviations);
+        grammar = findViewById(R.id.grammar);
 
+
+        ////////////////Publicité/////////////////////////
         mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();
         mAdView.loadAd(adRequest);
 
+        ////////////////Listeners////////////////////////
         mots.setOnClickListener(clickListenerMots);
         model.setOnClickListener(clickListenerModel);
         verbes.setOnClickListener(clickListenerVerbes);
         abbrev.setOnClickListener(clickListenerAbbrev);
+        grammar.setOnClickListener(clickListenerGrammar);
 
     }
 
@@ -159,7 +116,12 @@ public class ChooseActivity extends Activity {
     private View.OnClickListener clickListenerGrammar = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-
+            Intent intent = new Intent(ChooseActivity.this, ChooseListActivity.class);
+            Bundle extras = new Bundle();
+            extras.putString("choixUtilisateur", "grammar");
+            extras.putString("mode", choixMode);
+            intent.putExtras(extras);
+            startActivity(intent);
         }
     };
 }

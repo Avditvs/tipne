@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/beige_drapeau"
+    android:id="@+id/grammar_exercice_activity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bleu_drapeau"
+        android:orientation="vertical"
+        android:id="@+id/header">
+
+        <TextView
+            android:id="@+id/numeroGrammar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:textColor="@color/beige_drapeau"
+            android:textSize="15dp"
+            android:text="Grammar1"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="@color/beige_drapeau"
+            android:layout_marginHorizontal="60dp"/>
+
+        <TextView
+            android:id="@+id/numeroMot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="15dp"
+            android:textColor="@color/beige_drapeau"
+            android:textSize="25dp"
+            android:gravity="center"
+            android:text="Phrase i sur n"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="5px"
+            android:background="@color/rouge_drapeau"/>
+
+
+
+    </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/bodyEval"
+            android:layout_width="match_parent"
+            android:layout_height="275dp"
+            android:layout_marginVertical="25dp"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@+id/header">
+
+            <TextView
+                android:id="@+id/requete"
+                android:layout_width="wrap_content"
+                android:layout_height="215dp"
+                android:layout_gravity="top|center"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-condensed"
+                android:lines="2"
+                android:text="Test"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/infoSupp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="sans-serif-condensed"
+                android:textColor="@color/black"
+                android:textSize="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <Spinner
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center"
+                    android:gravity="center"
+                    android:id="@+id/premier">
+                </Spinner>
+
+                <Spinner
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center"
+                    android:gravity="center"
+                    android:id="@+id/deuxieme">
+                </Spinner>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Valider"
+                android:id="@+id/valider"
+                android:backgroundTint="@color/bleu_drapeau"
+                android:textColor="@color/beige_drapeau"
+                android:layout_marginBottom="10dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bleu_drapeau"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:id="@+id/baseEval"
+            android:layout_gravity="bottom">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="5px"
+                android:background="@color/rouge_drapeau"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"></FrameLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

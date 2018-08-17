@@ -66,6 +66,9 @@
             android:name=".Activities.GameOneActivity"
             android:screenOrientation="portrait"></activity>
 
+        <activity android:name=".Activities.GrammarExerciceActivity"
+            android:screenOrientation="portrait"></activity>
+
         <receiver android:name=".Notifications.NotificationsReceiver"
                     android:enabled="true"
             android:exported="true"></receiver>

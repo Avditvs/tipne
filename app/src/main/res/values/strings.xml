@@ -4488,4 +4488,499 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
+
+    <string-array name="deux_exos">
+        <item>Exercice A</item>
+        <item>Exercice B</item>
+    </string-array>
+    <string-array name="trois_exos">
+        <item>Exercice A</item>
+        <item>Exercice B</item>
+        <item>Exercice C</item>
+    </string-array>
+    <string-array name="quatre_exos">
+        <item>Exercice A</item>
+        <item>Exercice B</item>
+        <item>Exercice C</item>
+        <item>Exercice D</item>
+    </string-array>
+
+
+    <string-array name="Liste_Names_Exos_Grammar">
+        <item>Grammar #1</item>
+        <item>Grammar #2</item>
+        <item>Grammar #3</item>
+        <item>Grammar #4</item>
+        <item>Grammar #5</item>
+        <item>Grammar #7</item>
+        <item>Grammar #8</item>
+        <item>Grammar #9</item>
+    </string-array>
+    <string-array name="Liste_Exos_Grammar">  De la forme NomExo/NbExo/NbChoix/TexteExo1/Propositions_1/Solution_1/NbChoix/TexteExo2/Propositions_1/Propositions_2/Solution_2
+        <item>Grammar #1/2/2/Text_Grammar_1_A/Propositions_Grammar_1_A/Propositions_Grammar_1_A/Solutions_Grammar_1_A/2/Text_Grammar_1_B/Propositions_Grammar_1_A/Propositions_Grammar_1_B/Solutions_Grammar_1_B</item>
+        <item>Grammar #2/2/1/Text_Grammar_2_A/Propositions_Grammar_2_A/Solutions_Grammar_2_A/2/Text_Grammar_2_B/Propositions_Grammar_2_A/Propositions_Grammar_1_A/Solutions_Grammar_2_B</item>
+        <item>Grammar #3/1/2/Text_Grammar_3/Propositions_Grammar_3/Propositions_Grammar_3/Solutions_Grammar_3</item>
+        <item>Grammar #4/1/2/Text_Grammar_4/Propositions_Grammar_4/Propositions_Grammar_4/Solutions_Grammar_4</item>
+        <item>Grammar #5/4/2/Text_Grammar_5_A/Propositions_Grammar_5_A/Propositions_Grammar_5_A/Solutions_Grammar_5_A/2/Text_Grammar_5_B/Propositions_Grammar_5_B/Propositions_Grammar_5_B/Solutions_Grammar_5_B/2/Text_Grammar_5_C/Propositions_Grammar_5_C/Propositions_Grammar_5_C/Solutions_Grammar_5_C/1/Text_Grammar_5_D/Propositions_Grammar_5_C/Solutions_Grammar_5_D</item>
+        <item>Grammar #7/1/2/Text_Grammar_7/Propositions_Grammar_7/Propositions_Grammar_7/Solutions_Grammar_7</item>
+        <item>Grammar #8/2/1/Text_Grammar_8_A/Propositions_Grammar_8_A/Solutions_Grammar_8_A/1/Text_Grammar_8_B/Propositions_Grammar_8_B/Solutions_Grammar_8_B</item>
+        <item>Grammar #9/1/2/Text_Grammar_9/Propositions_Grammar_9/Propositions_Grammar_9/Solutions_Grammar_9</item>
+    </string-array>
+
+    <string-array name="Text_Grammar_1_A">
+        <item>Excuse me, I &#8230; (look for) the university hall of residence; could you tell me the way please ?</item>
+        <item>How long &#8230; (studies/last(durer)) in schools of engineering ?</item>
+        <item>We &#8230; (not have) any classes on Saturday morning.</item>
+        <item>The number of students in schools of engineering &#8230; (increase) at the moment.</item>
+        <item>Last year, it &#8230; (increase) by 5%.</item>
+        <item>But recently, it &#8230; a lot and our school is full up.</item>
+        <item>Would you like to see the list of students ? There &#8230; (be) lots of applicants this year.</item>
+        <item>Look ! Someone &#8230; (damage) the printer. We &#8230; (install) it last week.</item>
+        <item>You know what ? I &#8230; (read) about postgraduate studies when my friend &#8230; (phone) me.</item>
+        <item>That's settled ! First I &#8230; (graduate) with an M. Eng. Then I &#8230; (carry out) research</item>
+        <item>I(futur) &#8230; (not apply for) a job when I &#8230; (get) my Ph.D.</item>
+        <item>Instead of doing that, I &#8230; (travel) around the world.</item>
+        <item>If we (passé) &#8230; (ban - interdire) cars in the cities, there &#8230; (be) less pollution</item>
+    </string-array>
+    <string-array name="Propositions_Grammar_1_A">
+        <item>no answer</item>
+        <item>present simple</item>
+        <item>present continuous (ing)</item>
+        <item>preterit</item>
+        <item>preterit continuous (ing)</item>
+        <item>present perfect</item>
+        <item>present perfect continuous (ing)</item>
+        <item>past perfect</item>
+        <item>past perfect continuous (ing)</item>
+        <item>future</item>
+        <item>be going to</item>
+        <item>conditional present</item>
+        <item>conditional past</item>
+    </string-array>
+    <string-array name="Solutions_Grammar_1_A">
+        <item>present continuous (ing)/no answer</item>
+        <item>present simple/no answer</item>
+        <item>present simple/no answer</item>
+        <item>present continuous (ing)/no answer</item>
+        <item>preterit/no answer</item>
+        <item>preterit/no answer</item>
+        <item>present simple/no answer</item>
+        <item>present perfect/preterit</item>
+        <item>preterit continuous (ing)/preterit</item>
+        <item>be going to/be going to</item>
+        <item>future/present simple</item>
+        <item>be going to/no answer</item>
+        <item>past perfect/conditional present</item>
+    </string-array>
+
+    <string-array name="Text_Grammar_1_B">
+        <item>He &#8230; (lose) his job in 1999</item>
+        <item>&#8230; then, he &#8230; (travel) abroad</item>
+        <item>Many years &#8230;, people &#8230; (drive) more carefully. (1/2)</item>
+        <item>Therefore, there &#8230; (be) fewer accidents then. (2/2)</item>
+        <item>My friend Pam &#8230; (go) to the States six weeks &#8230;.</item>
+        <item>I &#8230; (not hear) from her since.</item>
+        <item>Did you know that she &#8230; (move) to Canada three years before ?</item>
+        <item>They &#8230; (study) in Cambridge &#8230; 6 months, (1/2)</item>
+        <item>&#8230; last March in fact (2/2)</item>
+    </string-array>
+    <string-array name="Propositions_Grammar_1_B">
+        <item>no answer</item>
+        <item>since</item>
+        <item>for</item>
+        <item>ago</item>
+    </string-array>
+    <string-array name="Solutions_Grammar_1_B">
+        <item>preterit/no answer</item>
+        <item>present continuous (ing)/since</item>
+        <item>preterit/ago</item>
+        <item>preterit/no answer</item>
+        <item>preterit/ago</item>
+        <item>present perfect/no answer</item>
+        <item>past perfect/no answer</item>
+        <item>present perfect continuous (ing)/for</item>
+        <item>no answer/since</item>
+    </string-array>
+
+    <string-array name="Text_Grammar_2_A">
+        <item>(asking for permission) &#8230; I come in ?</item>
+        <item>(reassuring) You &#8230; worry about that.</item>
+        <item>(asking for help) &#8230; you do me a favour ?</item>
+        <item>(offering help) &#8230; I help you ?</item>
+        <item>(offering help) What &#8230; I do for you ?</item>
+        <item>(obligation) I &#8230; go (now)</item>
+    </string-array>
+    <string-array name="Propositions_Grammar_2_A">
+        <item>can - could</item>
+        <item>be able to</item>
+        <item>need</item>
+        <item>must - have to</item>
+        <item>may - might</item>
+        <item>should</item>
+    </string-array>
+    <string-array name="Solutions_Grammar_2_A">
+        <item>may - might</item>
+        <item>should</item>
+        <item>can - could</item>
+        <item>can - could</item>
+        <item>can - could</item>
+        <item>must - have to</item>
+    </string-array>
+
+    <string-array name="Text_Grammar_2_B">
+        <item>(ability) How many languages &#8230; &#8230; (you/speak) fluently ?</item>
+        <item>(obligation) I &#8230; &#8230; (not forget) to pay my tuition fees (frais d'inscritption); (1/2)</item>
+        <item>otherwise, I will &#8230; &#8230; (leave) the school</item>
+        <item>(probability) She is not sure but she &#8230; &#8230; (specialise) in information technology after the prep cycle</item>
+        <item>(possibility/past) I &#8230; &#8230; (not go) back home for a week-end since school started in September</item>
+        <item>(possibility/conditional) but I &#8230; &#8230; (do) it if I had passed my driving license.</item>
+        <item>(advice) Do you think that I &#8230; &#8230; (look) for a training period overseas ? Yes, I think so</item>
+        <item>(necessity) Do I &#8230; &#8230; (show) an I.D. when I pay the rent for my one-room flat ?</item>
+        <item>(necessity) No, you &#8230; &#8230; (not show) any evidence of your identity.</item>
+        <item>(probability + concordance des temps) He was not completely certain about it but he told us that &#8230; &#8230; (apply) for an internship abroad</item>
+        <item>(regret = advice/past) All transatlantic flights are booked up; I &#8230; &#8230; (make) a reservation earlier.</item>
+        <item>(certainly/past) Finding a job during the past recession years &#8230; &#8230; (be) extremely difficult for the job-seekers.</item>
+        <item>(impossibility/past) He left the office so late that he &#8230; &#8230; (arrive) at the nation in time for his train.</item>
+        <item>(probability/past) If the students had been informed about the opening of a new school on the French Riviera, they &#8230; &#8230; (opt) for studies in the sunshine.</item>
+    </string-array>
+    <string-array name="Solutions_Grammar_2_B">
+        <item>can - could/present simple</item>
+        <item>must - have to/present simple</item>
+        <item>must - have to/present simple</item>
+        <item>may - might/present simple</item>
+        <item>be able to/present perfect</item>
+        <item>can - could/present simple</item>
+        <item>should/present simple</item>
+        <item>need/present simple</item>
+        <item>need/present simple</item>
+        <item>may - might/present simple</item>
+        <item>should/present perfect</item>
+        <item>must - have to/present perfect</item>
+        <item>can - could/preterit</item>
+        <item>may - might/present perfect</item>
+    </string-array>
+
+    <string-array name="Text_Grammar_3">
+        <item>(global) &#8230; lasers offer marvellous opportunities in (global + abstract) &#8230; flow-measurement.</item>
+        <item>(abstract) &#8230; accuracy (la précision) is &#8230; best quality of this instrument</item>
+        <item>This instrument is therefore good value for (substance + global) &#8230; money (un bon rapport qualité-prix)</item>
+        <item>&#8230; difficult route (voie) that the student has chosen for further research will be investigated by &#8230; research director of the lab</item>*
+        <item>(substance) &#8230; steel (acier) is a metal which is used to make (global) &#8230; car bodies</item>
+        <item>Could you put me through to &#8230; extension 555, please ?</item>
+        <item>(global + activity) &#8230; particle-sizing (granulométrie) can be applied for &#8230; measurements of (1/2)</item>
+        <item>&#8230; sizes of bubbles in (global + substance) &#8230; champagne (2/2)</item>
+        <item>(language) &#8230; Dutch is difficult to learn ; that is why (group, people) &#8230; Dutch are difficult to communicate with</item>
+        <item>&#8230; English that they speak in &#8230; Southern Ireland is very different from that of the United Kingdom</item>
+        <item>&#8230; USA, &#8230; Australia/New Zealand</item>
+        <item>I'm afraid &#8230; flight BA 747 will be delayed. &#8230; information about this delay (retard) is available at the counter</item>
+        <item>When (invention) &#8230; telephone was invented more than &#8230; century ago, nobody anticipated what a must it would become</item>
+        <item>Likewise, (invention) &#8230; Internet is &#8230; revolutionary invention whose future developments are still unknown</item>
+        <item>As you can see in &#8230; table 10, &#8230; design of new more powerful chips (1/2)</item>
+        <item>will lead to &#8230; more efficient generation of &#8230; P.C. processors</item>
+        <item>Let me remind you that &#8230; computer appeared in &#8230; late 1940s</item>
+        <item>What is the value of &#8230;(1) Euro compared to that of &#8230;(1) Dollar at &#8230; New York Stock Exchange (Bourse de NY) ?</item>
+        <item>&#8230; visionics is &#8230; science of computer-processing (1/2)</item>
+        <item>of &#8230; video images applied to &#8230; robotics</item>
+        <item>Will &#8230; man be able to go and live on &#8230; moon one day ?</item>
+        <item>Is &#8230; transport through &#8230; space ready ?</item>
+        <item>&#8230; workers who were injured in &#8230; workshop 5 are in bed in hospital in the section for the injured</item>
+        <item>Are you aware that &#8230; chlorine is toxic ?</item>
+        <item>People should be given &#8230; advice to avoid &#8230; toxic substances</item>
+        <item>My next-door neighbour, who is &#8230; executive, has been promoted very recently</item>
+        <item>As a consequence, he is now &#8230; member of &#8230; Board of Directors of his company, an S.M.E.</item>
+    </string-array>
+    <string-array name="Propositions_Grammar_3">
+        <item>no answer</item>
+        <item>the</item>
+        <item>a</item>
+        <item>leave the gap</item>
+    </string-array>
+    <string-array name="Solutions_Grammar_3">
+        <item>leave the gap/leave the gap</item>
+        <item>leave the gap/the</item>
+        <item>leave the gap/no answer</item>
+        <item>the/the</item>
+        <item>leave the gap/leave the gap</item>
+        <item>leave the gap/no answer</item>
+        <item>leave the gap/the</item>
+        <item>the/leave the gap</item>
+        <item>leave the gap/the</item>
+        <item>the/leave the gap</item>
+        <item>the/leave the gap</item>
+        <item>leave the gap/the</item>
+        <item>the/a</item>
+        <item>the/a</item>
+        <item>leave the gap/the</item>
+        <item>a/leave the gap</item>
+        <item>the/the</item>
+        <item>the/the</item>
+        <item>leave the gap/the</item>
+        <item>leave the gap/leave the gap</item>
+        <item>leave the gap/the</item>
+        <item>leave the gap/leave the gap</item>
+        <item>the/leave the gap</item>
+        <item>leave the gap/no answer</item>
+        <item>leave the gap/leave the gap</item>
+        <item>a/no answer</item>
+        <item>a/the</item>
+    </string-array>
+
+    <string-array name="Text_Grammar_4">
+        <item>Yesterday &#8230; lecture dealt with laser equipment. Tomorrow &#8230; will focus on laser applications</item>
+        <item>The Indian &#8230; Information Technology sector is booming at present, whereas America &#8230; Silicon Valley is becoming less active. This place, whose reputation is worldwide, is located in California</item>
+        <item>Mrs Brown &#8230; field of research is optics. Mrs Brown, whose researchs is famous, writes dozen &#8230; of publications every year.</item>
+        <item>I wish I could buy this antique table but unfortunately one of the table &#8230; is damaged</item>
+        <item>Look, here comes Mr Jones ; he is the black dog &#8230; master</item>
+        <item>The AXA &#8230; company insured the Smith &#8230; car against collisions</item>
+        <item>The university &#8230; new policy is to encourage student exchanges throughout the E.U.</item>
+        <item>The company C.E.O. is fifty year &#8230; old.</item>
+        <item>The C.E.O. &#8230; company has known a three-year &#8230; deficit</item>
+        <item>I may go on a week &#8230; business trip to Canada after my ten-day &#8230; holiday in my best friends' home</item>
+        <item>It is a thirty mile &#8230; drive from the city centre to the industrial estate</item>
+        <item>This container-ship is fifty-five metre &#8230; long.</item>
+        <item>So, the ship &#8230; length is 5 thousand &#8230; (1) 5 hundred &#8230; (1) centimetres.</item>
+        <item>The cargo-boat is insured against any sort of damage : indeed its owner has to pay hundred &#8230; of euros to the insurance company every year in order to obtain million &#8230; of euros in damages, in case of an accident.</item>
+    </string-array>
+    <string-array name="Propositions_Grammar_4">
+        <item>no answer</item>
+        <item>'s</item>
+        <item>s'</item>
+        <item>s</item>
+        <item>'</item>
+        <item>leave the gap</item>
+    </string-array>
+    <string-array name="Solutions_Grammar_4">
+        <item>'s/'s</item>
+        <item>leave the gap/'s</item>
+        <item>'s/s</item>
+        <item>leave the gap/no answer</item>
+        <item>'s/no answer</item>
+        <item>leave the gap/s'</item>
+        <item>'s/no answer</item>
+        <item>s/no answer</item>
+        <item>'s/leave the gap</item>
+        <item>'s/leave the gap</item>
+        <item>leave the gap/no answer</item>
+        <item>s/no answer</item>
+        <item>'s/leave the gap</item>
+        <item>s/s</item>
+    </string-array>
+
+    <string-array name="Text_Grammar_5_A">
+        <item>Students do not have &#8230; classes on Sundays</item>
+        <item>Thus, we can say that students have &#8230; classes</item>
+        <item>Whenever the library is closed, students have &#8230; to go to find &#8230; reference books</item>
+        <item>Has &#8230; done &#8230; in the PC room today ?</item>
+        <item>I doubt it because I saw &#8230; (= did not see &#8230;) there</item>
+    </string-array>
+    <string-array name="Propositions_Grammar_5_A">
+        <item>no answer</item>
+        <item>any</item>
+        <item>anybody</item>
+        <item>anything</item>
+        <item>noone</item>
+        <item>nowhere</item>
+        <item>some</item>
+    </string-array>
+    <string-array name="Solutions_Grammar_5_A">
+        <item>any/no answer</item>
+        <item>some/no answer</item>
+        <item>nowhere/some</item>
+        <item>anybody/anything</item>
+        <item>noone/anybody</item>
+    </string-array>
+
+    <string-array name="Text_Grammar_5_B">
+        <item>Working on a project requires &#8230; energy and implies managing &#8230; people </item>
+        <item>That is why I have &#8230; time to deal with non-important matters</item>
+        <item>This appliance is maintained on a regular basis. As a result, it suffers from &#8230; breakdowns</item>
+        <item>Yesterday was a quiet day at work. I received just &#8230; e-mail messages and managed to relax &#8230;</item>
+        <item>How &#8230; hands-on experience have you got ? How &#8230; hours a week do you work ?</item>
+        <item>&#8230; trainees have very &#8230; industrial experience when they apply for a placement in industry</item>
+    </string-array>
+    <string-array name="Propositions_Grammar_5_B">
+        <item>no answer</item>
+        <item>much</item>
+        <item>many</item>
+        <item>little</item>
+        <item>a little</item>
+        <item>few</item>
+        <item>a few</item>
+    </string-array>
+    <string-array name="Solutions_Grammar_5_B">
+        <item>much/many</item>
+        <item>little/no answer</item>
+        <item>few/no answer</item>
+        <item>a few/a little</item>
+        <item>much/many</item>
+        <item>many/little</item>
+    </string-array>
+
+    <string-array name="Text_Grammar_5_C">
+        <item>&#8230; trainees start their training periods in industry with no professional experience at all</item>
+        <item>&#8230; trainees in this firm are British and &#8230; carry out compulsory internships</item>
+        <item>Do you realise that &#8230; large machines require power, either alternating current or direct current ?</item>
+        <item>Make sure that you read the &#8230; report on maintenance, health and safety. That is &#8230; you need to do.</item>
+    </string-array>
+    <string-array name="Propositions_Grammar_5_C">
+        <item>no answer</item>
+        <item>most</item>
+        <item>most of the</item>
+        <item>most of them</item>
+        <item>all</item>
+        <item>whole</item>
+    </string-array>
+    <string-array name="Solutions_Grammar_5_C">
+        <item>most/no answer</item>
+        <item>most of the/most of them</item>
+        <item>most/no answer</item>
+        <item>whole/all</item>
+    </string-array>
+
+    <string-array name="Text_Grammar_5_D">
+        <item>Traffic moved &#8230; slowly that 2 students arrived too late for their exams.</item>
+        <item>It was &#8230; terrible experience for them</item>
+        <item>&#8230; students asked to have a replacement exam</item>
+        <item>but &#8230; of them obtained a positive answer</item>
+        <item>&#8230; the lecturer said about the lab's latest research on the latest technology was interesting.</item>
+        <item>further to my telephone call, I will confirm &#8230; in writing</item>
+        <item>&#8230; trainee must learn how to operate &#8230; machine in this lab</item>
+    </string-array>
+    <string-array name="Propositions_Grammar_5_D">
+        <item>such (such a)</item>
+        <item>so</item>
+        <item>both</item>
+        <item>neither</item>
+        <item>every</item>
+        <item>everything</item>
+        <item>whatever</item>
+    </string-array>
+    <string-array name="Solutions_Grammar_5_D">
+        <item>so</item>
+        <item>such (such aa)</item>
+        <item>both</item>
+        <item>neither</item>
+        <item>everything</item>
+        <item>everything</item>
+        <item>every</item>
+    </string-array>
+
+    <string-array name="Text_Grammar_7">
+        <item>Would you mind &#8230; (tell) us if you intend &#8230; (set) up a new production plant in the area ?</item>
+        <item>I would like &#8230; (make) you understand that production must &#8230; (be) top quality</item>
+        <item>I remember my previous boss &#8230; (say) that &#8230; (meet) the customers' requirements is vital</item>
+        <item>Companies have &#8230; (stop) &#8230; (2) (pollute) the environment and start &#8230; (2) (be)  environment-friendly</item>
+        <item>Environmentalists are positive that &#8230; (pollute) is very harmful for everybody</item>
+        <item>Do you have any idea how &#8230; (prevent) chemical companies from &#8230; (cause) damage ?</item>
+        <item>We cannot let polluting firms &#8230; (deteriorate) the environment without &#8230; (react)</item>
+        <item>French universities should make students &#8230; (study) abroad and therefore change their academic habits</item>
+        <item>I am looking forward &#8230; (hear) from you and &#8230; (discuss) your new project</item>
+        <item>Thank you for &#8230; (reply) so promptly to my enquiry</item>
+        <item>I apologise for &#8230; (not inform) you sooner of our new arrangements</item>
+        <item>When I was a teenager, I used &#8230; (have) my own bedroom ; now that I am a college student, I have become used &#8230; (share) a bedroom with a room-mate</item>
+        <item>I must remember &#8230; (apply) for an industrial placement overseas, just before the Christmas break</item>
+        <item>I don't really know when &#8230; (send) my letter of application and C.C. and who &#8230; (send) them to : the personnel manager ? the person in charge of human resources ?</item>
+        <item>I enjoy &#8230; (practise) tennis. Last year, I watched Nadal &#8230; (play) in the French Tennis Open</item>
+        <item>Excuse me, could you tell me how &#8230; (operate) this machine ?</item>
+        <item>The lab supervisor allowed me &#8230; (use) it for my experiment ; however, she does not want me &#8230; (recalibrate) it</item>
+        <item>This chromatograph enables all sorts of substances &#8230; (be) analysed very fast and accurately</item>
+    </string-array>
+    <string-array name="Propositions_Grammar_7">
+        <item>no answer</item>
+        <item>ing</item>
+        <item>to + verb</item>
+        <item>verb</item>
+        <item>for + ing</item>
+        <item>to + ing</item>
+    </string-array>
+    <string-array name="Solutions_Grammar_7">
+        <item>ing/to + verb</item>
+        <item>to + verb/verb</item>
+        <item>ing/ing</item>
+        <item>verb/ing</item>
+        <item>ing/no answer</item>
+        <item>to + verb/ing</item>
+        <item>verb/ing</item>
+        <item>verb/no answer</item>
+        <item>to + ing/ing</item>
+        <item>for + ing/no answer</item>
+        <item>for + ing/no answer</item>
+        <item>to + verb/to + ing</item>
+        <item>to + verb/no answer</item>
+        <item>to + verb/to + verb</item>
+        <item>ing/ing</item>
+        <item>to + verb/no answer</item>
+        <item>to + verb/to + verb</item>
+        <item>to + verb/no answer</item>
+    </string-array>
+
+    <string-array name="Text_Grammar_8_A">
+        <item>A firm describes its results over the past year in an Annual Report &#8230; is a document sent out to the shareholders.</item>
+        <item>The aim of this Annual Report is to keep the shareholders' confidence, &#8230; is not always easy to do</item>
+        <item>The company C.E.O.'s function is to decide &#8230; the following year's policy will be</item>
+        <item>Did you understand &#8230; the Chief Executive Officer said about increasing and diversifying production ?</item>
+        <item>&#8230; you are expected to do with this device is quite complex</item>
+        <item>What you are expected to do with this device is quite complex, &#8230; should be of interest to you</item>
+    </string-array>
+    <string-array name="Propositions_Grammar_8_A">
+        <item>what</item>
+        <item>which</item>
+    </string-array>
+    <string-array name="Solutions_Grammar_8_A">
+        <item>which</item>
+        <item>which</item>
+        <item>what</item>
+        <item>what</item>
+        <item>what</item>
+        <item>which</item>
+    </string-array>
+
+    <string-array name="Text_Grammar_8_B">
+        <item>As shown on the graph, you will realise &#8230; the curve goes down</item>
+        <item>Do you agree &#8230; it is worrying ?</item>
+        <item>I am not sure &#8230; measurement to carry out first</item>
+        <item>I wonder &#8230; one I'd better start with</item>
+        <item>I have isolated a new molecule &#8230; will soon be developed in cosmetics</item>
+        <item>&#8230; said that it was impossible ?</item>
+        <item>The invention &#8230; patent has not been granted yet cannot be protected against imitators</item>
+        <item>At a time &#8230; imitations are recurrent phenomena</item>
+    </string-array>
+    <string-array name="Propositions_Grammar_8_B">
+        <item>who</item>
+        <item>whom</item>
+        <item>whose</item>
+        <item>which</item>
+        <item>that</item>
+        <item>when</item>
+    </string-array>
+    <string-array name="Solutions_Grammar_8_B">
+        <item>that</item>
+        <item>that</item>
+        <item>which</item>
+        <item>which</item>
+        <item>which</item>
+        <item>who</item>
+        <item>whose</item>
+        <item>when</item>
+    </string-array>
+
+    <string-array name="Text_Grammar_9">
+        <item>He gave me a call &#8230; Tuesday &#8230; the afternoon</item>
+        <item>I had gone home &#8230; 2.00 p.m. on that particular day</item>
+        <item>I expect to graduate &#8230; 5 years' time, that is to say &#8230; 2017.</item>
+        <item>More precisely &#8230; the end of June 2017</item>
+    </string-array>
+    <string-array name="Propositions_Grammar_9">
+        <item>no answer</item>
+        <item>in</item>
+        <item>on</item>
+        <item>at</item>
+    </string-array>
+    <string-array name="Solutions_Grammar_9">
+        <item>on/in</item>
+        <item>at/no answer</item>
+        <item>in/in</item>
+        <item>at/no answer</item>
+    </string-array>
+
 </resources>

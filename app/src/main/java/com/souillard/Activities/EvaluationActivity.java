@@ -33,6 +33,7 @@ import com.souillard.SpeechToText.VoiceRecognitionActivity;
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 import java.util.Objects;
 
@@ -109,7 +110,19 @@ public class EvaluationActivity extends VoiceRecognitionActivity {
             dataMots.set(i, newWord);
         }
 
+
         Collections.shuffle(dataMots);
+
+        //////////////Tri selon nombre de fautes////////////////////
+        Collections.sort(dataMots, new Comparator<Mots>() {
+            @Override
+            public int compare(Mots mots, Mots t1) {
+                return mots.getNbFaults().compareTo(t1.getNbFaults());
+            }
+        });
+
+        Collections.reverse(dataMots);
+
 
         boutonValidation.setOnClickListener(listenerValidation);
 
@@ -241,6 +254,7 @@ public class EvaluationActivity extends VoiceRecognitionActivity {
 
     private void onCorrectAnswer(){
         Log.i("rep", "bonnerep");
+        dataMots.get(indiceMot-1).incrementNbFaults(-1);
         toast = Toast.makeText(getBaseContext(), "Bonne réponse", Toast.LENGTH_SHORT);
         toast.setGravity(Gravity.TOP, 0, bodyEval.getBottom()+20);
         toast.show();
