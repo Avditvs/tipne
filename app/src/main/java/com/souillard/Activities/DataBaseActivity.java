@@ -103,10 +103,7 @@ public class DataBaseActivity  extends Activity {
 
 
 
-        ////////////////////Notifications///////////////////////////
 
-        am = (AlarmManager) getSystemService(Context.ALARM_SERVICE);
-        ajouterAlarme();
 
         }
 
@@ -206,6 +203,10 @@ public class DataBaseActivity  extends Activity {
         popup.showAtLocation(layout, Gravity.CENTER, 0, 0);
         applyDim((ViewGroup)getWindow().getDecorView().getRootView(), 210);
 
+        ////////////////////Notifications///////////////////////////
+
+        am = (AlarmManager) getSystemService(Context.ALARM_SERVICE);
+        ajouterAlarme();
 
     }
 

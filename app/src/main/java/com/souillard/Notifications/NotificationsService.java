@@ -5,6 +5,7 @@ import android.app.Notification;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.Intent;
+import android.graphics.BitmapFactory;
 import android.support.v4.app.JobIntentService;
 import android.support.v4.app.NotificationManagerCompat;
 
@@ -19,7 +20,11 @@ public class NotificationsService extends JobIntentService {
         Notification.Builder builder = new Notification.Builder(this);
         builder.setContentTitle("Et le souillard ?");
         builder.setContentText("Je sais c'est dur ... mais faut l\'apprendre ...");
-        builder.setSmallIcon(R.drawable.ic_notif);
+        builder.setLargeIcon(BitmapFactory.decodeResource(getResources(), R.mipmap.vignette));
+        builder.setSmallIcon(R.drawable.vignette);
+
+
+
         Intent notifyIntent = new Intent(this, DataBaseActivity.class);
         PendingIntent pendingIntent = PendingIntent.getActivity(this, 2, notifyIntent, PendingIntent.FLAG_UPDATE_CURRENT);
 
