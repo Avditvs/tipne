@@ -68,15 +68,19 @@
             <TextView
                 android:id="@+id/requete"
                 android:layout_width="wrap_content"
-                android:layout_height="215dp"
+                android:layout_height="wrap_content"
                 android:layout_gravity="top|center"
                 android:layout_marginTop="10dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
                 android:fontFamily="sans-serif-condensed"
-                android:lines="2"
                 android:text="Test"
                 android:textColor="@color/black"
                 android:textSize="25dp"
-                android:gravity="center"/>
+                android:gravity="center"
+
+
+                />
 
             <TextView
                 android:id="@+id/infoSupp"
@@ -93,21 +97,40 @@
                 android:orientation="horizontal"
                 android:gravity="center">
 
-                <Spinner
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="bottom|center"
-                    android:gravity="center"
-                    android:id="@+id/premier">
-                </Spinner>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:gravity="bottom">
+                    <Spinner
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|center"
+                        android:gravity="center"
+                        android:id="@+id/premier">
+                    </Spinner>
 
-                <Spinner
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="bottom|center"
-                    android:gravity="center"
-                    android:id="@+id/deuxieme">
-                </Spinner>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:gravity="bottom">
+
+                    <Spinner
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|center"
+                        android:gravity="center|bottom"
+                        android:id="@+id/deuxieme">
+                    </Spinner>
+                </LinearLayout>
+
+
+
 
             </LinearLayout>
 
