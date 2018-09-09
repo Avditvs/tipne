@@ -4516,6 +4516,18 @@
         <item>Grammar #8</item>
         <item>Grammar #9</item>
     </string-array>
+    <string-array name="Liste_Names_Exos_Grammar_Entier">
+        <item>Grammar #1</item>
+        <item>Grammar #2</item>
+        <item>Grammar #3</item>
+        <item>Grammar #4</item>
+        <item>Grammar #5</item>
+        <item>Grammar #6</item>
+        <item>Grammar #7</item>
+        <item>Grammar #8</item>
+        <item>Grammar #9</item>
+        <item>Grammar #10</item>
+    </string-array>
     <string-array name="Liste_Exos_Grammar">  De la forme NomExo/NbExo/NbChoix/TexteExo1/Propositions_1/Solution_1/NbChoix/TexteExo2/Propositions_1/Propositions_2/Solution_2
         <item>Grammar #1/2/2/Text_Grammar_1_A/Propositions_Grammar_1_A/Propositions_Grammar_1_A/Solutions_Grammar_1_A/2/Text_Grammar_1_B/Propositions_Grammar_1_A/Propositions_Grammar_1_B/Solutions_Grammar_1_B</item>
         <item>Grammar #2/2/1/Text_Grammar_2_A/Propositions_Grammar_2_A/Solutions_Grammar_2_A/2/Text_Grammar_2_B/Propositions_Grammar_2_A/Propositions_Grammar_1_A/Solutions_Grammar_2_B</item>
@@ -4525,6 +4537,61 @@
         <item>Grammar #7/1/2/Text_Grammar_7/Propositions_Grammar_7/Propositions_Grammar_7/Solutions_Grammar_7</item>
         <item>Grammar #8/2/1/Text_Grammar_8_A/Propositions_Grammar_8_A/Solutions_Grammar_8_A/1/Text_Grammar_8_B/Propositions_Grammar_8_B/Solutions_Grammar_8_B</item>
         <item>Grammar #9/1/2/Text_Grammar_9/Propositions_Grammar_9/Propositions_Grammar_9/Solutions_Grammar_9</item>
+    </string-array>
+
+    <string-array name="Grammar_1">
+        <item>grammar_1_1</item>
+        <item>grammar_1_2</item>
+        <item>grammar_1_3</item>
+        <item>grammar_1_4</item>
+        <item>grammar_1_5</item>
+    </string-array>
+    <string-array name="Grammar_2">
+        <item>grammar_2_1</item>
+        <item>grammar_2_2</item>
+        <item>grammar_2_3</item>
+        <item>grammar_2_4</item>
+        <item>grammar_2_5</item>
+    </string-array>
+    <string-array name="Grammar_3">
+        <item>grammar_3_1</item>
+        <item>grammar_3_2</item>
+        <item>grammar_3_3</item>
+        <item>grammar_3_4</item>
+    </string-array>
+    <string-array name="Grammar_4">
+        <item>grammar_4_1</item>
+        <item>grammar_4_2</item>
+        <item>grammar_4_3</item>
+    </string-array>
+    <string-array name="Grammar_5">
+        <item>grammar_5_1</item>
+        <item>grammar_5_2</item>
+        <item>grammar_5_3</item>
+        <item>grammar_5_4</item>
+    </string-array>
+    <string-array name="Grammar_6">
+        <item>grammar_6_1</item>
+        <item>grammar_6_2</item>
+        <item>grammar_6_3</item>
+        <item>grammar_6_4</item>
+        <item>grammar_6_5</item>
+    </string-array>
+    <string-array name="Grammar_7">
+        <item>grammar_7</item>
+    </string-array>
+    <string-array name="Grammar_8">
+        <item>grammar_8_1</item>
+        <item>grammar_8_2</item>
+    </string-array>
+    <string-array name="Grammar_9">
+        <item>grammar_9_1</item>
+        <item>grammar_9_2</item>
+        <item>grammar_9_3</item>
+    </string-array>
+    <string-array name="Grammar_10">
+        <item>grammar_10_1</item>
+        <item>grammar_10_2</item>
     </string-array>
 
     <string-array name="Text_Grammar_1_A">

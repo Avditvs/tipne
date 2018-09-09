@@ -221,6 +221,68 @@ public class ChooseListActivity extends Activity {
     }
 
     private void grammarChosen(){
+        if (modeChoisi.equals("evaluation")){
+            grammarExerciseChosen();
+        }
+        else{
+            grammarLearningChosen();
+        }
+
+    }
+
+
+    private String[] setProperList (String[] nonProperList){
+        int i = 0;
+        String[] properList = new String[6];
+        for (String linkedList : nonProperList){
+            String[] parsedList = linkedList.split("_");
+            String aProperList = "";
+            for (String pieceList : parsedList){
+                aProperList = aProperList + ' ' + pieceList;
+            }
+            properList[i] = aProperList;
+            i++;
+        }
+        return properList;
+    }
+
+    private void launchingActivity(String nomliste, int nbMots){
+        if (modeChoisi.equals("apprentissage")) {
+            Intent i = new Intent(ChooseListActivity.this, LearningMotsActivity.class);
+            Bundle extras = new Bundle();
+            extras.putString("nameList", nomliste);
+            extras.putString("choixUtilisateur", "mots");
+            extras.putInt("nbMots", nbMots);
+            i.putExtras(extras);
+            startActivity(i);
+        } else if (modeChoisi.equals("evaluation")) {
+            Intent i = new Intent(ChooseListActivity.this, EvaluationActivity.class);
+            Bundle extras = new Bundle();
+            extras.putString("nameList", nomliste);
+            extras.putInt("nbMots", nbMots);
+            i.putExtras(extras);
+            startActivity(i);
+        }
+        else if (modeChoisi.equals("entrainement")){
+            Intent i = new Intent(ChooseListActivity.this, GameOneActivity.class);
+            Bundle extras = new Bundle();
+            extras.putString("nameList", nomliste);
+            extras.putInt("nbMots", nbMots);
+            i.putExtras(extras);
+            startActivity(i);
+        }
+    }
+
+    private void launchingGrammarActivity(int choixExo, int position){
+        Intent i = new Intent(ChooseListActivity.this, GrammarExerciceActivity.class);
+        Bundle extras = new Bundle();
+        extras.putInt("exoChoisi", position);
+        extras.putInt("partieExo", choixExo);
+        i.putExtras(extras);
+        startActivity(i);
+    }
+
+    private void grammarExerciseChosen(){
         final String[] grammarList = getResources().getStringArray(R.array.Liste_Names_Exos_Grammar);
 
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(ChooseListActivity.this,
@@ -287,57 +349,26 @@ public class ChooseListActivity extends Activity {
         });
     }
 
+    private void grammarLearningChosen(){
+        final String[] grammarList = getResources().getStringArray(R.array.Liste_Names_Exos_Grammar_Entier);
 
-    private String[] setProperList (String[] nonProperList){
-        int i = 0;
-        String[] properList = new String[6];
-        for (String linkedList : nonProperList){
-            String[] parsedList = linkedList.split("_");
-            String aProperList = "";
-            for (String pieceList : parsedList){
-                aProperList = aProperList + ' ' + pieceList;
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(ChooseListActivity.this,
+                R.layout.card_view,R.id.file_name_text, grammarList);
+
+        mListView.setAdapter(adapter);
+        mListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, final int position, long id) {
+                String exo = "Grammar_";
+                int numero  = position + 1;
+                exo = exo + numero;
+                Intent i = new Intent(ChooseListActivity.this, LearningGrammarActivity.class);
+                i.putExtra("exo", exo);
+                startActivity(i);
             }
-            properList[i] = aProperList;
-            i++;
-        }
-        return properList;
-    }
+        });
 
-    private void launchingActivity(String nomliste, int nbMots){
-        if (modeChoisi.equals("apprentissage")) {
-            Intent i = new Intent(ChooseListActivity.this, LearningMotsActivity.class);
-            Bundle extras = new Bundle();
-            extras.putString("nameList", nomliste);
-            extras.putString("choixUtilisateur", "mots");
-            extras.putInt("nbMots", nbMots);
-            i.putExtras(extras);
-            startActivity(i);
-        } else if (modeChoisi.equals("evaluation")) {
-            Intent i = new Intent(ChooseListActivity.this, EvaluationActivity.class);
-            Bundle extras = new Bundle();
-            extras.putString("nameList", nomliste);
-            extras.putInt("nbMots", nbMots);
-            i.putExtras(extras);
-            startActivity(i);
-        }
-        else if (modeChoisi.equals("entrainement")){
-            Intent i = new Intent(ChooseListActivity.this, GameOneActivity.class);
-            Bundle extras = new Bundle();
-            extras.putString("nameList", nomliste);
-            extras.putInt("nbMots", nbMots);
-            i.putExtras(extras);
-            startActivity(i);
-        }
-    }
-
-    private void launchingGrammarActivity(int choixExo, int position){
-        Intent i = new Intent(ChooseListActivity.this, GrammarExerciceActivity.class);
-        Bundle extras = new Bundle();
-        extras.putInt("exoChoisi", position);
-        extras.putInt("partieExo", choixExo);
-        i.putExtras(extras);
-        startActivity(i);
-    }
+    };
 
 }
 

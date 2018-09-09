@@ -53,10 +53,9 @@ public class MainActivity extends Activity {
     private View.OnClickListener listenerBtEval = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            intent = new Intent(getApplicationContext(), ChooseListActivity.class);
+            intent = new Intent(getApplicationContext(), ChooseExerciseActivity.class);
             Bundle extras = new Bundle();
             extras.putString("mode", "evaluation");
-            extras.putString("choixUtilisateur", "mots");;
             intent.putExtras(extras);
             startActivity(intent);
 

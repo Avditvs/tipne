@@ -69,6 +69,12 @@
         <activity android:name=".Activities.GrammarExerciceActivity"
             android:screenOrientation="portrait"></activity>
 
+        <activity android:name=".Activities.ChooseExerciseActivity"
+            android:screenOrientation="portrait"></activity>
+
+        <activity android:name=".Activities.LearningGrammarActivity"
+            android:screenOrientation="landscape"></activity>
+
         <receiver android:name=".Notifications.NotificationsReceiver"
                     android:enabled="true"
             android:exported="true"></receiver>
