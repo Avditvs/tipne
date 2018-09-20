@@ -59,8 +59,7 @@ public class DataBaseActivity  extends Activity {
     private ImageView checkView;
     private SharedPreferences.Editor spEditor;
     private AlarmManager am;
-    private InterstitialAd mInterstitialAd;
-    private int nbOfLaunch;
+
 
 
     public void onCreate (Bundle savedInstanceState){
@@ -75,6 +74,7 @@ public class DataBaseActivity  extends Activity {
         intent = new Intent(this, MainActivity.class);
 
         MobileAds.initialize(this, "ca-app-pub-5703356156338006~8507828990");
+
         sharedPreferences = getSharedPreferences("APP_SHARED_PREFERENCES", Context.MODE_PRIVATE);
         spEditor = sharedPreferences.edit();
         boolean firstLaunch = sharedPreferences.getBoolean("first_launch", true);
@@ -91,18 +91,6 @@ public class DataBaseActivity  extends Activity {
         else{
             threadDb.start();
         }
-
-        ////////////////////Publicités///////////////////////
-        mInterstitialAd = new InterstitialAd(this);
-        mInterstitialAd.setAdUnitId("ca-app-pub-3940256099942544/1033173712");
-        mInterstitialAd.loadAd(new AdRequest.Builder().build());
-
-        sharedPreferences = getSharedPreferences("APP_SHARED_PREFERENCES", Context.MODE_PRIVATE);
-        spEditor = sharedPreferences.edit();
-        nbOfLaunch = sharedPreferences.getInt("pub", 0);
-
-
-
 
 
         }
@@ -139,25 +127,8 @@ public class DataBaseActivity  extends Activity {
 
 
     public void onScreenClick(View view) {
-        if(dbIsLoaded&&classeEstChoisie){
-            if (nbOfLaunch==5){
-                nbOfLaunch=4;
-                if (mInterstitialAd.isLoaded()) {
-                    mInterstitialAd.show();
-                } else {
-                    Log.d("TAG", "The interstitial wasn't loaded yet.");
-                }
-            }
-            else{
-                nbOfLaunch++;
-            }
-            spEditor.putInt("pub", nbOfLaunch);
-            spEditor.commit();
-            startActivity(intent);
-        }
-        else{
-            Log.i("Base", "Pas encore chargée");
-        }
+        startActivity(intent);
+
     }
 
 
@@ -165,7 +136,7 @@ public class DataBaseActivity  extends Activity {
         Toast.makeText(this, "premier lancement", Toast.LENGTH_SHORT ).show();
         SharedPreferences.Editor editor = sharedPreferences.edit();
         editor.putBoolean("first_launch", false);
-        editor.putInt("pub", 3);
+        editor.putInt("pub", 0);
         editor.commit();
 
         LayoutInflater inflater = (LayoutInflater) getSystemService(Context.LAYOUT_INFLATER_SERVICE);

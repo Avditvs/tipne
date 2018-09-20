@@ -4604,7 +4604,7 @@
         <item>Would you like to see the list of students ? There &#8230; (be) lots of applicants this year.</item>
         <item>Look ! Someone &#8230; (damage) the printer. We &#8230; (install) it last week.</item>
         <item>You know what ? I &#8230; (read) about postgraduate studies when my friend &#8230; (phone) me.</item>
-        <item>That's settled ! First I &#8230; (graduate) with an M. Eng. Then I &#8230; (carry out) research</item>
+        <item>That\'s settled ! First I &#8230; (graduate) with an M. Eng. Then I &#8230; (carry out) research</item>
         <item>I(futur) &#8230; (not apply for) a job when I &#8230; (get) my Ph.D.</item>
         <item>Instead of doing that, I &#8230; (travel) around the world.</item>
         <item>If we (passé) &#8230; (ban - interdire) cars in the cities, there &#8230; (be) less pollution</item>
@@ -4696,7 +4696,7 @@
 
     <string-array name="Text_Grammar_2_B">
         <item>(ability) How many languages &#8230; &#8230; (you/speak) fluently ?</item>
-        <item>(obligation) I &#8230; &#8230; (not forget) to pay my tuition fees (frais d'inscritption); (1/2)</item>
+        <item>(obligation) I &#8230; &#8230; (not forget) to pay my tuition fees (frais d\'inscritption); (1/2)</item>
         <item>otherwise, I will &#8230; &#8230; (leave) the school</item>
         <item>(probability) She is not sure but she &#8230; &#8230; (specialise) in information technology after the prep cycle</item>
         <item>(possibility/past) I &#8230; &#8230; (not go) back home for a week-end since school started in September</item>
@@ -4739,7 +4739,7 @@
         <item>(language) &#8230; Dutch is difficult to learn ; that is why (group, people) &#8230; Dutch are difficult to communicate with</item>
         <item>&#8230; English that they speak in &#8230; Southern Ireland is very different from that of the United Kingdom</item>
         <item>&#8230; USA, &#8230; Australia/New Zealand</item>
-        <item>I'm afraid &#8230; flight BA 747 will be delayed. &#8230; information about this delay (retard) is available at the counter</item>
+        <item>I\'m afraid &#8230; flight BA 747 will be delayed. &#8230; information about this delay (retard) is available at the counter</item>
         <item>When (invention) &#8230; telephone was invented more than &#8230; century ago, nobody anticipated what a must it would become</item>
         <item>Likewise, (invention) &#8230; Internet is &#8230; revolutionary invention whose future developments are still unknown</item>
         <item>As you can see in &#8230; table 10, &#8230; design of new more powerful chips (1/2)</item>
@@ -4802,7 +4802,7 @@
         <item>The university &#8230; new policy is to encourage student exchanges throughout the E.U.</item>
         <item>The company C.E.O. is fifty year &#8230; old.</item>
         <item>The C.E.O. &#8230; company has known a three-year &#8230; deficit</item>
-        <item>I may go on a week &#8230; business trip to Canada after my ten-day &#8230; holiday in my best friends' home</item>
+        <item>I may go on a week &#8230; business trip to Canada after my ten-day &#8230; holiday in my best friends\' home</item>
         <item>It is a thirty mile &#8230; drive from the city centre to the industrial estate</item>
         <item>This container-ship is fifty-five metre &#8230; long.</item>
         <item>So, the ship &#8230; length is 5 thousand &#8230; (1) 5 hundred &#8230; (1) centimetres.</item>
@@ -4810,26 +4810,26 @@
     </string-array>
     <string-array name="Propositions_Grammar_4">
         <item>no answer</item>
-        <item>'s</item>
-        <item>s'</item>
+        <item>\'s</item>
+        <item>s\'</item>
         <item>s</item>
-        <item>'</item>
+        <item>\'</item>
         <item>leave the gap</item>
     </string-array>
     <string-array name="Solutions_Grammar_4">
-        <item>'s/'s</item>
+        <item>\'s/\'s</item>
         <item>leave the gap/'s</item>
-        <item>'s/s</item>
+        <item>\'s/s</item>
         <item>leave the gap/no answer</item>
-        <item>'s/no answer</item>
-        <item>leave the gap/s'</item>
-        <item>'s/no answer</item>
+        <item>\'s/no answer</item>
+        <item>leave the gap/s\'</item>
+        <item>\'s/no answer</item>
         <item>s/no answer</item>
-        <item>'s/leave the gap</item>
-        <item>'s/leave the gap</item>
+        <item>\'s/leave the gap</item>
+        <item>\'s/leave the gap</item>
         <item>leave the gap/no answer</item>
         <item>s/no answer</item>
-        <item>'s/leave the gap</item>
+        <item>\'s/leave the gap</item>
         <item>s/s</item>
     </string-array>
 
@@ -4909,7 +4909,7 @@
         <item>It was &#8230; terrible experience for them</item>
         <item>&#8230; students asked to have a replacement exam</item>
         <item>but &#8230; of them obtained a positive answer</item>
-        <item>&#8230; the lecturer said about the lab's latest research on the latest technology was interesting.</item>
+        <item>&#8230; the lecturer said about the lab\'s latest research on the latest technology was interesting.</item>
         <item>further to my telephone call, I will confirm &#8230; in writing</item>
         <item>&#8230; trainee must learn how to operate &#8230; machine in this lab</item>
     </string-array>
@@ -4935,7 +4935,7 @@
     <string-array name="Text_Grammar_7">
         <item>Would you mind &#8230; (tell) us if you intend &#8230; (set) up a new production plant in the area ?</item>
         <item>I would like &#8230; (make) you understand that production must &#8230; (be) top quality</item>
-        <item>I remember my previous boss &#8230; (say) that &#8230; (meet) the customers' requirements is vital</item>
+        <item>I remember my previous boss &#8230; (say) that &#8230; (meet) the customers\' requirements is vital</item>
         <item>Companies have &#8230; (stop) &#8230; (2) (pollute) the environment and start &#8230; (2) (be)  environment-friendly</item>
         <item>Environmentalists are positive that &#8230; (pollute) is very harmful for everybody</item>
         <item>Do you have any idea how &#8230; (prevent) chemical companies from &#8230; (cause) damage ?</item>
@@ -4946,7 +4946,7 @@
         <item>I apologise for &#8230; (not inform) you sooner of our new arrangements</item>
         <item>When I was a teenager, I used &#8230; (have) my own bedroom ; now that I am a college student, I have become used &#8230; (share) a bedroom with a room-mate</item>
         <item>I must remember &#8230; (apply) for an industrial placement overseas, just before the Christmas break</item>
-        <item>I don't really know when &#8230; (send) my letter of application and C.C. and who &#8230; (send) them to : the personnel manager ? the person in charge of human resources ?</item>
+        <item>I don\'t really know when &#8230; (send) my letter of application and C.C. and who &#8230; (send) them to : the personnel manager ? the person in charge of human resources ?</item>
         <item>I enjoy &#8230; (practise) tennis. Last year, I watched Nadal &#8230; (play) in the French Tennis Open</item>
         <item>Excuse me, could you tell me how &#8230; (operate) this machine ?</item>
         <item>The lab supervisor allowed me &#8230; (use) it for my experiment ; however, she does not want me &#8230; (recalibrate) it</item>
@@ -4983,8 +4983,8 @@
 
     <string-array name="Text_Grammar_8_A">
         <item>A firm describes its results over the past year in an Annual Report &#8230; is a document sent out to the shareholders.</item>
-        <item>The aim of this Annual Report is to keep the shareholders' confidence, &#8230; is not always easy to do</item>
-        <item>The company C.E.O.'s function is to decide &#8230; the following year's policy will be</item>
+        <item>The aim of this Annual Report is to keep the shareholders\' confidence, &#8230; is not always easy to do</item>
+        <item>The company C.E.O.\'s function is to decide &#8230; the following year\'s policy will be</item>
         <item>Did you understand &#8230; the Chief Executive Officer said about increasing and diversifying production ?</item>
         <item>&#8230; you are expected to do with this device is quite complex</item>
         <item>What you are expected to do with this device is quite complex, &#8230; should be of interest to you</item>
@@ -5006,7 +5006,7 @@
         <item>As shown on the graph, you will realise &#8230; the curve goes down</item>
         <item>Do you agree &#8230; it is worrying ?</item>
         <item>I am not sure &#8230; measurement to carry out first</item>
-        <item>I wonder &#8230; one I'd better start with</item>
+        <item>I wonder &#8230; one I\'d better start with</item>
         <item>I have isolated a new molecule &#8230; will soon be developed in cosmetics</item>
         <item>&#8230; said that it was impossible ?</item>
         <item>The invention &#8230; patent has not been granted yet cannot be protected against imitators</item>
@@ -5034,7 +5034,7 @@
     <string-array name="Text_Grammar_9">
         <item>He gave me a call &#8230; Tuesday &#8230; the afternoon</item>
         <item>I had gone home &#8230; 2.00 p.m. on that particular day</item>
-        <item>I expect to graduate &#8230; 5 years' time, that is to say &#8230; 2017.</item>
+        <item>I expect to graduate &#8230; 5 years\' time, that is to say &#8230; 2017.</item>
         <item>More precisely &#8230; the end of June 2017</item>
     </string-array>
     <string-array name="Propositions_Grammar_9">

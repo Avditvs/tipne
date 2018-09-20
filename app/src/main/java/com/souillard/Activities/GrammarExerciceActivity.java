@@ -20,6 +20,7 @@ import com.souillard.R;
 public class GrammarExerciceActivity extends Activity {
 
     private TextView phrase;
+    private TextView nom;
     private int indice = 0;
     private String[] listeExercices;
     private Spinner choix_1;
@@ -43,6 +44,7 @@ public class GrammarExerciceActivity extends Activity {
     private LinearLayout layout;
     private int nombrePhrases;
     private int scoreTot;
+    private TextView numerotPhrase;
 
 
     @Override
@@ -107,6 +109,10 @@ public class GrammarExerciceActivity extends Activity {
             choix_2.setVisibility(View.INVISIBLE);
         }
 
+        nom = findViewById(R.id.numeroGrammar);
+        nom.setText(nomExo);
+
+        numerotPhrase = findViewById(R.id.numeroMot);
 
         validate = findViewById(R.id.valider);
         validate.setOnClickListener(clickListenerValidate);
@@ -114,6 +120,7 @@ public class GrammarExerciceActivity extends Activity {
         phrase = findViewById(R.id.requete);
         phrase.setText(texte[indice]);
 
+        updateScreen();
     }
 
 
@@ -136,10 +143,16 @@ public class GrammarExerciceActivity extends Activity {
                     showResults();
                 }
             }
+            updateScreen();
         }
     };
 
 
+    private void updateScreen(){
+        int temp = indice + 1;
+        String phrase = "Phrase " + temp + " sur " + nombrePhrases;
+        numerotPhrase.setText(phrase);
+    }
 
     private int calculScore(String reponseChoisie){
         int score = 0;
